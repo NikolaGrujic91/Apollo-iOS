@@ -12,6 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     let planStore = PlanStore();
+    let weightStore = WeightStore();
     let locationController = LocationController();
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -22,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navController = self.window!.rootViewController as! UINavigationController;
         let plansController = navController.topViewController as! PlansViewController;
         plansController.planStore = self.planStore;
+        plansController.weightStore = self.weightStore;
         plansController.locationController = self.locationController;
         
         HealthKitController.fetchWeight();

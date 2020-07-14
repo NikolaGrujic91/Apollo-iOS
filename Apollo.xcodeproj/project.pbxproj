@@ -11,6 +11,10 @@
 		8E2F4FF724B25CC90027FC35 /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F4FF624B25CC90027FC35 /* PlanCell.swift */; };
 		8E2F4FF924B265BE0027FC35 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F4FF824B265BE0027FC35 /* DaysViewController.swift */; };
 		8E2F4FFB24B266B60027FC35 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F4FFA24B266B60027FC35 /* DayCell.swift */; };
+		8E49FBDD24BD8B1700E52A87 /* StringExtensionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49FBDC24BD8B1700E52A87 /* StringExtensionsHelper.swift */; };
+		8E4CD06724BCD03C00E97BA0 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CD06624BCD03C00E97BA0 /* Weight.swift */; };
+		8E4CD06924BCD04A00E97BA0 /* WeightStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CD06824BCD04A00E97BA0 /* WeightStore.swift */; };
+		8E4CD06B24BCD57D00E97BA0 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */; };
 		8E5D0EDE24BA60F200D8553E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D0EDD24BA60F200D8553E /* Assets.xcassets */; };
 		8E67C6FB24B83E3100E3F56D /* HealthKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67C6FA24B83E3100E3F56D /* HealthKitController.swift */; };
 		8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8A5DB724B746A800998E1D /* HealthKit.framework */; };
@@ -55,6 +59,10 @@
 		8E2F4FF624B25CC90027FC35 /* PlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
 		8E2F4FF824B265BE0027FC35 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
 		8E2F4FFA24B266B60027FC35 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		8E49FBDC24BD8B1700E52A87 /* StringExtensionsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsHelper.swift; sourceTree = "<group>"; };
+		8E4CD06624BCD03C00E97BA0 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		8E4CD06824BCD04A00E97BA0 /* WeightStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightStore.swift; sourceTree = "<group>"; };
+		8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		8E5D0EDD24BA60F200D8553E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E67C6FA24B83E3100E3F56D /* HealthKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitController.swift; sourceTree = "<group>"; };
 		8E67C6FF24B8AEC200E3F56D /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				8E83EC4324B1E92C00B27863 /* LaunchScreen.storyboard */,
 				8E5D0EDD24BA60F200D8553E /* Assets.xcassets */,
 				8E83EC4624B1E92C00B27863 /* Info.plist */,
+				8E49FBDC24BD8B1700E52A87 /* StringExtensionsHelper.swift */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -194,6 +203,8 @@
 				8E83EC6F24B1EC3800B27863 /* PlanStore.swift */,
 				8E83EC7124B1ECA200B27863 /* Day.swift */,
 				8E83EC7324B1ECB400B27863 /* Interval.swift */,
+				8E4CD06624BCD03C00E97BA0 /* Weight.swift */,
+				8E4CD06824BCD04A00E97BA0 /* WeightStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 				8E2F4FF324B25AE40027FC35 /* PlansViewController.swift */,
 				8E2F4FF824B265BE0027FC35 /* DaysViewController.swift */,
 				8E8016BD24B596D7002A5BE2 /* IntervalsViewController.swift */,
+				8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */,
 				8E67C6FA24B83E3100E3F56D /* HealthKitController.swift */,
 				8E67C6FF24B8AEC200E3F56D /* AudioController.swift */,
 				8E7A9BB924BAC63B005E6C9C /* LocationController.swift */,
@@ -353,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4CD06B24BCD57D00E97BA0 /* WeightViewController.swift in Sources */,
 				8E67C70024B8AEC200E3F56D /* AudioController.swift in Sources */,
 				8E8016BE24B596D7002A5BE2 /* IntervalsViewController.swift in Sources */,
 				8E2F4FF724B25CC90027FC35 /* PlanCell.swift in Sources */,
@@ -363,11 +376,14 @@
 				8E83EC7224B1ECA200B27863 /* Day.swift in Sources */,
 				8E8016C024B59A6E002A5BE2 /* IntervalCell.swift in Sources */,
 				8E83EC7024B1EC3800B27863 /* PlanStore.swift in Sources */,
+				8E49FBDD24BD8B1700E52A87 /* StringExtensionsHelper.swift in Sources */,
 				8E83EC3924B1E92B00B27863 /* AppDelegate.swift in Sources */,
+				8E4CD06924BCD04A00E97BA0 /* WeightStore.swift in Sources */,
 				8E2F4FF924B265BE0027FC35 /* DaysViewController.swift in Sources */,
 				8E83EC7424B1ECB400B27863 /* Interval.swift in Sources */,
 				8E7A9BBA24BAC63B005E6C9C /* LocationController.swift in Sources */,
 				8E83EC3B24B1E92B00B27863 /* SceneDelegate.swift in Sources */,
+				8E4CD06724BCD03C00E97BA0 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

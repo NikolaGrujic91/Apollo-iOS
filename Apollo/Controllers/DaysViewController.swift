@@ -18,6 +18,7 @@ class DaysViewController: UITableViewController
         }
     };
     var locationController: LocationController!;
+    var weight: Weight!;
     
     let baseRed: CGFloat = 255.0;
     let baseGreen: CGFloat = 175.0;
@@ -51,6 +52,7 @@ class DaysViewController: UITableViewController
                     let intervalsViewController = segue.destination as! IntervalsViewController;
                     intervalsViewController.day = day;
                     intervalsViewController.locationController = self.locationController;
+                    intervalsViewController.weight = self.weight;
                 }
             default:
                 preconditionFailure("Unexpected segue identifier.");

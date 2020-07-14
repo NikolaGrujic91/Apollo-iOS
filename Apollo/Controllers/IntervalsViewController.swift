@@ -18,7 +18,9 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
         }
     };
     var locationController: LocationController!;
+    var weight: Weight!;
     var audioController = AudioController();
+
     
     var timer: Timer! = Timer();
     var seconds: Int! = 0;
@@ -159,9 +161,7 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
 
                 self.locationController.stopUpdatingLocation();
                 self.day.distance = Int(self.locationController.calculateDistance());
-                
-                let calories = Int((Double(self.day.distance) * HealthKitController.getWeight() * 1.036) / 1000);
-                self.day.calories = calories;
+                self.day.calories = Int(Double(self.day.distance) / 1000.0 * self.weight.value * 1.036);
 
                 return;
             }
@@ -230,7 +230,3 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
     }
 }
 
-extension StringProtocol {
-    var firstUppercased: String { return prefix(1).uppercased() + dropFirst(); }
-    var firstCapitalized: String { return prefix(1).capitalized + dropFirst(); }
-}

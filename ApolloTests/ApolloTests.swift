@@ -46,6 +46,18 @@ class ApolloTests: XCTestCase {
         XCTAssertNoThrow(try? JSONEncoder().encode(planStore.plans));
     }
     
+    func testWeightLoading() throws
+    {
+        let weightStore = WeightStore();
+        XCTAssertGreaterThan(weightStore.weight.value, 0.0, "Loaded weight is wrong");
+    }
+    
+    func testWeightEncoding() throws
+    {
+        let weightStore = WeightStore();
+        XCTAssertNoThrow(try? JSONEncoder().encode(weightStore.weight));
+    }
+    
     func testSoundAvailable() throws
     {
         let fileManager = FileManager();
