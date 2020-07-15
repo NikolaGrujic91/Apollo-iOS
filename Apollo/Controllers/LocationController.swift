@@ -64,6 +64,11 @@ class LocationController: NSObject, CLLocationManagerDelegate
         return distance;
     }
     
+    internal func clear() -> Void
+    {
+        self.locations.removeAll();
+    }
+    
     // MARK: - CLLocationManagerDelegate methods
     
     // Tells the delegate its authorization status when the app creates the location manager and when the authorization status changes.

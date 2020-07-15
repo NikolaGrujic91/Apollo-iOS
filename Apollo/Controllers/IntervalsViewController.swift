@@ -59,6 +59,13 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
         self.intervalsTableView.reloadData();
     }
     
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated);
+        self.locationController.stopUpdatingLocation();
+        self.locationController.clear();
+    }
+    
     // MARK: - Action methods
     
     @IBAction func startButtonPressed(_ sender: UIButton)
@@ -79,17 +86,11 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
     {
         if self.resumeTapped
         {
-            self.runTimer();
-            self.resumeTapped = false;
-            self.pauseButton.setImage(UIImage(systemName: "pause"), for: .normal);
-            self.locationController.startUpdatingLocation();
+            self.resume();
         }
         else
         {
-            self.timer.invalidate();
-            self.resumeTapped = true;
-            self.pauseButton.setImage(UIImage(systemName: "playpause"), for: .normal);
-            self.locationController.stopUpdatingLocation();
+            self.pause()
         }
     }
     
@@ -108,6 +109,22 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     // MARK: - Helper methods
+    
+    internal func pause() -> Void
+    {
+        self.timer.invalidate();
+        self.resumeTapped = true;
+        self.pauseButton.setImage(UIImage(systemName: "playpause"), for: .normal);
+        self.locationController.stopUpdatingLocation();
+    }
+    
+    internal func resume() -> Void
+    {
+        self.runTimer();
+        self.resumeTapped = false;
+        self.pauseButton.setImage(UIImage(systemName: "pause"), for: .normal);
+        self.locationController.startUpdatingLocation();
+    }
     
     private func setDynamicCellHeight() -> Void
     {
@@ -194,6 +211,11 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
     
     private func setCurrentInterval() -> Void
     {
+        if self.currentIntervalIndex >= self.day.intervals.count
+        {
+            self.currentIntervalIndex = self.day.intervals.count - 1;
+        }
+        
         self.intervalsCountLabel.text = "\(self.currentIntervalIndex + 1) / \(self.day.intervals.count)";
         self.intervalTypeLabel.text = self.day.intervals[self.currentIntervalIndex].type.uppercased();
         self.currentIntervalSeconds = self.day.intervals[self.currentIntervalIndex].seconds;
