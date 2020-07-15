@@ -51,16 +51,14 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     {
         self.dismissKeyboard();
         
-        if let weight = Double(self.textField.text!)
-        {
-            self.weightStore.weight.value = weight;
-            self.weightStore.encode();
-        }
+        let weight = self.numberFormatter.number(from: self.textField.text!);
+        self.weightStore.weight.value = weight?.doubleValue ?? 0.0;
+        self.weightStore.encode();
     }
     
     @IBAction func loadButtonPressed(_ sender: UIButton)
     {
-        self.textField.text = String(format: "%.1f", HealthKitController.getWeight());
+        self.textField.text = self.numberFormatter.string(from: NSNumber(value: HealthKitController.getWeight()));
     }
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer)
