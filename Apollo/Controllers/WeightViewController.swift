@@ -11,6 +11,15 @@ import UIKit
 class WeightViewController: UIViewController, UITextFieldDelegate
 {
     var weightStore: WeightStore!;
+    var decimalSeparator: String!;
+    
+    let numberFormatter: NumberFormatter = {
+        let nf = NumberFormatter();
+        nf.numberStyle = .decimal;
+        nf.minimumFractionDigits = 1;
+        nf.maximumFractionDigits = 1;
+        return nf;
+    }();
     
     @IBOutlet var textField: UITextField!;
     
@@ -21,7 +30,8 @@ class WeightViewController: UIViewController, UITextFieldDelegate
         super.viewDidLoad();
         self.textField.delegate = self;
         self.setNavigationItem("Weight");
-        self.textField.text = String(format: "%.1f", self.weightStore.weight.value);
+        self.textField.text = self.numberFormatter.string(from: NSNumber(value: self.weightStore.weight.value));
+        self.decimalSeparator = self.numberFormatter.decimalSeparator;
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -95,7 +105,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
         {
             let count = str.count;
             
-            if (str[count - 2] == ".")
+            if (str[count - 2] == self.decimalSeparator)
             {
                 return false;
             }
@@ -104,18 +114,18 @@ class WeightViewController: UIViewController, UITextFieldDelegate
             {
                 return true;
             }
-            else if (count == 2 && string == "." && str[count - 1] != ".") ||
-                    (count == 2 && decimal != nil && str[count - 1] != ".")
+            else if (count == 2 && string == self.decimalSeparator && str[count - 1] != self.decimalSeparator) ||
+                    (count == 2 && decimal != nil && str[count - 1] != self.decimalSeparator)
             {
                 return true;
             }
-            else if (count == 3 && string == "." && str[count - 1] != ".") ||
-                    (count == 3 && decimal != nil && str[count - 1] == ".")
+            else if (count == 3 && string == self.decimalSeparator && str[count - 1] != self.decimalSeparator) ||
+                    (count == 3 && decimal != nil && str[count - 1] == self.decimalSeparator)
             {
                 return true;
             }
-            else if (count == 4 && string == "." && str[count - 1] != ".") ||
-                    (count == 4 && decimal != nil && str[count - 1] == ".")
+            else if (count == 4 && string == self.decimalSeparator && str[count - 1] != self.decimalSeparator) ||
+                    (count == 4 && decimal != nil && str[count - 1] == self.decimalSeparator)
             {
                 return true;
             }
