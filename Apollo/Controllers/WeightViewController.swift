@@ -22,6 +22,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     }();
     
     @IBOutlet var textField: UITextField!;
+    @IBOutlet var saveButton: UIButton!;
     
     // MARK: - View life cycle
     
@@ -29,7 +30,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     {
         super.viewDidLoad();
         self.textField.delegate = self;
-        self.setNavigationItem("Weight");
+        self.setNavigationItem("Profile");
         self.textField.text = self.numberFormatter.string(from: NSNumber(value: self.weightStore.weight.value));
         self.decimalSeparator = self.numberFormatter.decimalSeparator;
     }
@@ -50,6 +51,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     @IBAction func saveButtonPressed(_ sender: UIButton)
     {
         self.dismissKeyboard();
+        self.saveButton.isEnabled = false;
         
         let weight = self.numberFormatter.number(from: self.textField.text!);
         self.weightStore.weight.value = weight?.doubleValue ?? 0.0;
@@ -59,11 +61,15 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     @IBAction func loadButtonPressed(_ sender: UIButton)
     {
         self.textField.text = self.numberFormatter.string(from: NSNumber(value: HealthKitController.getWeight()));
+        self.enableSaveButton();
     }
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer)
     {
+        self.enableSaveButton();
         self.dismissKeyboard();
+        let number = self.numberFormatter.number(from: self.textField.text!);
+        self.textField.text = self.numberFormatter.string(from: number!);
     }
     
     // MARK: - Helper methods
@@ -76,6 +82,17 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     private func dismissKeyboard() -> Void
     {
         self.view.endEditing(true);
+    }
+    
+    private func enableSaveButton() -> Void
+    {
+        let oldValue = self.numberFormatter.string(from: NSNumber(value: self.weightStore.weight.value));
+        let newValue = self.textField.text;
+        
+        if oldValue != newValue
+        {
+            self.saveButton.isEnabled = true;
+        }
     }
     
     // MARK: - UITextFieldDelegate
@@ -143,7 +160,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     // Asks the delegate if the text field should process the pressing of the return button.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
-        textField.resignFirstResponder()
+        textField.resignFirstResponder();
         return true;
     }
 }

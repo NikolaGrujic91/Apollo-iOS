@@ -56,7 +56,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Apollo" id="fe0-kG-CVY">
-                        <barButtonItem key="rightBarButtonItem" image="pencil" catalog="system" id="XLq-AF-t6e">
+                        <barButtonItem key="rightBarButtonItem" image="person.fill" catalog="system" id="XLq-AF-t6e">
                             <connections>
                                 <segue destination="eaZ-jF-m0n" kind="show" identifier="enterWeight" id="ooM-N9-m47"/>
                             </connections>
@@ -76,10 +76,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uO8-GF-pIr">
-                                <rect key="frame" x="112.5" y="412" width="189.5" height="72"/>
+                                <rect key="frame" x="115" y="412" width="184" height="72"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pvh-jg-JVq">
-                                        <rect key="frame" x="0.0" y="0.0" width="189.5" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter weight..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="n00-fr-pWH">
                                                 <rect key="frame" x="0.0" y="0.0" width="121" height="34"/>
@@ -92,10 +92,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFr-T1-TPS">
-                                                <rect key="frame" x="155.5" y="2" width="34" height="30"/>
-                                                <state key="normal" title="Save">
-                                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFr-T1-TPS">
+                                                <rect key="frame" x="155.5" y="4.5" width="28.5" height="25"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="archivebox" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="23"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="saveButtonPressed:" destination="eaZ-jF-m0n" eventType="touchDown" id="p3f-ND-uSw"/>
@@ -104,7 +105,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoh-tm-DgL">
-                                        <rect key="frame" x="13.5" y="42" width="162" height="30"/>
+                                        <rect key="frame" x="11" y="42" width="162" height="30"/>
                                         <state key="normal" title="Load from Apple Health">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -128,6 +129,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5ry-Wv-R84"/>
                     <connections>
+                        <outlet property="saveButton" destination="SFr-T1-TPS" id="4lW-KZ-ofz"/>
                         <outlet property="textField" destination="n00-fr-pWH" id="4vy-60-4bd"/>
                     </connections>
                 </viewController>
@@ -159,19 +161,19 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="38a-rh-naV">
                                             <rect key="frame" x="154.5" y="15.5" width="105.5" height="49.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Week 1 Day 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPZ-02-LwA" userLabel="NameLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 1 Day 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPZ-02-LwA" userLabel="NameLabel">
                                                     <rect key="frame" x="0.0" y="0.0" width="105.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Calories: 400 kcal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klu-fE-aWP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories: 400 kcal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klu-fE-aWP">
                                                     <rect key="frame" x="0.0" y="20.5" width="105.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Distance: 5km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-cU-y7s">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: 5km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-cU-y7s">
                                                     <rect key="frame" x="0.0" y="35" width="105.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -366,9 +368,10 @@
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="pause" catalog="system" width="88" height="128"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="play" catalog="system" width="120" height="128"/>
     </resources>
 </document>
