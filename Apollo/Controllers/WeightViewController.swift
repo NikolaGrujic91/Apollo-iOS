@@ -52,6 +52,10 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     {
         self.dismissKeyboard();
         self.saveButton.isEnabled = false;
+        self.saveButton.setImage(UIImage(systemName: "checkmark"), for: .normal);
+        
+        let number = self.numberFormatter.number(from: self.textField.text!);
+        self.textField.text = self.numberFormatter.string(from: number!);
         
         let weight = self.numberFormatter.number(from: self.textField.text!);
         self.weightStore.weight.value = weight?.doubleValue ?? 0.0;
@@ -92,6 +96,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
         if oldValue != newValue
         {
             self.saveButton.isEnabled = true;
+            self.saveButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal);
         }
     }
     
@@ -100,6 +105,8 @@ class WeightViewController: UIViewController, UITextFieldDelegate
     // Asks the delegate if the specified text should be changed.
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
+        self.enableSaveButton();
+        
         if let char = string.cString(using: String.Encoding.utf8)
         {
             let isBackSpace = strcmp(char, "\\b");
