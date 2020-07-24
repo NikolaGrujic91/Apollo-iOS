@@ -54,7 +54,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
         self.saveButton.isEnabled = false;
         self.saveButton.setImage(UIImage(systemName: "checkmark"), for: .normal);
         
-        let number = self.numberFormatter.number(from: self.textField.text!);
+        let number = self.numberFormatter.number(from: self.textField.text!.isEmpty ? "0.0" : self.textField.text!);
         self.textField.text = self.numberFormatter.string(from: number!);
         
         let weight = self.numberFormatter.number(from: self.textField.text!);
