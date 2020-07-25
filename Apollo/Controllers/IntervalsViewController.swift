@@ -175,7 +175,10 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
             if self.isLastInterval()
             {
                 self.intervalTypeLabel.text = "FINISHED";
-
+                self.startButton.isEnabled = false;
+                self.pauseButton.isEnabled = false;
+                self.resetButton.isEnabled = false;
+                
                 self.locationController.stopUpdatingLocation();
                 self.day.distance = Int(self.locationController.calculateDistance());
                 self.day.calories = Int(Double(self.day.distance) / 1000.0 * self.weight.value * 1.036);
