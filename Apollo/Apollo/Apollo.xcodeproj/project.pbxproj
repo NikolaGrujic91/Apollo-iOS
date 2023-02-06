@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -248,6 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8EBED17E299151860079AE77 /* PBXTargetDependency */,
 			);
 			name = Apollo;
 			productName = EasyRunTracker;
@@ -322,6 +323,9 @@
 				Base,
 			);
 			mainGroup = 8E83EC2C24B1E92B00B27863;
+			packageReferences = (
+				8EBED17C299151740079AE77 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
+			);
 			productRefGroup = 8E83EC3624B1E92B00B27863 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +423,10 @@
 			isa = PBXTargetDependency;
 			target = 8E83EC3424B1E92B00B27863 /* Apollo */;
 			targetProxy = 8E83EC5724B1E92C00B27863 /* PBXContainerItemProxy */;
+		};
+		8EBED17E299151860079AE77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8EBED17D299151860079AE77 /* SwiftLint */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,6 +734,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8EBED17C299151740079AE77 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8EBED17D299151860079AE77 /* SwiftLint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EBED17C299151740079AE77 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
+			productName = "plugin:SwiftLint";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E83EC2D24B1E92B00B27863 /* Project object */;
 }

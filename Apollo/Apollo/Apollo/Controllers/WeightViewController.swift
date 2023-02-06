@@ -118,7 +118,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate
         
         let decimal = string.rangeOfCharacter(from:CharacterSet.decimalDigits);
         
-        if (textField.text?.count == 0 && decimal != nil)
+        if (textField.text?.isEmpty ?? true && decimal != nil)
         {
             return true;
         }
