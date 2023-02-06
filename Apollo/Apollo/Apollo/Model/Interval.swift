@@ -6,9 +6,7 @@
 //  Copyright © 2020 Nikola Grujic. All rights reserved.
 //
 
-import Foundation
-
 class Interval: Codable {
-    var type: String;
-    var seconds: Int;
+    var type: String
+    var seconds: Int
 }

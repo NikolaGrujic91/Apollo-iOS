@@ -8,23 +8,20 @@
 
 import UIKit
 
-class PlanCell: UITableViewCell
-{
-    @IBOutlet var nameLabel: UILabel!;
-    @IBOutlet var imageBackground: UIImageView!;
-    
+class PlanCell: UITableViewCell {
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var imageBackground: UIImageView!
+
     // MARK: - Initializers
-    
-    override func awakeFromNib()
-    {
-        super.awakeFromNib();
-        self.setRespondToUserSettingsChanges();
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.setRespondToUserSettingsChanges()
     }
-    
+
     // MARK: - Helper methods
-    
-    private func setRespondToUserSettingsChanges() -> Void
-    {
-        self.nameLabel.adjustsFontForContentSizeCategory = true;
+
+    private func setRespondToUserSettingsChanges() {
+        self.nameLabel.adjustsFontForContentSizeCategory = true
     }
 }

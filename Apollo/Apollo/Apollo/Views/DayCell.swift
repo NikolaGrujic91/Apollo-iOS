@@ -8,26 +8,23 @@
 
 import UIKit
 
-class DayCell: UITableViewCell
-{
-    @IBOutlet var nameLabel: UILabel!;
-    @IBOutlet var caloriesLabel: UILabel!;
-    @IBOutlet var distanceLabel: UILabel!;
-    
+class DayCell: UITableViewCell {
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var caloriesLabel: UILabel!
+    @IBOutlet var distanceLabel: UILabel!
+
     // MARK: - Initializers
-    
-    override func awakeFromNib()
-    {
-        super.awakeFromNib();
-        self.setRespondToUserSettingsChanges();
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.setRespondToUserSettingsChanges()
     }
-    
+
     // MARK: - Helper methods
-    
-    private func setRespondToUserSettingsChanges() -> Void
-    {
-        self.nameLabel.adjustsFontForContentSizeCategory = true;
-        self.caloriesLabel.adjustsFontForContentSizeCategory = true;
-        self.distanceLabel.adjustsFontForContentSizeCategory = true;
+
+    private func setRespondToUserSettingsChanges() {
+        self.nameLabel.adjustsFontForContentSizeCategory = true
+        self.caloriesLabel.adjustsFontForContentSizeCategory = true
+        self.distanceLabel.adjustsFontForContentSizeCategory = true
     }
 }

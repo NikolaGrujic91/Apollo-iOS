@@ -6,11 +6,9 @@
 //  Copyright © 2020 Nikola Grujic. All rights reserved.
 //
 
-import Foundation
-
 class Day: Codable {
-    var name: String;
-    var calories: Int;
-    var distance: Int;
-    var intervals: [Interval];
+    var name: String
+    var calories: Int
+    var distance: Int
+    var intervals: [Interval]
 }

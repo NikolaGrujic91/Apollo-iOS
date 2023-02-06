@@ -9,40 +9,31 @@
 import Foundation
 import AVFoundation
 
-class AudioController
-{
-    var audioPlayer: AVAudioPlayer = AVAudioPlayer();
-    
-    private func playFile(filePath: String) -> Void
-    {
-        let fileURL: URL = URL(fileURLWithPath: filePath)
-        do
-        {
+class AudioController {
+    var audioPlayer = AVAudioPlayer()
+
+    private func playFile(filePath: String) {
+        let fileURL = URL(fileURLWithPath: filePath)
+        do {
             audioPlayer = try AVAudioPlayer(contentsOf: fileURL)
-            audioPlayer.prepareToPlay();
+            audioPlayer.prepareToPlay()
+        } catch {
+            print("\(error)")
+            return
         }
-        catch
-        {
-            print("\(error)");
-            return;
-        }
-        
-        audioPlayer.play();
+
+        audioPlayer.play()
     }
-    
-    internal func playCountdownSound() -> Void
-    {
-        if let path: String = Bundle.main.path(forResource: "WorkoutCountdown_Haptic", ofType: "caf")
-        {
-            self.playFile(filePath: path);
+
+    internal func playCountdownSound() {
+        if let path: String = Bundle.main.path(forResource: "WorkoutCountdown_Haptic", ofType: "caf") {
+            self.playFile(filePath: path)
         }
     }
-    
-    internal func playCompleteSound() -> Void
-    {
-        if let path: String = Bundle.main.path(forResource: "WorkoutComplete_Haptic", ofType: "caf")
-        {
-            self.playFile(filePath: path);
+
+    internal func playCompleteSound() {
+        if let path: String = Bundle.main.path(forResource: "WorkoutComplete_Haptic", ofType: "caf") {
+            self.playFile(filePath: path)
         }
     }
 }
