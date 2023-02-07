@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Apollo/Apollo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ApolloLogger">
+   </FileRef>
 </Workspace>
