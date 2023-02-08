@@ -27,7 +27,8 @@ class HealthKitRepository {
 
         do {
             try await store.requestAuthorization(toShare: [], read: [quantityType, workoutType])
-            authorized = true
+            let status = store.authorizationStatus(for: workoutType)
+            authorized = status == .sharingAuthorized
         } catch {
             authorized = false
             throw HealthKitError(.authorization(description: error.localizedDescription), ErrorLine())
