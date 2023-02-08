@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import ApolloLogger
 
-class WeightRepository: WeightRepositoryProtocol {
+class WeightRepository: WeightRepositoryProtocol, LoggerInjected {
     // MARK: - Properties
     var value: Double = 0.0
     private let key: String = "ApolloWeight"
@@ -30,8 +31,12 @@ class WeightRepository: WeightRepositoryProtocol {
     }
 
     func loadFromHealthKit() async {
-        await healthKitRepository.requestAuthorization()
-        await healthKitRepository.fetchWeight()
-        save(healthKitRepository.bodyMass)
+        do {
+            try await healthKitRepository.requestAuthorization()
+            try await healthKitRepository.fetchWeight()
+            save(healthKitRepository.bodyMass)
+        } catch {
+            logger.handleError(error)
+        }
     }
 }

@@ -7,33 +7,38 @@
 
 import Foundation
 import HealthKit
+import ApolloLogger
 
 class HealthKitRepository {
     private let store = HKHealthStore()
     private(set) var bodyMass: Double = 0.0
+    private var authorized = false
 
-    func requestAuthorization() async {
+    func requestAuthorization() async throws {
         if !HKHealthStore.isHealthDataAvailable() {
-            print("Health data not available")
-            return
+            throw HealthKitError(.healthData, ErrorLine())
         }
 
         guard let quantityType = HKQuantityType.quantityType(forIdentifier: .bodyMass) else {
-            print("Quantity type not recognized")
-            return
+            throw HealthKitError(.quantityType, ErrorLine())
         }
 
         let workoutType = HKObjectType.workoutType()
 
         do {
             try await store.requestAuthorization(toShare: [], read: [quantityType, workoutType])
-            print("Authorization success")
+            authorized = true
         } catch {
-            print(error)
+            authorized = false
+            throw HealthKitError(.authorization(description: error.localizedDescription), ErrorLine())
         }
     }
 
-    public func fetchWeight() async {
+    func fetchWeight() async throws {
+        if !authorized {
+            return
+        }
+
         guard let sampleType = HKSampleType.quantityType(forIdentifier: .bodyMass) else {
             return
         }
@@ -57,7 +62,7 @@ class HealthKitRepository {
                 bodyMass = latestResult.quantity.doubleValue(for: HKUnit.gramUnit(with: .kilo))
             }
         } catch {
-            print(error)
+            throw HealthKitError(.query(description: error.localizedDescription), ErrorLine())
         }
     }
 }
