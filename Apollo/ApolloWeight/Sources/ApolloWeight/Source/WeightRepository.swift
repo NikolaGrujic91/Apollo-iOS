@@ -11,6 +11,7 @@ class WeightRepository: WeightRepositoryProtocol {
     // MARK: - Properties
     var value: Double = 0.0
     private let key: String = "ApolloWeight"
+    private let healthKitRepository = HealthKitRepository()
 
     // MARK: - Initializers
     init() {
@@ -26,5 +27,11 @@ class WeightRepository: WeightRepositoryProtocol {
 
     func load() {
         value = UserDefaults.standard.double(forKey: key)
+    }
+
+    func loadFromHealthKit() async {
+        await healthKitRepository.requestAuthorization()
+        await healthKitRepository.fetchWeight()
+        value = healthKitRepository.bodyMass
     }
 }

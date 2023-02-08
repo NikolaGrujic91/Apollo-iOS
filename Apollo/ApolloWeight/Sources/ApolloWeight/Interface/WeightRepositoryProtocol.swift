@@ -17,4 +17,9 @@ public protocol WeightRepositoryProtocol {
     /// Load weight data from user defaults
     ///
     func load()
+
+    ///
+    /// Load weight data from HealthKit
+    ///
+    func loadFromHealthKit() async
 }

@@ -36,6 +36,7 @@
 		8E83EC7024B1EC3800B27863 /* PlanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC6F24B1EC3800B27863 /* PlanStore.swift */; };
 		8E83EC7224B1ECA200B27863 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC7124B1ECA200B27863 /* Day.swift */; };
 		8E83EC7424B1ECB400B27863 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC7324B1ECB400B27863 /* Interval.swift */; };
+		8E97CFFD2992A1F9007B5C4B /* ApolloWeight in Frameworks */ = {isa = PBXBuildFile; productRef = 8E97CFFC2992A1F9007B5C4B /* ApolloWeight */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */,
+				8E97CFFD2992A1F9007B5C4B /* ApolloWeight in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +253,9 @@
 				8EBED17E299151860079AE77 /* PBXTargetDependency */,
 			);
 			name = Apollo;
+			packageProductDependencies = (
+				8E97CFFC2992A1F9007B5C4B /* ApolloWeight */,
+			);
 			productName = EasyRunTracker;
 			productReference = 8E83EC3524B1E92B00B27863 /* Apollo.app */;
 			productType = "com.apple.product-type.application";
@@ -747,6 +752,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E97CFFC2992A1F9007B5C4B /* ApolloWeight */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ApolloWeight;
+		};
 		8EBED17D299151860079AE77 /* SwiftLint */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8EBED17C299151740079AE77 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
