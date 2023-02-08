@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import ApolloWeight
 
-class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeightRepositoryInjected {
     var day: Day! {
         didSet {
             self.setNavigationItem(self.day.name)
         }
     }
     var locationController: LocationController!
-    var weight: Weight!
     var audioController = AudioController()
 
     var timer: Timer! = Timer()
@@ -155,7 +155,7 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
 
                 self.locationController.stopUpdatingLocation()
                 self.day.distance = Int(self.locationController.calculateDistance())
-                self.day.calories = Int(Double(self.day.distance) / 1000.0 * self.weight.value * 1.036)
+                self.day.calories = Int(Double(self.day.distance) / 1000.0 * repository.value * 1.036)
 
                 return
             }

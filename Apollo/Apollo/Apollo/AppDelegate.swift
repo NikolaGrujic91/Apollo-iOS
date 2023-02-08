@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         application.isIdleTimerDisabled = true
 
-        HealthKitController.requestAuthorization(identifier: .bodyMass)
         return true
     }
 

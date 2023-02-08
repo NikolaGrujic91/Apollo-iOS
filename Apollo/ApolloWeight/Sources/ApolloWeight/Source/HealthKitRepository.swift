@@ -43,16 +43,19 @@ class HealthKitRepository {
         components.day = components.day ?? 7 - 7
         let oneWeekAgo = calendar.date(from: components)
 
-        let queryPredicate = HKQuery.predicateForSamples(withStart: oneWeekAgo, end: .now, options: .strictEndDate)
+        let predicate = HKQuery.predicateForSamples(withStart: oneWeekAgo, end: .now, options: .strictEndDate)
 
         let queryDescriptor = HKSampleQueryDescriptor(
-            predicates: [.quantitySample(type: sampleType, predicate: queryPredicate)],
+            predicates: [.quantitySample(type: sampleType, predicate: predicate)],
             sortDescriptors: []
         )
 
         do {
             let results = try await queryDescriptor.result(for: store)
-            print(results)
+
+            if let latestResult = results.last {
+                bodyMass = latestResult.quantity.doubleValue(for: HKUnit.gramUnit(with: .kilo))
+            }
         } catch {
             print(error)
         }

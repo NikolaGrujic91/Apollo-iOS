@@ -32,6 +32,6 @@ class WeightRepository: WeightRepositoryProtocol {
     func loadFromHealthKit() async {
         await healthKitRepository.requestAuthorization()
         await healthKitRepository.fetchWeight()
-        value = healthKitRepository.bodyMass
+        save(healthKitRepository.bodyMass)
     }
 }

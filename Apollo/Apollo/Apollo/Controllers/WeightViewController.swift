@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import ApolloWeight
 
-class WeightViewController: UIViewController, UITextFieldDelegate {
-    var weightStore: WeightStore!
+class WeightViewController: UIViewController, UITextFieldDelegate, WeightRepositoryInjected {
     var decimalSeparator: String!
 
     let numberFormatter: NumberFormatter = {
@@ -29,7 +29,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.textField.delegate = self
         self.setNavigationItem("Profile")
-        self.textField.text = self.numberFormatter.string(from: NSNumber(value: self.weightStore.weight.value))
+        self.textField.text = self.numberFormatter.string(from: NSNumber(value: repository.value))
         self.decimalSeparator = self.numberFormatter.decimalSeparator
     }
 
@@ -53,13 +53,15 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
         self.textField.text = self.numberFormatter.string(from: number!)
 
         let weight = self.numberFormatter.number(from: self.textField.text!)
-        self.weightStore.weight.value = weight?.doubleValue ?? 0.0;
-        self.weightStore.encode()
+        repository.save(weight?.doubleValue ?? 0.0)
     }
 
     @IBAction func loadButtonPressed(_ sender: UIButton) {
-        self.textField.text = self.numberFormatter.string(from: NSNumber(value: HealthKitController.getWeight()))
-        self.enableSaveButton()
+        Task {
+            await repository.loadFromHealthKit()
+            self.textField.text = self.numberFormatter.string(from: NSNumber(value: repository.value))
+            self.enableSaveButton()
+        }
     }
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
@@ -80,7 +82,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
     }
 
     private func enableSaveButton() {
-        let oldValue = self.numberFormatter.string(from: NSNumber(value: self.weightStore.weight.value))
+        let oldValue = self.numberFormatter.string(from: NSNumber(value: repository.value))
         let newValue = self.textField.text
 
         if oldValue != newValue {
