@@ -23,14 +23,11 @@ final class ApolloLoggerTests: XCTestCase, LoggerInjected {
         logger.handleError(FileError(.readingJsonData, ErrorLine()))
         logger.handleError(FileError(.decodingJsonData(description: "test"), ErrorLine()))
 
-        // HtmlParserError
-        logger.handleError(HtmlParseError(.emptyHtml, ErrorLine()))
-        logger.handleError(HtmlParseError(.parseName, ErrorLine()))
-        logger.handleError(HtmlParseError(.parseSize, ErrorLine()))
-        logger.handleError(HtmlParseError(.parsePrices, ErrorLine()))
-        logger.handleError(HtmlParseError(.parsePricePerUnit, ErrorLine()))
-        logger.handleError(HtmlParseError(.parseAction, ErrorLine()))
-        logger.handleError(HtmlParseError(.parseImage, ErrorLine()))
+        // HealthKitError
+        logger.handleError(HealthKitError(.healthData, ErrorLine()))
+        logger.handleError(HealthKitError(.quantityType, ErrorLine()))
+        logger.handleError(HealthKitError(.authorization(description: "test"), ErrorLine()))
+        logger.handleError(HealthKitError(.query(description: "test"), ErrorLine()))
 
         // LocalizationError
         logger.handleError(LocalizationError(.pathNotFound, ErrorLine()))
