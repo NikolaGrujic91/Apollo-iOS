@@ -23,24 +23,24 @@ class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProto
 
     func requestAuthorization() {
         if locationManager.authorizationStatus == .notDetermined {
-            self.locationManager.requestWhenInUseAuthorization()
+            locationManager.requestWhenInUseAuthorization()
         }
     }
 
     func startUpdatingLocation() {
-        self.locationManager.startUpdatingLocation()
-        self.updatingLocationStopped = false
+        locationManager.startUpdatingLocation()
+        updatingLocationStopped = false
     }
 
     func stopUpdatingLocation() {
-        self.locationManager.stopUpdatingLocation()
-        self.updatingLocationStopped = true
+        locationManager.stopUpdatingLocation()
+        updatingLocationStopped = true
     }
 
     func calculateDistance() -> Double {
         var distance = 0.0
 
-        for i in 0..<self.locations.count - 1 {
+        for i in 0..<locations.count - 1 {
             let currentLocation = self.locations[i]
             let nextLocation = self.locations[i + 1]
 
@@ -51,7 +51,7 @@ class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProto
     }
 
     func clear() {
-        self.locations.removeAll()
+        locations.removeAll()
     }
 
     // MARK: - CLLocationManagerDelegate methods

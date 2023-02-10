@@ -1,11 +1,14 @@
 import XCTest
 @testable import ApolloLocation
 
-final class ApolloLocationTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ApolloLocation().text, "Hello, World!")
+final class ApolloLocationTests: XCTestCase, LocationTrackerInjected {
+    func testLocationTracker() throws {
+        XCTAssertTrue(locationTracker.updatingLocationStopped)
+
+        locationTracker.startUpdatingLocation()
+        XCTAssertFalse(locationTracker.updatingLocationStopped)
+
+        locationTracker.stopUpdatingLocation()
+        XCTAssertTrue(locationTracker.updatingLocationStopped)
     }
 }

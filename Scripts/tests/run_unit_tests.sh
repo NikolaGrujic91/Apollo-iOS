@@ -55,3 +55,14 @@ xcodebuild \
  -scheme ApolloWeight \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for ApolloLocation"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme ApolloLocation \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
