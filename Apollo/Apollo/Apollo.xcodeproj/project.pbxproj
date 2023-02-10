@@ -15,6 +15,7 @@
 		8E49FBDD24BD8B1700E52A87 /* StringExtensionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49FBDC24BD8B1700E52A87 /* StringExtensionsHelper.swift */; };
 		8E4CD06B24BCD57D00E97BA0 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */; };
 		8E5D0EDE24BA60F200D8553E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D0EDD24BA60F200D8553E /* Assets.xcassets */; };
+		8E64B7CC29960E1800FD9409 /* ApolloLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 8E64B7CB29960E1800FD9409 /* ApolloLocation */; };
 		8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8A5DB724B746A800998E1D /* HealthKit.framework */; };
 		8E67C70024B8AEC200E3F56D /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67C6FF24B8AEC200E3F56D /* AudioController.swift */; };
 		8E7A9BBA24BAC63B005E6C9C /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A9BB924BAC63B005E6C9C /* LocationController.swift */; };
@@ -94,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E64B7CC29960E1800FD9409 /* ApolloLocation in Frameworks */,
 				8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */,
 				8E97CFFD2992A1F9007B5C4B /* ApolloWeight in Frameworks */,
 			);
@@ -246,6 +248,7 @@
 			name = Apollo;
 			packageProductDependencies = (
 				8E97CFFC2992A1F9007B5C4B /* ApolloWeight */,
+				8E64B7CB29960E1800FD9409 /* ApolloLocation */,
 			);
 			productName = EasyRunTracker;
 			productReference = 8E83EC3524B1E92B00B27863 /* Apollo.app */;
@@ -740,6 +743,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E64B7CB29960E1800FD9409 /* ApolloLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ApolloLocation;
+		};
 		8E97CFFC2992A1F9007B5C4B /* ApolloWeight */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ApolloWeight;
