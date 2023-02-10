@@ -16,10 +16,8 @@
 		8E4CD06B24BCD57D00E97BA0 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */; };
 		8E5D0EDE24BA60F200D8553E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D0EDD24BA60F200D8553E /* Assets.xcassets */; };
 		8E64B7CC29960E1800FD9409 /* ApolloLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 8E64B7CB29960E1800FD9409 /* ApolloLocation */; };
+		8E64B7CF2996936B00FD9409 /* ApolloAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 8E64B7CE2996936B00FD9409 /* ApolloAudio */; };
 		8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8A5DB724B746A800998E1D /* HealthKit.framework */; };
-		8E67C70024B8AEC200E3F56D /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67C6FF24B8AEC200E3F56D /* AudioController.swift */; };
-		8E7CB8F424BC24A10006F20A /* WorkoutComplete_Haptic.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7CB8F224BC22E40006F20A /* WorkoutComplete_Haptic.caf */; };
-		8E7CB8F624BC257C0006F20A /* WorkoutCountdown_Haptic.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7CB8F324BC22E40006F20A /* WorkoutCountdown_Haptic.caf */; };
 		8E8016BE24B596D7002A5BE2 /* IntervalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8016BD24B596D7002A5BE2 /* IntervalsViewController.swift */; };
 		8E8016C024B59A6E002A5BE2 /* IntervalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8016BF24B59A6E002A5BE2 /* IntervalCell.swift */; };
 		8E83EC3924B1E92B00B27863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC3824B1E92B00B27863 /* AppDelegate.swift */; };
@@ -62,9 +60,6 @@
 		8E49FBDC24BD8B1700E52A87 /* StringExtensionsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsHelper.swift; sourceTree = "<group>"; };
 		8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		8E5D0EDD24BA60F200D8553E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8E67C6FF24B8AEC200E3F56D /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
-		8E7CB8F224BC22E40006F20A /* WorkoutComplete_Haptic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WorkoutComplete_Haptic.caf; sourceTree = "<group>"; };
-		8E7CB8F324BC22E40006F20A /* WorkoutCountdown_Haptic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WorkoutCountdown_Haptic.caf; sourceTree = "<group>"; };
 		8E8016BD24B596D7002A5BE2 /* IntervalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsViewController.swift; sourceTree = "<group>"; };
 		8E8016BF24B59A6E002A5BE2 /* IntervalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCell.swift; sourceTree = "<group>"; };
 		8E83EC3524B1E92B00B27863 /* Apollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E64B7CF2996936B00FD9409 /* ApolloAudio in Frameworks */,
 				8E64B7CC29960E1800FD9409 /* ApolloLocation in Frameworks */,
 				8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */,
 				8E97CFFD2992A1F9007B5C4B /* ApolloWeight in Frameworks */,
@@ -188,8 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				8E42611824C36E78006688A8 /* LaunchScreen.png */,
-				8E7CB8F224BC22E40006F20A /* WorkoutComplete_Haptic.caf */,
-				8E7CB8F324BC22E40006F20A /* WorkoutCountdown_Haptic.caf */,
 				8E83EC6B24B1E9A400B27863 /* data.json */,
 			);
 			path = Resources;
@@ -213,7 +207,6 @@
 				8E2F4FF824B265BE0027FC35 /* DaysViewController.swift */,
 				8E8016BD24B596D7002A5BE2 /* IntervalsViewController.swift */,
 				8E4CD06A24BCD57D00E97BA0 /* WeightViewController.swift */,
-				8E67C6FF24B8AEC200E3F56D /* AudioController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +239,7 @@
 			packageProductDependencies = (
 				8E97CFFC2992A1F9007B5C4B /* ApolloWeight */,
 				8E64B7CB29960E1800FD9409 /* ApolloLocation */,
+				8E64B7CE2996936B00FD9409 /* ApolloAudio */,
 			);
 			productName = EasyRunTracker;
 			productReference = 8E83EC3524B1E92B00B27863 /* Apollo.app */;
@@ -338,8 +332,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7CB8F624BC257C0006F20A /* WorkoutCountdown_Haptic.caf in Resources */,
-				8E7CB8F424BC24A10006F20A /* WorkoutComplete_Haptic.caf in Resources */,
 				8E83EC4524B1E92C00B27863 /* LaunchScreen.storyboard in Resources */,
 				8E83EC4024B1E92B00B27863 /* Main.storyboard in Resources */,
 				8E42611924C36E78006688A8 /* LaunchScreen.png in Resources */,
@@ -370,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4CD06B24BCD57D00E97BA0 /* WeightViewController.swift in Sources */,
-				8E67C70024B8AEC200E3F56D /* AudioController.swift in Sources */,
 				8E8016BE24B596D7002A5BE2 /* IntervalsViewController.swift in Sources */,
 				8E2F4FF724B25CC90027FC35 /* PlanCell.swift in Sources */,
 				8E83EC6E24B1EC2600B27863 /* Plan.swift in Sources */,
@@ -742,6 +733,10 @@
 		8E64B7CB29960E1800FD9409 /* ApolloLocation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ApolloLocation;
+		};
+		8E64B7CE2996936B00FD9409 /* ApolloAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ApolloAudio;
 		};
 		8E97CFFC2992A1F9007B5C4B /* ApolloWeight */ = {
 			isa = XCSwiftPackageProductDependency;

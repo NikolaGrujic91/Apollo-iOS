@@ -3,7 +3,9 @@ import XCTest
 
 final class ApolloAudioTests: XCTestCase, AudioPlayerInjected {
     func testAudioPlayer() throws {
-        XCTAssertNoThrow(try player.play(.complete))
-        XCTAssertNoThrow(try player.play(.countdown))
+        let audioPlayer = AudioPlayer()
+
+        XCTAssertNoThrow(try audioPlayer.playSound(.complete))
+        XCTAssertNoThrow(try audioPlayer.playSound(.countdown))
     }
 }

@@ -9,14 +9,15 @@
 import UIKit
 import ApolloWeight
 import ApolloLocation
+import ApolloAudio
 
-class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeightRepositoryInjected, LocationTrackerInjected {
+
+class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     var day: Day! {
         didSet {
             self.setNavigationItem(self.day.name)
         }
     }
-    var audioController = AudioController()
 
     var timer: Timer! = Timer()
     var seconds: Int! = 0
@@ -160,12 +161,12 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
                 return
             }
 
-            self.audioController.playCompleteSound()
+            player.play(.complete)
             self.setCurrentInterval()
             self.runTimer()
         } else {
             if self.seconds == 3 {
-                self.audioController.playCountdownSound()
+                player.play(.countdown)
             }
 
             self.seconds -= 1

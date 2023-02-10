@@ -6,5 +6,5 @@
 //
 
 public protocol AudioPlayerProtocol {
-    func play(_ sound: SoundsEnum) throws
+    func play(_ sound: SoundsEnum)
 }

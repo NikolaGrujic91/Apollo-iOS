@@ -15,7 +15,15 @@ class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
 
     // MARK: - AudioPlayerProtocol
 
-    func play(_ sound: SoundsEnum) throws {
+    func play(_ sound: SoundsEnum) {
+        do {
+            try playSound(sound)
+        } catch {
+            logger.handleError(error)
+        }
+    }
+
+    func playSound(_ sound: SoundsEnum) throws {
         guard let path: String = Bundle.module.path(forResource: sound.rawValue, ofType: fileType) else {
             throw AudioError(.soundNotFound, ErrorLine())
         }
