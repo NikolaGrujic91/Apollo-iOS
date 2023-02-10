@@ -9,12 +9,9 @@ final class ApolloLoggerTests: XCTestCase, LoggerInjected {
 
         logger.logWarn("Log warning.")
 
-        // FetchError
-        logger.handleError(FetchError(.noLinks, ErrorLine()))
-        logger.handleError(FetchError(.emptyLink, ErrorLine()))
-        logger.handleError(FetchError(.badUrl, ErrorLine()))
-        logger.handleError(FetchError(.responseError(description: "404"), ErrorLine()))
-        logger.handleError(FetchError(.responseBodyError, ErrorLine()))
+        // AudioError
+        logger.handleError(AudioError(.soundNotFound, ErrorLine()))
+        logger.handleError(AudioError(.failedToLoadSound, ErrorLine()))
 
         // FileError
         logger.handleError(FileError(.fileNotFound(fileName: "test"), ErrorLine()))
