@@ -10,4 +10,7 @@
    <FileRef
       location = "group:ApolloWeight">
    </FileRef>
+   <FileRef
+      location = "group:ApolloLocation">
+   </FileRef>
 </Workspace>
