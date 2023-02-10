@@ -10,7 +10,6 @@ import UIKit
 
 class PlansViewController: UITableViewController {
     var planStore: PlanStore!
-    var locationController: LocationController!
 
     let rowHeight: CGFloat = 120
 
@@ -36,7 +35,6 @@ class PlansViewController: UITableViewController {
                 let plan = self.planStore.plans[row]
                 let daysViewController = segue.destination as! DaysViewController
                 daysViewController.plan = plan
-                daysViewController.locationController = self.locationController
             }
         case "enterWeight"?:
             let weightViewController = segue.destination as! WeightViewController

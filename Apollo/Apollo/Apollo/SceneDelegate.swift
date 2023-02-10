@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import ApolloLocation
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, LocationTrackerInjected {
     var window: UIWindow?
     let planStore = PlanStore()
-    let locationController = LocationController()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navController = self.window!.rootViewController as! UINavigationController
         let plansController = navController.topViewController as! PlansViewController
         plansController.planStore = self.planStore
-        plansController.locationController = self.locationController
 
         guard let _ = (scene as? UIWindowScene) else { return }
     }
@@ -44,8 +43,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
 
-        if !self.locationController.isUpdatingLocationStopped() {
-            self.locationController.startUpdatingLocation()
+        if !locationTracker.updatingLocationStopped {
+            locationTracker.startUpdatingLocation()
         }
 
         UIApplication.shared.isIdleTimerDisabled = true
@@ -54,14 +53,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call)
-        self.locationController.stopUpdatingLocation()
+        locationTracker.stopUpdatingLocation()
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        if !self.locationController.isUpdatingLocationStopped() {
-            self.locationController.startUpdatingLocation()
+        if !locationTracker.updatingLocationStopped {
+            locationTracker.startUpdatingLocation()
         }
     }
 
@@ -77,7 +76,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
 
-        self.locationController.stopUpdatingLocation()
+        locationTracker.stopUpdatingLocation()
         UIApplication.shared.isIdleTimerDisabled = false
 
         let success = self.planStore.encode()

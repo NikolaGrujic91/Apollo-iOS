@@ -14,7 +14,6 @@ class DaysViewController: UITableViewController {
             self.setNavigationItem(self.plan.name)
         }
     }
-    var locationController: LocationController!
 
     let baseRed: CGFloat = 255.0
     let baseGreen: CGFloat = 175.0
@@ -42,7 +41,6 @@ class DaysViewController: UITableViewController {
                 let day = self.plan.days[row]
                 let intervalsViewController = segue.destination as! IntervalsViewController
                 intervalsViewController.day = day
-                intervalsViewController.locationController = self.locationController
             }
         default:
             preconditionFailure("Unexpected segue identifier.")

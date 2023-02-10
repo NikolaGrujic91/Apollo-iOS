@@ -8,14 +8,14 @@
 
 import UIKit
 import ApolloWeight
+import ApolloLocation
 
-class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeightRepositoryInjected {
+class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeightRepositoryInjected, LocationTrackerInjected {
     var day: Day! {
         didSet {
             self.setNavigationItem(self.day.name)
         }
     }
-    var locationController: LocationController!
     var audioController = AudioController()
 
     var timer: Timer! = Timer()
@@ -45,7 +45,7 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
         self.intervalsCountLabel.text = "0 / \(self.day.intervals.count)"
         self.intervalTypeLabel.text = " "
         self.setDynamicCellHeight()
-        self.locationController.requestAuthorization()
+        locationTracker.requestAuthorization()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -55,8 +55,8 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.locationController.stopUpdatingLocation()
-        self.locationController.clear()
+        locationTracker.stopUpdatingLocation()
+        locationTracker.clear()
     }
 
     // MARK: - Action methods
@@ -66,7 +66,7 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
             return
         }
         
-        self.locationController.startUpdatingLocation()
+        locationTracker.startUpdatingLocation()
         self.setCurrentInterval()
         self.runTimer()
         self.startButton.isEnabled = false
@@ -100,14 +100,14 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
         self.timer.invalidate()
         self.resumeTapped = true
         self.pauseButton.setImage(UIImage(systemName: "playpause"), for: .normal)
-        self.locationController.stopUpdatingLocation()
+        locationTracker.stopUpdatingLocation()
     }
 
     internal func resume() {
         self.runTimer()
         self.resumeTapped = false
         self.pauseButton.setImage(UIImage(systemName: "pause"), for: .normal)
-        self.locationController.startUpdatingLocation()
+        locationTracker.startUpdatingLocation()
     }
 
     private func setDynamicCellHeight() {
@@ -153,8 +153,8 @@ class IntervalsViewController: UIViewController, UITableViewDataSource, UITableV
                 self.pauseButton.isEnabled = false
                 self.resetButton.isEnabled = false
 
-                self.locationController.stopUpdatingLocation()
-                self.day.distance = Int(self.locationController.calculateDistance())
+                locationTracker.stopUpdatingLocation()
+                self.day.distance = Int(locationTracker.calculateDistance())
                 self.day.calories = Int(Double(self.day.distance) / 1000.0 * repository.value * 1.036)
 
                 return
