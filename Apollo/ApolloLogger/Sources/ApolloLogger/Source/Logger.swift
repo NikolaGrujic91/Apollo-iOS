@@ -8,9 +8,15 @@
 import CocoaLumberjackSwift
 
 class Logger: LoggerProtocol {
+    #if DEBUG
+    private let logLevel: DDLogLevel = .verbose
+    #else
+    private let logLevel: DDLogLevel = .error
+    #endif
+
     init() {
         // Configure CocoaLumberjack to print messages in Xcode console
-        DDLog.add(DDOSLogger.sharedInstance)
+        DDLog.add(DDOSLogger.sharedInstance, with: logLevel)
     }
 
     // MARK: - LoggerProtocol
