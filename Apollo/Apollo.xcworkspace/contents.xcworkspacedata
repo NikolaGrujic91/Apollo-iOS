@@ -19,4 +19,7 @@
    <FileRef
       location = "group:ApolloAudio">
    </FileRef>
+   <FileRef
+      location = "group:ApolloTheme">
+   </FileRef>
 </Workspace>
