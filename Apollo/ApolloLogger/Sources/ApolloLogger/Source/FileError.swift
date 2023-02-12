@@ -12,6 +12,7 @@ public class FileError: Error {
         case emptyString
         case readingJsonData
         case decodingJsonData(description: String)
+        case encodingJsonData(description: String)
     }
 
     let errorType: FileErrorType
@@ -38,6 +39,8 @@ extension FileError: ErrorProtocol {
             return "Not possible to read json data from string."
         case .decodingJsonData:
             return "Not possible to decode json data."
+        case .encodingJsonData:
+            return "Not possible to encode json data."
         }
     }
 
@@ -53,6 +56,8 @@ extension FileError: ErrorProtocol {
             return "String seems to be empty or corrupted."
         case .decodingJsonData(let description):
             return "\(description)"
+        case .encodingJsonData(let description):
+            return "\(description)"
         }
     }
 
@@ -67,6 +72,8 @@ extension FileError: ErrorProtocol {
         case .readingJsonData:
             return "Check if the content of the file is valid."
         case .decodingJsonData:
+            return "Check if the content of the file is valid json."
+        case .encodingJsonData:
             return "Check if the content of the file is valid json."
         }
     }
