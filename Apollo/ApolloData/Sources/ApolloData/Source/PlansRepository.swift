@@ -6,10 +6,7 @@
 //  Copyright © 2020 Nikola Grujic. All rights reserved.
 //
 
-import UIKit
-import ApolloLogger
-
-class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected, LoggerInjected {
+class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
     // MARK: - Properties
 
     var plans: [Plan] = []
