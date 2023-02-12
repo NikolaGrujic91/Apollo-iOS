@@ -25,4 +25,7 @@
    <FileRef
       location = "group:ApolloTheme">
    </FileRef>
+   <FileRef
+      location = "group:ApolloImages">
+   </FileRef>
 </Workspace>

@@ -99,3 +99,14 @@ xcodebuild \
  -scheme ApolloTheme \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for ApolloImages"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme ApolloImages \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
