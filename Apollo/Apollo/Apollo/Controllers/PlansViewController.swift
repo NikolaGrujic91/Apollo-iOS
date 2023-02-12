@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import ApolloData
 
-class PlansViewController: UITableViewController {
-    var planStore: PlanStore!
-
+class PlansViewController: UITableViewController, PlansRepositoryInjected {
     let rowHeight: CGFloat = 120
 
     // MARK: - View life cycle
@@ -32,7 +31,7 @@ class PlansViewController: UITableViewController {
         switch segue.identifier {
         case "showPlan"?:
             if let row = self.tableView.indexPathForSelectedRow?.row {
-                let plan = self.planStore.plans[row]
+                let plan = repository.plans[row]
                 let daysViewController = segue.destination as! DaysViewController
                 daysViewController.plan = plan
             }
@@ -84,7 +83,7 @@ class PlansViewController: UITableViewController {
 
     // Return the number of rows for the table.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.planStore.plans.count
+        return repository.plans.count
     }
 
     // Provide a cell object for each row.
@@ -92,7 +91,7 @@ class PlansViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlanCell", for: indexPath) as! PlanCell
 
         let index = indexPath.row
-        let plan = self.planStore.plans[index]
+        let plan = repository.plans[index]
 
         cell.nameLabel.text = plan.name
         cell.imageBackground.image = self.getImage(index: index)

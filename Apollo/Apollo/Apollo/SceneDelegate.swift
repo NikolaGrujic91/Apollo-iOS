@@ -8,10 +8,10 @@
 
 import UIKit
 import ApolloLocation
+import ApolloData
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate, LocationTrackerInjected {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, LocationTrackerInjected, PlansRepositoryInjected {
     var window: UIWindow?
-    let planStore = PlanStore()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,7 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, LocationTrackerInjected
 
         let navController = self.window!.rootViewController as! UINavigationController
         let plansController = navController.topViewController as! PlansViewController
-        plansController.planStore = self.planStore
 
         guard let _ = (scene as? UIWindowScene) else { return }
     }
@@ -79,7 +78,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, LocationTrackerInjected
         locationTracker.stopUpdatingLocation()
         UIApplication.shared.isIdleTimerDisabled = false
 
-        let success = self.planStore.encode()
+        // TODO this should happen when interval is done
+        let success = repository.save()
 
         if success {
             print("Saved all changes.")

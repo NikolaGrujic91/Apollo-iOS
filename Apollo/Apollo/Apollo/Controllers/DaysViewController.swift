@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ApolloData
 
 class DaysViewController: UITableViewController {
     var plan: Plan! {

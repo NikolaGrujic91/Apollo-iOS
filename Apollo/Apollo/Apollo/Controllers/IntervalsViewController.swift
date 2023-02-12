@@ -10,7 +10,7 @@ import UIKit
 import ApolloWeight
 import ApolloLocation
 import ApolloAudio
-
+import ApolloData
 
 class IntervalsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     var day: Day! {

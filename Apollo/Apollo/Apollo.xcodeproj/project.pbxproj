@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E12E66A2998B229007AAB3B /* ApolloData in Frameworks */ = {isa = PBXBuildFile; productRef = 8E12E6692998B229007AAB3B /* ApolloData */; };
 		8E2F4FF424B25AE40027FC35 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F4FF324B25AE40027FC35 /* PlansViewController.swift */; };
 		8E2F4FF724B25CC90027FC35 /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F4FF624B25CC90027FC35 /* PlanCell.swift */; };
 		8E2F4FF924B265BE0027FC35 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F4FF824B265BE0027FC35 /* DaysViewController.swift */; };
@@ -26,11 +27,6 @@
 		8E83EC4524B1E92C00B27863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E83EC4324B1E92C00B27863 /* LaunchScreen.storyboard */; };
 		8E83EC5024B1E92C00B27863 /* ApolloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC4F24B1E92C00B27863 /* ApolloTests.swift */; };
 		8E83EC5B24B1E92C00B27863 /* ApolloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC5A24B1E92C00B27863 /* ApolloUITests.swift */; };
-		8E83EC6C24B1E9A400B27863 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E83EC6B24B1E9A400B27863 /* data.json */; };
-		8E83EC6E24B1EC2600B27863 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC6D24B1EC2600B27863 /* Plan.swift */; };
-		8E83EC7024B1EC3800B27863 /* PlanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC6F24B1EC3800B27863 /* PlanStore.swift */; };
-		8E83EC7224B1ECA200B27863 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC7124B1ECA200B27863 /* Day.swift */; };
-		8E83EC7424B1ECB400B27863 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EC7324B1ECB400B27863 /* Interval.swift */; };
 		8E97CFFD2992A1F9007B5C4B /* ApolloWeight in Frameworks */ = {isa = PBXBuildFile; productRef = 8E97CFFC2992A1F9007B5C4B /* ApolloWeight */; };
 /* End PBXBuildFile section */
 
@@ -74,11 +70,6 @@
 		8E83EC5624B1E92C00B27863 /* ApolloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E83EC5A24B1E92C00B27863 /* ApolloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloUITests.swift; sourceTree = "<group>"; };
 		8E83EC5C24B1E92C00B27863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E83EC6B24B1E9A400B27863 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		8E83EC6D24B1EC2600B27863 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
-		8E83EC6F24B1EC3800B27863 /* PlanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanStore.swift; sourceTree = "<group>"; };
-		8E83EC7124B1ECA200B27863 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		8E83EC7324B1ECB400B27863 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		8E8A5DB524B746A800998E1D /* Apollo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Apollo.entitlements; sourceTree = "<group>"; };
 		8E8A5DB724B746A800998E1D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -90,6 +81,7 @@
 			files = (
 				8E64B7CF2996936B00FD9409 /* ApolloAudio in Frameworks */,
 				8E64B7CC29960E1800FD9409 /* ApolloLocation in Frameworks */,
+				8E12E66A2998B229007AAB3B /* ApolloData in Frameworks */,
 				8E67C6FC24B889A900E3F56D /* HealthKit.framework in Frameworks */,
 				8E97CFFD2992A1F9007B5C4B /* ApolloWeight in Frameworks */,
 			);
@@ -184,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				8E42611824C36E78006688A8 /* LaunchScreen.png */,
-				8E83EC6B24B1E9A400B27863 /* data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -192,10 +183,6 @@
 		8E83EC6924B1E97400B27863 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8E83EC6D24B1EC2600B27863 /* Plan.swift */,
-				8E83EC6F24B1EC3800B27863 /* PlanStore.swift */,
-				8E83EC7124B1ECA200B27863 /* Day.swift */,
-				8E83EC7324B1ECB400B27863 /* Interval.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +227,7 @@
 				8E97CFFC2992A1F9007B5C4B /* ApolloWeight */,
 				8E64B7CB29960E1800FD9409 /* ApolloLocation */,
 				8E64B7CE2996936B00FD9409 /* ApolloAudio */,
+				8E12E6692998B229007AAB3B /* ApolloData */,
 			);
 			productName = EasyRunTracker;
 			productReference = 8E83EC3524B1E92B00B27863 /* Apollo.app */;
@@ -336,7 +324,6 @@
 				8E83EC4024B1E92B00B27863 /* Main.storyboard in Resources */,
 				8E42611924C36E78006688A8 /* LaunchScreen.png in Resources */,
 				8E5D0EDE24BA60F200D8553E /* Assets.xcassets in Resources */,
-				8E83EC6C24B1E9A400B27863 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,16 +351,12 @@
 				8E4CD06B24BCD57D00E97BA0 /* WeightViewController.swift in Sources */,
 				8E8016BE24B596D7002A5BE2 /* IntervalsViewController.swift in Sources */,
 				8E2F4FF724B25CC90027FC35 /* PlanCell.swift in Sources */,
-				8E83EC6E24B1EC2600B27863 /* Plan.swift in Sources */,
 				8E2F4FFB24B266B60027FC35 /* DayCell.swift in Sources */,
 				8E2F4FF424B25AE40027FC35 /* PlansViewController.swift in Sources */,
-				8E83EC7224B1ECA200B27863 /* Day.swift in Sources */,
 				8E8016C024B59A6E002A5BE2 /* IntervalCell.swift in Sources */,
-				8E83EC7024B1EC3800B27863 /* PlanStore.swift in Sources */,
 				8E49FBDD24BD8B1700E52A87 /* StringExtensionsHelper.swift in Sources */,
 				8E83EC3924B1E92B00B27863 /* AppDelegate.swift in Sources */,
 				8E2F4FF924B265BE0027FC35 /* DaysViewController.swift in Sources */,
-				8E83EC7424B1ECB400B27863 /* Interval.swift in Sources */,
 				8E83EC3B24B1E92B00B27863 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,6 +713,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8E12E6692998B229007AAB3B /* ApolloData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ApolloData;
+		};
 		8E64B7CB29960E1800FD9409 /* ApolloLocation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ApolloLocation;
