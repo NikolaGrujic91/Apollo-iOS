@@ -11,19 +11,17 @@ class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
 
     var plans: [Plan] = []
 
-    // MARK: - Initializers
+    // MARK: - PlansStoreProtocol
 
-    init() {
+    func load() async {
         plans = plansLoader.load()
     }
-
-    // MARK: - PlansStoreProtocol
 
     func save() -> Bool {
         return plansLoader.save(plans)
     }
 
-    func remove() {
+    func reset() {
         plansLoader.remove()
         plans = plansLoader.load()
     }

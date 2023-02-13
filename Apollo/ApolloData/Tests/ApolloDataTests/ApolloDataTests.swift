@@ -2,11 +2,17 @@ import XCTest
 @testable import ApolloData
 
 final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
-    func testPlansRepository() throws {
+    func testPlansRepository() async {
+        // Check there is no plans before loading
+        XCTAssertEqual(repository.plans.count, 0)
+
+        // Load plans
+        await repository.load()
         XCTAssertEqual(repository.plans.count, 6)
         checkPlans()
         checkDayInitialValue()
 
+        // Modify days and calories and save them
         repository.plans[0].days[0].calories = 600
         repository.plans[0].days[0].distance = 6000
         checkDayWithValue()
@@ -15,7 +21,8 @@ final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
         checkPlans()
         checkDayWithValue()
 
-        repository.remove()
+        // Remove UserDefaults modified plans and restore default plans
+        repository.reset()
         checkPlans()
         checkDayInitialValue()
     }
