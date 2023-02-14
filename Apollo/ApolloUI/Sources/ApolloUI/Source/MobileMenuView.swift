@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-//import CoreLocalization
+import ApolloLocalization
 import ApolloTheme
 
 struct MobileMenuView: View {
-    //@EnvironmentObject var localization: LocalizationManager
+    @EnvironmentObject var localization: LocalizationManager
     @State private(set) var totalAmount: Int = 0
 
     @State private var selectedTab: Int = 0
@@ -21,8 +21,7 @@ struct MobileMenuView: View {
         TabView(selection: $selectedTab) {
             Text("Plans")
                 .tabItem {
-                    //Label("products".localized(localization.language), systemImage: "magnifyingglass")
-                    Label("plans", systemImage: "figure.run")
+                    Label("plans".localized(localization.language), systemImage: "figure.run")
                 }
                 .tag(0)
                 .highPriorityGesture(DragGesture().onEnded {
@@ -30,8 +29,7 @@ struct MobileMenuView: View {
                 })
             Text("Settings")
                 .tabItem {
-                    //Label("settings".localized(localization.language), systemImage: "gearshape.fill")
-                    Label("settings", systemImage: "gearshape.fill")
+                    Label("settings".localized(localization.language), systemImage: "gearshape.fill")
                 }
                 .tag(1)
                 .highPriorityGesture(DragGesture().onEnded {
@@ -62,6 +60,6 @@ struct MobileMenuView_Previews: PreviewProvider {
     static var previews: some View {
         MobileMenuView()
             .environmentObject(ThemeManager())
-            //.environmentObject(LocalizationManager())
+            .environmentObject(LocalizationManager())
     }
 }

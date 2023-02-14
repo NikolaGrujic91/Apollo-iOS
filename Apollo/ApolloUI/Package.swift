@@ -20,6 +20,7 @@ let package = Package(
         .package(name: "ApolloData", path: "ApolloData"),
         .package(name: "ApolloLogger", path: "ApolloLogger"),
         .package(name: "ApolloTheme", path: "ApolloTheme"),
+        .package(name: "ApolloLocalization", path: "ApolloLocalization"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.2.2")
     ],
     targets: [
@@ -31,6 +32,7 @@ let package = Package(
                 .product(name: "ApolloData", package: "ApolloData"),
                 .product(name: "ApolloLogger", package: "ApolloLogger"),
                 .product(name: "ApolloTheme", package: "ApolloTheme"),
+                .product(name: "ApolloLocalization", package: "ApolloLocalization"),
             ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin")
