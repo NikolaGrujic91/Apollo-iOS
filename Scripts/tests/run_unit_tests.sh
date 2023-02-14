@@ -110,3 +110,15 @@ xcodebuild \
  -scheme ApolloImages \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for ApolloLocalization"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme ApolloLocalization \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
+

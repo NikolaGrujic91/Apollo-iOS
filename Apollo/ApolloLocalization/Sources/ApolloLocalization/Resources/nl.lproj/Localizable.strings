@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Nikola Grujic on 28/09/2022.
+  
+*/
+"plans"          = "Plannen";
+"settings"       = "Instellingen";
+"appearance"     = "Weergave";
+"light"          = "Licht";
+"dark"           = "Donker";
+"language"       = "Taal";
+"information"    = "Informatie";
+"version"        = "Versie:";

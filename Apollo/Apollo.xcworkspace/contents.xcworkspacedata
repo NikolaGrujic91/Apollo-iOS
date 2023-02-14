@@ -28,4 +28,7 @@
    <FileRef
       location = "group:ApolloImages">
    </FileRef>
+   <FileRef
+      location = "group:ApolloLocalization">
+   </FileRef>
 </Workspace>
