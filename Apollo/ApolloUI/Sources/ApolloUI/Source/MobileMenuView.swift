@@ -27,7 +27,7 @@ struct MobileMenuView: View {
                 .highPriorityGesture(DragGesture().onEnded {
                     self.handleSwipe(translation: $0.translation.width)
                 })
-            Text("Settings")
+            SettingsView()
                 .tabItem {
                     Label("settings".localized(localization.language), systemImage: "gearshape.fill")
                 }
