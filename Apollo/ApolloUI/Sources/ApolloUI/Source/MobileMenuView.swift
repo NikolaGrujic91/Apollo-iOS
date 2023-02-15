@@ -19,7 +19,7 @@ struct MobileMenuView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Plans")
+            PlansView()
                 .tabItem {
                     Label("plans".localized(localization.language), systemImage: "figure.run")
                 }
