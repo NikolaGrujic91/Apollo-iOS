@@ -8,5 +8,5 @@
 import SwiftUI
 
 public protocol PlanImageProtocol {
-    func getImage(_ planImage: PlanImage, _ colorScheme: ColorScheme) -> UIImage
+    func getImage(_ planImage: PlanImage) -> UIImage
 }

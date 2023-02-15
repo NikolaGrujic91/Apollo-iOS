@@ -11,12 +11,12 @@ final class ApolloImagesTests: XCTestCase, PlanImageInjected {
     var imagePlan6: UIImage?
 
     func testPlanImageManager() {
-        imagePlan1 = planImage.getImage(.plan1, ColorScheme.light)
-        imagePlan2 = planImage.getImage(.plan2, ColorScheme.light)
-        imagePlan3 = planImage.getImage(.plan3, ColorScheme.light)
-        imagePlan4 = planImage.getImage(.plan4, ColorScheme.light)
-        imagePlan5 = planImage.getImage(.plan5, ColorScheme.dark)
-        imagePlan6 = planImage.getImage(.plan6, ColorScheme.light)
+        imagePlan1 = planImage.getImage(.plan1)
+        imagePlan2 = planImage.getImage(.plan2)
+        imagePlan3 = planImage.getImage(.plan3)
+        imagePlan4 = planImage.getImage(.plan4)
+        imagePlan5 = planImage.getImage(.plan5)
+        imagePlan6 = planImage.getImage(.plan6)
 
         compareImages()
     }

@@ -18,7 +18,7 @@ class PlanImageManager: PlanImageProtocol {
     private let imageEmpty = UIImage()
 
     // MARK: - PlanImageProtocol
-    public func getImage(_ planImage: PlanImage, _ colorScheme: ColorScheme) -> UIImage {
+    public func getImage(_ planImage: PlanImage) -> UIImage {
         switch planImage {
         case .plan1:
             return imagePlan1 ?? imageEmpty
