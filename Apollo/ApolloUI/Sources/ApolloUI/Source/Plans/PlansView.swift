@@ -1,6 +1,6 @@
 //
 //  PlansView.swift
-//  
+//  ApolloUI
 //
 //  Created by Nikola Grujic on 15/02/2023.
 //
@@ -11,15 +11,12 @@ import ApolloImages
 
 struct PlansView: View, PlansRepositoryInjected, PlanImageInjected {
     @State private var plans: [Plan] = []
-    @State private var path = NavigationPath()
 
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack {
             List {
                 ForEach(plans) { plan in
-                    Button {
-                        path.append(plan)
-                    } label: {
+                    NavigationLink(destination: DaysView(plan: plan)) {
                         VStack(alignment: .center) {
                             Text("\(plan.name)")
                             Image(uiImage: getImage(plan.name))
@@ -31,11 +28,7 @@ struct PlansView: View, PlansRepositoryInjected, PlanImageInjected {
                         .frame(maxWidth: .infinity) // Enable alignment center
                         .contentShape(Rectangle()) // Detect tap on entire button
                     }
-                    .buttonStyle(.plain)
                 }
-            }
-            .navigationDestination(for: Plan.self) { plan in
-                Text("\(plan.name) days: \(plan.days.count)")
             }
             .task {
                 await repository.load()

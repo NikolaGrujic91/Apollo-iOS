@@ -12,6 +12,8 @@ public class Plan: Codable, Identifiable {
     public var name: String = ""
     public var days: [Day] = []
 
+    public init() {}
+
     private enum CodingKeys: CodingKey {
         case name
         case days

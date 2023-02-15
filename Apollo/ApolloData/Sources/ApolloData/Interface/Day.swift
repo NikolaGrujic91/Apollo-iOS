@@ -14,6 +14,8 @@ public class Day: Codable, Identifiable {
     public var distance: Int = 0
     public var intervals: [Interval] = []
 
+    public init() {}
+
     private enum CodingKeys: CodingKey {
         case name
         case calories
