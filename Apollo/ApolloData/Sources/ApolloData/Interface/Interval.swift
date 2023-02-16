@@ -12,6 +12,8 @@ public class Interval: Codable, Identifiable {
     public var type: String = ""
     public var seconds: Int = 0
 
+    public init() {}
+
     private enum CodingKeys: CodingKey {
         case type
         case seconds

@@ -12,14 +12,10 @@ struct CircularProgressView: View {
     @EnvironmentObject private var theme: ThemeManager
     @State private var strokeColor: Color = .orange
     private var style: StrokeStyle
-    let width: CGFloat
-    let height: CGFloat
     let lineWidth: CGFloat
     let progress: Double
 
-    public init(width: CGFloat, height: CGFloat, lineWidth: CGFloat, progress: Double) {
-        self.width = width
-        self.height = height
+    public init(lineWidth: CGFloat, progress: Double) {
         self.lineWidth = lineWidth
         self.progress = progress
         self.style = StrokeStyle(lineWidth: lineWidth, lineCap: .round)
@@ -28,12 +24,14 @@ struct CircularProgressView: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(strokeColor.opacity(0.5), lineWidth: lineWidth)
-                .frame(width: width, height: height)
+                .stroke(strokeColor.opacity(0.2), lineWidth: lineWidth)
+                .padding()
+                .frame(maxWidth: .infinity)
             Circle()
                 .trim(from: 0, to: progress)
                 .stroke(strokeColor, style: style)
-                .frame(width: width, height: height)
+                .padding()
+                .frame(maxWidth: .infinity)
                 .rotationEffect(.degrees(-90))
                 .animation(.easeOut, value: progress)
         }
@@ -46,8 +44,6 @@ struct CircularProgressView: View {
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
         CircularProgressView(
-            width: 200,
-            height: 200,
             lineWidth: 10,
             progress: 0.25
         )
