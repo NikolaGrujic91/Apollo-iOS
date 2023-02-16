@@ -38,6 +38,7 @@ struct TimerView: View {
                 )
             }
         }
+        .navigationTitle(day.name)
     }
 }
 

@@ -15,7 +15,7 @@ struct DaysView: View {
         NavigationStack {
             List {
                 ForEach(plan.days) { day in
-                    NavigationLink(destination: Text("\(day.name) intervals: \(day.intervals.count)")) {
+                    NavigationLink(destination: TimerView(day: day)) {
                         VStack(alignment: .center, spacing: 10) {
                             Text("\(day.name)")
                             Text("\(day.distance) m")
