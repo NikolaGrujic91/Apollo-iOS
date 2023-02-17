@@ -22,6 +22,9 @@ let package = Package(
         .package(name: "ApolloTheme", path: "ApolloTheme"),
         .package(name: "ApolloLocalization", path: "ApolloLocalization"),
         .package(name: "ApolloImages", path: "ApolloImages"),
+        .package(name: "ApolloWeight", path: "ApolloWeight"),
+        .package(name: "ApolloLocation", path: "ApolloLocation"),
+        .package(name: "ApolloAudio", path: "ApolloAudio"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.2.2")
     ],
     targets: [
@@ -35,6 +38,9 @@ let package = Package(
                 .product(name: "ApolloTheme", package: "ApolloTheme"),
                 .product(name: "ApolloLocalization", package: "ApolloLocalization"),
                 .product(name: "ApolloImages", package: "ApolloImages"),
+                .product(name: "ApolloWeight", package: "ApolloWeight"),
+                .product(name: "ApolloLocation", package: "ApolloLocation"),
+                .product(name: "ApolloAudio", package: "ApolloAudio"),
             ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin")
