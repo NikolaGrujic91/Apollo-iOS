@@ -5,6 +5,8 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
+import CoreLocation
+
 public protocol LocationTrackerProtocol {
     var updatingLocationStopped: Bool { get }
 
@@ -17,4 +19,6 @@ public protocol LocationTrackerProtocol {
     func calculateDistance() -> Double
 
     func clear()
+
+    func addLocation(_ location: CLLocation)
 }

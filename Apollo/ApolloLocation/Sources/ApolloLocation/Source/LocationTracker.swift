@@ -15,8 +15,8 @@ class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProto
 
     override init() {
         super.init()
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
 
     // MARK: - LocationTrackerProtocol
@@ -40,11 +40,15 @@ class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProto
     func calculateDistance() -> Double {
         var distance = 0.0
 
-        for i in 0..<locations.count - 1 {
-            let currentLocation = self.locations[i]
-            let nextLocation = self.locations[i + 1]
+        if locations.isEmpty {
+            return distance
+        }
 
-            distance += nextLocation.distance(from: currentLocation)
+        for i in 1...locations.count - 1 {
+            let currentLocation = locations[i - 1]
+            let nextLocation = locations[i]
+
+            distance += currentLocation.distance(from: nextLocation)
         }
 
         return distance
@@ -52,6 +56,10 @@ class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProto
 
     func clear() {
         locations.removeAll()
+    }
+
+    func addLocation(_ location: CLLocation) {
+        locations.append(location)
     }
 
     // MARK: - CLLocationManagerDelegate methods
