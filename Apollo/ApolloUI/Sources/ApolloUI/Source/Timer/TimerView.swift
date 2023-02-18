@@ -8,150 +8,59 @@
 import SwiftUI
 import ApolloData
 import ApolloTheme
-import ApolloWeight
-import ApolloLocation
-import ApolloAudio
 
-enum TimerButton {
-    case start
-    case pause
-    case resume
-}
-
-struct TimerView: View, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+struct TimerView: View {
+    @StateObject private var viewModel = TimerViewModel()
     var day: Day
-    @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State private var timeRemaining = 0
-    @State private var currentInterval = 0
-    @State private var activeButton: TimerButton = .start
-    private var totalIntervals: Int
-
-    public init(day: Day) {
-        self.day = day
-        totalIntervals = day.intervals.count
-    }
 
     var body: some View {
         VStack {
             ZStack {
                 CircularProgressView(
                     lineWidth: 10,
-                    progress: progress()
+                    progress: viewModel.progress()
                 )
                 TimerText(
-                    timeInterval: TimeInterval(timeRemaining),
-                    intervalType: day.intervals[currentInterval].type,
-                    currentInterval: currentInterval + 1,
-                    totalIntervals: totalIntervals,
+                    timeInterval: TimeInterval(viewModel.timeRemaining),
+                    intervalType: viewModel.intervalType(),
+                    currentInterval: viewModel.currentInterval + 1,
+                    totalIntervals: viewModel.totalIntervals,
                     fontSize: 90
                 )
-                .onReceive(timer) { _ in
-                    update()
+                .onReceive(viewModel.timer) { _ in
+                    viewModel.update()
                 }
             }
             HStack(spacing: 30) {
                 CircleButton(
-                    action: cancelPressed,
+                    action: viewModel.cancelPressed,
                     text: "Cancel"
                 )
-                if activeButton == .start {
+                if viewModel.activeButton == .start {
                     CircleButton(
-                        action: startPressed,
+                        action: viewModel.startPressed,
                         text: "Start"
                     )
-                } else if activeButton == .pause {
+                } else if viewModel.activeButton == .pause {
                     CircleButton(
-                        action: pausePressed,
+                        action: viewModel.pausePressed,
                         text: "Pause"
                     )
-                } else if activeButton == .resume {
+                } else if viewModel.activeButton == .resume {
                     CircleButton(
-                        action: resumePressed,
+                        action: viewModel.resumePressed,
                         text: "Resume"
                     )
                 }
             }
         }
-        .navigationTitle(day.name)
+        .navigationTitle(viewModel.day.name)
         .onAppear {
-            stopTimer()
-            timeRemaining = day.intervals[currentInterval].seconds
-            locationTracker.requestAuthorization()
+            viewModel.onAppear(day: day)
         }
         .onDisappear {
-            locationTracker.stopUpdatingLocation()
-            locationTracker.clear()
+            viewModel.onDissapear()
         }
-    }
-
-    private func cancelPressed() {
-        stopTimer()
-        activeButton = .start
-        currentInterval = 0
-        timeRemaining = day.intervals[currentInterval].seconds
-        locationTracker.stopUpdatingLocation()
-    }
-
-    private func startPressed() {
-        startTimer()
-        activeButton = .pause
-        locationTracker.startUpdatingLocation()
-    }
-
-    private func pausePressed() {
-        stopTimer()
-        activeButton = .resume
-        locationTracker.stopUpdatingLocation()
-    }
-
-    private func resumePressed() {
-        startTimer()
-        activeButton = .pause
-        locationTracker.startUpdatingLocation()
-    }
-
-    private func startTimer() {
-        timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    }
-
-    private func stopTimer() {
-        timer.upstream.connect().cancel()
-    }
-
-    private func update() {
-        if timeRemaining == 3 {
-            player.play(.countdown)
-        }
-
-        if timeRemaining < 1 {
-            stopTimer()
-            currentInterval += 1
-
-            if isLastInterval() {
-                activeButton = .start
-                currentInterval = 0
-                timeRemaining = day.intervals[currentInterval].seconds
-
-                locationTracker.stopUpdatingLocation()
-                // day.distance = Int(locationTracker.calculateDistance())
-                // day.calories = Int(Double(day.distance) / 1000.0 * repository.value * 1.036)
-                return
-            }
-
-            player.play(.complete)
-            timeRemaining = day.intervals[currentInterval].seconds
-            startTimer()
-        } else {
-            timeRemaining -= 1
-        }
-    }
-
-    private func isLastInterval() -> Bool {
-        return currentInterval >= totalIntervals
-    }
-
-    private func progress() -> Double {
-        ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval].seconds)) / 100.0
     }
 }
 
