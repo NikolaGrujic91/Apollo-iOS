@@ -36,7 +36,7 @@ struct TimerView: View, WeightRepositoryInjected, LocationTrackerInjected, Audio
             ZStack {
                 CircularProgressView(
                     lineWidth: 10,
-                    progress: 1.0
+                    progress: progress()
                 )
                 TimerText(
                     timeInterval: TimeInterval(timeRemaining),
@@ -149,6 +149,10 @@ struct TimerView: View, WeightRepositoryInjected, LocationTrackerInjected, Audio
     private func isLastInterval() -> Bool {
         return currentInterval >= totalIntervals
     }
+
+    private func progress() -> Double {
+        ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval].seconds)) / 100.0
+    }
 }
 
 struct TimerView_Previews: PreviewProvider {
@@ -159,7 +163,7 @@ struct TimerView_Previews: PreviewProvider {
 
     static func previewDay() -> Day {
         let interval1 = Interval()
-        interval1.seconds = 5
+        interval1.seconds = 10
         interval1.type = "Run"
 
         let interval2 = Interval()
