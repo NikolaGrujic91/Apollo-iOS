@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-public protocol PlansLoadingProtocol {
+protocol PlansLoadingProtocol {
     ///
     /// Save plans with updated calories and distances in UserDefaults.
     ///

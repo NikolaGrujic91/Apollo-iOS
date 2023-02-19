@@ -11,9 +11,13 @@ class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
 
     var plans: [Plan] = []
 
-    // MARK: - PlansStoreProtocol
+    // MARK: - PlansRepositoryProtocol
 
     func load() async {
+        if !plans.isEmpty {
+            return
+        }
+
         plans = plansLoader.load()
     }
 
