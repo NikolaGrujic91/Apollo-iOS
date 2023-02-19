@@ -10,6 +10,8 @@ import ApolloTheme
 import ApolloLocalization
 
 public struct RootView: View {
+    public init() {}
+
     public var body: some View {
         MobileMenuView()
     }
