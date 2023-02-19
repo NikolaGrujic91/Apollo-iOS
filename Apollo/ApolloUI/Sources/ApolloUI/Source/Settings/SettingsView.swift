@@ -8,8 +8,9 @@
 import SwiftUI
 import ApolloTheme
 import ApolloLocalization
+import ApolloWeight
 
-struct SettingsView: View {
+struct SettingsView: View, WeightRepositoryInjected {
     @EnvironmentObject var theme: ThemeManager
     @EnvironmentObject var localization: LocalizationManager
     @State private var darkMode = false
@@ -47,7 +48,11 @@ struct SettingsView: View {
                         localization.save(language)
                     }
                 }
-
+                Section(header: Text("weight")) {
+                    NavigationLink(destination: WeightView()) {
+                        Text("\(String(format: "%.1f", weightRepository.value)) kg")
+                    }
+                }
                 Section(header: Text("information".localized(localization.language))) {
                     Text("version".localized(localization.language) + " 1.0.0")
                 }
