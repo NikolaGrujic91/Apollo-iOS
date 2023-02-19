@@ -17,7 +17,7 @@ enum TimerButton {
     case resume
 }
 
-final class TimerViewModel: ObservableObject, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     @Published private(set) var timeRemaining = 0
     @Published private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Published private(set) var activeButton: TimerButton = .start
@@ -91,8 +91,10 @@ final class TimerViewModel: ObservableObject, WeightRepositoryInjected, Location
                 timeRemaining = day.intervals[currentInterval].seconds
 
                 locationTracker.stopUpdatingLocation()
-                // day.distance = Int(locationTracker.calculateDistance())
-                // day.calories = Int(Double(day.distance) / 1000.0 * repository.value * 1.036)
+                day.distance = Int(locationTracker.calculateDistance())
+                day.calories = Int(Double(day.distance) / 1000.0 * weightRepository.value * 1.036)
+                plansRepository.save()
+
                 return
             }
 

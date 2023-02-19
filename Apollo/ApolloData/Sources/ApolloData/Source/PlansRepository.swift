@@ -21,8 +21,8 @@ class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
         plans = plansLoader.load()
     }
 
-    func save() -> Bool {
-        return plansLoader.save(plans)
+    func save() {
+        plansLoader.save(plans)
     }
 
     func reset() {

@@ -6,13 +6,13 @@
 //
 
 enum PlansRepositoryInjectionMap {
-    static var repository: PlansRepositoryProtocol = PlansRepository()
+    static var plansRepository: PlansRepositoryProtocol = PlansRepository()
 }
 
 public protocol PlansRepositoryInjected {}
 
 extension PlansRepositoryInjected {
-    public var repository: PlansRepositoryProtocol {
-        return PlansRepositoryInjectionMap.repository
+    public var plansRepository: PlansRepositoryProtocol {
+        return PlansRepositoryInjectionMap.plansRepository
     }
 }

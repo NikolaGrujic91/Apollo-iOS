@@ -11,7 +11,7 @@ protocol PlansLoadingProtocol {
     ///
     /// - Returns true if success, false otherwise
     ///
-    func save(_ plans: [Plan]) -> Bool
+    func save(_ plans: [Plan])
 
     ///
     /// Load plans from UserDefaults. Otherwise load default plans from Resources.

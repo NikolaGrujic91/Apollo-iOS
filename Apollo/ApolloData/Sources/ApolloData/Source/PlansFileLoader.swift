@@ -14,19 +14,16 @@ class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
     private let fileName = "data"
     private let userDefaultsKey = "ApolloPlans"
 
-    // MARK: - PlansStoreProtocol
+    // MARK: - PlansLoadingProtocol
 
-    func save(_ plans: [Plan]) -> Bool {
+    func save(_ plans: [Plan]) {
         do {
             try self.trySave(plans)
-            return true
         } catch let error as ErrorProtocol {
             logger.handleError(error)
         } catch {
             logger.handleError(error)
         }
-
-        return false
     }
 
     func trySave(_ plans: [Plan]) throws {

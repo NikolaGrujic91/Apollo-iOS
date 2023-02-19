@@ -31,8 +31,8 @@ struct PlansView: View, PlansRepositoryInjected, PlanImageInjected {
                 }
             }
             .task {
-                await repository.load()
-                plans = repository.plans
+                await plansRepository.load()
+                plans = plansRepository.plans
             }
         }
     }

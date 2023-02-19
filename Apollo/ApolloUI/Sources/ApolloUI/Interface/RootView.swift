@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ApolloTheme
+import ApolloLocalization
 
 public struct RootView: View {
     public var body: some View {
@@ -18,5 +19,6 @@ struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootView()
             .environmentObject(ThemeManager())
+            .environmentObject(LocalizationManager())
     }
 }

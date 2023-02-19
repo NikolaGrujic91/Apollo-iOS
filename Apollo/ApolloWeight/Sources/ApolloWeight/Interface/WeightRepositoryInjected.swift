@@ -6,13 +6,13 @@
 //
 
 enum WeightRepositoryInjectionMap {
-    static var repository: WeightRepositoryProtocol = WeightRepository()
+    static var weightRepository: WeightRepositoryProtocol = WeightRepository()
 }
 
 public protocol WeightRepositoryInjected {}
 
 extension WeightRepositoryInjected {
-    public var repository: WeightRepositoryProtocol {
-        return WeightRepositoryInjectionMap.repository
+    public var weightRepository: WeightRepositoryProtocol {
+        return WeightRepositoryInjectionMap.weightRepository
     }
 }

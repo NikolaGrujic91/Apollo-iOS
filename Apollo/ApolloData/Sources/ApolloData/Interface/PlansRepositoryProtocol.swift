@@ -16,9 +16,7 @@ public protocol PlansRepositoryProtocol {
     ///
     /// Save plans with updated calories and distances in UserDefaults.
     ///
-    /// - Returns true if success, false otherwise
-    ///
-    func save() -> Bool
+    func save()
 
     ///
     /// Remove plans from UserDefaults and load default plans from Resources.
