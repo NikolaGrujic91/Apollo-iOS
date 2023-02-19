@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct WeightView: View {
-    @State private var viewModel = WeightViewModel()
+    @ObservedObject private var viewModel: WeightViewModel
     @FocusState private var isFocused: Bool
+
+    public init(_ viewModel: WeightViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack(spacing: 10) {
             HStack {
                 Text("kg")
-                TextField("", value: $viewModel.weight, formatter: NumberFormatter())
-                    .keyboardType(.numberPad)
+                TextField("", text: $viewModel.weight)
+                    .keyboardType(.decimalPad)
                     .multilineTextAlignment(.trailing)
                     .disableAutocorrection(true)
                     .focused($isFocused)
-                    .onChange(of: viewModel.weight) { newValue in
-                        viewModel.weight = newValue
-                    }
             }
             Button(action: viewModel.save) {
                 Text("Save")
@@ -48,6 +49,6 @@ struct WeightView: View {
 
 struct WeightViewView_Previews: PreviewProvider {
     static var previews: some View {
-        WeightView()
+        WeightView(WeightViewModel())
     }
 }

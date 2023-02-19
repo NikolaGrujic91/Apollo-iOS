@@ -8,13 +8,10 @@
 import Foundation
 import ApolloWeight
 
-final class WeightViewModel: WeightRepositoryInjected {
+final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
     @Published var weight: String = "0.0"
-    let numberFormatter = NumberFormatter()
 
     init() {
-        numberFormatter.maximumIntegerDigits = 3
-        numberFormatter.maximumFractionDigits = 1
         weightRepository.load()
         weight = "\(String(format: "%.1f", weightRepository.value))"
     }
