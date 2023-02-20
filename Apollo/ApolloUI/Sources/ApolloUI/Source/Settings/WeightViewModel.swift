@@ -11,16 +11,16 @@ import ApolloWeight
 final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
     @Published var weight: String = "0.0"
 
-    init() {
-        weightRepository.load()
-        weight = "\(String(format: "%.1f", weightRepository.value))"
-    }
-
     func save() {
         weightRepository.save(Double(weight) ?? 0.0)
     }
 
     func loadFromHealth() async {
         await weightRepository.loadFromHealthKit()
+    }
+
+    func onAppear() {
+        weightRepository.load()
+        weight = "\(String(format: "%.1f", weightRepository.value))"
     }
 }

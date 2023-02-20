@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WeightView: View {
+    @Environment(\.dismiss) var dismiss
     @ObservedObject private var viewModel: WeightViewModel
     @FocusState private var isFocused: Bool
 
@@ -25,11 +26,6 @@ struct WeightView: View {
                     .disableAutocorrection(true)
                     .focused($isFocused)
             }
-            Button(action: viewModel.save) {
-                Text("Save")
-                    .frame(maxWidth: .infinity)
-            }
-            .buttonStyle(.bordered)
             Button(action: {
                 Task {
                     await viewModel.loadFromHealth()
@@ -43,6 +39,15 @@ struct WeightView: View {
         .padding()
         .onAppear {
             isFocused = true
+            viewModel.onAppear()
+        }
+        .toolbar {
+            Button(action: {
+                viewModel.save()
+                dismiss()
+            }, label: {
+                Text("Save")
+            })
         }
     }
 }
