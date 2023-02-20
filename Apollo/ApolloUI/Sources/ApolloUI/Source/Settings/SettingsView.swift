@@ -54,6 +54,9 @@ struct SettingsView: View, WeightRepositoryInjected {
                         Text("\(String(format: "%.1f", weightRepository.value)) kg")
                     }
                 }
+                Section(header: Text("data")) {
+                    ResetDataView()
+                }
                 Section(header: Text("information".localized(localization.language))) {
                     Text("version".localized(localization.language) + " 1.0.0")
                 }
