@@ -5,9 +5,6 @@
       location = "group:ApolloApp/ApolloApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Apollo/Apollo.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:ApolloUI">
    </FileRef>
    <FileRef
