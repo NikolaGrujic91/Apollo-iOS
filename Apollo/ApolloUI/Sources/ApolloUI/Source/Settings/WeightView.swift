@@ -9,12 +9,8 @@ import SwiftUI
 
 struct WeightView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject private var viewModel: WeightViewModel
+    @EnvironmentObject private var viewModel: WeightViewModel
     @FocusState private var isFocused: Bool
-
-    public init(_ viewModel: WeightViewModel) {
-        self.viewModel = viewModel
-    }
 
     var body: some View {
         VStack(spacing: 10) {
@@ -56,6 +52,7 @@ struct WeightView: View {
 
 struct WeightViewView_Previews: PreviewProvider {
     static var previews: some View {
-        WeightView(WeightViewModel())
+        WeightView()
+            .environmentObject(WeightViewModel())
     }
 }

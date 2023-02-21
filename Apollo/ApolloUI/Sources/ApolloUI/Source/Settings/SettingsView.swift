@@ -13,7 +13,7 @@ import ApolloWeight
 struct SettingsView: View, WeightRepositoryInjected {
     @EnvironmentObject var theme: ThemeManager
     @EnvironmentObject var localization: LocalizationManager
-    @StateObject private var weightViewModel = WeightViewModel()
+    @EnvironmentObject private var weightViewModel: WeightViewModel
     @State private var darkMode = false
     @State private var selectedLanguage = Language.netherlands
 
@@ -50,7 +50,7 @@ struct SettingsView: View, WeightRepositoryInjected {
                     }
                 }
                 Section(header: Text("weight")) {
-                    NavigationLink(destination: WeightView(weightViewModel)) {
+                    NavigationLink(destination: WeightView()) {
                         Text("\(String(format: "%.1f", weightRepository.value)) kg")
                     }
                 }
@@ -88,5 +88,6 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView()
         .environmentObject(ThemeManager())
         .environmentObject(LocalizationManager())
+        .environmentObject(WeightViewModel())
     }
 }

@@ -26,6 +26,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     public private(set) var day = Day()
 
     public func onAppear(day: Day) {
+        activeButton = .start
         stopTimer()
         locationTracker.requestAuthorization()
 

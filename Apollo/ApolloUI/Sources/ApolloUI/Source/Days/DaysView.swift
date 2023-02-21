@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ApolloTheme
 import ApolloData
 
 struct DaysView: View {
@@ -34,6 +35,8 @@ struct DaysView: View {
 struct DaysView_Previews: PreviewProvider {
     static var previews: some View {
         DaysView(plan: previewPlan())
+            .environmentObject(ThemeManager())
+            .environmentObject(TimerViewModel())
     }
 
     static func previewPlan() -> Plan {

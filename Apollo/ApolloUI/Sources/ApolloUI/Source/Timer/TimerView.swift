@@ -10,7 +10,7 @@ import ApolloData
 import ApolloTheme
 
 struct TimerView: View {
-    @StateObject private var viewModel = TimerViewModel()
+    @EnvironmentObject private var viewModel: TimerViewModel
     var day: Day
 
     var body: some View {
@@ -71,6 +71,7 @@ struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView(day: previewDay())
             .environmentObject(ThemeManager())
+            .environmentObject(TimerViewModel())
     }
 
     static func previewDay() -> Day {
