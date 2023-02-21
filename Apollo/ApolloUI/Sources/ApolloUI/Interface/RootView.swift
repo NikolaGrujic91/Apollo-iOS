@@ -12,6 +12,7 @@ import ApolloLocalization
 public struct ApolloRootView: View {
     @StateObject private var theme = ThemeManager()
     @StateObject private var localization = LocalizationManager()
+    @StateObject private var plansViewModel = PlansViewModel()
     @StateObject private var timerViewModel = TimerViewModel()
     @StateObject private var weightViewModel = WeightViewModel()
 
@@ -21,6 +22,7 @@ public struct ApolloRootView: View {
         MobileMenuView()
             .environmentObject(theme)
             .environmentObject(localization)
+            .environmentObject(plansViewModel)
             .environmentObject(timerViewModel)
             .environmentObject(weightViewModel)
             .onAppear {
@@ -36,6 +38,7 @@ struct RootView_Previews: PreviewProvider {
         ApolloRootView()
             .environmentObject(LocalizationManager())
             .environmentObject(ThemeManager())
+            .environmentObject(PlansViewModel())
             .environmentObject(TimerViewModel())
             .environmentObject(WeightViewModel())
     }
