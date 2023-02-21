@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import ApolloLocalization
 
 struct WeightView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var localization: LocalizationManager
     @EnvironmentObject private var viewModel: WeightViewModel
     @FocusState private var isFocused: Bool
 
@@ -29,7 +31,7 @@ struct WeightView: View {
                     dismiss()
                 }
             }, label: {
-                Text("Load from Health")
+                Text("loadHealth".localized(localization.language))
                     .frame(maxWidth: .infinity)
             })
             .buttonStyle(.bordered)
@@ -45,7 +47,7 @@ struct WeightView: View {
                 viewModel.update()
                 dismiss()
             }, label: {
-                Text("Save")
+                Text("save".localized(localization.language))
             })
         }
     }

@@ -8,8 +8,10 @@
 import SwiftUI
 import ApolloData
 import ApolloTheme
+import ApolloLocalization
 
 struct TimerView: View {
+    @EnvironmentObject var localization: LocalizationManager
     @EnvironmentObject private var viewModel: TimerViewModel
     var day: Day
 
@@ -34,22 +36,22 @@ struct TimerView: View {
             HStack(spacing: 30) {
                 CircleButton(
                     action: viewModel.cancelPressed,
-                    text: "Cancel"
+                    text: "cancel".localized(localization.language)
                 )
                 if viewModel.activeButton == .start {
                     CircleButton(
                         action: viewModel.startPressed,
-                        text: "Start"
+                        text: "start".localized(localization.language)
                     )
                 } else if viewModel.activeButton == .pause {
                     CircleButton(
                         action: viewModel.pausePressed,
-                        text: "Pause"
+                        text: "pause".localized(localization.language)
                     )
                 } else if viewModel.activeButton == .resume {
                     CircleButton(
                         action: viewModel.resumePressed,
-                        text: "Resume"
+                        text: "resume".localized(localization.language)
                     )
                 }
             }
@@ -70,6 +72,7 @@ struct TimerView: View {
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView(day: previewDay())
+            .environmentObject(LocalizationManager())
             .environmentObject(ThemeManager())
             .environmentObject(TimerViewModel())
     }

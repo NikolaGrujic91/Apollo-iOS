@@ -49,12 +49,12 @@ struct SettingsView: View, WeightRepositoryInjected {
                         localization.save(language)
                     }
                 }
-                Section(header: Text("weight")) {
+                Section(header: Text("weight".localized(localization.language))) {
                     NavigationLink(destination: WeightView()) {
                         Text("\(String(format: "%.1f", weightRepository.value)) kg")
                     }
                 }
-                Section(header: Text("data")) {
+                Section(header: Text("data".localized(localization.language))) {
                     ResetDataView()
                 }
                 Section(header: Text("information".localized(localization.language))) {

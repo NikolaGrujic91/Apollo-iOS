@@ -17,11 +17,11 @@ struct ResetDataView: View, PlansRepositoryInjected {
         Button(
             role: .destructive,
             action: { showingAlert = true },
-            label: { Text("Reset calories and distances") }
+            label: { Text("resetLabel".localized(localization.language)) }
         )
-        .alert("Are you sure you want to reset calories and distances?", isPresented: $showingAlert) {
-            Button("Cancel", role: .cancel) { }
-            Button("Reset", role: .destructive) {
+        .alert("resetQuestion".localized(localization.language), isPresented: $showingAlert) {
+            Button("cancel".localized(localization.language), role: .cancel) { }
+            Button("reset".localized(localization.language), role: .destructive) {
                 plansRepository.reset()
             }
         }

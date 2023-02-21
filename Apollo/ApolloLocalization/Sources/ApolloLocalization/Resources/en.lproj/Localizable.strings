@@ -11,5 +11,16 @@
 "light"          = "Light";
 "dark"           = "Dark";
 "language"       = "Language";
+"weight"         = "Weight";
+"data"           = "Data";
+"resetLabel"     = "Reset calories and distances";
+"resetQuestion"  = "Are you sure you want to reset calories and distances?";
+"reset"          = "Reset";
+"cancel"         = "Cancel";
+"start"          = "Start";
+"pause"          = "Pause";
+"resume"         = "Resume";
+"save"           = "Save";
+"loadHealth"     = "Load from Health";
 "information"    = "Information";
 "version"        = "Version:";
