@@ -23,7 +23,7 @@ final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
         }
     }
 
-    private func playSound(_ sound: SoundsEnum) throws {
+    func playSound(_ sound: SoundsEnum) throws {
         guard let path: String = Bundle.module.path(forResource: sound.rawValue, ofType: fileType) else {
             throw AudioError(.soundNotFound, ErrorLine())
         }
