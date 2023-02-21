@@ -39,6 +39,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     }
 
     public func onDissapear() {
+        stopTimer()
         locationTracker.stopUpdatingLocation()
         locationTracker.clear()
     }
