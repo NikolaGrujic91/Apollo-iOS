@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public class ErrorLine: CustomStringConvertible {
+public final class ErrorLine: CustomStringConvertible {
     let file: String
     let function: String
     let line: Int

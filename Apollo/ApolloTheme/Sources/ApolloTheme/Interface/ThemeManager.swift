@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public class ThemeManager: ObservableObject {
+public final class ThemeManager: ObservableObject {
     // MARK: - Properties
     @Published public var colorScheme: ColorScheme?
     private let key = "colorScheme"

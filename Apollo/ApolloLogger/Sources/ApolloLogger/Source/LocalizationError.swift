@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public class LocalizationError: Error {
+public final class LocalizationError: Error {
     public enum LocalizationErrorType {
         case pathNotFound
         case bundleNotFound

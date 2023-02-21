@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class LocalizationManager: ObservableObject {
+public final class LocalizationManager: ObservableObject {
     // MARK: - Properties
     private let key = "language"
     @Published public var language = Language.netherlands

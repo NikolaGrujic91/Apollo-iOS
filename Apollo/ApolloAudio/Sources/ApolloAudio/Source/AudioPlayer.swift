@@ -9,7 +9,7 @@ import Foundation
 import AVFoundation
 import ApolloLogger
 
-class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
+final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
     private var audioPlayer: AVAudioPlayer?
     private let fileType: String = "caf"
 
@@ -23,7 +23,7 @@ class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
         }
     }
 
-    func playSound(_ sound: SoundsEnum) throws {
+    private func playSound(_ sound: SoundsEnum) throws {
         guard let path: String = Bundle.module.path(forResource: sound.rawValue, ofType: fileType) else {
             throw AudioError(.soundNotFound, ErrorLine())
         }

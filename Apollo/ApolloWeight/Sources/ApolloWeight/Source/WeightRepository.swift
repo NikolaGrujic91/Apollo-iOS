@@ -8,7 +8,7 @@
 import Foundation
 import ApolloLogger
 
-class WeightRepository: WeightRepositoryProtocol, LoggerInjected {
+final class WeightRepository: WeightRepositoryProtocol, LoggerInjected {
     // MARK: - Properties
     var value: Double = 0.0
     private let key: String = "ApolloWeight"

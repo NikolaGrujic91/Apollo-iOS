@@ -6,7 +6,7 @@
 //  Copyright © 2020 Nikola Grujic. All rights reserved.
 //
 
-class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
+final class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
     // MARK: - Properties
 
     var plans: [Plan] = []

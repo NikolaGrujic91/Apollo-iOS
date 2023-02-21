@@ -25,7 +25,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     public private(set) var totalIntervals: Int = 0
     public private(set) var day = Day()
 
-    public func onAppear(day: Day) {
+    func onAppear(day: Day) {
         activeButton = .start
         stopTimer()
         locationTracker.requestAuthorization()
@@ -38,13 +38,13 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         }
     }
 
-    public func onDissapear() {
+    func onDissapear() {
         stopTimer()
         locationTracker.stopUpdatingLocation()
         locationTracker.clear()
     }
 
-    public func cancelPressed() {
+    func cancelPressed() {
         stopTimer()
         activeButton = .start
         currentInterval = 0
@@ -54,33 +54,33 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         locationTracker.stopUpdatingLocation()
     }
 
-    public func startPressed() {
+    func startPressed() {
         startTimer()
         activeButton = .pause
         locationTracker.startUpdatingLocation()
     }
 
-    public func pausePressed() {
+    func pausePressed() {
         stopTimer()
         activeButton = .resume
         locationTracker.stopUpdatingLocation()
     }
 
-    public func resumePressed() {
+    func resumePressed() {
         startTimer()
         activeButton = .pause
         locationTracker.startUpdatingLocation()
     }
 
-    public func startTimer() {
+    func startTimer() {
         timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     }
 
-    public func stopTimer() {
+    func stopTimer() {
         timer.upstream.connect().cancel()
     }
 
-    public func update() {
+    func update() {
         if timeRemaining == 3 {
             player.play(.countdown)
         }
@@ -114,7 +114,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         return currentInterval >= totalIntervals
     }
 
-    public func progress() -> Double {
+    func progress() -> Double {
         if day.intervals.isEmpty {
             return 1.0
         }
@@ -122,7 +122,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         return ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval].seconds)) / 100.0
     }
 
-    public func intervalType() -> String {
+    func intervalType() -> String {
         if day.intervals.isEmpty {
             return ""
         }

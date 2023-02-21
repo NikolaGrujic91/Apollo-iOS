@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public class AudioError: Error {
+public final class AudioError: Error {
     public enum AudioErrorType {
         case soundNotFound
         case failedToLoadSound

@@ -7,7 +7,7 @@
 
 import CocoaLumberjackSwift
 
-class Logger: LoggerProtocol {
+final class Logger: LoggerProtocol {
     #if DEBUG
     private let logLevel: DDLogLevel = .verbose
     #else
@@ -21,11 +21,11 @@ class Logger: LoggerProtocol {
 
     // MARK: - LoggerProtocol
 
-    public func handleError(_ error: Error) {
+    func handleError(_ error: Error) {
         DDLogError(error.localizedDescription)
     }
 
-    public func handleError(_ error: ErrorProtocol) {
+    func handleError(_ error: ErrorProtocol) {
         var message = ""
 
         message.append("\n\tError: \(error.errorLine.description)\n")
@@ -45,11 +45,11 @@ class Logger: LoggerProtocol {
         DDLogError(message)
     }
 
-    public func logInfo(_ message: String) {
+    func logInfo(_ message: String) {
         DDLogInfo(message)
     }
 
-    public func logWarn(_ message: String) {
+    func logWarn(_ message: String) {
         DDLogWarn(message)
     }
 }

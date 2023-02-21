@@ -9,7 +9,7 @@ import Foundation
 import HealthKit
 import ApolloLogger
 
-class HealthKitRepository {
+final class HealthKitRepository {
     private let store = HKHealthStore()
     private(set) var bodyMass: Double = 0.0
 

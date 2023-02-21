@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Day: Codable, Identifiable {
+public final class Day: Codable, Identifiable {
     public let id = UUID()
     public var name: String = ""
     public var calories: Int = 0

@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public class FileError: Error {
+public final class FileError: Error {
     public enum FileErrorType {
         case fileNotFound(fileName: String)
         case readingFileString

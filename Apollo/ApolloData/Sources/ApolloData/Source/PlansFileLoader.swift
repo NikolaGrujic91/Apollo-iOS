@@ -8,7 +8,7 @@
 import Foundation
 import ApolloLogger
 
-class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
+final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
     // MARK: - Properties
 
     private let fileName = "data"

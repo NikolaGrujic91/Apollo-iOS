@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class PlanImageManager: PlanImageProtocol {
+final class PlanImageManager: PlanImageProtocol {
     // MARK: - Properties
     private let imagePlan1 = loadImage("1")
     private let imagePlan2 = loadImage("2")
@@ -18,7 +18,7 @@ class PlanImageManager: PlanImageProtocol {
     private let imageEmpty = UIImage()
 
     // MARK: - PlanImageProtocol
-    public func getImage(_ planImage: PlanImage) -> UIImage {
+    func getImage(_ planImage: PlanImage) -> UIImage {
         switch planImage {
         case .plan1:
             return imagePlan1 ?? imageEmpty

@@ -8,7 +8,7 @@
 import CoreLocation
 import ApolloLogger
 
-class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
+final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
     private let locationManager = CLLocationManager()
     private var locations: [CLLocation] = []
     var updatingLocationStopped = true

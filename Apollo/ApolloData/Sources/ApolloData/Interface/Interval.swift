@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Interval: Codable, Identifiable {
+public final class Interval: Codable, Identifiable {
     public let id = UUID()
     public var type: String = ""
     public var seconds: Int = 0

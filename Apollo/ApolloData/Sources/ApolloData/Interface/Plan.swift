@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Plan: Codable, Identifiable {
+public final class Plan: Codable, Identifiable {
     public let id = UUID()
     public var name: String = ""
     public var days: [Day] = []

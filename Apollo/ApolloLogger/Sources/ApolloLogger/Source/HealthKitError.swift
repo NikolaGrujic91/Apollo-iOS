@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public class HealthKitError: Error {
+public final class HealthKitError: Error {
     public enum HealthKitErrorType {
         case healthData
         case quantityType
