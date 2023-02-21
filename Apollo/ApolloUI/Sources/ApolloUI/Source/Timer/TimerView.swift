@@ -57,6 +57,9 @@ struct TimerView: View {
         .navigationTitle(viewModel.day.name)
         .onAppear {
             viewModel.onAppear(day: day)
+
+            // Prevent screen lock only for timer
+            UIApplication.shared.isIdleTimerDisabled = true
         }
         .onDisappear {
             viewModel.onDissapear()
