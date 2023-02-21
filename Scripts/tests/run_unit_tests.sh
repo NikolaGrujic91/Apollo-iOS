@@ -122,3 +122,13 @@ xcodebuild \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
 
+printg "/***************************************************/"
+printg "             Running tests for ApolloUI"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme ApolloUI \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty

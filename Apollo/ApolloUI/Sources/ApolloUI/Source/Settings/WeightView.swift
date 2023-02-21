@@ -42,6 +42,7 @@ struct WeightView: View {
         .toolbar {
             Button(action: {
                 viewModel.save()
+                viewModel.update()
                 dismiss()
             }, label: {
                 Text("Save")

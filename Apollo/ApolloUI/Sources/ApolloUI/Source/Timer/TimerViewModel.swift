@@ -48,7 +48,9 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         stopTimer()
         activeButton = .start
         currentInterval = 0
-        timeRemaining = day.intervals[currentInterval].seconds
+        if !day.intervals.isEmpty {
+            timeRemaining = day.intervals[currentInterval].seconds
+        }
         locationTracker.stopUpdatingLocation()
     }
 
