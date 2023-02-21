@@ -9,7 +9,7 @@ enum PlanImageInjectionMap {
     static var planImage: PlanImageProtocol = PlanImageManager()
 }
 
-public protocol PlanImageInjected {}
+public protocol PlanImageInjected: AnyObject {}
 
 extension PlanImageInjected {
     public var planImage: PlanImageProtocol {

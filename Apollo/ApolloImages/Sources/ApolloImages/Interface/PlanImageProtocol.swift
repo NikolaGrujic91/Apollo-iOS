@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-public protocol PlanImageProtocol {
+public protocol PlanImageProtocol: AnyObject {
     func getImage(_ planImage: PlanImage) -> UIImage
 }

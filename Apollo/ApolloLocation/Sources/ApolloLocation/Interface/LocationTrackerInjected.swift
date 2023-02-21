@@ -9,7 +9,7 @@ enum LocationTrackerInjectionMap {
     static var locationTracker: LocationTrackerProtocol = LocationTracker()
 }
 
-public protocol LocationTrackerInjected {}
+public protocol LocationTrackerInjected: AnyObject {}
 
 extension LocationTrackerInjected {
     public var locationTracker: LocationTrackerProtocol {

@@ -9,7 +9,7 @@ enum PlansLoaderInjectionMap {
     static var plansLoader: PlansLoadingProtocol = PlansFileLoader()
 }
 
-protocol PlansLoadingInjected {}
+protocol PlansLoadingInjected: AnyObject {}
 
 extension PlansLoadingInjected {
     public var plansLoader: PlansLoadingProtocol {

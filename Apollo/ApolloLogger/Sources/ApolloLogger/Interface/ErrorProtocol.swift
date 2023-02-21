@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol ErrorProtocol: LocalizedError {
+public protocol ErrorProtocol: LocalizedError, AnyObject {
     var errorLine: ErrorLine { get set }
 }

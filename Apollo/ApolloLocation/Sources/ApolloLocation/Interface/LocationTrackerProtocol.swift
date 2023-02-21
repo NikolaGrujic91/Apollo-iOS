@@ -7,7 +7,7 @@
 
 import CoreLocation
 
-public protocol LocationTrackerProtocol {
+public protocol LocationTrackerProtocol: AnyObject {
     var updatingLocationStopped: Bool { get }
 
     func requestAuthorization()

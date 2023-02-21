@@ -9,7 +9,7 @@ enum AudioPlayerInjectionMap {
     static var player: AudioPlayerProtocol = AudioPlayer()
 }
 
-public protocol AudioPlayerInjected {}
+public protocol AudioPlayerInjected: AnyObject {}
 
 extension AudioPlayerInjected {
     public var player: AudioPlayerProtocol {

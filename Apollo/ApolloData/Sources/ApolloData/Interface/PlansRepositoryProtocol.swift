@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-public protocol PlansRepositoryProtocol {
+public protocol PlansRepositoryProtocol: AnyObject {
     var plans: [Plan] { get }
 
     ///

@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public protocol WeightRepositoryProtocol {
+public protocol WeightRepositoryProtocol: AnyObject {
     var value: Double { get }
 
     ///
