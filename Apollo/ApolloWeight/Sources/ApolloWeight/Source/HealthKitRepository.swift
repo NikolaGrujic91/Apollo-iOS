@@ -12,44 +12,31 @@ import ApolloLogger
 class HealthKitRepository {
     private let store = HKHealthStore()
     private(set) var bodyMass: Double = 0.0
-    private var authorized = false
 
     func requestAuthorization() async throws {
         if !HKHealthStore.isHealthDataAvailable() {
             throw HealthKitError(.healthData, ErrorLine())
         }
 
-        guard let quantityType = HKQuantityType.quantityType(forIdentifier: .bodyMass) else {
+        guard let bodyMassType = HKQuantityType.quantityType(forIdentifier: .bodyMass) else {
             throw HealthKitError(.quantityType, ErrorLine())
         }
 
-        let workoutType = HKObjectType.workoutType()
-
         do {
-            try await store.requestAuthorization(toShare: [], read: [quantityType, workoutType])
-            let status = store.authorizationStatus(for: workoutType)
-            authorized = status == .sharingAuthorized
+            try await store.requestAuthorization(toShare: [], read: [bodyMassType])
         } catch {
-            authorized = false
             throw HealthKitError(.authorization(description: error.localizedDescription), ErrorLine())
         }
     }
 
     func fetchWeight() async throws {
-        if !authorized {
-            return
-        }
-
         guard let sampleType = HKSampleType.quantityType(forIdentifier: .bodyMass) else {
             return
         }
 
-        let calendar = Calendar.current
-        var components: DateComponents = calendar.dateComponents([.year, .month, .day], from: Date())
-        components.day = components.day ?? 7 - 7
-        let oneWeekAgo = calendar.date(from: components)
+        let oneYearAgo = Calendar.current.date(byAdding: .day, value: -365, to: Date())
 
-        let predicate = HKQuery.predicateForSamples(withStart: oneWeekAgo, end: .now, options: .strictEndDate)
+        let predicate = HKQuery.predicateForSamples(withStart: oneYearAgo, end: .now, options: .strictEndDate)
 
         let queryDescriptor = HKSampleQueryDescriptor(
             predicates: [.quantitySample(type: sampleType, predicate: predicate)],

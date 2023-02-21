@@ -15,12 +15,16 @@ final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
         weightRepository.save(Double(weight) ?? 0.0)
     }
 
+    func update() {
+        weight = "\(String(format: "%.1f", weightRepository.value))"
+    }
+
     func loadFromHealth() async {
         await weightRepository.loadFromHealthKit()
     }
 
     func onAppear() {
         weightRepository.load()
-        weight = "\(String(format: "%.1f", weightRepository.value))"
+        update()
     }
 }

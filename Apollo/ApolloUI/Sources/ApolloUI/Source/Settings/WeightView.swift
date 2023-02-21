@@ -29,6 +29,8 @@ struct WeightView: View {
             Button(action: {
                 Task {
                     await viewModel.loadFromHealth()
+                    viewModel.update()
+                    dismiss()
                 }
             }, label: {
                 Text("Load from Health")
