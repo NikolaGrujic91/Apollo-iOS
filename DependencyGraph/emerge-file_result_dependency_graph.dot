@@ -1,0 +1,1231 @@
+digraph "" {
+	"Apollo/ApolloImages/Package.swift"	[absolute_name="Apollo/ApolloImages/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=13,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=32,
+		metric_tag_dependencies=0.28161158103255246,
+		metric_tag_name=0.3525240071077134,
+		metric_tag_other=0.21120868577441435,
+		metric_tag_package=0.5786668746374647,
+		metric_tag_products=0.21120868577441435,
+		metric_tag_targets=0.3520144762906906];
+	"Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift"	[absolute_name="Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift",
+		display_name="Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=4,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=28,
+		metric_tag_compareimages=0.2905634846103282,
+		metric_tag_uiimage=0.6488821879277918,
+		metric_tag_xctassertequal=0.5956950973703283];
+	"Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift" -> "Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift"	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift",
+		display_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=4,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_apolloimages=0.23794969315610445,
+		metric_tag_planimage=0.4153432554683977,
+		metric_tag_planimageinjected=0.4758993863122089,
+		metric_tag_planimageinjectionmap=0.2855465514172821,
+		metric_tag_planimagemanager=0.2568509817159064,
+		metric_tag_planimageprotocol=0.4608971655695232,
+		metric_tag_public=0.24846056835689237];
+	"Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift"	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift",
+		display_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=4,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=4,
+		metric_tag_anyobject=0.22316103619172592,
+		metric_tag_apolloimages=0.32754655605505806,
+		metric_tag_getimage=0.32754655605505806,
+		metric_tag_planimage=0.5717353576082125,
+		metric_tag_planimageprotocol=0.3172210001102964,
+		metric_tag_swiftui=0.2425943779545657,
+		metric_tag_uiimage=0.29259599057618146];
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift"	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift",
+		display_name="Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=4,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=32,
+		metric_tag_imageempty=0.6148204186426918,
+		metric_tag_loadimage=0.6148204186426918,
+		metric_tag_uiimage=0.2615253527069821];
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift"	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift",
+		display_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=4,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=8,
+		metric_tag_apolloimages=0.5448004042532337,
+		metric_tag_created=0.27966875439836875,
+		metric_tag_enum=0.31435175985442065,
+		metric_tag_grujic=0.27966875439836875,
+		metric_tag_nikola=0.27966875439836875,
+		metric_tag_planimage=0.47547691800255665,
+		metric_tag_public=0.28443284857068657];
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift";
+	"Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift";
+	"Apollo/ApolloAudio/Package.swift"	[absolute_name="Apollo/ApolloAudio/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=15,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=38,
+		metric_tag_dependencies=0.2576095129808793,
+		metric_tag_name=0.429970658887018,
+		metric_tag_package=0.5881627263849923,
+		metric_tag_targets=0.32201189122609913];
+	"Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift"	[absolute_name="Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift",
+		display_name="Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=5,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=9,
+		metric_tag_apolloaudio=0.2685712430749165,
+		metric_tag_apolloaudiotests=0.28468286980596963,
+		metric_tag_audioplayer=0.4744599518425833,
+		metric_tag_audioplayerinjected=0.23722997592129166,
+		metric_tag_import=0.23761123975886003,
+		metric_tag_testaudioplayer=0.28468286980596963,
+		metric_tag_xctassertnothrow=0.5693657396119393];
+	"Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift" -> "Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift"	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift",
+		display_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=5,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_audioplayer=0.23201711808976316,
+		metric_tag_audioplayerinjected=0.4640342361795263,
+		metric_tag_audioplayerinjectionmap=0.27842728881707124,
+		metric_tag_audioplayerprotocol=0.44940605164397884,
+		metric_tag_player=0.5253393933716174,
+		metric_tag_public=0.24226593556181633];
+	"Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift"	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift",
+		display_name="Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=7,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=5,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=27,
+		metric_tag_audioplayer=0.5086100652150332,
+		metric_tag_avaudioplayer=0.24413874750070602,
+		metric_tag_filetype=0.24413874750070602,
+		metric_tag_fileurl=0.24413874750070602,
+		metric_tag_playsound=0.24413874750070602,
+		metric_tag_sound=0.30516603912901985,
+		metric_tag_throw=0.20344402608601325];
+	"Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift"	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift",
+		display_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=5,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=3,
+		metric_tag_anyobject=0.2818835141220246,
+		metric_tag_audioplayerprotocol=0.40069436757575366,
+		metric_tag_nikola=0.21238843860977139,
+		metric_tag_play=0.4466017557417241,
+		metric_tag_public=0.216006427772791,
+		metric_tag_sound=0.41373698489212235,
+		metric_tag_soundsenum=0.41373698489212235];
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift"	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift",
+		display_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=5,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=4,
+		metric_tag_complete=0.5122706657380848,
+		metric_tag_countdown=0.5122706657380848,
+		metric_tag_enum=0.2463123523974733,
+		metric_tag_grujic=0.21913625939245615,
+		metric_tag_nikola=0.21913625939245615,
+		metric_tag_public=0.2228691961610307,
+		metric_tag_soundsenum=0.4268818765985391];
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift",
+		"metric_fan-in-dependency-graph"=7,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=10,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_logger=0.6521255614182205,
+		metric_tag_loggerinjected=0.3754444527475272,
+		metric_tag_loggerinjectionmap=0.2693474366441119,
+		metric_tag_loggerprotocol=0.43475037427881363,
+		metric_tag_public=0.23436534905396786];
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift",
+		"metric_fan-in-dependency-graph"=11,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=24,
+		metric_tag_column=0.5917758764725309,
+		metric_tag_customstringconvertible=0.29588793823626547,
+		metric_tag_errorlocation=0.29588793823626547,
+		metric_tag_function=0.5917758764725309];
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=38,
+		metric_tag_audioerrortype=0.3157992174852636,
+		metric_tag_errorline=0.33922629557274897,
+		metric_tag_errortype=0.26239671408800763,
+		metric_tag_not=0.26239671408800763,
+		metric_tag_public=0.3398131803766819,
+		metric_tag_requested=0.22316270470577157,
+		metric_tag_sound=0.5578932420482123];
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift";
+	"Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift",
+		display_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift",
+		"metric_fan-in-dependency-graph"=16,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=31,
+		metric_tag_bundle=0.616319531489421,
+		metric_tag_overrides=0.41517502230552944];
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift";
+	"Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=10,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=6,
+		metric_tag_error=0.4905580078569004,
+		metric_tag_handleerror=0.47663671949497033,
+		metric_tag_loggerprotocol=0.21382097856313473,
+		metric_tag_loginfo=0.23831835974748516,
+		metric_tag_logwarn=0.23831835974748516,
+		metric_tag_message=0.47663671949497033];
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=10,
+		"metric_number-of-methods-in-file"=4,
+		"metric_sloc-in-file"=34,
+		metric_tag_ddlogerror=0.22363500213018345,
+		metric_tag_ddloglevel=0.22363500213018345,
+		metric_tag_error=0.20703652094777725,
+		metric_tag_handleerror=0.20116114012960182,
+		metric_tag_loglevel=0.33545250319527514,
+		metric_tag_message=0.6034834203888055];
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift",
+		"metric_fan-in-dependency-graph"=8,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=4,
+		metric_tag_anyobject=0.24814912902101027,
+		metric_tag_apollologger=0.28792797339851434,
+		metric_tag_errorline=0.5315168955886943,
+		metric_tag_errorprotocol=0.28792797339851434,
+		metric_tag_foundation=0.31099474555463363,
+		metric_tag_localizederror=0.4370782482240922];
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloTheme/Package.swift"	[absolute_name="Apollo/ApolloTheme/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=19,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=29,
+		metric_tag_dependencies=0.282350821134957,
+		metric_tag_name=0.35344939477166837,
+		metric_tag_other=0.21176311585121776,
+		metric_tag_package=0.5801858951198492,
+		metric_tag_products=0.21176311585121776,
+		metric_tag_targets=0.35293852641869633];
+	"Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift"	[absolute_name="Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift",
+		display_name="Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=17,
+		metric_tag_dark=0.21351373433787144,
+		metric_tag_import=0.2475671423276584,
+		metric_tag_light=0.21351373433787144,
+		metric_tag_read=0.34155311893139967,
+		metric_tag_settings=0.21351373433787144,
+		metric_tag_xctassertequal=0.6756594256905818];
+	"Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift" -> "Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift";
+	"Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift"	[absolute_name="Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift",
+		display_name="Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift",
+		"metric_fan-in-dependency-graph"=9,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=3,
+		"metric_sloc-in-file"=26,
+		metric_tag_colorscheme=0.3817142179373402,
+		metric_tag_defaults=0.25447614529156015,
+		metric_tag_getcolorschemedevice=0.2946557478111562,
+		metric_tag_key=0.3683107592983366,
+		metric_tag_public=0.3204833599259594,
+		metric_tag_stringvalue=0.2650447631669401,
+		metric_tag_value=0.30204239981924846];
+	"Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloTheme/Sources/ApolloTheme/Source/ColorSchemeExtensions.swift"	[absolute_name="Apollo/ApolloTheme/Sources/ApolloTheme/Source/ColorSchemeExtensions.swift",
+		display_name="ColorSchemeExtensions.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=22,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=15,
+		metric_tag_apollotheme=0.24483387145263408,
+		metric_tag_colorscheme=0.5681069380035279,
+		metric_tag_fromstring=0.3551384165833059,
+		metric_tag_swiftui=0.20299430839875252,
+		metric_tag_tostring=0.3551384165833059,
+		metric_tag_value=0.4495310230668905];
+	"Apollo/ApolloData/Package.swift"	[absolute_name="Apollo/ApolloData/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=23,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=38,
+		metric_tag_dependencies=0.2576095129808793,
+		metric_tag_name=0.429970658887018,
+		metric_tag_package=0.5881627263849923,
+		metric_tag_targets=0.32201189122609913];
+	"Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift"	[absolute_name="Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift",
+		display_name="Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=9,
+		"metric_number-of-methods-in-file"=4,
+		"metric_sloc-in-file"=48,
+		metric_tag_checkplans=0.2649556796194513,
+		metric_tag_xctassertequal=0.8147933639083996];
+	"Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift" -> "Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift",
+		"metric_fan-in-dependency-graph"=5,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=9,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_plansrepository=0.6713530148541316,
+		metric_tag_plansrepositoryinjected=0.3857723414204905,
+		metric_tag_plansrepositoryinjectionmap=0.2591179675020528,
+		metric_tag_plansrepositoryprotocol=0.41823911434779776,
+		metric_tag_public=0.22546445459591813];
+	"Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=9,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=6,
+		metric_tag_default=0.25377084665452165,
+		metric_tag_load=0.3823864433107742,
+		metric_tag_plans=0.6860663340957,
+		metric_tag_userdefaults=0.29664892617534544];
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=9,
+		"metric_number-of-methods-in-file"=3,
+		"metric_sloc-in-file"=16,
+		metric_tag_copyright=0.23149682268803612,
+		metric_tag_mark=0.29302660224953886,
+		metric_tag_plans=0.6236997306325518,
+		metric_tag_plansrepositoryprotocol=0.34605285415172754,
+		metric_tag_rights=0.23149682268803612];
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift",
+		"metric_fan-in-dependency-graph"=6,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=23,
+		metric_tag_calories=0.23243558915059354,
+		metric_tag_day=0.3936381978274644,
+		metric_tag_distance=0.25906563858023773,
+		metric_tag_hasher=0.25906563858023773,
+		metric_tag_intervals=0.28800863128148085,
+		metric_tag_public=0.5638564804778868];
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift",
+		"metric_fan-in-dependency-graph"=9,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=19,
+		metric_tag_days=0.3059782671707831,
+		metric_tag_hasher=0.3059782671707831,
+		metric_tag_name=0.21664090175208509,
+		metric_tag_plan=0.44051808701609135,
+		metric_tag_public=0.5179703184387445];
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=11,
+		metric_tag_codable=0.20148959288893312,
+		metric_tag_interval=0.20148959288893312,
+		metric_tag_public=0.5259748195424272,
+		metric_tag_seconds=0.41764428776740065,
+		metric_tag_type=0.40297918577786623,
+		metric_tag_uuid=0.20148959288893312];
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=11,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_plansfileloader=0.24642121411225093,
+		metric_tag_plansloader=0.516894549035704,
+		metric_tag_plansloaderinjectionmap=0.2739515629480475,
+		metric_tag_plansloadinginjected=0.49284242822450186,
+		metric_tag_plansloadingprotocol=0.4421818377402897];
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=8,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=11,
+		"metric_number-of-methods-in-file"=5,
+		"metric_sloc-in-file"=63,
+		metric_tag_catch=0.3487825148192578,
+		metric_tag_errorline=0.27054348041035553,
+		metric_tag_fileerror=0.37078095401945715,
+		metric_tag_jsondata=0.2542559584090803,
+		metric_tag_plan=0.28810889487375285,
+		metric_tag_throw=0.37078095401945715,
+		metric_tag_userdefaultskey=0.2542559584090803];
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift"	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift",
+		display_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=11,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=5,
+		metric_tag_load=0.2684436356665999,
+		metric_tag_otherwise=0.29432961899009513,
+		metric_tag_plans=0.6421780696983779,
+		metric_tag_remove=0.24526873876722122,
+		metric_tag_returns=0.38129173166716585];
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=66,
+		metric_tag_description=0.305186951161129,
+		metric_tag_errorline=0.234740449930204,
+		metric_tag_filename=0.4361995424833193,
+		metric_tag_not=0.24210042491440287,
+		metric_tag_possible=0.3088517275574219,
+		metric_tag_public=0.235146567040612,
+		metric_tag_seems=0.23163879566806642];
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift" -> "Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift";
+	"Apollo/ApolloWeight/Package.swift"	[absolute_name="Apollo/ApolloWeight/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=33,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=32,
+		metric_tag_dependencies=0.25989416435649854,
+		metric_tag_name=0.4337839227915037,
+		metric_tag_package=0.5933789420688563,
+		metric_tag_targets=0.32486770544562316];
+	"Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift"	[absolute_name="Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift",
+		display_name="Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=6,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=17,
+		metric_tag_bodymass=0.858286408526129,
+		metric_tag_xctassertequal=0.39396751460489865];
+	"Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift" -> "Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift"	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift",
+		display_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift",
+		"metric_fan-in-dependency-graph"=4,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=6,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_public=0.2199312344092536,
+		metric_tag_weightrepository=0.6548770516659359,
+		metric_tag_weightrepositoryinjected=0.3962614910859343,
+		metric_tag_weightrepositoryinjectionmap=0.25275884197568343,
+		metric_tag_weightrepositoryprotocol=0.4079749282945704];
+	"Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift"	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift",
+		display_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=6,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=6,
+		metric_tag_data=0.40463269962229625,
+		metric_tag_double=0.2266986152663002,
+		metric_tag_load=0.31386532923068894,
+		metric_tag_save=0.21569606372860314,
+		metric_tag_user=0.37158135803794595,
+		metric_tag_weight=0.5573720370569188];
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift"	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift",
+		display_name="Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=6,
+		"metric_number-of-methods-in-file"=3,
+		"metric_sloc-in-file"=26,
+		metric_tag_bodymass=0.23712910521359018,
+		metric_tag_forkey=0.2497047572857087,
+		metric_tag_healthkitrepository=0.28654023330484746,
+		metric_tag_key=0.3981812341319812,
+		metric_tag_mark=0.32653842572868,
+		metric_tag_value=0.32653842572868,
+		metric_tag_weightrepositoryprotocol=0.257085996848373];
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift"	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift",
+		display_name="Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=39,
+		metric_tag_errorline=0.25800923499698397,
+		metric_tag_healthkiterror=0.35360271906352797,
+		metric_tag_oneyearago=0.2121667728609427,
+		metric_tag_predicate=0.31825015929141404,
+		metric_tag_sampletype=0.2121667728609427,
+		metric_tag_store=0.2121667728609427,
+		metric_tag_throw=0.35360271906352797];
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=52,
+		metric_tag_description=0.3787085132776538,
+		metric_tag_errorline=0.29129098233384054,
+		metric_tag_errortype=0.2253180181059283,
+		metric_tag_healthkiterrortype=0.27117433253877254,
+		metric_tag_not=0.37553003017654724,
+		metric_tag_public=0.29179493575161963,
+		metric_tag_type=0.23952929450715862];
+	"Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift";
+	"Apollo/ApolloUI/Package.swift"	[absolute_name="Apollo/ApolloUI/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=14,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=46,
+		metric_tag_name=0.6751179768653988,
+		metric_tag_package=0.5708928161286643,
+		metric_tag_path=0.26865544288407733];
+	"Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift"	[absolute_name="Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift",
+		display_name="Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=12,
+		"metric_number-of-methods-in-file"=3,
+		"metric_sloc-in-file"=42,
+		metric_tag_xctassertequal=0.8905430070989483];
+	"Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift";
+	"Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift" -> "Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift",
+		"metric_fan-in-dependency-graph"=5,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=4,
+		"metric_sloc-in-file"=18,
+		metric_tag_bodymass=0.542283203327874,
+		metric_tag_format=0.21842666038950623,
+		metric_tag_import=0.20267817279998465,
+		metric_tag_loadfromhealth=0.24282943828030074,
+		metric_tag_onappear=0.21842666038950623,
+		metric_tag_update=0.40470592301868497];
+	"Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift",
+		"metric_fan-in-dependency-graph"=4,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=12,
+		"metric_number-of-methods-in-file"=3,
+		"metric_sloc-in-file"=27,
+		metric_tag_import=0.21592669464923425,
+		metric_tag_level=0.3102728241501131,
+		metric_tag_loss=0.3102728241501131,
+		metric_tag_name=0.6590446932840044,
+		metric_tag_plans=0.2508647699241029];
+	"Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift",
+		"metric_fan-in-dependency-graph"=6,
+		"metric_fan-out-dependency-graph"=7,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=12,
+		"metric_sloc-in-file"=102,
+		metric_tag_activebutton=0.38717676942584456,
+		metric_tag_currentinterval=0.49102212228425657,
+		metric_tag_starttimer=0.22124386824333975,
+		metric_tag_stoptimer=0.3318658023650096,
+		metric_tag_timeremaining=0.4977987035475144];
+	"Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift" -> "Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift"	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift",
+		display_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=8,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=9,
+		metric_tag_apollolocation=0.21521232377638536,
+		metric_tag_locationtracker=0.6456369713291561,
+		metric_tag_locationtrackerinjected=0.41531077783144876,
+		metric_tag_locationtrackerinjectionmap=0.24919250536372636,
+		metric_tag_locationtrackerprotocol=0.4022185483706686,
+		metric_tag_public=0.21682808356691];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=7,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=34,
+		metric_tag_apollorootview=0.25941997631452035,
+		metric_tag_localization=0.21372981635450006,
+		metric_tag_plansviewmodel=0.4472031083193019,
+		metric_tag_theme=0.23545980051605636,
+		metric_tag_timerviewmodel=0.41054709793363114,
+		metric_tag_view=0.22788049353869638,
+		metric_tag_weightviewmodel=0.4187010983475321];
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=50,
+		metric_tag_mindragtranslationforswipe=0.20429138652380793,
+		metric_tag_selectedtab=0.5107284663095197,
+		metric_tag_swipeleft=0.20429138652380793,
+		metric_tag_swiperight=0.20429138652380793,
+		metric_tag_systemimage=0.20429138652380793,
+		metric_tag_tabscount=0.20429138652380793,
+		metric_tag_translation=0.5107284663095197];
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift"	[absolute_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift",
+		display_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift",
+		"metric_fan-in-dependency-graph"=8,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=17,
+		metric_tag_defaults=0.2890414280621414,
+		metric_tag_forkey=0.2623453982197381,
+		metric_tag_key=0.4183381028358164,
+		metric_tag_language=0.39351809732960713,
+		metric_tag_public=0.36401434765926877,
+		metric_tag_stringvalue=0.3010455724971452,
+		metric_tag_value=0.2287123782048981];
+	"Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=7,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=83,
+		metric_tag_darkmode=0.43788134853792837,
+		metric_tag_header=0.36490112378160694,
+		metric_tag_section=0.36490112378160694,
+		metric_tag_selectedlanguage=0.21894067426896419,
+		metric_tag_text=0.3993701401695179];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=38,
+		metric_tag_alignment=0.2653819938965297,
+		metric_tag_import=0.21193019829505266,
+		metric_tag_maxwidth=0.2520168035103919,
+		metric_tag_plan=0.3288248825512822,
+		metric_tag_plansview=0.2923870249615847,
+		metric_tag_plansviewmodel=0.2520168035103919,
+		metric_tag_view=0.25683950981390813];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift"	[absolute_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift",
+		display_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=5,
+		metric_tag_apollolocalization=0.2927169110716622,
+		metric_tag_caseiterable=0.3932278336548444,
+		metric_tag_english=0.3932278336548444,
+		metric_tag_identifiable=0.30824054755629693,
+		metric_tag_language=0.30824054755629693,
+		metric_tag_netherlands=0.3932278336548444,
+		metric_tag_public=0.34215650848767];
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=43,
+		metric_tag_action=0.3892156714260898,
+		metric_tag_height=0.30738604237071054,
+		metric_tag_labeltext=0.29512907270557054,
+		metric_tag_rectanglecolor=0.29512907270557054,
+		metric_tag_roundedrectangle=0.2278182827162808,
+		metric_tag_systemname=0.39350543027409407,
+		metric_tag_width=0.30738604237071054];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=26,
+		metric_tag_button=0.3716881987195513,
+		metric_tag_import=0.21800204323764202,
+		metric_tag_localizationmanager=0.21174908401109274,
+		metric_tag_resetdataview=0.30076397498132706,
+		metric_tag_role=0.5223780436938936,
+		metric_tag_showingalert=0.3482520291292624,
+		metric_tag_view=0.2641980160167361];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=51,
+		metric_tag_button=0.21724978884478816,
+		metric_tag_dismiss=0.45799081090255656,
+		metric_tag_isfocused=0.30532720726837104,
+		metric_tag_label=0.2544331735792837,
+		metric_tag_text=0.37129866335248335,
+		metric_tag_view=0.2316335172487764,
+		metric_tag_weightview=0.263692432051551];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=6,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=41,
+		metric_tag_day=0.4914016584669274,
+		metric_tag_daysview=0.20700736040929557,
+		metric_tag_plan=0.5432117434981549,
+		metric_tag_previewplan=0.23969204859626383,
+		metric_tag_text=0.2186113826611576];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=9,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=7,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=81,
+		metric_tag_action=0.27038482624943877,
+		metric_tag_circlebutton=0.3417061066780427,
+		metric_tag_day=0.6083658590612372,
+		metric_tag_text=0.2405738755599453];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=7,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=41,
+		metric_tag_linewidth=0.6252971521288251,
+		metric_tag_progress=0.4689728640966188,
+		metric_tag_strokecolor=0.2905498103586738,
+		metric_tag_style=0.26135144570153995];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=7,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=33,
+		metric_tag_action=0.4169965982085458,
+		metric_tag_circle=0.3813645049575553,
+		metric_tag_circlebutton=0.26349534115568,
+		metric_tag_height=0.27443853415880676,
+		metric_tag_text=0.37102114463256214,
+		metric_tag_view=0.2314603880577976,
+		metric_tag_width=0.27443853415880676];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift"	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift",
+		display_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=7,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=42,
+		metric_tag_fontsize=0.35660756597231885,
+		metric_tag_hours=0.2477477067399797,
+		metric_tag_minutes=0.2477477067399797,
+		metric_tag_seconds=0.28528605277785507,
+		metric_tag_size=0.2477477067399797,
+		metric_tag_time=0.4129128445666328,
+		metric_tag_timeinterval=0.42792907916678263];
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift";
+	"Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift"	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift",
+		display_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=8,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=10,
+		metric_tag_calculatedistance=0.26931658869310965,
+		metric_tag_clear=0.26931658869310965,
+		metric_tag_corelocation=0.28246000889547257,
+		metric_tag_location=0.26931658869310965,
+		metric_tag_startupdatinglocation=0.26931658869310965,
+		metric_tag_stopupdatinglocation=0.26931658869310965,
+		metric_tag_updatinglocationstopped=0.26931658869310965];
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift"	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift",
+		display_name="Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift",
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=8,
+		"metric_number-of-methods-in-file"=9,
+		"metric_sloc-in-file"=71,
+		metric_tag_cllocationmanager=0.23095427233309787,
+		metric_tag_location=0.41548974264130245,
+		metric_tag_locationmanager=0.23095427233309787,
+		metric_tag_locations=0.23095427233309787,
+		metric_tag_manager=0.28869284041637233,
+		metric_tag_status=0.23095427233309787,
+		metric_tag_statusstring=0.46190854466619574];
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift";
+	"Apollo/ApolloLogger/Package.swift"	[absolute_name="Apollo/ApolloLogger/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=16,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=34,
+		metric_tag_dependencies=0.24902728415402572,
+		metric_tag_name=0.41564623996047284,
+		metric_tag_package=0.6254249742845045,
+		metric_tag_targets=0.3112841051925322];
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift"	[absolute_name="Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift",
+		display_name="Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=7,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=22,
+		metric_tag_audioerror=0.22035028712932037,
+		metric_tag_errorline=0.6967153411924976,
+		metric_tag_fileerror=0.44070057425864073,
+		metric_tag_healthkiterror=0.36725047854886733,
+		metric_tag_localizationerror=0.22836921105447802];
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift";
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift";
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift";
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift"	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift",
+		display_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift",
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=38,
+		metric_tag_errorline=0.4408176780481087,
+		metric_tag_errortype=0.3409791980790684,
+		metric_tag_localizationerror=0.2504512880628897,
+		metric_tag_localizationerrortype=0.41037466610960066,
+		metric_tag_not=0.2273194653860456,
+		metric_tag_public=0.4415803229253715];
+	"Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift";
+	"Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift";
+	"Apollo/ApolloApp/ApolloApp/ApolloApp.swift"	[absolute_name="Apollo/ApolloApp/ApolloApp/ApolloApp.swift",
+		display_name="Apollo/ApolloApp/ApolloApp/ApolloApp.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=1,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=10,
+		metric_tag_apolloapp=0.6267965463833577,
+		metric_tag_apollorootview=0.2706629179823864,
+		metric_tag_apolloui=0.21019078781623612,
+		metric_tag_app=0.29566149823482096,
+		metric_tag_import=0.2615786200346895,
+		metric_tag_scene=0.31339827319167884,
+		metric_tag_windowgroup=0.31339827319167884];
+	"Apollo/ApolloApp/ApolloApp/ApolloApp.swift" -> "Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift";
+	"Apollo/ApolloApp/ApolloApp/ApolloApp.swift" -> "Apollo/ApolloApp/ApolloApp/ApolloApp.swift";
+	"Apollo/ApolloLocalization/Package.swift"	[absolute_name="Apollo/ApolloLocalization/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=17,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=39,
+		metric_tag_dependencies=0.2437525233032424,
+		metric_tag_name=0.4576975276145116,
+		metric_tag_package=0.6121775617342491,
+		metric_tag_targets=0.304690654129053];
+	"Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift"	[absolute_name="Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift",
+		display_name="Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=2,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=54,
+		metric_tag_xctassertequal=0.9845107626275779];
+	"Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift";
+	"Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift" -> "Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift"	[absolute_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift",
+		display_name="StringExtensions.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=0,
+		"metric_number-of-methods-in-file"=1,
+		"metric_sloc-in-file"=17,
+		metric_tag_bundle=0.5310792149624453,
+		metric_tag_errorline=0.222002030306708,
+		metric_tag_language=0.2862032613312641,
+		metric_tag_localizationerror=0.3153270456908928,
+		metric_tag_path=0.38170088781845296];
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift";
+	"Apollo/ApolloLocalization/Sources/ApolloLocalization/Source/StringExtensions.swift" -> "Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift";
+	"Apollo/Build/Intermediates.noindex/ApolloUI.build/Debug-iphonesimulator/ApolloUI.build/Objects-normal/x86_64/dummyInput-10.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloUI.build/Debug-iphonesimulator/ApolloUI.build/Objects-normal/x86_64/dummyInput-10.swift",
+		display_name="dummyInput-10.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=18,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjackSwift.build/Objects-normal/x86_64/\
+dummyInput-1.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjackSwift.build/Objects-normal/x86_64/\
+dummyInput-1.swift",
+		display_name="dummyInput-1.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=20,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloLogger.build/Debug-iphonesimulator/ApolloLogger.build/Objects-normal/x86_64/dummyInput-4.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloLogger.build/Debug-iphonesimulator/ApolloLogger.build/Objects-normal/x86_64/dummyInput-4.swift",
+		display_name="dummyInput-4.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=21,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloWeight.build/Debug-iphonesimulator/ApolloWeight.build/Objects-normal/x86_64/dummyInput-6.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloWeight.build/Debug-iphonesimulator/ApolloWeight.build/Objects-normal/x86_64/dummyInput-6.swift",
+		display_name="dummyInput-6.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=24,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloLocation.build/Debug-iphonesimulator/ApolloLocation.build/Objects-normal/x86_64/dummyInput-5.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloLocation.build/Debug-iphonesimulator/ApolloLocation.build/Objects-normal/x86_64/dummyInput-5.swift",
+		display_name="dummyInput-5.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=25,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloData.build/Debug-iphonesimulator/ApolloData.build/Objects-normal/x86_64/dummyInput-9.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloData.build/Debug-iphonesimulator/ApolloData.build/Objects-normal/x86_64/dummyInput-9.swift",
+		display_name="dummyInput-9.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=26,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloData.build/Debug-iphonesimulator/ApolloData.build/DerivedSources/resource_bundle_accessor.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloData.build/Debug-iphonesimulator/ApolloData.build/DerivedSources/resource_bundle_accessor.swift",
+		display_name="resource_bundle_accessor.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=31,
+		metric_tag_bundle=0.616319531489421,
+		metric_tag_overrides=0.41517502230552944];
+	"Apollo/Build/Intermediates.noindex/ApolloData.build/Debug-iphonesimulator/ApolloData.build/DerivedSources/resource_bundle_accessor.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/Build/Intermediates.noindex/ApolloTheme.build/Debug-iphonesimulator/ApolloTheme.build/Objects-normal/x86_64/dummyInput-2.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloTheme.build/Debug-iphonesimulator/ApolloTheme.build/Objects-normal/x86_64/dummyInput-2.swift",
+		display_name="dummyInput-2.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=27,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloAudio.build/Debug-iphonesimulator/ApolloAudio.build/Objects-normal/x86_64/dummyInput-8.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloAudio.build/Debug-iphonesimulator/ApolloAudio.build/Objects-normal/x86_64/dummyInput-8.swift",
+		display_name="dummyInput-8.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=28,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloAudio.build/Debug-iphonesimulator/ApolloAudio.build/DerivedSources/resource_bundle_accessor.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloAudio.build/Debug-iphonesimulator/ApolloAudio.build/DerivedSources/resource_bundle_accessor.swift",
+		display_name="resource_bundle_accessor.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=31,
+		metric_tag_bundle=0.616319531489421,
+		metric_tag_overrides=0.41517502230552944];
+	"Apollo/Build/Intermediates.noindex/ApolloAudio.build/Debug-iphonesimulator/ApolloAudio.build/DerivedSources/resource_bundle_accessor.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/Build/Intermediates.noindex/ApolloLocalization.build/Debug-iphonesimulator/ApolloLocalization.build/Objects-normal/x86_64/\
+dummyInput-7.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloLocalization.build/Debug-iphonesimulator/ApolloLocalization.build/Objects-normal/x86_64/\
+dummyInput-7.swift",
+		display_name="dummyInput-7.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=29,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloLocalization.build/Debug-iphonesimulator/ApolloLocalization.build/DerivedSources/resource_\
+bundle_accessor.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloLocalization.build/Debug-iphonesimulator/ApolloLocalization.build/DerivedSources/resource_\
+bundle_accessor.swift",
+		display_name="resource_bundle_accessor.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=3,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=31,
+		metric_tag_bundle=0.616319531489421,
+		metric_tag_overrides=0.41517502230552944];
+	"Apollo/Build/Intermediates.noindex/ApolloLocalization.build/Debug-iphonesimulator/ApolloLocalization.build/DerivedSources/resource_\
+bundle_accessor.swift" -> "Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift";
+	"Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/Objects-normal/x86_64/dummyInput-3.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/Objects-normal/x86_64/dummyInput-3.swift",
+		display_name="dummyInput-3.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=30,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/Build/Intermediates.noindex/ApolloApp.build/Debug-iphonesimulator/ApolloApp.build/Objects-normal/x86_64/dummyInput-11.swift"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloApp.build/Debug-iphonesimulator/ApolloApp.build/Objects-normal/x86_64/dummyInput-11.swift",
+		display_name="dummyInput-11.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=31,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=0];
+	"Apollo/ApolloLocation/Package.swift"	[absolute_name="Apollo/ApolloLocation/Package.swift",
+		display_name="Package.swift",
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=32,
+		"metric_number-of-methods-in-file"=0,
+		"metric_sloc-in-file"=32,
+		metric_tag_dependencies=0.25989416435649854,
+		metric_tag_name=0.4337839227915037,
+		metric_tag_package=0.5933789420688563,
+		metric_tag_targets=0.32486770544562316];
+	"Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift"	[absolute_name="Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift",
+		display_name="Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift",
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_file_result_dependency_graph_louvain-modularity-in-file"=8,
+		"metric_number-of-methods-in-file"=2,
+		"metric_sloc-in-file"=22,
+		metric_tag_cllocation=0.3490511445412246,
+		metric_tag_latitude=0.41887152393432275,
+		metric_tag_locationamsterdam=0.27924768262288185,
+		metric_tag_locationrotterdam=0.27924768262288185,
+		metric_tag_locationthehague=0.27924768262288185,
+		metric_tag_longitude=0.41887152393432275,
+		metric_tag_xctasserttrue=0.27924768262288185];
+	"Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift";
+	"Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift" -> "Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift" -> "Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift";
+	"Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift" -> "Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift";
+}
