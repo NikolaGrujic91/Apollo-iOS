@@ -9,14 +9,14 @@ import Foundation
 import ApolloWeight
 
 final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
-    @Published var weight: String = "0.0"
+    @Published var bodyMass: String = "0.0"
 
     func save() {
-        weightRepository.save(Double(weight) ?? 0.0)
+        weightRepository.save(Double(bodyMass) ?? 0.0)
     }
 
     func update() {
-        weight = "\(String(format: "%.1f", weightRepository.value))"
+        bodyMass = "\(String(format: "%.1f", weightRepository.bodyMass))"
     }
 
     func loadFromHealth() async {

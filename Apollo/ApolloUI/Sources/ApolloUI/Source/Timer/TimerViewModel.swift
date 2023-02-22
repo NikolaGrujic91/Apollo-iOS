@@ -96,7 +96,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
 
                 locationTracker.stopUpdatingLocation()
                 day.distance = Int(locationTracker.calculateDistance())
-                day.calories = Int(Double(day.distance) / 1000.0 * weightRepository.value * 1.036)
+                day.calories = Int(Double(day.distance) / 1000.0 * weightRepository.bodyMass * 1.036)
                 plansRepository.save()
 
                 return

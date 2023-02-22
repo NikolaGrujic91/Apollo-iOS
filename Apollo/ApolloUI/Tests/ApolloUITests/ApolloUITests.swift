@@ -41,16 +41,16 @@ final class ApolloUITests: XCTestCase {
 
     func testWeightViewModel() {
         let weightViewModel = WeightViewModel()
-        XCTAssertEqual(weightViewModel.weight, "0.0")
+        XCTAssertEqual(weightViewModel.bodyMass, "0.0")
 
-        weightViewModel.weight = "95.55555"
+        weightViewModel.bodyMass = "95.55555"
         weightViewModel.save()
         weightViewModel.update()
-        XCTAssertEqual(weightViewModel.weight, "95.6")
+        XCTAssertEqual(weightViewModel.bodyMass, "95.6")
 
-        weightViewModel.weight = "0.0"
+        weightViewModel.bodyMass = "0.0"
         weightViewModel.save()
         weightViewModel.update()
-        XCTAssertEqual(weightViewModel.weight, "0.0")
+        XCTAssertEqual(weightViewModel.bodyMass, "0.0")
     }
 }

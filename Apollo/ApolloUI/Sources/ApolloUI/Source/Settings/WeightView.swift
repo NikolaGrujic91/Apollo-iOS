@@ -18,7 +18,7 @@ struct WeightView: View {
         VStack(spacing: 10) {
             HStack {
                 Text("kg")
-                TextField("", text: $viewModel.weight)
+                TextField("", text: $viewModel.bodyMass)
                     .keyboardType(.decimalPad)
                     .multilineTextAlignment(.trailing)
                     .disableAutocorrection(true)

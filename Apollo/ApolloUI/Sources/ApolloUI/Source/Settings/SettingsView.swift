@@ -52,7 +52,7 @@ struct SettingsView: View {
                 Section(header: Text("weight".localized(localization.language))) {
                     NavigationLink(destination: WeightView()) {
                         HStack {
-                            Text(weightViewModel.weight)
+                            Text(weightViewModel.bodyMass)
                             Text("kg")
                         }
                     }

@@ -3,19 +3,19 @@ import XCTest
 
 final class ApolloWeightTests: XCTestCase, WeightRepositoryInjected {
     func testWeightRepository() {
-        var value = weightRepository.value
-        XCTAssertEqual(value, 0)
+        var bodyMass = weightRepository.bodyMass
+        XCTAssertEqual(bodyMass, 0)
 
         weightRepository.save(86)
-        value = weightRepository.value
-        XCTAssertEqual(value, 86)
+        bodyMass = weightRepository.bodyMass
+        XCTAssertEqual(bodyMass, 86)
 
         weightRepository.load()
-        value = weightRepository.value
-        XCTAssertEqual(value, 86)
+        bodyMass = weightRepository.bodyMass
+        XCTAssertEqual(bodyMass, 86)
 
         weightRepository.save(0)
-        value = weightRepository.value
-        XCTAssertEqual(value, 0)
+        bodyMass = weightRepository.bodyMass
+        XCTAssertEqual(bodyMass, 0)
     }
 }

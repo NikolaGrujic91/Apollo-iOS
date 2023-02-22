@@ -6,7 +6,7 @@
 //
 
 public protocol WeightRepositoryProtocol: AnyObject {
-    var value: Double { get }
+    var bodyMass: Double { get }
 
     ///
     /// Save weight data to user defaults.
