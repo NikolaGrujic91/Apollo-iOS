@@ -9,7 +9,7 @@ enum WeightRepositoryInjectionMap {
     static var weightRepository: WeightRepositoryProtocol = WeightRepository()
 }
 
-public protocol WeightRepositoryInjected {}
+public protocol WeightRepositoryInjected: AnyObject {}
 
 extension WeightRepositoryInjected {
     public var weightRepository: WeightRepositoryProtocol {

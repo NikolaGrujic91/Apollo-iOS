@@ -10,7 +10,7 @@ import ApolloTheme
 import ApolloLocalization
 import ApolloWeight
 
-struct SettingsView: View, WeightRepositoryInjected {
+struct SettingsView: View {
     @EnvironmentObject var theme: ThemeManager
     @EnvironmentObject var localization: LocalizationManager
     @EnvironmentObject private var weightViewModel: WeightViewModel
@@ -51,7 +51,10 @@ struct SettingsView: View, WeightRepositoryInjected {
                 }
                 Section(header: Text("weight".localized(localization.language))) {
                     NavigationLink(destination: WeightView()) {
-                        Text("\(String(format: "%.1f", weightRepository.value)) kg")
+                        HStack {
+                            Text(weightViewModel.weight)
+                            Text("kg")
+                        }
                     }
                 }
                 Section(header: Text("data".localized(localization.language))) {
