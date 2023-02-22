@@ -2,6 +2,12 @@ import XCTest
 @testable import ApolloData
 
 final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
+    func testMemoryLayout() {
+        XCTAssertEqual(class_getInstanceSize(Day.self), 72)
+        XCTAssertEqual(class_getInstanceSize(Interval.self), 56)
+        XCTAssertEqual(class_getInstanceSize(Plan.self), 56)
+    }
+
     func testPlansRepository() async {
         // Check there is no plans before loading
         XCTAssertEqual(plansRepository.plans.count, 0)
