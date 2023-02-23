@@ -10,7 +10,7 @@ import ApolloLocalization
 
 struct WeightView: View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var localization: LocalizationManager
+    @EnvironmentObject private var localization: LocalizationManager
     @EnvironmentObject private var viewModel: WeightViewModel
     @FocusState private var isFocused: Bool
 

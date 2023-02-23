@@ -10,7 +10,7 @@ import ApolloData
 import ApolloImages
 
 final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImageInjected {
-    @Published var plans: [Plan] = []
+    @Published private(set) var plans: [Plan] = []
 
     func update() {
         plans = plansRepository.plans

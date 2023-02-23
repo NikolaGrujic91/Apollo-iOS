@@ -11,8 +11,8 @@ import ApolloLocalization
 import ApolloWeight
 
 struct SettingsView: View {
-    @EnvironmentObject var theme: ThemeManager
-    @EnvironmentObject var localization: LocalizationManager
+    @EnvironmentObject private var theme: ThemeManager
+    @EnvironmentObject private var localization: LocalizationManager
     @EnvironmentObject private var weightViewModel: WeightViewModel
     @State private var darkMode = false
     @State private var selectedLanguage = Language.netherlands

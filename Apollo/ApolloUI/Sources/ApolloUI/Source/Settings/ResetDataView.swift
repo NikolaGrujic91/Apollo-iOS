@@ -10,7 +10,7 @@ import ApolloData
 import ApolloLocalization
 
 struct ResetDataView: View, PlansRepositoryInjected {
-    @EnvironmentObject var localization: LocalizationManager
+    @EnvironmentObject private var localization: LocalizationManager
     @State private var showingAlert = false
 
     var body: some View {

@@ -10,9 +10,7 @@ import ApolloLocalization
 import ApolloTheme
 
 struct MobileMenuView: View {
-    @EnvironmentObject var localization: LocalizationManager
-    @State private(set) var totalAmount: Int = 0
-
+    @EnvironmentObject private var localization: LocalizationManager
     @State private var selectedTab: Int = 0
     private var tabsCount: Int = 3
     private let minDragTranslationForSwipe: CGFloat = 50

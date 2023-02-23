@@ -11,7 +11,7 @@ import ApolloTheme
 import ApolloLocalization
 
 struct TimerView: View {
-    @EnvironmentObject var localization: LocalizationManager
+    @EnvironmentObject private var localization: LocalizationManager
     @EnvironmentObject private var viewModel: TimerViewModel
     var day: Day
 
