@@ -1,5 +1,5 @@
-import XCTest
 @testable import ApolloWeight
+import XCTest
 
 final class ApolloWeightTests: XCTestCase, WeightRepositoryInjected {
     func testWeightRepository() {

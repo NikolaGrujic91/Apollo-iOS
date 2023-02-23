@@ -1,5 +1,5 @@
-import XCTest
 @testable import ApolloData
+import XCTest
 
 final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
     func testMemoryLayout() {

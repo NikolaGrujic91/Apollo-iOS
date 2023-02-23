@@ -11,8 +11,8 @@ enum WeightRepositoryInjectionMap {
 
 public protocol WeightRepositoryInjected: AnyObject {}
 
-extension WeightRepositoryInjected {
-    public var weightRepository: WeightRepositoryProtocol {
-        return WeightRepositoryInjectionMap.weightRepository
+public extension WeightRepositoryInjected {
+    var weightRepository: WeightRepositoryProtocol {
+        WeightRepositoryInjectionMap.weightRepository
     }
 }

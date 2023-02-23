@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
-import Foundation
-import AVFoundation
 import ApolloLogger
+import AVFoundation
+import Foundation
 
 final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
     private var audioPlayer: AVAudioPlayer?

@@ -9,17 +9,19 @@ import SwiftUI
 
 public final class ThemeManager: ObservableObject {
     // MARK: - Properties
+
     @Published public var colorScheme: ColorScheme?
     private let key = "colorScheme"
 
     public init() {}
 
     // MARK: - Functions
+
     public func save(_ value: ColorScheme) {
         let defaults = UserDefaults.standard
         defaults.set(value.toString(), forKey: key)
 
-        self.colorScheme = value
+        colorScheme = value
     }
 
     public func load() {
@@ -27,7 +29,7 @@ public final class ThemeManager: ObservableObject {
 
         // if color scheme is stored in UserDefaults, use that value
         if let stringValue = defaults.object(forKey: key) as? String {
-            self.colorScheme = ColorScheme.fromString(stringValue)
+            colorScheme = ColorScheme.fromString(stringValue)
             return
         }
 
@@ -36,10 +38,10 @@ public final class ThemeManager: ObservableObject {
 
     private func getColorSchemeDevice() {
         if UITraitCollection.current.userInterfaceStyle == .dark {
-            self.colorScheme = .dark
+            colorScheme = .dark
             return
         }
 
-        self.colorScheme = .light
+        colorScheme = .light
     }
 }

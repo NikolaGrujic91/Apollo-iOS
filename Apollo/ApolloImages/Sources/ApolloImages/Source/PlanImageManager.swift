@@ -9,6 +9,7 @@ import SwiftUI
 
 final class PlanImageManager: PlanImageProtocol {
     // MARK: - Properties
+
     private let imagePlan1 = loadImage("1")
     private let imagePlan2 = loadImage("2")
     private let imagePlan3 = loadImage("3")
@@ -18,6 +19,7 @@ final class PlanImageManager: PlanImageProtocol {
     private let imageEmpty = UIImage()
 
     // MARK: - PlanImageProtocol
+
     func getImage(_ planImage: PlanImage) -> UIImage {
         switch planImage {
         case .plan1:
@@ -36,6 +38,7 @@ final class PlanImageManager: PlanImageProtocol {
     }
 
     // MARK: - Functions
+
     private static func loadImage(_ name: String) -> UIImage? {
         if let path = Bundle.module.path(forResource: name, ofType: "png") {
             return UIImage(contentsOfFile: path)

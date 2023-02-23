@@ -25,10 +25,10 @@ struct CircleButton: View {
                     ) // Detect tap on entire button
                     .contentShape(Circle())
             }
-                .frame(width: 140, height: 140)
-                .background(.orange)
-                .foregroundColor(.white)
-                .clipShape(Circle())
+            .frame(width: 140, height: 140)
+            .background(.orange)
+            .foregroundColor(.white)
+            .clipShape(Circle())
         }
     }
 }

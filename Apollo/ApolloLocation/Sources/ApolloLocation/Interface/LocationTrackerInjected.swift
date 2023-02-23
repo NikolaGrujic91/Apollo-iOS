@@ -11,8 +11,8 @@ enum LocationTrackerInjectionMap {
 
 public protocol LocationTrackerInjected: AnyObject {}
 
-extension LocationTrackerInjected {
-    public var locationTracker: LocationTrackerProtocol {
-        return LocationTrackerInjectionMap.locationTracker
+public extension LocationTrackerInjected {
+    var locationTracker: LocationTrackerProtocol {
+        LocationTrackerInjectionMap.locationTracker
     }
 }

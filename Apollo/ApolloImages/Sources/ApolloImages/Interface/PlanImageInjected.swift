@@ -11,8 +11,8 @@ enum PlanImageInjectionMap {
 
 public protocol PlanImageInjected: AnyObject {}
 
-extension PlanImageInjected {
-    public var planImage: PlanImageProtocol {
-        return PlanImageInjectionMap.planImage
+public extension PlanImageInjected {
+    var planImage: PlanImageProtocol {
+        PlanImageInjectionMap.planImage
     }
 }

@@ -5,10 +5,10 @@
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
-import SwiftUI
-import ApolloTheme
 import ApolloLocalization
+import ApolloTheme
 import ApolloWeight
+import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject private var theme: ThemeManager
@@ -89,8 +89,8 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-        .environmentObject(ThemeManager())
-        .environmentObject(LocalizationManager())
-        .environmentObject(WeightViewModel())
+            .environmentObject(ThemeManager())
+            .environmentObject(LocalizationManager())
+            .environmentObject(WeightViewModel())
     }
 }

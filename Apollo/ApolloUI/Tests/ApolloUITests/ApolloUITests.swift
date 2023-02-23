@@ -1,6 +1,6 @@
-import XCTest
 import ApolloData
 @testable import ApolloUI
+import XCTest
 
 final class ApolloUITests: XCTestCase {
     func testPlansViewModel() async {

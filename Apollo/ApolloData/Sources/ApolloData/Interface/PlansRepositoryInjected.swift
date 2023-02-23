@@ -11,8 +11,8 @@ enum PlansRepositoryInjectionMap {
 
 public protocol PlansRepositoryInjected {}
 
-extension PlansRepositoryInjected {
-    public var plansRepository: PlansRepositoryProtocol {
-        return PlansRepositoryInjectionMap.plansRepository
+public extension PlansRepositoryInjected {
+    var plansRepository: PlansRepositoryProtocol {
+        PlansRepositoryInjectionMap.plansRepository
     }
 }

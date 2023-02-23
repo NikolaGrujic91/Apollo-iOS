@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 19/02/2023.
 //
 
-import SwiftUI
 import ApolloLocalization
+import SwiftUI
 
 struct WeightView: View {
     @Environment(\.dismiss) var dismiss

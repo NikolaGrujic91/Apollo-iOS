@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 15/02/2023.
 //
 
-import SwiftUI
-import ApolloTheme
 import ApolloData
+import ApolloTheme
+import SwiftUI
 
 struct DaysView: View {
     var plan: Plan

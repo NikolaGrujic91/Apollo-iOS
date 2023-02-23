@@ -11,7 +11,7 @@ public final class ErrorLine: CustomStringConvertible {
     let line: Int
     let column: Int
 
-    public init (
+    public init(
         file: String = #file,
         function: String = #function,
         line: Int = #line,
@@ -29,7 +29,8 @@ public final class ErrorLine: CustomStringConvertible {
     }
 
     // MARK: - CustomStringConvertible
+
     public var description: String {
-        return "[\(file):\(function):\(line):\(column)]"
+        "[\(file):\(function):\(line):\(column)]"
     }
 }

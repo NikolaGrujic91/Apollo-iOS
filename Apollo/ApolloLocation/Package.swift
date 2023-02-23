@@ -6,13 +6,14 @@ import PackageDescription
 let package = Package(
     name: "ApolloLocation",
     platforms: [
-        .iOS(.v16)
+        .iOS(.v16),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ApolloLocation",
-            targets: ["ApolloLocation"]),
+            targets: ["ApolloLocation"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,13 +30,15 @@ let package = Package(
                 .product(name: "ApolloLogger", package: "ApolloLogger"),
             ],
             plugins: [
-                .plugin(name: "SwiftLint", package: "SwiftLintPlugin")
-            ]),
+                .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
+            ]
+        ),
         .testTarget(
             name: "ApolloLocationTests",
             dependencies: ["ApolloLocation"],
             plugins: [
-                .plugin(name: "SwiftLint", package: "SwiftLintPlugin")
-            ]),
+                .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
+            ]
+        ),
     ]
 )

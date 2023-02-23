@@ -1,6 +1,6 @@
 //
 //  AudioPlayerInjected.swift
-//  
+//
 //
 //  Created by Nikola Grujic on 10/02/2023.
 //
@@ -11,8 +11,8 @@ enum AudioPlayerInjectionMap {
 
 public protocol AudioPlayerInjected: AnyObject {}
 
-extension AudioPlayerInjected {
-    public var player: AudioPlayerProtocol {
-        return AudioPlayerInjectionMap.player
+public extension AudioPlayerInjected {
+    var player: AudioPlayerProtocol {
+        AudioPlayerInjectionMap.player
     }
 }

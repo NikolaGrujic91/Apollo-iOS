@@ -9,9 +9,9 @@ import CocoaLumberjackSwift
 
 final class Logger: LoggerProtocol {
     #if DEBUG
-    private let logLevel: DDLogLevel = .verbose
+        private let logLevel: DDLogLevel = .verbose
     #else
-    private let logLevel: DDLogLevel = .error
+        private let logLevel: DDLogLevel = .error
     #endif
 
     init() {

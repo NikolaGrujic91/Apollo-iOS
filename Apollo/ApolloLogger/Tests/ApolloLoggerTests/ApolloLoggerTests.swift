@@ -1,5 +1,5 @@
-import XCTest
 @testable import ApolloLogger
+import XCTest
 
 final class ApolloLoggerTests: XCTestCase, LoggerInjected {
     func testLogger() {

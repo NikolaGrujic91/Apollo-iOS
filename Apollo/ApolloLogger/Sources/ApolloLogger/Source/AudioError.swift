@@ -17,13 +17,15 @@ public final class AudioError: Error {
         self.errorType = errorType
         self.errorLine = errorLine
     }
+
     // MARK: - ErrorProtocol
+
     public var errorLine: ErrorLine
 }
 
 extension AudioError: ErrorProtocol {
     public var errorDescription: String? {
-        switch self.errorType {
+        switch errorType {
         case .soundNotFound:
             return "Requested sound not found."
         case .failedToLoadSound:
@@ -32,7 +34,7 @@ extension AudioError: ErrorProtocol {
     }
 
     public var failureReason: String? {
-        switch self.errorType {
+        switch errorType {
         case .soundNotFound:
             return "Can not find requested sound in Resources."
         case .failedToLoadSound:
@@ -41,7 +43,7 @@ extension AudioError: ErrorProtocol {
     }
 
     public var recoverySuggestion: String? {
-        switch self.errorType {
+        switch errorType {
         case .soundNotFound:
             return "Check if requested sound is present in Resources."
         case .failedToLoadSound:

@@ -6,7 +6,7 @@
 //
 
 public enum Language: String, CaseIterable, Identifiable {
-    case english     = "en"
+    case english = "en"
     case netherlands = "nl"
 
     public var id: Self { self }

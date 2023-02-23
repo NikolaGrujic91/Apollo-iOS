@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 20/02/2023.
 //
 
-import SwiftUI
 import ApolloData
 import ApolloLocalization
+import SwiftUI
 
 struct ResetDataView: View, PlansRepositoryInjected {
     @EnvironmentObject private var localization: LocalizationManager
@@ -20,7 +20,7 @@ struct ResetDataView: View, PlansRepositoryInjected {
             label: { Text("resetLabel".localized(localization.language)) }
         )
         .alert("resetQuestion".localized(localization.language), isPresented: $showingAlert) {
-            Button("cancel".localized(localization.language), role: .cancel) { }
+            Button("cancel".localized(localization.language), role: .cancel) {}
             Button("reset".localized(localization.language), role: .destructive) {
                 plansRepository.reset()
             }

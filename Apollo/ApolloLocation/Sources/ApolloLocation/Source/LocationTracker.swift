@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
-import CoreLocation
 import ApolloLogger
+import CoreLocation
 
 final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
     private let locationManager = CLLocationManager()
@@ -44,7 +44,7 @@ final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTracke
             return distance
         }
 
-        for i in 1...locations.count - 1 {
+        for i in 1 ... locations.count - 1 {
             let currentLocation = locations[i - 1]
             let nextLocation = locations[i]
 
@@ -65,8 +65,8 @@ final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTracke
     // MARK: - CLLocationManagerDelegate methods
 
     // Tells the delegate its authorization status when the app creates the location manager and when the authorization status changes.
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        var statusString: String = ""
+    func locationManager(_: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        var statusString = ""
 
         switch status {
         case .restricted:
@@ -93,7 +93,7 @@ final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTracke
     }
 
     // Tells the delegate that new location data is available.
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             logger.logInfo("Location updated: \(location.coordinate)")
             self.locations.append(location)

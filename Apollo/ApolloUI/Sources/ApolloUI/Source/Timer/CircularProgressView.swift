@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
-import SwiftUI
 import ApolloTheme
+import SwiftUI
 
 struct CircularProgressView: View {
     @EnvironmentObject private var theme: ThemeManager
@@ -18,7 +18,7 @@ struct CircularProgressView: View {
     public init(lineWidth: CGFloat, progress: Double) {
         self.lineWidth = lineWidth
         self.progress = progress
-        self.style = StrokeStyle(lineWidth: lineWidth, lineCap: .round)
+        style = StrokeStyle(lineWidth: lineWidth, lineCap: .round)
     }
 
     var body: some View {

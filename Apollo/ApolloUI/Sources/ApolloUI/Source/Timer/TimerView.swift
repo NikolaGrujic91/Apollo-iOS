@@ -5,10 +5,10 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
-import SwiftUI
 import ApolloData
-import ApolloTheme
 import ApolloLocalization
+import ApolloTheme
+import SwiftUI
 
 struct TimerView: View {
     @EnvironmentObject private var localization: LocalizationManager

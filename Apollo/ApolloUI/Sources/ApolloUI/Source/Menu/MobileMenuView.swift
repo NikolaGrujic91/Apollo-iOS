@@ -1,13 +1,13 @@
 //
 //  MobileMenuView.swift
-//  
+//
 //
 //  Created by Nikola Grujic on 13/02/2023.
 //
 
-import SwiftUI
 import ApolloLocalization
 import ApolloTheme
+import SwiftUI
 
 struct MobileMenuView: View {
     @EnvironmentObject private var localization: LocalizationManager

@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 21/02/2023.
 //
 
-import SwiftUI
 import ApolloData
 import ApolloImages
+import SwiftUI
 
 final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImageInjected {
     @Published private(set) var plans: [Plan] = []

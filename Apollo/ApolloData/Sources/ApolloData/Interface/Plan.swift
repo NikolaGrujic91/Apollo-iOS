@@ -22,7 +22,7 @@ public final class Plan: Codable, Identifiable {
 
 extension Plan: Hashable {
     public static func == (lhs: Plan, rhs: Plan) -> Bool {
-        return lhs.id == rhs.id
+        lhs.id == rhs.id
     }
 
     public func hash(into hasher: inout Hasher) {

@@ -1,13 +1,13 @@
 //
 //  RootView.swift
-//  
+//
 //
 //  Created by Nikola Grujic on 13/02/2023.
 //
 
-import SwiftUI
-import ApolloTheme
 import ApolloLocalization
+import ApolloTheme
+import SwiftUI
 
 public struct ApolloRootView: View {
     @StateObject private var theme = ThemeManager()

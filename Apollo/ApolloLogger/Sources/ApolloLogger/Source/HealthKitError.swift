@@ -19,26 +19,28 @@ public final class HealthKitError: Error {
         self.errorType = errorType
         self.errorLine = errorLine
     }
+
     // MARK: - ErrorProtocol
+
     public var errorLine: ErrorLine
 }
 
 extension HealthKitError: ErrorProtocol {
     public var errorDescription: String? {
-        switch self.errorType {
+        switch errorType {
         case .healthData:
             return "Health data not available."
         case .quantityType:
             return "Quantity type not recognized."
-        case .authorization(let description):
+        case let .authorization(description):
             return description
-        case .query(let description):
+        case let .query(description):
             return description
         }
     }
 
     public var failureReason: String? {
-        switch self.errorType {
+        switch errorType {
         case .healthData:
             return "Health data not available on the device."
         case .quantityType:
@@ -51,7 +53,7 @@ extension HealthKitError: ErrorProtocol {
     }
 
     public var recoverySuggestion: String? {
-        switch self.errorType {
+        switch errorType {
         case .healthData:
             return "Check if health data is supported on the device."
         case .quantityType:

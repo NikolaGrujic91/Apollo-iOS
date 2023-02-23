@@ -13,6 +13,6 @@ protocol PlansLoadingInjected: AnyObject {}
 
 extension PlansLoadingInjected {
     public var plansLoader: PlansLoadingProtocol {
-        return PlansLoaderInjectionMap.plansLoader
+        PlansLoaderInjectionMap.plansLoader
     }
 }

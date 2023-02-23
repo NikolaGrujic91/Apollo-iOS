@@ -23,13 +23,14 @@ public final class FileError: Error {
     }
 
     // MARK: - ErrorProtocol
+
     public var errorLine: ErrorLine
 }
 
 extension FileError: ErrorProtocol {
     public var errorDescription: String? {
-        switch self.errorType {
-        case .fileNotFound(let fileName):
+        switch errorType {
+        case let .fileNotFound(fileName):
             return "File \(fileName) not found. "
         case .readingFileString:
             return "Not possible to read string from file."
@@ -45,8 +46,8 @@ extension FileError: ErrorProtocol {
     }
 
     public var failureReason: String? {
-        switch self.errorType {
-        case .fileNotFound(let fileName):
+        switch errorType {
+        case let .fileNotFound(fileName):
             return "File \(fileName) not found in the resources folder."
         case .readingFileString:
             return "File seems to be empty or corrupted."
@@ -54,16 +55,16 @@ extension FileError: ErrorProtocol {
             return "File seems to be empty."
         case .readingJsonData:
             return "String seems to be empty or corrupted."
-        case .decodingJsonData(let description):
+        case let .decodingJsonData(description):
             return "\(description)"
-        case .encodingJsonData(let description):
+        case let .encodingJsonData(description):
             return "\(description)"
         }
     }
 
     public var recoverySuggestion: String? {
-        switch self.errorType {
-        case .fileNotFound(let fileName):
+        switch errorType {
+        case let .fileNotFound(fileName):
             return "Check if the file \(fileName) exists."
         case .readingFileString:
             return "Check if file is not empty."

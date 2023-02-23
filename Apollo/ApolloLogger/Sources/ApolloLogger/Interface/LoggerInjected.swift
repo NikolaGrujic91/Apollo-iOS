@@ -11,8 +11,8 @@ enum LoggerInjectionMap {
 
 public protocol LoggerInjected {}
 
-extension LoggerInjected {
-    public var logger: LoggerProtocol {
-        return LoggerInjectionMap.logger
+public extension LoggerInjected {
+    var logger: LoggerProtocol {
+        LoggerInjectionMap.logger
     }
 }

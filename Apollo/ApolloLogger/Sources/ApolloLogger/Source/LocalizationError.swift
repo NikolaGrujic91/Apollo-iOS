@@ -17,13 +17,15 @@ public final class LocalizationError: Error {
         self.errorType = errorType
         self.errorLine = errorLine
     }
+
     // MARK: - ErrorProtocol
+
     public var errorLine: ErrorLine
 }
 
 extension LocalizationError: ErrorProtocol {
     public var errorDescription: String? {
-        switch self.errorType {
+        switch errorType {
         case .pathNotFound:
             return "Path to resource .lproj not found."
         case .bundleNotFound:
@@ -32,7 +34,7 @@ extension LocalizationError: ErrorProtocol {
     }
 
     public var failureReason: String? {
-        switch self.errorType {
+        switch errorType {
         case .pathNotFound:
             return ".lproj file missing."
         case .bundleNotFound:
@@ -41,7 +43,7 @@ extension LocalizationError: ErrorProtocol {
     }
 
     public var recoverySuggestion: String? {
-        switch self.errorType {
+        switch errorType {
         case .pathNotFound:
             return "Check if .lproj is in resources folder."
         case .bundleNotFound:

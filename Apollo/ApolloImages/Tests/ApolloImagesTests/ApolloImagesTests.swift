@@ -1,6 +1,6 @@
-import XCTest
-import SwiftUI
 @testable import ApolloImages
+import SwiftUI
+import XCTest
 
 final class ApolloImagesTests: XCTestCase, PlanImageInjected {
     var imagePlan1: UIImage?

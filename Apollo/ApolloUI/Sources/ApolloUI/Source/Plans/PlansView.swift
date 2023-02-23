@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 15/02/2023.
 //
 
-import SwiftUI
 import ApolloData
 import ApolloTheme
+import SwiftUI
 
 struct PlansView: View {
     @EnvironmentObject private var viewModel: PlansViewModel

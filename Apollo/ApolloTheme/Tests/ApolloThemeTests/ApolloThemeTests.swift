@@ -1,6 +1,6 @@
-import XCTest
-import SwiftUI
 @testable import ApolloTheme
+import SwiftUI
+import XCTest
 
 final class ApolloThemeTests: XCTestCase {
     func testTheme() {

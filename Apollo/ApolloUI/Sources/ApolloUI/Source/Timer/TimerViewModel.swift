@@ -5,11 +5,11 @@
 //  Created by Nikola Grujic on 18/02/2023.
 //
 
-import Foundation
-import ApolloData
-import ApolloWeight
-import ApolloLocation
 import ApolloAudio
+import ApolloData
+import ApolloLocation
+import ApolloWeight
+import Foundation
 
 enum TimerButton {
     case start
@@ -111,7 +111,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     }
 
     private func isLastInterval() -> Bool {
-        return currentInterval >= totalIntervals
+        currentInterval >= totalIntervals
     }
 
     func progress() -> Double {

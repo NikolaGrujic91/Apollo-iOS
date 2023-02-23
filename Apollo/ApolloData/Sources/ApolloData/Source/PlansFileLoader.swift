@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import Foundation
 import ApolloLogger
+import Foundation
 
 final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
     // MARK: - Properties
@@ -18,7 +18,7 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
 
     func save(_ plans: [Plan]) {
         do {
-            try self.trySave(plans)
+            try trySave(plans)
         } catch let error as ErrorProtocol {
             logger.handleError(error)
         } catch {
@@ -50,7 +50,7 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
     func tryLoad() throws -> [Plan] {
         if let jsonData = UserDefaults.standard.data(forKey: userDefaultsKey) {
             do {
-                return try JSONDecoder().decode(Array<Plan>.self, from: jsonData)
+                return try JSONDecoder().decode([Plan].self, from: jsonData)
             } catch {
                 throw FileError(.decodingJsonData(description: error.localizedDescription), ErrorLine())
             }
@@ -72,7 +72,7 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
             }
 
             do {
-                return try JSONDecoder().decode(Array<Plan>.self, from: jsonData)
+                return try JSONDecoder().decode([Plan].self, from: jsonData)
             } catch {
                 throw FileError(.decodingJsonData(description: error.localizedDescription), ErrorLine())
             }

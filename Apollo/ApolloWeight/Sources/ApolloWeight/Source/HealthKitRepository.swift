@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
+import ApolloLogger
 import Foundation
 import HealthKit
-import ApolloLogger
 
 final class HealthKitRepository {
     private let store = HKHealthStore()

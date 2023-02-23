@@ -1,5 +1,5 @@
-import XCTest
 @testable import ApolloAudio
+import XCTest
 
 final class ApolloAudioTests: XCTestCase, AudioPlayerInjected {
     func testAudioPlayer() throws {
