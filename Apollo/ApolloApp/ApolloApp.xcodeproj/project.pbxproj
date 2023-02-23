@@ -94,6 +94,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8E14EA7E29A735950089BE7B /* PBXTargetDependency */,
 			);
 			name = ApolloApp;
 			packageProductDependencies = (
@@ -127,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 8EAAF17E29A26CC90032AFA8;
+			packageReferences = (
+				8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
+			);
 			productRefGroup = 8EAAF18829A26CC90032AFA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +162,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E14EA7E29A735950089BE7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8E14EA7D29A735950089BE7B /* SwiftLint */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8EAAF19329A26CCB0032AFA8 /* Debug */ = {
@@ -369,7 +380,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		8E14EA7D29A735950089BE7B /* SwiftLint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
+			productName = "plugin:SwiftLint";
+		};
 		8EAAF19929A26D650032AFA8 /* ApolloUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ApolloUI;
