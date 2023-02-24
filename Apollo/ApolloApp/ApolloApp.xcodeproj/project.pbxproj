@@ -297,6 +297,8 @@
 				DEVELOPMENT_TEAM = RC9N8SWUGD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Apollo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Read weight in order to calculate burned calories.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read weight in order to calculate burned calories.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Read weight in order to calculate burned calories.";
@@ -333,6 +335,8 @@
 				DEVELOPMENT_TEAM = RC9N8SWUGD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Apollo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Read weight in order to calculate burned calories.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read weight in order to calculate burned calories.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Read weight in order to calculate burned calories.";
