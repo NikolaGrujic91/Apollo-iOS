@@ -70,6 +70,7 @@ struct SettingsView: View {
                 }
 
                 selectedLanguage = localization.language
+                weightViewModel.onAppear()
             }
             .navigationTitle("settings".localized(localization.language))
         }
