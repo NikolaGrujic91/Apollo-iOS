@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E67D23929ACF07F00696F05 /* CoreLocation.framework */; };
 		8EAAF18B29A26CC90032AFA8 /* ApolloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */; };
 		8EAAF18F29A26CCB0032AFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */; };
 		8EAAF19229A26CCB0032AFA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF19129A26CCB0032AFA8 /* Preview Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E67D23929ACF07F00696F05 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8E67D23C29ACF10B00696F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8EAAF18729A26CC90032AFA8 /* ApolloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloApp.swift; sourceTree = "<group>"; };
 		8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */,
 				8EAAF19A29A26D650032AFA8 /* ApolloUI in Frameworks */,
 				8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */,
 			);
@@ -56,6 +60,7 @@
 		8EAAF18929A26CC90032AFA8 /* ApolloApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E67D23C29ACF10B00696F05 /* Info.plist */,
 				8EAAF19D29A273C50032AFA8 /* ApolloApp.entitlements */,
 				8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */,
 				8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */,
@@ -75,6 +80,7 @@
 		8EAAF19829A26D650032AFA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E67D23929ACF07F00696F05 /* CoreLocation.framework */,
 				8EAAF19B29A273720032AFA8 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -297,6 +303,7 @@
 				DEVELOPMENT_TEAM = RC9N8SWUGD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApolloApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Apollo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Read weight in order to calculate burned calories.";
@@ -335,6 +342,7 @@
 				DEVELOPMENT_TEAM = RC9N8SWUGD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApolloApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Apollo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Read weight in order to calculate burned calories.";

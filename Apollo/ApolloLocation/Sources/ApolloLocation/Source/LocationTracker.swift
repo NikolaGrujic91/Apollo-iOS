@@ -40,7 +40,7 @@ final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTracke
     func calculateDistance() -> Double {
         var distance = 0.0
 
-        if locations.isEmpty {
+        if locations.isEmpty || locations.count == 1 {
             return distance
         }
 
