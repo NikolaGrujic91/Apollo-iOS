@@ -19,11 +19,16 @@ enum TimerButton {
 
 final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     @Published private(set) var timeRemaining = 0
+    private(set) var timeElapsed = 0
     @Published private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Published private(set) var activeButton: TimerButton = .start
+    @Published private(set) var distance: Int = 0
+    @Published private(set) var calories: Int = 0
+    @Published private(set) var pace: Double = 0.0
     public private(set) var currentInterval = 0
     public private(set) var totalIntervals: Int = 0
     public private(set) var day = Day()
+    private var bodyMass: Double = 0.0
 
     func onAppear(day: Day) {
         activeButton = .start
@@ -32,6 +37,9 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
 
         self.day = day
         totalIntervals = day.intervals.count
+        currentInterval = 0
+        bodyMass = weightRepository.bodyMass
+        timeElapsed = 0
 
         if !day.intervals.isEmpty {
             timeRemaining = day.intervals[currentInterval].seconds
@@ -47,6 +55,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     func cancelPressed() {
         stopTimer()
         activeButton = .start
+        timeElapsed = 0
         currentInterval = 0
         if !day.intervals.isEmpty {
             timeRemaining = day.intervals[currentInterval].seconds
@@ -80,9 +89,13 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         timer.upstream.connect().cancel()
     }
 
-    func update() {
+    func onReceive() {
         if timeRemaining == 3 {
             player.play(.countdown)
+        }
+
+        if timeRemaining % 15 == 0 {
+            update()
         }
 
         if timeRemaining < 1 {
@@ -91,14 +104,12 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
 
             if isLastInterval() {
                 activeButton = .start
+                timeElapsed = 0
                 currentInterval = 0
                 timeRemaining = day.intervals[currentInterval].seconds
-
                 locationTracker.stopUpdatingLocation()
-                day.distance = Int(locationTracker.calculateDistance())
-                day.calories = Int(Double(day.distance) / 1000.0 * weightRepository.bodyMass * 1.036)
-                plansRepository.save()
 
+                save()
                 return
             }
 
@@ -106,6 +117,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
             timeRemaining = day.intervals[currentInterval].seconds
             startTimer()
         } else {
+            timeElapsed += 1
             timeRemaining -= 1
         }
     }
@@ -128,5 +140,18 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         }
 
         return day.intervals[currentInterval].type
+    }
+
+    private func save() {
+        day.distance = distance
+        day.calories = calories
+        plansRepository.save()
+    }
+
+    private func update() {
+        let doubleDistance = locationTracker.calculateDistance()
+        distance = Int(doubleDistance)
+        calories = Int(Double(distance) / 1000.0 * bodyMass * 1.036)
+        pace = (Double(timeElapsed) / doubleDistance) / 60.0
     }
 }

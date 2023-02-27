@@ -30,7 +30,7 @@ struct TimerView: View {
                     fontSize: 90
                 )
                 .onReceive(viewModel.timer) { _ in
-                    viewModel.update()
+                    viewModel.onReceive()
                 }
             }
             HStack(spacing: 30) {
