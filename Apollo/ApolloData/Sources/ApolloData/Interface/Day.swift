@@ -12,6 +12,7 @@ public final class Day: Codable, Identifiable {
     public var name: String = ""
     public var calories: Int = 0
     public var distance: Int = 0
+    public var pace: String = ""
     public var intervals: [Interval] = []
 
     public init() {}
@@ -20,6 +21,7 @@ public final class Day: Codable, Identifiable {
         case name
         case calories
         case distance
+        case pace
         case intervals
     }
 }
