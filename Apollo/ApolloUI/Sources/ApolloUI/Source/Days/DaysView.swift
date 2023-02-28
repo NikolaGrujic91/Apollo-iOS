@@ -20,9 +20,12 @@ struct DaysView: View {
                 ForEach(plan.days) { day in
                     NavigationLink(destination: TimerView(day: day)) {
                         VStack(alignment: .center, spacing: 10) {
-                            Text("\(day.name)")
-                            Text("\(day.distance) m")
-                            Text("\(day.calories) kcal")
+                            DayView(
+                                name: day.name,
+                                distance: day.distance,
+                                calories: day.calories,
+                                pace: day.pace
+                            )
                         }
                         .frame(maxWidth: .infinity) // Enable alignment center
                         .contentShape(Rectangle()) // Detect tap on entire button
