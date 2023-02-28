@@ -6,6 +6,8 @@
 //  Copyright © 2020 Nikola Grujic. All rights reserved.
 //
 
+import Foundation
+
 final class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
     // MARK: - Properties
 
@@ -28,5 +30,13 @@ final class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
     func reset() {
         plansLoader.remove()
         plans = plansLoader.load()
+    }
+
+    func get(_ id: UUID) -> Plan {
+        guard let plan = plans.first(where: { $0.id == id }) else {
+            return Plan()
+        }
+
+        return plan
     }
 }

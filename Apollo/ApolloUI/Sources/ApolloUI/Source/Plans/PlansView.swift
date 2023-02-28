@@ -16,7 +16,7 @@ struct PlansView: View {
         NavigationStack {
             List {
                 ForEach(viewModel.plans) { plan in
-                    NavigationLink(destination: DaysView(plan: plan)) {
+                    NavigationLink(destination: DaysView(planID: plan.id)) {
                         VStack(alignment: .center) {
                             Text("\(plan.name)")
                             Image(uiImage: viewModel.getImage(plan.name))

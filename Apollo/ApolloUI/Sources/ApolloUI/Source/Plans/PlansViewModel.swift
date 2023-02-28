@@ -20,6 +20,10 @@ final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImage
         await plansRepository.load()
     }
 
+    func get(_ id: UUID) -> Plan {
+        plansRepository.get(id)
+    }
+
     func getImage(_ name: String) -> UIImage {
         if name == "0 to 2K" {
             return planImage.getImage(.plan1)

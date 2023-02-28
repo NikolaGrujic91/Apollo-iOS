@@ -10,7 +10,9 @@ import ApolloTheme
 import SwiftUI
 
 struct DaysView: View {
-    var plan: Plan
+    @EnvironmentObject private var viewModel: PlansViewModel
+    @State private var plan = Plan()
+    var planID: UUID
 
     var body: some View {
         NavigationStack {
@@ -28,27 +30,18 @@ struct DaysView: View {
                 }
             }
             .navigationTitle(plan.name)
+            .task {
+                viewModel.update()
+                plan = viewModel.get(planID)
+            }
         }
     }
 }
 
 struct DaysView_Previews: PreviewProvider {
     static var previews: some View {
-        DaysView(plan: previewPlan())
+        DaysView(planID: UUID())
             .environmentObject(ThemeManager())
             .environmentObject(TimerViewModel())
-    }
-
-    static func previewPlan() -> Plan {
-        let day = Day()
-        day.name = "Preview day"
-        day.distance = 5000
-        day.calories = 500
-
-        let plan = Plan()
-        plan.name = "Preview plan"
-        plan.days.append(day)
-
-        return plan
     }
 }
