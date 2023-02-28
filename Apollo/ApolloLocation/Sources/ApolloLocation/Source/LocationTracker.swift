@@ -10,8 +10,10 @@ import CoreLocation
 
 final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
     private let locationManager = CLLocationManager()
-    private var locations: [CLLocation] = []
+    private var lastLocation: CLLocation?
     var updatingLocationStopped = true
+    var distanceMeters: Double = 0.0
+    var distanceKilometers: Double = 0.0
 
     override init() {
         super.init()
@@ -37,29 +39,21 @@ final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTracke
         updatingLocationStopped = true
     }
 
-    func calculateDistance() -> Double {
-        var distance = 0.0
-
-        if locations.isEmpty || locations.count == 1 {
-            return distance
-        }
-
-        for i in 1 ... locations.count - 1 {
-            let currentLocation = locations[i - 1]
-            let nextLocation = locations[i]
-
-            distance += currentLocation.distance(from: nextLocation)
-        }
-
-        return distance
-    }
-
     func clear() {
-        locations.removeAll()
+        lastLocation = nil
+        distanceMeters = 0.0
+        distanceKilometers = 0.0
     }
 
-    func addLocation(_ location: CLLocation) {
-        locations.append(location)
+    func update(_ location: CLLocation) {
+        if lastLocation == nil {
+            lastLocation = location
+            return
+        }
+
+        distanceMeters += Double(lastLocation?.distance(from: location) ?? 0.0)
+        distanceKilometers = distanceMeters / 1000.0
+        lastLocation = location
     }
 
     // MARK: - CLLocationManagerDelegate methods
@@ -96,7 +90,7 @@ final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTracke
     func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             logger.logInfo("Location updated: \(location.coordinate)")
-            self.locations.append(location)
+            update(location)
         }
     }
 }

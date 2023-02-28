@@ -10,15 +10,17 @@ import CoreLocation
 public protocol LocationTrackerProtocol: AnyObject {
     var updatingLocationStopped: Bool { get }
 
+    var distanceMeters: Double { get }
+
+    var distanceKilometers: Double { get }
+
     func requestAuthorization()
 
     func startUpdatingLocation()
 
     func stopUpdatingLocation()
 
-    func calculateDistance() -> Double
-
     func clear()
 
-    func addLocation(_ location: CLLocation)
+    func update(_ location: CLLocation)
 }

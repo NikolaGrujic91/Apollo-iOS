@@ -24,7 +24,6 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     @Published private(set) var distanceFormatted: String = "0.00"
     @Published private(set) var paceFormatted: String = "00:00"
     private var timeElapsed = 0
-    private var distance: Double = 0
     private var calories: Int = 0
     private var pace: Double = 0.0
     private var bodyMass: Double = 0.0
@@ -149,19 +148,17 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     }
 
     private func save() {
-        day.distance = Int(distance)
+        day.distance = Int(locationTracker.distanceMeters)
         day.calories = calories
         plansRepository.save()
     }
 
     private func update() {
-        distance = locationTracker.calculateDistance()
-        let distanceKm: Double = distance / 1000.0
-        distanceFormatted = String(format: "%.2f", distanceKm)
-        calories = Int(distanceKm * bodyMass * 1.036)
+        distanceFormatted = String(format: "%.2f", locationTracker.distanceKilometers)
+        calories = Int(locationTracker.distanceKilometers * bodyMass * 1.036)
 
-        if distanceKm > 0 {
-            pace = Double(timeElapsed) / distanceKm
+        if locationTracker.distanceKilometers > 0 {
+            pace = Double(timeElapsed) / locationTracker.distanceKilometers
             paceFormatted = String(format: "%02i:%02i", Int(pace) / 60 % 60, Int(pace) % 60)
         }
     }
