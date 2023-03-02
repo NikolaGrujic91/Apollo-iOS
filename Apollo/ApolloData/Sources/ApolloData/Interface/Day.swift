@@ -8,12 +8,13 @@
 import Foundation
 
 public final class Day: Codable, Identifiable {
-    public let id = UUID()
-    public var name: String = ""
+    public var finished = false
     public var calories: Int = 0
     public var distance: Int = 0
-    public var pace: String = ""
     public var intervals: [Interval] = []
+    public var name: String = ""
+    public var pace: String = ""
+    public let id = UUID()
 
     public init() {}
 
@@ -22,6 +23,7 @@ public final class Day: Codable, Identifiable {
         case calories
         case distance
         case pace
+        case finished
         case intervals
     }
 }

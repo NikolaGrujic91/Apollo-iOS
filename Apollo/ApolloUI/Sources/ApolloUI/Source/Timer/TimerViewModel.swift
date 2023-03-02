@@ -148,6 +148,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     }
 
     private func save() {
+        day.finished = true
         day.distance = Int(locationTracker.distanceMeters)
         day.calories = calories
         day.pace = paceFormatted

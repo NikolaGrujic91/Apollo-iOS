@@ -21,9 +21,10 @@ struct DaysView: View {
                     NavigationLink(destination: TimerView(day: day)) {
                         VStack(alignment: .center, spacing: 10) {
                             DayView(
-                                name: day.name,
-                                distance: day.distance,
+                                finished: day.finished,
                                 calories: day.calories,
+                                distance: day.distance,
+                                name: day.name,
                                 pace: day.pace
                             )
                         }

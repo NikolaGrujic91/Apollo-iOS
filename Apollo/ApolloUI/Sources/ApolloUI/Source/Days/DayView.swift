@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct DayView: View {
-    var name: String
-    var distance: Int
+    var finished: Bool
     var calories: Int
+    var distance: Int
+    var name: String
     var pace: String
 
     var body: some View {
@@ -18,31 +19,34 @@ struct DayView: View {
             Text(name)
                 .font(.title3)
                 .fontWeight(.semibold)
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Distance")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Text("\(distance) m")
-                        .font(.subheadline)
-                }
-                Divider()
-                    .padding()
-                VStack(alignment: .leading) {
-                    Text("Pace")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Text("\(pace)/km")
-                        .font(.subheadline)
-                }
-                Divider()
-                    .padding()
-                VStack(alignment: .leading) {
-                    Text("Calories")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                    Text("\(calories) kcal")
-                        .font(.subheadline)
+
+            if finished {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("Distance")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                        Text("\(distance) m")
+                            .font(.subheadline)
+                    }
+                    Divider()
+                        .padding()
+                    VStack(alignment: .leading) {
+                        Text("Pace")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                        Text("\(pace)/km")
+                            .font(.subheadline)
+                    }
+                    Divider()
+                        .padding()
+                    VStack(alignment: .leading) {
+                        Text("Calories")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                        Text("\(calories) kcal")
+                            .font(.subheadline)
+                    }
                 }
             }
         }
@@ -52,9 +56,10 @@ struct DayView: View {
 struct DayView_Previews: PreviewProvider {
     static var previews: some View {
         DayView(
-            name: "Test day",
-            distance: 200,
+            finished: true,
             calories: 500,
+            distance: 200,
+            name: "Test day",
             pace: "00:00"
         )
     }
