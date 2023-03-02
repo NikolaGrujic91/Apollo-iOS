@@ -7,6 +7,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -63,6 +64,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -119,6 +121,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -159,6 +162,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -199,6 +203,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -239,6 +244,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -279,6 +285,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -311,6 +318,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -343,6 +351,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -375,6 +384,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -407,6 +417,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -435,6 +446,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -463,6 +475,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -483,6 +496,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -503,6 +517,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -523,6 +538,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -540,6 +556,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -596,6 +613,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -668,6 +686,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -740,6 +759,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -796,6 +816,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -852,6 +873,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -908,6 +930,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -948,6 +971,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -988,6 +1012,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1028,6 +1053,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1068,6 +1094,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1108,6 +1135,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1148,6 +1176,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1176,6 +1205,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1204,6 +1234,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1224,6 +1255,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1244,6 +1276,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1264,6 +1297,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1284,6 +1318,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1296,6 +1331,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1308,6 +1344,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1320,6 +1357,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1332,6 +1370,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1344,6 +1383,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1361,6 +1401,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1381,6 +1422,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1401,6 +1443,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1421,6 +1464,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1465,6 +1509,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1509,6 +1554,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1553,6 +1599,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1581,6 +1628,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1601,6 +1649,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1621,6 +1670,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1641,6 +1691,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1661,6 +1712,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1681,6 +1733,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1701,6 +1754,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1721,6 +1775,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1741,6 +1796,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1753,6 +1809,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1765,6 +1822,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1782,6 +1840,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1838,6 +1897,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1910,6 +1970,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -1982,6 +2043,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2054,6 +2116,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2126,6 +2189,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2182,6 +2246,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2238,6 +2303,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2294,6 +2360,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2334,6 +2401,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2374,6 +2442,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2414,6 +2483,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2454,6 +2524,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2494,6 +2565,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2534,6 +2606,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2574,6 +2647,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2614,6 +2688,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2654,6 +2729,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2699,6 +2775,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2739,6 +2816,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2779,6 +2857,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2819,6 +2898,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2859,6 +2939,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2899,6 +2980,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2939,6 +3021,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -2979,6 +3062,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3019,6 +3103,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3059,6 +3144,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3115,6 +3201,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3171,6 +3258,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3227,6 +3315,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3267,6 +3356,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3323,6 +3413,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3371,6 +3462,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3403,6 +3495,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3435,6 +3528,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3488,6 +3582,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3520,6 +3615,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3552,6 +3648,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3584,6 +3681,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3624,6 +3722,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3656,6 +3755,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3680,6 +3780,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3704,6 +3805,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3728,6 +3830,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3776,6 +3879,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3824,6 +3928,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3880,6 +3985,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3936,6 +4042,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -3980,6 +4087,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -4012,6 +4120,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -4036,6 +4145,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -4068,6 +4178,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
@@ -4136,6 +4247,7 @@
                 "calories" : 0,
                 "distance" : 0,
                 "pace": "00:00",
+                "finished": false,
                 "intervals": [
                     {
                         "type" : "run",
