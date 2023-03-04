@@ -17,8 +17,6 @@ struct DayView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(name)
-                .font(.title3)
-                .fontWeight(.semibold)
 
             if finished {
                 HStack {

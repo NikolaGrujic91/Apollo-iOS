@@ -17,20 +17,29 @@ struct DaysView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(plan.days) { day in
-                    NavigationLink(destination: TimerView(day: day)) {
-                        VStack(alignment: .center, spacing: 10) {
-                            DayView(
-                                finished: day.finished,
-                                calories: day.calories,
-                                distance: day.distance,
-                                name: day.name,
-                                pace: day.pace
-                            )
+                ForEach(plan.weeks) { week in
+                    DisclosureGroup(
+                        content: {
+                            ForEach(week.days) { day in
+                                NavigationLink(destination: TimerView(day: day)) {
+                                    VStack(alignment: .center, spacing: 10) {
+                                        DayView(
+                                            finished: day.finished,
+                                            calories: day.calories,
+                                            distance: day.distance,
+                                            name: day.name,
+                                            pace: day.pace
+                                        )
+                                    }
+                                    .frame(maxWidth: .infinity) // Enable alignment center
+                                    .contentShape(Rectangle()) // Detect tap on entire button
+                                }
+                            }
+                        },
+                        label: {
+                            Text(week.name)
                         }
-                        .frame(maxWidth: .infinity) // Enable alignment center
-                        .contentShape(Rectangle()) // Detect tap on entire button
-                    }
+                    )
                 }
             }
             .navigationTitle(plan.name)
@@ -47,5 +56,6 @@ struct DaysView_Previews: PreviewProvider {
         DaysView(planID: UUID())
             .environmentObject(ThemeManager())
             .environmentObject(TimerViewModel())
+            .environmentObject(PlansViewModel())
     }
 }
