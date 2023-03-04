@@ -17,13 +17,14 @@ struct PlansView: View {
             List {
                 ForEach(viewModel.plans) { plan in
                     NavigationLink(destination: DaysView(planID: plan.id)) {
-                        VStack(alignment: .center) {
-                            Text("\(plan.name)")
+                        ZStack {
                             Image(uiImage: viewModel.getImage(plan.name))
                                 .resizable()
                                 .scaledToFit()
-                                .frame(maxWidth: 200)
+                                .frame(maxWidth: .infinity) // Enable alignment center
                                 .accessibilityHidden(true)
+                            Text("\(plan.name)")
+                                .foregroundColor(.white)
                         }
                         .frame(maxWidth: .infinity) // Enable alignment center
                         .contentShape(Rectangle()) // Detect tap on entire button
