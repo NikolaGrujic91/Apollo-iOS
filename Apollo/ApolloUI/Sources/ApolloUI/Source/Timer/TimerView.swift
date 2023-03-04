@@ -17,11 +17,6 @@ struct TimerView: View {
 
     var body: some View {
         VStack {
-            InfoView(
-                pace: viewModel.paceFormatted,
-                distance: viewModel.distanceFormatted
-            )
-            .frame(maxHeight: 70)
             ZStack {
                 CircularProgressView(
                     lineWidth: 10,
@@ -72,6 +67,13 @@ struct TimerView: View {
             viewModel.onDissapear()
         }
         .toolbar(.hidden, for: .tabBar)
+        .sheet(isPresented: $viewModel.isFinished) {
+            InfoView(
+                calories: viewModel.calories,
+                distance: viewModel.distanceFormatted,
+                pace: viewModel.paceFormatted
+            )
+        }
     }
 }
 

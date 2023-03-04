@@ -8,42 +8,61 @@
 import SwiftUI
 
 struct InfoView: View {
-    let pace: String
-    let distance: String
+    @Environment(\.dismiss) var dismiss
+    var calories: Int
+    var distance: String
+    var pace: String
 
     var body: some View {
         VStack {
-            HStack(spacing: 10) {
-                VStack {
-                    Text("AVG PACE")
+            VStack {
+                Text("Pace")
                     .font(.body)
-                    Text(pace)
+                Text(pace)
                     .font(.largeTitle)
-                    Text("/KM")
+                Text("/km")
                     .font(.subheadline)
                     .foregroundColor(.gray)
-                }
-                .padding()
-                Divider()
-                .padding()
-                VStack {
-                    Text("DISTANCE")
-                    .font(.body)
-                    Text(distance)
-                    .font(.largeTitle)
-                    Text("KILOMETERS")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-                }
-                .padding()
             }
+            .padding()
             Divider()
+                .padding()
+            VStack {
+                Text("Distance")
+                    .font(.body)
+                Text(distance)
+                    .font(.largeTitle)
+                Text("km")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            .padding()
+            Divider()
+            VStack {
+                Text("Calories")
+                    .font(.body)
+                Text("\(calories)")
+                    .font(.largeTitle)
+                Text("kcal")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            .padding()
+            Divider()
+            Button("Close") {
+                dismiss()
+            }
+            .padding()
         }
     }
 }
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView(pace: "0:00", distance: "0,00")
+        InfoView(
+            calories: 500,
+            distance: "5.5",
+            pace: "0:00"
+        )
     }
 }

@@ -23,10 +23,11 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     @Published private(set) var activeButton: TimerButton = .start
     @Published private(set) var distanceFormatted: String = "0.00"
     @Published private(set) var paceFormatted: String = "00:00"
+    @Published var isFinished = false
     private var timeElapsed = 0
-    private var calories: Int = 0
     private var pace: Double = 0.0
     private var bodyMass: Double = 0.0
+    public private(set) var calories: Int = 0
     public private(set) var currentInterval = 0
     public private(set) var totalIntervals: Int = 0
     public private(set) var day = Day()
@@ -43,6 +44,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         timeElapsed = 0
         distanceFormatted = "0.00"
         paceFormatted = "00:00"
+        isFinished = false
 
         if !day.intervals.isEmpty {
             timeRemaining = day.intervals[currentInterval].seconds
@@ -111,6 +113,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
                 activeButton = .start
                 timeElapsed = 0
                 currentInterval = 0
+                isFinished = true
                 timeRemaining = day.intervals[currentInterval].seconds
                 locationTracker.stopUpdatingLocation()
 
