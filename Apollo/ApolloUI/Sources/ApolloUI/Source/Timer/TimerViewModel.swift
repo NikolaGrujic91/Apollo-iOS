@@ -25,6 +25,8 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     @Published private(set) var paceFormatted: String = "00:00"
     @Published var isFinished = false
     private var timeElapsed = 0
+    private var totalTime = 0
+    private var totalTimeRemaining = 0
     private var pace: Double = 0.0
     private var bodyMass: Double = 0.0
     public private(set) var calories: Int = 0
@@ -48,6 +50,8 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
 
         if !day.intervals.isEmpty {
             timeRemaining = day.intervals[currentInterval].seconds
+            totalTime = getTotalTime()
+            totalTimeRemaining = totalTime
         }
     }
 
@@ -66,6 +70,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         paceFormatted = "00:00"
         if !day.intervals.isEmpty {
             timeRemaining = day.intervals[currentInterval].seconds
+            totalTimeRemaining = totalTime
         }
         locationTracker.stopUpdatingLocation()
     }
@@ -101,20 +106,18 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
             player.play(.countdown)
         }
 
-        if timeRemaining % 15 == 0 {
-            update()
-        }
-
         if timeRemaining < 1 {
             stopTimer()
             currentInterval += 1
 
             if isLastInterval() {
+                update()
                 activeButton = .start
                 timeElapsed = 0
                 currentInterval = 0
                 isFinished = true
                 timeRemaining = day.intervals[currentInterval].seconds
+                totalTimeRemaining = totalTime
                 locationTracker.stopUpdatingLocation()
 
                 save()
@@ -127,6 +130,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         } else {
             timeElapsed += 1
             timeRemaining -= 1
+            totalTimeRemaining -= 1
         }
     }
 
@@ -140,6 +144,14 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         }
 
         return ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval].seconds)) / 100.0
+    }
+
+    func progressTotal() -> Double {
+        if totalTime == 0 {
+            return 1.0
+        }
+
+        return ((Double(totalTimeRemaining) * 100.0) / Double(totalTime)) / 100.0
     }
 
     func intervalType() -> String {
@@ -166,5 +178,9 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
             pace = Double(timeElapsed) / locationTracker.distanceKilometers
             paceFormatted = String(format: "%02i:%02i", Int(pace) / 60 % 60, Int(pace) % 60)
         }
+    }
+
+    private func getTotalTime() -> Int {
+        day.intervals.reduce(0) { $0 + $1.seconds }
     }
 }

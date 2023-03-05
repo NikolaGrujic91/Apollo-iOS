@@ -19,8 +19,12 @@ struct TimerView: View {
         VStack {
             ZStack {
                 CircularProgressView(
-                    lineWidth: 10,
-                    progress: viewModel.progress()
+                    innerLineWidth: 10,
+                    innerProgress: viewModel.progress(),
+                    innerPadding: 20,
+                    outerLineWidth: 5,
+                    outerProgress: viewModel.progressTotal(),
+                    outerPadding: 5
                 )
                 TimerText(
                     timeInterval: TimeInterval(viewModel.timeRemaining),
