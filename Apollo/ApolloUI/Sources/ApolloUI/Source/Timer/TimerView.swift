@@ -38,10 +38,6 @@ struct TimerView: View {
                 }
             }
             HStack(spacing: 30) {
-                CircleButton(
-                    action: viewModel.cancelPressed,
-                    text: "cancel".localized(localization.language)
-                )
                 if viewModel.activeButton == .start {
                     CircleButton(
                         action: viewModel.startPressed,

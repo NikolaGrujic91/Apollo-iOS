@@ -26,9 +26,6 @@ final class ApolloUITests: XCTestCase {
         timerViewModel.onAppear(day: Day())
         XCTAssertEqual(timerViewModel.activeButton, .start)
 
-        timerViewModel.cancelPressed()
-        XCTAssertEqual(timerViewModel.activeButton, .start)
-
         timerViewModel.startPressed()
         XCTAssertEqual(timerViewModel.activeButton, .pause)
 

@@ -61,20 +61,6 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
         locationTracker.clear()
     }
 
-    func cancelPressed() {
-        stopTimer()
-        activeButton = .start
-        timeElapsed = 0
-        currentInterval = 0
-        distanceFormatted = "0.00"
-        paceFormatted = "00:00"
-        if !day.intervals.isEmpty {
-            timeRemaining = day.intervals[currentInterval].seconds
-            totalTimeRemaining = totalTime
-        }
-        locationTracker.stopUpdatingLocation()
-    }
-
     func startPressed() {
         startTimer()
         activeButton = .pause
