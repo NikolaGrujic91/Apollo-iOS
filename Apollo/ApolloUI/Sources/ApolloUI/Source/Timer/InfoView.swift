@@ -14,45 +14,50 @@ struct InfoView: View {
     var pace: String
 
     var body: some View {
-        VStack {
+        NavigationView {
             VStack {
-                Text("Pace")
-                    .font(.body)
-                Text(pace)
-                    .font(.largeTitle)
-                Text("/km")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-            }
-            .padding()
-            Divider()
+                VStack {
+                    Text("Pace")
+                        .font(.body)
+                    Text(pace)
+                        .font(.largeTitle)
+                    Text("/km")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
                 .padding()
-            VStack {
-                Text("Distance")
-                    .font(.body)
-                Text(distance)
-                    .font(.largeTitle)
-                Text("km")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                Divider()
+                    .padding()
+                VStack {
+                    Text("Distance")
+                        .font(.body)
+                    Text(distance)
+                        .font(.largeTitle)
+                    Text("km")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+                .padding()
+                Divider()
+                VStack {
+                    Text("Calories")
+                        .font(.body)
+                    Text("\(calories)")
+                        .font(.largeTitle)
+                    Text("kcal")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+                .padding()
+                Divider()
             }
-            .padding()
-            Divider()
-            VStack {
-                Text("Calories")
-                    .font(.body)
-                Text("\(calories)")
-                    .font(.largeTitle)
-                Text("kcal")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button("Close") {
+                        dismiss()
+                    }
+                }
             }
-            .padding()
-            Divider()
-            Button("Close") {
-                dismiss()
-            }
-            .padding()
         }
     }
 }
