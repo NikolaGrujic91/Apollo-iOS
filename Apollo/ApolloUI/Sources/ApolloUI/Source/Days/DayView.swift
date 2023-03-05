@@ -15,10 +15,9 @@ struct DayView: View {
     var pace: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(name)
-
+        VStack(alignment: .leading) {
             if finished {
+                Text(name)
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Distance")
@@ -45,6 +44,11 @@ struct DayView: View {
                         Text("\(calories) kcal")
                             .font(.subheadline)
                     }
+                }
+            } else {
+                HStack {
+                    Text(name)
+                    Spacer()
                 }
             }
         }
