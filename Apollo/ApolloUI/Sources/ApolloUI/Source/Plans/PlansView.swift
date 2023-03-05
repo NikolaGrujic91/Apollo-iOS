@@ -16,19 +16,20 @@ struct PlansView: View {
         NavigationStack {
             List {
                 ForEach(viewModel.plans) { plan in
-                    NavigationLink(destination: DaysView(planID: plan.id)) {
-                        ZStack {
-                            Image(uiImage: viewModel.getImage(plan.name))
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxWidth: .infinity) // Enable alignment center
-                                .accessibilityHidden(true)
-                            Text("\(plan.name)")
-                                .foregroundColor(.white)
+                    ZStack {
+                        NavigationLink(destination: DaysView(planID: plan.id)) {
+                            EmptyView()
                         }
-                        .frame(maxWidth: .infinity) // Enable alignment center
-                        .contentShape(Rectangle()) // Detect tap on entire button
+                        Image(uiImage: viewModel.getImage(plan.name))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity) // Enable alignment center
+                            .accessibilityHidden(true)
+                        Text("\(plan.name)")
+                            .foregroundColor(.white)
                     }
+                    .frame(maxWidth: .infinity) // Enable alignment center
+                    .contentShape(Rectangle()) // Detect tap on entire button
                 }
             }
             .task {
