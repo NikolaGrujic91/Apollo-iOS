@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 27/02/2023.
 //
 
+import ApolloImages
 import SwiftUI
 
 struct InfoView: View {
@@ -16,6 +17,8 @@ struct InfoView: View {
     var body: some View {
         NavigationView {
             VStack {
+                GifView(gif: .success)
+                    .frame(width: 200, height: 200)
                 VStack {
                     Text("Pace")
                         .font(.body)
@@ -69,5 +72,6 @@ struct InfoView_Previews: PreviewProvider {
             distance: "5.5",
             pace: "0:00"
         )
+        .environmentObject(PlansViewModel())
     }
 }

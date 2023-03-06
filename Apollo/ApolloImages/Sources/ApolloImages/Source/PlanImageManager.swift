@@ -18,6 +18,8 @@ final class PlanImageManager: PlanImageProtocol {
     private let imagePlan6 = loadImage("6")
     private let imageEmpty = UIImage()
 
+    private let gifSuccess = loadGifData("success")
+
     // MARK: - PlanImageProtocol
 
     func getImage(_ planImage: PlanImage) -> UIImage {
@@ -37,11 +39,27 @@ final class PlanImageManager: PlanImageProtocol {
         }
     }
 
+    func getGif(_ gif: Gifs) -> Data {
+        switch gif {
+        case .success:
+            return gifSuccess ?? Data()
+        }
+    }
+
     // MARK: - Functions
 
     private static func loadImage(_ name: String) -> UIImage? {
         if let path = Bundle.module.path(forResource: name, ofType: "png") {
             return UIImage(contentsOfFile: path)
+        }
+
+        return nil
+    }
+
+    private static func loadGifData(_ name: String) -> Data? {
+        if let path = Bundle.module.path(forResource: name, ofType: "gif"),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+            return data
         }
 
         return nil

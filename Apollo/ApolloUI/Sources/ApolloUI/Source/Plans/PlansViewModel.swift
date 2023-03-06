@@ -39,4 +39,8 @@ final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImage
             return planImage.getImage(.plan6)
         }
     }
+
+    func getGif(_ gif: Gifs) -> Data {
+        return planImage.getGif(gif)
+    }
 }

@@ -10,6 +10,8 @@ final class ApolloImagesTests: XCTestCase, PlanImageInjected {
     var imagePlan5: UIImage?
     var imagePlan6: UIImage?
 
+    var successGif: Data?
+
     func testPlanImageManager() {
         imagePlan1 = planImage.getImage(.plan1)
         imagePlan2 = planImage.getImage(.plan2)
@@ -28,5 +30,10 @@ final class ApolloImagesTests: XCTestCase, PlanImageInjected {
         XCTAssertEqual(imagePlan4?.pngData()?.isEmpty, false)
         XCTAssertEqual(imagePlan5?.pngData()?.isEmpty, false)
         XCTAssertEqual(imagePlan6?.pngData()?.isEmpty, false)
+    }
+
+    func testGifs() {
+        successGif = planImage.getGif(.success)
+        XCTAssertEqual(successGif?.isEmpty, false)
     }
 }

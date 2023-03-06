@@ -9,4 +9,6 @@ import SwiftUI
 
 public protocol PlanImageProtocol: AnyObject {
     func getImage(_ planImage: PlanImage) -> UIImage
+
+    func getGif(_ gif: Gifs) -> Data
 }
