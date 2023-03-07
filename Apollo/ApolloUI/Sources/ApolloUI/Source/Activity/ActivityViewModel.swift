@@ -17,7 +17,7 @@ enum TimerButton {
     case resume
 }
 
-final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     @Published private(set) var timeRemaining = 0
     @Published private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Published private(set) var activeButton: TimerButton = .start
@@ -56,6 +56,7 @@ final class TimerViewModel: ObservableObject, PlansRepositoryInjected, WeightRep
     }
 
     func onDissapear() {
+        isFinished = false
         stopTimer()
         locationTracker.stopUpdatingLocation()
         locationTracker.clear()

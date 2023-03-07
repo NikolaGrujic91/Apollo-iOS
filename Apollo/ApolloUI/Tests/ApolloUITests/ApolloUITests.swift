@@ -17,23 +17,23 @@ final class ApolloUITests: XCTestCase {
         XCTAssertNotNil(planImage)
     }
 
-    func testTimerViewModel() async {
-        let timerViewModel = TimerViewModel()
+    func testActivityViewModel() async {
+        let activityViewModel = ActivityViewModel()
 
-        XCTAssertEqual(timerViewModel.timeRemaining, 0)
-        XCTAssertEqual(timerViewModel.activeButton, .start)
+        XCTAssertEqual(activityViewModel.timeRemaining, 0)
+        XCTAssertEqual(activityViewModel.activeButton, .start)
 
-        timerViewModel.onAppear(day: Day())
-        XCTAssertEqual(timerViewModel.activeButton, .start)
+        activityViewModel.onAppear(day: Day())
+        XCTAssertEqual(activityViewModel.activeButton, .start)
 
-        timerViewModel.startPressed()
-        XCTAssertEqual(timerViewModel.activeButton, .pause)
+        activityViewModel.startPressed()
+        XCTAssertEqual(activityViewModel.activeButton, .pause)
 
-        timerViewModel.pausePressed()
-        XCTAssertEqual(timerViewModel.activeButton, .resume)
+        activityViewModel.pausePressed()
+        XCTAssertEqual(activityViewModel.activeButton, .resume)
 
-        timerViewModel.resumePressed()
-        XCTAssertEqual(timerViewModel.activeButton, .pause)
+        activityViewModel.resumePressed()
+        XCTAssertEqual(activityViewModel.activeButton, .pause)
     }
 
     func testWeightViewModel() {

@@ -5,15 +5,13 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
-import ApolloData
 import ApolloLocalization
 import ApolloTheme
 import SwiftUI
 
 struct TimerView: View {
     @EnvironmentObject private var localization: LocalizationManager
-    @EnvironmentObject private var viewModel: TimerViewModel
-    var day: Day
+    @EnvironmentObject private var viewModel: ActivityViewModel
 
     var body: some View {
         VStack {
@@ -56,50 +54,14 @@ struct TimerView: View {
                 }
             }
         }
-        .navigationTitle(viewModel.day.name)
-        .onAppear {
-            viewModel.onAppear(day: day)
-
-            // Prevent screen lock only for timer
-            UIApplication.shared.isIdleTimerDisabled = true
-        }
-        .onDisappear {
-            viewModel.onDissapear()
-        }
-        .toolbar(.hidden, for: .tabBar)
-        .sheet(isPresented: $viewModel.isFinished) {
-            InfoView(
-                calories: viewModel.calories,
-                distance: viewModel.distanceFormatted,
-                pace: viewModel.paceFormatted
-            )
-        }
     }
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(day: previewDay())
+        TimerView()
             .environmentObject(LocalizationManager())
             .environmentObject(ThemeManager())
-            .environmentObject(TimerViewModel())
-    }
-
-    static func previewDay() -> Day {
-        let interval1 = Interval()
-        interval1.seconds = 10
-        interval1.type = "Run"
-
-        let interval2 = Interval()
-        interval2.seconds = 5
-        interval2.type = "Walk"
-
-        let day = Day()
-        day.name = "Preview day"
-        day.distance = 5000
-        day.calories = 500
-        day.intervals = [interval1, interval2]
-
-        return day
+            .environmentObject(ActivityViewModel())
     }
 }

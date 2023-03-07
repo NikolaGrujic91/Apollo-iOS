@@ -21,7 +21,7 @@ struct DaysView: View {
                     DisclosureGroup(
                         content: {
                             ForEach(week.days) { day in
-                                NavigationLink(destination: TimerView(day: day)) {
+                                NavigationLink(destination: ActivityView(day: day)) {
                                     VStack(alignment: .center, spacing: 10) {
                                         DayView(
                                             finished: day.finished,
@@ -55,7 +55,7 @@ struct DaysView_Previews: PreviewProvider {
     static var previews: some View {
         DaysView(planID: UUID())
             .environmentObject(ThemeManager())
-            .environmentObject(TimerViewModel())
+            .environmentObject(ActivityViewModel())
             .environmentObject(PlansViewModel())
     }
 }

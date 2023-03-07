@@ -54,13 +54,6 @@ struct InfoView: View {
                 .padding()
                 Divider()
             }
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button("Close") {
-                        dismiss()
-                    }
-                }
-            }
         }
     }
 }
