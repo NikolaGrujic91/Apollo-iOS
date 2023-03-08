@@ -52,11 +52,11 @@ struct ActivityView_Previews: PreviewProvider {
     static func previewDay() -> Day {
         let interval1 = Interval()
         interval1.seconds = 10
-        interval1.type = "Run"
+        interval1.type = .run
 
         let interval2 = Interval()
         interval2.seconds = 5
-        interval2.type = "Walk"
+        interval2.type = .walk
 
         let day = Day()
         day.name = "Preview day"

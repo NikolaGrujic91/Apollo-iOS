@@ -3,7 +3,7 @@ import XCTest
 
 final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
     func testMemoryLayout() {
-        XCTAssertEqual(class_getInstanceSize(Interval.self), 72)
+        XCTAssertEqual(class_getInstanceSize(Interval.self), 64)
         XCTAssertEqual(class_getInstanceSize(Plan.self), 56)
         XCTAssertEqual(class_getInstanceSize(Week.self), 56)
         XCTAssertEqual(class_getInstanceSize(Day.self), 96)
@@ -106,5 +106,19 @@ final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
     func checkDayInitialValue() {
         XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].calories, 0)
         XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].distance, 0)
+    }
+
+    func testIntervalColor() {
+        var intervalType: IntervalType = .run
+        XCTAssertEqual(intervalType.color(), .blue)
+
+        intervalType = .walk
+        XCTAssertEqual(intervalType.color(), .green)
+
+        intervalType = .fastRun
+        XCTAssertEqual(intervalType.color(), .yellow)
+
+        intervalType = .fastWalk
+        XCTAssertEqual(intervalType.color(), .red)
     }
 }

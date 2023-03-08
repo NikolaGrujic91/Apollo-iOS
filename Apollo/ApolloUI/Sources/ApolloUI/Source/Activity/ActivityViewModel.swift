@@ -147,7 +147,7 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
             return ""
         }
 
-        return day.intervals[currentInterval].type
+        return day.intervals[currentInterval].type.rawValue
     }
 
     private func save() {

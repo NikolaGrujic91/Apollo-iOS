@@ -9,7 +9,7 @@ import Foundation
 
 public final class Interval: Codable, Identifiable {
     public let id = UUID()
-    public var type: String = ""
+    public var type: IntervalType = .run
     public var seconds: Int = 0
     public var startFraction: CGFloat = 0
     public var endFraction: CGFloat = 0
