@@ -16,13 +16,16 @@ struct TimerView: View {
     var body: some View {
         VStack {
             ZStack {
+                FractionProgressView(
+                    lineWidth: 5,
+                    progress: viewModel.progressTotal(),
+                    padding: 5,
+                    intervals: viewModel.day.intervals
+                )
                 CircularProgressView(
-                    innerLineWidth: 10,
-                    innerProgress: viewModel.progress(),
-                    innerPadding: 20,
-                    outerLineWidth: 5,
-                    outerProgress: viewModel.progressTotal(),
-                    outerPadding: 5
+                    lineWidth: 10,
+                    progress: viewModel.progress(),
+                    padding: 20
                 )
                 TimerText(
                     timeInterval: TimeInterval(viewModel.timeRemaining),

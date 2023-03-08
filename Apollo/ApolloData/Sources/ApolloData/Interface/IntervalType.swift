@@ -16,7 +16,7 @@ public enum IntervalType: String, CaseIterable, Codable {
 }
 
 extension IntervalType {
-    func color() -> Color {
+    public func color() -> Color {
         switch self {
         case .run:
             return Color.blue
