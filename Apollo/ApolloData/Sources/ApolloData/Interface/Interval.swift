@@ -11,6 +11,8 @@ public final class Interval: Codable, Identifiable {
     public let id = UUID()
     public var type: String = ""
     public var seconds: Int = 0
+    public var startFraction: CGFloat = 0
+    public var endFraction: CGFloat = 0
 
     public init() {}
 

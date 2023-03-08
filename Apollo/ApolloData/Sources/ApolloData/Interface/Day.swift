@@ -9,6 +9,7 @@ import Foundation
 
 public final class Day: Codable, Identifiable {
     public var finished = false
+    public var fractionsCalculated = false
     public var calories: Int = 0
     public var distance: Int = 0
     public var intervals: [Interval] = []

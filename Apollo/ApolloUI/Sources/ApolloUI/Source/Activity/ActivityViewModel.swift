@@ -52,6 +52,7 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
             timeRemaining = day.intervals[currentInterval].seconds
             totalTime = getTotalTime()
             totalTimeRemaining = totalTime
+            calculateFractions()
         }
     }
 
@@ -169,5 +170,32 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
 
     private func getTotalTime() -> Int {
         day.intervals.reduce(0) { $0 + $1.seconds }
+    }
+
+    private func calculateFractions() {
+        if day.fractionsCalculated {
+            return
+        }
+
+        let intervals = day.intervals
+
+        for i in 0..<intervals.count {
+            if i == 0 {
+                intervals[0].startFraction = 100.0 / (CGFloat(totalTime) / CGFloat(intervals[0].seconds)) / 100.0
+                intervals[0].endFraction = 0
+                continue
+            }
+
+            var sumSeconds = 0
+            for indice in 0...i {
+                sumSeconds += intervals[indice].seconds
+            }
+
+            intervals[i].startFraction = 100.0 / (CGFloat(totalTime) / CGFloat(sumSeconds)) / 100.0
+            let fractionLength = intervals[i].startFraction - intervals[i - 1].startFraction
+            intervals[i].endFraction = intervals[i].startFraction - fractionLength
+        }
+
+        day.fractionsCalculated = true
     }
 }

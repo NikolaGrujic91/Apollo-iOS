@@ -3,7 +3,7 @@ import XCTest
 
 final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
     func testMemoryLayout() {
-        XCTAssertEqual(class_getInstanceSize(Interval.self), 56)
+        XCTAssertEqual(class_getInstanceSize(Interval.self), 72)
         XCTAssertEqual(class_getInstanceSize(Plan.self), 56)
         XCTAssertEqual(class_getInstanceSize(Week.self), 56)
         XCTAssertEqual(class_getInstanceSize(Day.self), 96)
