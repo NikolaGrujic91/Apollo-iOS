@@ -21,3 +21,9 @@ public final class Interval: Codable, Identifiable {
         case seconds
     }
 }
+
+extension Interval: Equatable {
+    public static func == (lhs: Interval, rhs: Interval) -> Bool {
+        lhs.id == rhs.id
+    }
+}

@@ -177,17 +177,19 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
             return
         }
 
-        let intervals = day.intervals
         var remainingFraction: CGFloat = 1.0
+        var fractionDuration: CGFloat = 0.0
+        var startFraction: CGFloat = 0.0
+        var endFraction: CGFloat = 0.0
 
-        for i in 0..<intervals.count {
-            let fractionDuration = ((CGFloat(intervals[i].seconds) * 100.0) / CGFloat(totalTime)) / 100.0
-            let startFraction = remainingFraction
-            let endFraction = i == intervals.count - 1 ? 0.0 : remainingFraction - fractionDuration
+        day.intervals.forEach {
+            fractionDuration = ((CGFloat($0.seconds) * 100.0) / CGFloat(totalTime)) / 100.0
+            startFraction = remainingFraction
             remainingFraction -= fractionDuration
+            endFraction = $0 == day.intervals.last ? 0.0 : remainingFraction
 
-            intervals[i].startFraction = startFraction
-            intervals[i].endFraction = endFraction
+            $0.startFraction = startFraction
+            $0.endFraction = endFraction
         }
 
         day.fractionsCalculated = true
