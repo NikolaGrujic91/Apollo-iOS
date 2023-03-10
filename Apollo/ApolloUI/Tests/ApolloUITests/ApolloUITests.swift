@@ -3,7 +3,47 @@ import ApolloData
 import XCTest
 
 final class ApolloUITests: XCTestCase {
-    func testPlansViewModel() async {
+    func testPlansViewModelLoad() async {
+        let plansViewModel = PlansViewModel()
+        XCTAssertEqual(plansViewModel.plans.count, 0)
+
+        await plansViewModel.load()
+        XCTAssertEqual(plansViewModel.plans.count, 0)
+
+        plansViewModel.update()
+        XCTAssertEqual(plansViewModel.plans.count, 6)
+    }
+
+    func testPlansViewModelGetImage() {
+        let plansViewModel = PlansViewModel()
+
+        var planImage = plansViewModel.getImage("0 to 2K")
+        XCTAssertNotNil(planImage)
+
+        planImage = plansViewModel.getImage("0 to 5K")
+        XCTAssertNotNil(planImage)
+
+        planImage = plansViewModel.getImage("5K to 10K")
+        XCTAssertNotNil(planImage)
+
+        planImage = plansViewModel.getImage("Weight Loss: Level 1")
+        XCTAssertNotNil(planImage)
+
+        planImage = plansViewModel.getImage("Weight Loss: Level 2")
+        XCTAssertNotNil(planImage)
+
+        planImage = plansViewModel.getImage("")
+        XCTAssertNotNil(planImage)
+    }
+
+    func testPlansViewModelGetGif() {
+        let plansViewModel = PlansViewModel()
+
+        let gif = plansViewModel.getGif(.success)
+        XCTAssertNotNil(gif)
+    }
+
+    func testPlansViewModelGet() async {
         let plansViewModel = PlansViewModel()
         XCTAssertEqual(plansViewModel.plans.count, 0)
 
@@ -13,8 +53,10 @@ final class ApolloUITests: XCTestCase {
         plansViewModel.update()
         XCTAssertEqual(plansViewModel.plans.count, 6)
 
-        let planImage = plansViewModel.getImage("0 to 2K")
-        XCTAssertNotNil(planImage)
+        let uuid = plansViewModel.plans[0].id
+        let plan = plansViewModel.get(uuid)
+
+        XCTAssertEqual(plan.name, "0 to 2K")
     }
 
     func testActivityViewModelActiveButton() async {
