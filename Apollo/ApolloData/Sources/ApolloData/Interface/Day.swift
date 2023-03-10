@@ -27,6 +27,38 @@ public final class Day: Codable, Identifiable {
         case finished
         case intervals
     }
+
+    public func calculateFractions() {
+        if fractionsCalculated {
+            return
+        }
+
+        let totalTime = CGFloat(totalTime())
+        var remainingFraction: CGFloat = 1.0
+        var fractionDuration: CGFloat = 0.0
+        var startFraction: CGFloat = 0.0
+        var endFraction: CGFloat = 0.0
+
+        intervals.forEach {
+            fractionDuration = ((CGFloat($0.seconds) * 100.0) / totalTime) / 100.0
+            startFraction = remainingFraction
+            remainingFraction -= fractionDuration
+            endFraction = $0 == intervals.last ? 0.0 : remainingFraction
+
+            $0.startFraction = startFraction
+            $0.endFraction = endFraction
+        }
+
+        fractionsCalculated = true
+    }
+
+    public func totalTime() -> Int {
+        intervals.reduce(0) { $0 + $1.seconds }
+    }
+
+    public func intervalType(_ index: Int) -> String {
+        intervals.isEmpty ? "" : intervals[index].type.rawValue
+    }
 }
 
 extension Day: Hashable {

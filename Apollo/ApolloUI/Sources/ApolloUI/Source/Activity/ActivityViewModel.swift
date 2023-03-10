@@ -50,9 +50,9 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
 
         if !day.intervals.isEmpty {
             timeRemaining = day.intervals[currentInterval].seconds
-            totalTime = getTotalTime()
+            totalTime = day.totalTime()
             totalTimeRemaining = totalTime
-            calculateFractions()
+            day.calculateFractions()
         }
     }
 
@@ -143,11 +143,7 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
     }
 
     func intervalType() -> String {
-        if day.intervals.isEmpty {
-            return ""
-        }
-
-        return day.intervals[currentInterval].type.rawValue
+        day.intervalType(currentInterval)
     }
 
     private func save() {
@@ -166,32 +162,5 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
             pace = Double(timeElapsed) / locationTracker.distanceKilometers
             paceFormatted = String(format: "%02i:%02i", Int(pace) / 60 % 60, Int(pace) % 60)
         }
-    }
-
-    private func getTotalTime() -> Int {
-        day.intervals.reduce(0) { $0 + $1.seconds }
-    }
-
-    private func calculateFractions() {
-        if day.fractionsCalculated {
-            return
-        }
-
-        var remainingFraction: CGFloat = 1.0
-        var fractionDuration: CGFloat = 0.0
-        var startFraction: CGFloat = 0.0
-        var endFraction: CGFloat = 0.0
-
-        day.intervals.forEach {
-            fractionDuration = ((CGFloat($0.seconds) * 100.0) / CGFloat(totalTime)) / 100.0
-            startFraction = remainingFraction
-            remainingFraction -= fractionDuration
-            endFraction = $0 == day.intervals.last ? 0.0 : remainingFraction
-
-            $0.startFraction = startFraction
-            $0.endFraction = endFraction
-        }
-
-        day.fractionsCalculated = true
     }
 }
