@@ -8,4 +8,11 @@ final class ApolloAudioTests: XCTestCase, AudioPlayerInjected {
         XCTAssertNoThrow(try audioPlayer.playSound(.complete))
         XCTAssertNoThrow(try audioPlayer.playSound(.countdown))
     }
+
+    func testAudioPlayerInjected() {
+        XCTAssertNotNil(player)
+
+        XCTAssertNoThrow(player.play(.complete))
+        XCTAssertNoThrow(player.play(.countdown))
+    }
 }
