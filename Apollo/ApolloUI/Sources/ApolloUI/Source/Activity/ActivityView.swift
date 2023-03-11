@@ -29,14 +29,14 @@ struct ActivityView: View {
             .toolbar(.hidden, for: .tabBar)
         } else {
             TimerView()
-            .navigationTitle(viewModel.day.name)
-            .onAppear {
-                viewModel.onAppear(day: day)
+                .navigationTitle(viewModel.day.name)
+                .onAppear {
+                    viewModel.onAppear(day: day)
 
-                // Prevent screen lock only for timer
-                UIApplication.shared.isIdleTimerDisabled = true
-            }
-            .toolbar(.hidden, for: .tabBar)
+                    // Prevent screen lock only for timer
+                    UIApplication.shared.isIdleTimerDisabled = true
+                }
+                .toolbar(.hidden, for: .tabBar)
         }
     }
 }

@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 06/03/2023.
 //
 
-import SwiftUI
 import ApolloImages
 import FLAnimatedImage
+import SwiftUI
 
 struct GifView: UIViewRepresentable {
     @EnvironmentObject private var viewModel: PlansViewModel
@@ -15,7 +15,8 @@ struct GifView: UIViewRepresentable {
     var gif: Gifs
 
     // MARK: - UIViewRepresentable
-    func makeUIView(context: UIViewRepresentableContext<GifView>) -> UIView {
+
+    func makeUIView(context _: UIViewRepresentableContext<GifView>) -> UIView {
         animatedImageView.animatedImage = FLAnimatedImage(animatedGIFData: viewModel.getGif(gif))
         animatedImageView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -24,13 +25,13 @@ struct GifView: UIViewRepresentable {
 
         NSLayoutConstraint.activate([
             animatedImageView.heightAnchor.constraint(equalTo: view.heightAnchor),
-            animatedImageView.widthAnchor.constraint(equalTo: view.widthAnchor)
+            animatedImageView.widthAnchor.constraint(equalTo: view.widthAnchor),
         ])
 
         return view
     }
 
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<GifView>) {}
+    func updateUIView(_: UIView, context _: UIViewRepresentableContext<GifView>) {}
 }
 
 struct GifView_Previews: PreviewProvider {

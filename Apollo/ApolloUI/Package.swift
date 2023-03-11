@@ -43,7 +43,7 @@ let package = Package(
                 .product(name: "ApolloWeight", package: "ApolloWeight"),
                 .product(name: "ApolloLocation", package: "ApolloLocation"),
                 .product(name: "ApolloAudio", package: "ApolloAudio"),
-                .product(name: "FLAnimatedImage", package: "FLAnimatedImage")
+                .product(name: "FLAnimatedImage", package: "FLAnimatedImage"),
             ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),

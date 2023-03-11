@@ -41,6 +41,6 @@ final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImage
     }
 
     func getGif(_ gif: Gifs) -> Data {
-        return planImage.getGif(gif)
+        planImage.getGif(gif)
     }
 }
