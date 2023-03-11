@@ -29,6 +29,14 @@ final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
         plansRepository.reset()
         checkPlans()
         checkDayInitialValue()
+
+        // Check get plan by id
+        let id = plansRepository.plans[0].id
+        let plan = plansRepository.get(id)
+        XCTAssertEqual(plan.name, "0 to 2K")
+
+        let emptyPlan = plansRepository.get(UUID())
+        XCTAssertEqual(emptyPlan.name, "")
     }
 
     func checkPlans() {
