@@ -9,26 +9,18 @@ import SwiftUI
 
 struct CircleButton: View {
     let action: () -> Void
-    let text: String
+    let imageName: String
 
     var body: some View {
         ZStack {
-            Circle()
-                .stroke(.orange.opacity(0.5), lineWidth: 2)
-                .frame(width: 150, height: 150)
             Button(action: action) {
-                Text(text)
-                    .frame(
-                        maxWidth: .infinity,
-                        maxHeight: .infinity,
-                        alignment: .center
-                    ) // Detect tap on entire button
-                    .contentShape(Circle())
+                Image(systemName: imageName)
+                    .resizable()
+                    .frame(width: 100, height: 100)
             }
-            .frame(width: 140, height: 140)
-            .background(.orange)
-            .foregroundColor(.white)
-            .clipShape(Circle())
+            .foregroundColor(.accentColor)
+            .frame(maxWidth: .infinity) // Enable alignment center
+            .contentShape(Rectangle()) // Detect tap on entire button
         }
     }
 }
@@ -37,7 +29,7 @@ struct CircleButton_Previews: PreviewProvider {
     static var previews: some View {
         CircleButton(
             action: { print("pressed") },
-            text: "Cancel"
+            imageName: "play.fill"
         )
     }
 }

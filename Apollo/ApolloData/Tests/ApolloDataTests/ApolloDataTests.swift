@@ -115,16 +115,16 @@ final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
 
     func testIntervalColor() {
         var intervalType: IntervalType = .run
-        XCTAssertEqual(intervalType.color(), .blue)
+        XCTAssertEqual(intervalType.color(), .orange.opacity(0.4))
 
         intervalType = .walk
-        XCTAssertEqual(intervalType.color(), .green)
+        XCTAssertEqual(intervalType.color(), .gray.opacity(0.4))
 
         intervalType = .fastRun
-        XCTAssertEqual(intervalType.color(), .yellow)
+        XCTAssertEqual(intervalType.color(), .red.opacity(0.8))
 
         intervalType = .fastWalk
-        XCTAssertEqual(intervalType.color(), .red)
+        XCTAssertEqual(intervalType.color(), .gray.opacity(0.8))
     }
 
     func testDay() async {
@@ -138,8 +138,8 @@ final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
         let day = plansRepository.plans[0].weeks[0].days[0]
         XCTAssertEqual(day.totalTime(), 900)
 
-        XCTAssertEqual(day.intervalType(0), "run")
-        XCTAssertEqual(day.intervalType(1), "walk")
+        XCTAssertEqual(day.intervalType(0), .run)
+        XCTAssertEqual(day.intervalType(1), .walk)
 
         XCTAssertFalse(day.fractionsCalculated)
         day.calculateFractions()

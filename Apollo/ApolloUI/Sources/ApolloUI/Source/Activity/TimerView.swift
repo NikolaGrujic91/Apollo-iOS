@@ -17,19 +17,21 @@ struct TimerView: View {
         VStack {
             ZStack {
                 FractionProgressView(
-                    lineWidth: 5,
+                    lineWidth: 8,
                     progress: viewModel.progressTotal(),
-                    padding: 5,
+                    padding: 10,
                     intervals: viewModel.day.intervals
                 )
                 CircularProgressView(
-                    lineWidth: 10,
+                    lineWidth: 12,
                     progress: viewModel.progress(),
-                    padding: 20
+                    padding: 30,
+                    color: viewModel.intervalType().color()
                 )
                 TimerText(
                     timeInterval: TimeInterval(viewModel.timeRemaining),
-                    intervalType: viewModel.intervalType(),
+                    color: viewModel.intervalType().color(),
+                    intervalType: viewModel.intervalType().rawValue,
                     currentInterval: viewModel.currentInterval + 1,
                     totalIntervals: viewModel.totalIntervals,
                     fontSize: 90
@@ -42,17 +44,17 @@ struct TimerView: View {
                 if viewModel.activeButton == .start {
                     CircleButton(
                         action: viewModel.startPressed,
-                        text: "start".localized(localization.language)
+                        imageName: "play.fill"
                     )
                 } else if viewModel.activeButton == .pause {
                     CircleButton(
                         action: viewModel.pausePressed,
-                        text: "pause".localized(localization.language)
+                        imageName: "pause.fill"
                     )
                 } else if viewModel.activeButton == .resume {
                     CircleButton(
                         action: viewModel.resumePressed,
-                        text: "resume".localized(localization.language)
+                        imageName: "play.fill"
                     )
                 }
             }

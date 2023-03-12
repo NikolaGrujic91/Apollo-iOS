@@ -56,8 +56,8 @@ public final class Day: Codable, Identifiable {
         intervals.reduce(0) { $0 + $1.seconds }
     }
 
-    public func intervalType(_ index: Int) -> String {
-        intervals.isEmpty ? "" : intervals[index].type.rawValue
+    public func intervalType(_ index: Int) -> IntervalType {
+        intervals.isEmpty ? .run : intervals[index].type
     }
 }
 

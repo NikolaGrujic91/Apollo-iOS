@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimerText: View {
     let timeInterval: TimeInterval
+    let color: Color
     let intervalType: String
     let currentInterval: Int
     let totalIntervals: Int
@@ -22,9 +23,7 @@ struct TimerText: View {
             Text(intervalType)
                 .font(.system(size: fontSize / 2))
                 .fontWeight(.bold)
-            Text("\(currentInterval) \\ \(totalIntervals)")
-                .font(.system(size: fontSize / 2))
-                .fontWeight(.bold)
+                .foregroundColor(color)
         }
     }
 
@@ -45,7 +44,8 @@ struct TimerTextView_Previews: PreviewProvider {
     static var previews: some View {
         TimerText(
             timeInterval: TimeInterval(90), // 90 seconds
-            intervalType: "Run",
+            color: .orange,
+            intervalType: "run",
             currentInterval: 1,
             totalIntervals: 10,
             fontSize: 100

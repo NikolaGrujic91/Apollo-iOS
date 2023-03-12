@@ -34,20 +34,7 @@ struct FractionProgressView: View {
     var body: some View {
         ZStack {
             ForEach(intervals) { interval in
-                if interval.endFraction >= progress, interval.startFraction >= progress {
-                    Circle()
-                        .trim(from: interval.endFraction, to: interval.startFraction)
-                        .stroke(interval.type.color().opacity(0.2), lineWidth: lineWidth)
-                        .padding(padding)
-                        .frame(maxWidth: .infinity)
-                        .rotationEffect(.degrees(-90))
-                } else if interval.endFraction <= progress, progress <= interval.startFraction {
-                    Circle()
-                        .trim(from: interval.endFraction, to: interval.startFraction)
-                        .stroke(interval.type.color().opacity(0.2), lineWidth: lineWidth)
-                        .padding(padding)
-                        .frame(maxWidth: .infinity)
-                        .rotationEffect(.degrees(-90))
+                if interval.endFraction <= progress, progress <= interval.startFraction {
                     Circle()
                         .trim(from: interval.endFraction, to: progress)
                         .stroke(interval.type.color(), style: outerStyle)

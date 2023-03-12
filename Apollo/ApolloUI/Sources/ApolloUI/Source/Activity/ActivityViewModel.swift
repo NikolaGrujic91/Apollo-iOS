@@ -142,7 +142,7 @@ final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, Weight
         return ((Double(totalTimeRemaining) * 100.0) / Double(totalTime)) / 100.0
     }
 
-    func intervalType() -> String {
+    func intervalType() -> IntervalType {
         day.intervalType(currentInterval)
     }
 
