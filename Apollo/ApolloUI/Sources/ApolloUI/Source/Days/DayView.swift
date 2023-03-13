@@ -8,48 +8,17 @@
 import SwiftUI
 
 struct DayView: View {
-    var finished: Bool
-    var calories: Int
-    var distance: Int
     var name: String
-    var pace: String
 
     var body: some View {
         VStack(alignment: .leading) {
-            if finished {
+            HStack {
+                Image(systemName: "circlebadge")
+                    .frame(height: 20)
+                    .foregroundColor(.gray)
                 Text(name)
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Distance")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                        Text("\(distance) m")
-                            .font(.subheadline)
-                    }
-                    Divider()
-                        .padding()
-                    VStack(alignment: .leading) {
-                        Text("Pace")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                        Text("\(pace)/km")
-                            .font(.subheadline)
-                    }
-                    Divider()
-                        .padding()
-                    VStack(alignment: .leading) {
-                        Text("Calories")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                        Text("\(calories) kcal")
-                            .font(.subheadline)
-                    }
-                }
-            } else {
-                HStack {
-                    Text(name)
-                    Spacer()
-                }
+                    .foregroundColor(.accentColor)
+                Spacer()
             }
         }
     }
@@ -58,11 +27,7 @@ struct DayView: View {
 struct DayView_Previews: PreviewProvider {
     static var previews: some View {
         DayView(
-            finished: true,
-            calories: 500,
-            distance: 200,
-            name: "Test day",
-            pace: "00:00"
+            name: "Test day"
         )
     }
 }

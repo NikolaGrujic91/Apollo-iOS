@@ -21,18 +21,22 @@ struct DaysView: View {
                     DisclosureGroup(
                         content: {
                             ForEach(week.days) { day in
-                                NavigationLink(destination: ActivityView(day: day)) {
+                                if day.finished {
                                     VStack(alignment: .center, spacing: 10) {
-                                        DayView(
-                                            finished: day.finished,
-                                            calories: day.calories,
-                                            distance: day.distance,
-                                            name: day.name,
-                                            pace: day.pace
-                                        )
+                                        FinishedDayView(day: day)
                                     }
                                     .frame(maxWidth: .infinity) // Enable alignment center
                                     .contentShape(Rectangle()) // Detect tap on entire button
+                                    .padding(.vertical)
+                                } else {
+                                    NavigationLink(destination: ActivityView(day: day)) {
+                                        VStack(alignment: .center, spacing: 10) {
+                                            DayView(name: day.name)
+                                        }
+                                        .frame(maxWidth: .infinity) // Enable alignment center
+                                        .contentShape(Rectangle()) // Detect tap on entire button
+                                    }
+                                    .padding(.vertical)
                                 }
                             }
                         },
