@@ -35,17 +35,6 @@ xcodebuild -list -workspace $WORKSPACE
 # xcrun simctl list
 
 printg "/***************************************************/"
-printg "             Running tests for ApolloLogger"
-printg "/***************************************************/"
-
-xcodebuild \
- test \
- -workspace $WORKSPACE \
- -scheme ApolloLogger \
- -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
-xcpretty
-
-printg "/***************************************************/"
 printg "             Running tests for ApolloWeight"
 printg "/***************************************************/"
 
@@ -130,6 +119,17 @@ xcodebuild \
  test \
  -workspace $WORKSPACE \
  -scheme ApolloUI \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for FoundationLogger"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme FoundationLogger \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
 

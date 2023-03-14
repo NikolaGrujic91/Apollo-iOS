@@ -1,6 +1,6 @@
 //
 //  Logger.swift
-//  ApolloLogger
+//  FoundationLogger
 //
 //  Created by Nikola Grujic on 07/02/2023.
 //

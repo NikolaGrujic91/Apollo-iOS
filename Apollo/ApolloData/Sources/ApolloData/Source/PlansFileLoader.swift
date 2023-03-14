@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import ApolloLogger
+import FoundationLogger
 import Foundation
 
 final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {

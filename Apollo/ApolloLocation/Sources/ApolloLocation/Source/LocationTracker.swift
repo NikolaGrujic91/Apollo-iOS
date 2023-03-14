@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
-import ApolloLogger
+import FoundationLogger
 import CoreLocation
 
 final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {

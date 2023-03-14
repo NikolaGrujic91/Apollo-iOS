@@ -1,7 +1,7 @@
-@testable import ApolloLogger
+@testable import FoundationLogger
 import XCTest
 
-final class ApolloLoggerTests: XCTestCase, LoggerInjected {
+final class FoundationLoggerTests: XCTestCase, LoggerInjected {
     func testLogger() {
         XCTAssertNotNil(logger)
 

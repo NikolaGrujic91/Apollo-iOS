@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
-import ApolloLogger
+import FoundationLogger
 import AVFoundation
 import Foundation
 

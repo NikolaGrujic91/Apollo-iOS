@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-import ApolloLogger
+import FoundationLogger
 import Foundation
 
 final class WeightRepository: WeightRepositoryProtocol, LoggerInjected {

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloLogger"
-               BuildableName = "ApolloLogger"
-               BlueprintName = "ApolloLogger"
+               BlueprintIdentifier = "FoundationLogger"
+               BuildableName = "FoundationLogger"
+               BlueprintName = "FoundationLogger"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloLoggerTests"
-               BuildableName = "ApolloLoggerTests"
-               BlueprintName = "ApolloLoggerTests"
+               BlueprintIdentifier = "FoundationLoggerTests"
+               BuildableName = "FoundationLoggerTests"
+               BlueprintName = "FoundationLoggerTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloLoggerTests"
-               BuildableName = "ApolloLoggerTests"
-               BlueprintName = "ApolloLoggerTests"
+               BlueprintIdentifier = "FoundationLoggerTests"
+               BuildableName = "FoundationLoggerTests"
+               BlueprintName = "FoundationLoggerTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -74,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ApolloLogger"
-            BuildableName = "ApolloLogger"
-            BlueprintName = "ApolloLogger"
+            BlueprintIdentifier = "FoundationLogger"
+            BuildableName = "FoundationLogger"
+            BlueprintName = "FoundationLogger"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
