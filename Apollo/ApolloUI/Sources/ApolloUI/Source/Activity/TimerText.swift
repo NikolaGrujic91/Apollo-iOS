@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UtilityExtensions
 
 struct TimerText: View {
     let timeInterval: TimeInterval
@@ -17,25 +18,13 @@ struct TimerText: View {
 
     var body: some View {
         VStack(spacing: 10) {
-            Text(formatTimeString(time: timeInterval))
+            Text(timeInterval.format())
                 .font(.system(size: fontSize))
                 .fontWeight(.bold)
             Text(intervalType)
                 .font(.system(size: fontSize / 2))
                 .fontWeight(.bold)
                 .foregroundColor(color)
-        }
-    }
-
-    private func formatTimeString(time: TimeInterval) -> String {
-        let hours = Int(time) / 3600
-        let minutes = Int(time) / 60 % 60
-        let seconds = Int(time) % 60
-
-        if hours == 0 {
-            return String(format: "%02i:%02i", minutes, seconds)
-        } else {
-            return String(format: "%02i:%02i:%02i", hours, minutes, seconds)
         }
     }
 }

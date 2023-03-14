@@ -1,13 +1,13 @@
 //
-//  ColorSchemeExtensions.swift
-//  ApolloTheme
+//  ColorSchemeExtension.swift
+//  UtilityExtensions
 //
-//  Created by Nikola Grujic on 12/02/2023.
+//  Created by Nikola Grujic on 14/03/2023.
 //
 
 import SwiftUI
 
-extension ColorScheme {
+public extension ColorScheme {
     func toString() -> String {
         if self == .dark {
             return "dark"

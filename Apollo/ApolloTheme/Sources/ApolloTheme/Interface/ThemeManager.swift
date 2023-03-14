@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UtilityExtensions
 
 public final class ThemeManager: ObservableObject {
     // MARK: - Properties

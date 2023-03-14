@@ -132,3 +132,14 @@ xcodebuild \
  -scheme ApolloUI \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for UtilityExtensions"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme UtilityExtensions \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty

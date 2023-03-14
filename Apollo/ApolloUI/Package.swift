@@ -26,6 +26,7 @@ let package = Package(
         .package(name: "ApolloWeight", path: "ApolloWeight"),
         .package(name: "ApolloLocation", path: "ApolloLocation"),
         .package(name: "ApolloAudio", path: "ApolloAudio"),
+        .package(name: "UtilityExtensions", path: "UtilityExtensions"),
         .package(url: "https://github.com/Flipboard/FLAnimatedImage.git", from: "1.0.17"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.2.2"),
     ],
@@ -43,6 +44,7 @@ let package = Package(
                 .product(name: "ApolloWeight", package: "ApolloWeight"),
                 .product(name: "ApolloLocation", package: "ApolloLocation"),
                 .product(name: "ApolloAudio", package: "ApolloAudio"),
+                .product(name: "UtilityExtensions", package: "UtilityExtensions"),
                 .product(name: "FLAnimatedImage", package: "FLAnimatedImage"),
             ],
             plugins: [
