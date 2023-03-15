@@ -6,7 +6,7 @@
 //
 
 import FeatureSettings
-import ApolloUI
+import FeaturePlans
 import SwiftUI
 
 struct ApolloRootView: View {

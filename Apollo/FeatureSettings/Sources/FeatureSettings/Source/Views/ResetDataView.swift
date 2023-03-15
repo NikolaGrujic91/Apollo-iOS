@@ -1,6 +1,6 @@
 //
 //  ResetDataView.swift
-//  ApolloUI
+//  FeatureSettings
 //
 //  Created by Nikola Grujic on 20/02/2023.
 //

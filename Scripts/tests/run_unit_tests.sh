@@ -35,13 +35,13 @@ xcodebuild -list -workspace $WORKSPACE
 # xcrun simctl list
 
 printg "/***************************************************/"
-printg "             Running tests for ApolloUI"
+printg "             Running tests for FeaturePlans"
 printg "/***************************************************/"
 
 xcodebuild \
  test \
  -workspace $WORKSPACE \
- -scheme ApolloUI \
+ -scheme FeaturePlans \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
 

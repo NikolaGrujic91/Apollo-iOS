@@ -1,8 +1,8 @@
 import FoundationData
-@testable import ApolloUI
+@testable import FeaturePlans
 import XCTest
 
-final class ApolloUITests: XCTestCase {
+final class FeaturePlansTests: XCTestCase {
     func testPlansViewModelLoad() async {
         let plansViewModel = PlansViewModel()
         XCTAssertEqual(plansViewModel.plans.count, 0)

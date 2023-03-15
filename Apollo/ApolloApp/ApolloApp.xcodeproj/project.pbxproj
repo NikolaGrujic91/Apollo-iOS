@@ -11,10 +11,11 @@
 		8EAAF18B29A26CC90032AFA8 /* ApolloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */; };
 		8EAAF18F29A26CCB0032AFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */; };
 		8EAAF19229A26CCB0032AFA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF19129A26CCB0032AFA8 /* Preview Assets.xcassets */; };
-		8EAAF19A29A26D650032AFA8 /* ApolloUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8EAAF19929A26D650032AFA8 /* ApolloUI */; };
 		8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAAF19B29A273720032AFA8 /* HealthKit.framework */; };
 		8EE0B4FD29C20B1D00DD7726 /* ApolloRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FC29C20B1C00DD7726 /* ApolloRootView.swift */; };
 		8EE0B4FF29C20B2000DD7726 /* MobileMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FE29C20B2000DD7726 /* MobileMenuView.swift */; };
+		8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE0B50129C20F9E00DD7726 /* FeaturePlans */; };
+		8EE0B50429C20F9E00DD7726 /* FeatureSettings in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE0B50329C20F9E00DD7726 /* FeatureSettings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +36,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE0B50429C20F9E00DD7726 /* FeatureSettings in Frameworks */,
 				8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */,
-				8EAAF19A29A26D650032AFA8 /* ApolloUI in Frameworks */,
 				8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */,
+				8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +112,8 @@
 			);
 			name = ApolloApp;
 			packageProductDependencies = (
-				8EAAF19929A26D650032AFA8 /* ApolloUI */,
+				8EE0B50129C20F9E00DD7726 /* FeaturePlans */,
+				8EE0B50329C20F9E00DD7726 /* FeatureSettings */,
 			);
 			productName = ApolloApp;
 			productReference = 8EAAF18729A26CC90032AFA8 /* ApolloApp.app */;
@@ -417,9 +420,13 @@
 			package = 8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
 			productName = "plugin:SwiftLint";
 		};
-		8EAAF19929A26D650032AFA8 /* ApolloUI */ = {
+		8EE0B50129C20F9E00DD7726 /* FeaturePlans */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ApolloUI;
+			productName = FeaturePlans;
+		};
+		8EE0B50329C20F9E00DD7726 /* FeatureSettings */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureSettings;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

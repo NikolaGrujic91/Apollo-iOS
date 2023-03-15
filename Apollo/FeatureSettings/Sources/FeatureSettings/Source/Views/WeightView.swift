@@ -1,6 +1,6 @@
 //
 //  WeightView.swift
-//  ApolloUI
+//  FeatureSettings
 //
 //  Created by Nikola Grujic on 19/02/2023.
 //

@@ -5,7 +5,7 @@
       location = "group:ApolloApp/ApolloApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ApolloUI">
+      location = "group:FeaturePlans">
    </FileRef>
    <FileRef
       location = "group:FeatureSettings">

@@ -1,6 +1,6 @@
 //
 //  TimerViewModel.swift
-//  ApolloUI
+//  FeaturePlans
 //
 //  Created by Nikola Grujic on 18/02/2023.
 //

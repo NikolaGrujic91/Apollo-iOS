@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloUI"
-               BuildableName = "ApolloUI"
-               BlueprintName = "ApolloUI"
+               BlueprintIdentifier = "FeaturePlans"
+               BuildableName = "FeaturePlans"
+               BlueprintName = "FeaturePlans"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloUITests"
-               BuildableName = "ApolloUITests"
-               BlueprintName = "ApolloUITests"
+               BlueprintIdentifier = "FeaturePlansTests"
+               BuildableName = "FeaturePlansTests"
+               BlueprintName = "FeaturePlansTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloUITests"
-               BuildableName = "ApolloUITests"
-               BlueprintName = "ApolloUITests"
+               BlueprintIdentifier = "FeaturePlansTests"
+               BuildableName = "FeaturePlansTests"
+               BlueprintName = "FeaturePlansTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -74,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ApolloUI"
-            BuildableName = "ApolloUI"
-            BlueprintName = "ApolloUI"
+            BlueprintIdentifier = "FeaturePlans"
+            BuildableName = "FeaturePlans"
+            BlueprintName = "FeaturePlans"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

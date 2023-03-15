@@ -1,6 +1,6 @@
 //
 //  PlansViewModel.swift
-//  ApolloUI
+//  FeaturePlans
 //
 //  Created by Nikola Grujic on 21/02/2023.
 //

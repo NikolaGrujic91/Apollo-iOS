@@ -1,6 +1,6 @@
 //
 //  InfoView.swift
-//  ApolloUI
+//  FeaturePlans
 //
 //  Created by Nikola Grujic on 27/02/2023.
 //

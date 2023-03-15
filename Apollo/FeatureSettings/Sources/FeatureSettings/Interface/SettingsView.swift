@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  ApolloUI
+//  FeatureSettings
 //
 //  Created by Nikola Grujic on 14/02/2023.
 //

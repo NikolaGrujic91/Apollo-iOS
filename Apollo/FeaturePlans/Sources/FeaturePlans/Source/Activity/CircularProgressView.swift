@@ -1,6 +1,6 @@
 //
 //  CircularProgressView.swift
-//  ApolloUI
+//  FeaturePlans
 //
 //  Created by Nikola Grujic on 16/02/2023.
 //
