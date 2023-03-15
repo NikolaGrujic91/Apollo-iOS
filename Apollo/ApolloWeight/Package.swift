@@ -19,6 +19,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.2.2"),
+        .package(name: "FoundationStorage", path: "FoundationStorage"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
     ],
     targets: [
@@ -27,6 +28,7 @@ let package = Package(
         .target(
             name: "ApolloWeight",
             dependencies: [
+                .product(name: "FoundationStorage", package: "FoundationStorage"),
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
             ],
             plugins: [

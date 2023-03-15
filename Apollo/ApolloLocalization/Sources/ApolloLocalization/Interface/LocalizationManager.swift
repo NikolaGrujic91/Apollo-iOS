@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import FoundationStorage
 
-public final class LocalizationManager: ObservableObject {
+public final class LocalizationManager: ObservableObject, StorageInjected {
     // MARK: - Properties
 
     private let key = "language"
@@ -18,17 +19,13 @@ public final class LocalizationManager: ObservableObject {
     // MARK: - Functions
 
     public func save(_ value: Language) {
-        let defaults = UserDefaults.standard
-        defaults.set(value.rawValue, forKey: key)
-
+        storage.set(value.rawValue, forKey: key)
         language = value
     }
 
     public func load() {
-        let defaults = UserDefaults.standard
-
-        if let stringValue = defaults.object(forKey: key) as? String {
-            language = Language(rawValue: stringValue) ?? Language.netherlands
+        if let value: String = storage.get(forKey: key) {
+            language = Language(rawValue: value) ?? Language.netherlands
         }
     }
 }

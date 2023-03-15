@@ -5,10 +5,11 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
+import FoundationStorage
 import SwiftUI
 import UtilityExtensions
 
-public final class ThemeManager: ObservableObject {
+public final class ThemeManager: ObservableObject, StorageInjected {
     // MARK: - Properties
 
     @Published public var colorScheme: ColorScheme?
@@ -19,18 +20,14 @@ public final class ThemeManager: ObservableObject {
     // MARK: - Functions
 
     public func save(_ value: ColorScheme) {
-        let defaults = UserDefaults.standard
-        defaults.set(value.toString(), forKey: key)
-
+        storage.set(value.toString(), forKey: key)
         colorScheme = value
     }
 
     public func load() {
-        let defaults = UserDefaults.standard
-
         // if color scheme is stored in UserDefaults, use that value
-        if let stringValue = defaults.object(forKey: key) as? String {
-            colorScheme = ColorScheme.fromString(stringValue)
+        if let value: String = storage.get(forKey: key) {
+            colorScheme = ColorScheme.fromString(value)
             return
         }
 

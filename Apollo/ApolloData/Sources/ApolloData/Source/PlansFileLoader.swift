@@ -5,14 +5,15 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
+import FoundationStorage
 import FoundationLogger
 import Foundation
 
-final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
+final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 
     private let fileName = "data"
-    private let userDefaultsKey = "ApolloPlans"
+    private let key = "ApolloPlans"
 
     // MARK: - PlansLoadingProtocol
 
@@ -26,10 +27,10 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
         }
     }
 
-    func trySave(_ plans: [Plan]) throws {
+   private  func trySave(_ plans: [Plan]) throws {
         do {
             let data = try JSONEncoder().encode(plans)
-            UserDefaults.standard.set(data, forKey: userDefaultsKey)
+            storage.set(data, forKey: key)
         } catch {
             throw FileError(.encodingJsonData(description: error.localizedDescription), ErrorLine())
         }
@@ -47,8 +48,8 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
         return [Plan]()
     }
 
-    func tryLoad() throws -> [Plan] {
-        if let jsonData = UserDefaults.standard.data(forKey: userDefaultsKey) {
+    private func tryLoad() throws -> [Plan] {
+        if let jsonData: Data = storage.get(forKey: key) {
             do {
                 return try JSONDecoder().decode([Plan].self, from: jsonData)
             } catch {
@@ -80,6 +81,6 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected {
     }
 
     func remove() {
-        UserDefaults.standard.removeObject(forKey: userDefaultsKey)
+        storage.remove(forKey: key)
     }
 }

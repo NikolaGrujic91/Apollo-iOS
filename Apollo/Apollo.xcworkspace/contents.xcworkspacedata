@@ -29,6 +29,9 @@
       location = "group:ApolloLocalization">
    </FileRef>
    <FileRef
+      location = "group:FoundationStorage">
+   </FileRef>
+   <FileRef
       location = "group:FoundationLogger">
    </FileRef>
    <FileRef

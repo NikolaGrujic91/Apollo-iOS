@@ -123,6 +123,17 @@ xcodebuild \
 xcpretty
 
 printg "/***************************************************/"
+printg "             Running tests for FoundationStorage"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme FoundationStorage \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
+
+printg "/***************************************************/"
 printg "             Running tests for FoundationLogger"
 printg "/***************************************************/"
 

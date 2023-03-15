@@ -5,13 +5,14 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
+import FoundationStorage
 import FoundationLogger
 import Foundation
 
-final class WeightRepository: WeightRepositoryProtocol, LoggerInjected {
+final class WeightRepository: WeightRepositoryProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 
-    var bodyMass: Double = 0.0
+    private(set) var bodyMass: Double = 0.0
     private let key: String = "ApolloWeight"
     private let healthKitRepository = HealthKitRepository()
 
@@ -24,12 +25,12 @@ final class WeightRepository: WeightRepositoryProtocol, LoggerInjected {
     // MARK: - WeightRepositoryProtocol
 
     func save(_ value: Double) {
+        storage.set(value, forKey: key)
         bodyMass = value
-        UserDefaults.standard.set(value, forKey: key)
     }
 
     func load() {
-        bodyMass = UserDefaults.standard.double(forKey: key)
+        bodyMass = storage.get(forKey: key)
     }
 
     func loadFromHealthKit() async {
