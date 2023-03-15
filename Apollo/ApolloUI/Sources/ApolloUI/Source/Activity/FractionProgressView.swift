@@ -10,7 +10,7 @@ import FeatureSettings
 import SwiftUI
 
 struct FractionProgressView: View {
-    @EnvironmentObject private var theme: ThemeManager
+    @EnvironmentObject private var theme: ThemeViewModel
     private var outerStyle: StrokeStyle
     let lineWidth: CGFloat
     let progress: Double
@@ -66,7 +66,7 @@ struct FractionProgressView_Previews: PreviewProvider {
             padding: 10,
             intervals: previewIntervals()
         )
-        .environmentObject(ThemeManager())
+        .environmentObject(ThemeViewModel())
     }
 
     static func previewIntervals() -> [Interval] {

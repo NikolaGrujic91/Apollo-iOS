@@ -4,8 +4,8 @@ import FoundationLocalization
 @testable import FeatureSettings
 
 final class FeatureSettingsTests: XCTestCase, WeightRepositoryInjected {
-    func testSettingsLanguage() {
-        let localizationManager = LocalizationManager()
+    func testLocalizationViewModel() {
+        let localizationManager = LocalizationViewModel()
 
         // Default language
         XCTAssertEqual(localizationManager.language, .netherlands)
@@ -64,7 +64,7 @@ final class FeatureSettingsTests: XCTestCase, WeightRepositoryInjected {
     }
 
     func testTheme() {
-        let theme = ThemeManager()
+        let theme = ThemeViewModel()
 
         // Default settings
         XCTAssertEqual(theme.colorScheme, nil)

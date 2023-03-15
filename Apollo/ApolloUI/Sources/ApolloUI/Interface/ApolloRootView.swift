@@ -9,8 +9,8 @@ import FeatureSettings
 import SwiftUI
 
 public struct ApolloRootView: View {
-    @StateObject private var theme = ThemeManager()
-    @StateObject private var localization = LocalizationManager()
+    @StateObject private var theme = ThemeViewModel()
+    @StateObject private var localization = LocalizationViewModel()
     @StateObject private var plansViewModel = PlansViewModel()
     @StateObject private var activityViewModel = ActivityViewModel()
     @StateObject private var weightViewModel = WeightViewModel()
@@ -35,8 +35,8 @@ public struct ApolloRootView: View {
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         ApolloRootView()
-            .environmentObject(LocalizationManager())
-            .environmentObject(ThemeManager())
+            .environmentObject(LocalizationViewModel())
+            .environmentObject(ThemeViewModel())
             .environmentObject(PlansViewModel())
             .environmentObject(ActivityViewModel())
             .environmentObject(WeightViewModel())

@@ -45,6 +45,6 @@ struct PlansView_Previews: PreviewProvider {
         PlansView()
             .environmentObject(PlansViewModel())
             .environmentObject(ActivityViewModel())
-            .environmentObject(ThemeManager())
+            .environmentObject(ThemeViewModel())
     }
 }

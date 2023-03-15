@@ -9,8 +9,8 @@ import FoundationLocalization
 import SwiftUI
 
 public struct SettingsView: View {
-    @EnvironmentObject private var theme: ThemeManager
-    @EnvironmentObject private var localization: LocalizationManager
+    @EnvironmentObject private var theme: ThemeViewModel
+    @EnvironmentObject private var localization: LocalizationViewModel
     @EnvironmentObject private var weightViewModel: WeightViewModel
     @State private var darkMode = false
     @State private var selectedLanguage = Language.netherlands
@@ -90,8 +90,8 @@ public struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-            .environmentObject(ThemeManager())
-            .environmentObject(LocalizationManager())
+            .environmentObject(ThemeViewModel())
+            .environmentObject(LocalizationViewModel())
             .environmentObject(WeightViewModel())
     }
 }

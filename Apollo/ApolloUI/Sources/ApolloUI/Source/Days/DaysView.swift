@@ -62,7 +62,7 @@ struct DaysView: View {
 struct DaysView_Previews: PreviewProvider {
     static var previews: some View {
         DaysView(planID: UUID())
-            .environmentObject(ThemeManager())
+            .environmentObject(ThemeViewModel())
             .environmentObject(ActivityViewModel())
             .environmentObject(PlansViewModel())
     }

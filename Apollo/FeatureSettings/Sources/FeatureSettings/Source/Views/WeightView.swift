@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WeightView: View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject private var localization: LocalizationManager
+    @EnvironmentObject private var localization: LocalizationViewModel
     @EnvironmentObject private var viewModel: WeightViewModel
     @FocusState private var isFocused: Bool
 

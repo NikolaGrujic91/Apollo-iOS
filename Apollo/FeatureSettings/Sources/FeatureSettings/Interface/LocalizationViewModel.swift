@@ -9,7 +9,7 @@ import Foundation
 import FoundationLocalization
 import FoundationStorage
 
-public final class LocalizationManager: ObservableObject, StorageInjected {
+public final class LocalizationViewModel: ObservableObject, StorageInjected {
     // MARK: - Properties
 
     private let key = "language"

@@ -9,7 +9,7 @@ import FoundationStorage
 import SwiftUI
 import UtilityExtensions
 
-public final class ThemeManager: ObservableObject, StorageInjected {
+public final class ThemeViewModel: ObservableObject, StorageInjected {
     // MARK: - Properties
 
     @Published public var colorScheme: ColorScheme?
