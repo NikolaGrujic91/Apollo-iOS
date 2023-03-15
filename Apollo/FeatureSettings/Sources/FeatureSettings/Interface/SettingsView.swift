@@ -5,19 +5,19 @@
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
-import FeatureSettings
 import FoundationLocalization
-import ApolloWeight
 import SwiftUI
 
-struct SettingsView: View {
+public struct SettingsView: View {
     @EnvironmentObject private var theme: ThemeManager
     @EnvironmentObject private var localization: LocalizationManager
     @EnvironmentObject private var weightViewModel: WeightViewModel
     @State private var darkMode = false
     @State private var selectedLanguage = Language.netherlands
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         NavigationStack {
             List {
                 Section(header: Text("appearance".localized(localization.language))) {

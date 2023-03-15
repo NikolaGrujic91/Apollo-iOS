@@ -6,7 +6,6 @@
 //
 
 import ApolloData
-import FeatureSettings
 import SwiftUI
 
 struct ResetDataView: View, PlansRepositoryInjected {

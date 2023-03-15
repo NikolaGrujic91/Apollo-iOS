@@ -121,19 +121,4 @@ final class ApolloUITests: XCTestCase {
         XCTAssertEqual(day.intervals[11].startFraction, 0.10000000000000016)
         XCTAssertEqual(day.intervals[11].endFraction, 0.0)
     }
-
-    func testWeightViewModel() {
-        let weightViewModel = WeightViewModel()
-        XCTAssertEqual(weightViewModel.bodyMass, "0.0")
-
-        weightViewModel.bodyMass = "95.55555"
-        weightViewModel.save()
-        weightViewModel.update()
-        XCTAssertEqual(weightViewModel.bodyMass, "95.6")
-
-        weightViewModel.bodyMass = "0.0"
-        weightViewModel.save()
-        weightViewModel.update()
-        XCTAssertEqual(weightViewModel.bodyMass, "0.0")
-    }
 }

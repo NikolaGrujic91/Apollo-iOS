@@ -11,9 +11,6 @@
       location = "group:ApolloData">
    </FileRef>
    <FileRef
-      location = "group:ApolloWeight">
-   </FileRef>
-   <FileRef
       location = "group:ApolloLocation">
    </FileRef>
    <FileRef

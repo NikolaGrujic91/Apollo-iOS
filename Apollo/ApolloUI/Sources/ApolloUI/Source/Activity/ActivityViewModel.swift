@@ -8,7 +8,7 @@
 import ApolloAudio
 import ApolloData
 import ApolloLocation
-import ApolloWeight
+import FeatureSettings
 import Foundation
 
 enum TimerButton {

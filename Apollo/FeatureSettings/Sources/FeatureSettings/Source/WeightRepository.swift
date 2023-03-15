@@ -1,6 +1,6 @@
 //
 //  WeightRepository.swift
-//  ApolloWeight
+//  FeatureSettings
 //
 //  Created by Nikola Grujic on 07/02/2023.
 //

@@ -5,11 +5,12 @@
 //  Created by Nikola Grujic on 19/02/2023.
 //
 
-import ApolloWeight
 import Foundation
 
-final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
+public final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
     @Published var bodyMass: String = "0.0"
+
+    public init() {}
 
     func save() {
         weightRepository.save(Double(bodyMass) ?? 0.0)
