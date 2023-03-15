@@ -27,7 +27,7 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected, StorageInject
         }
     }
 
-   private  func trySave(_ plans: [Plan]) throws {
+    private  func trySave(_ plans: [Plan]) throws {
         do {
             let data = try JSONEncoder().encode(plans)
             storage.set(data, forKey: key)
