@@ -6,11 +6,9 @@
 //
 
 import FoundationData
-import FeatureSettings
 import SwiftUI
 
 struct ActivityView: View {
-    @EnvironmentObject private var localization: LocalizationViewModel
     @EnvironmentObject private var viewModel: ActivityViewModel
     var day: Day
 
@@ -43,8 +41,6 @@ struct ActivityView: View {
 struct ActivityView_Previews: PreviewProvider {
     static var previews: some View {
         ActivityView(day: previewDay())
-            .environmentObject(LocalizationViewModel())
-            .environmentObject(ThemeViewModel())
             .environmentObject(ActivityViewModel())
     }
 

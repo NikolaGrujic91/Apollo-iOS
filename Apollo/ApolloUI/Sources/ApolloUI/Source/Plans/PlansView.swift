@@ -6,7 +6,6 @@
 //
 
 import FoundationData
-import FeatureSettings
 import SwiftUI
 
 struct PlansView: View {
@@ -45,6 +44,5 @@ struct PlansView_Previews: PreviewProvider {
         PlansView()
             .environmentObject(PlansViewModel())
             .environmentObject(ActivityViewModel())
-            .environmentObject(ThemeViewModel())
     }
 }

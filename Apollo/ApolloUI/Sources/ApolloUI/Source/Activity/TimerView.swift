@@ -5,11 +5,9 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
-import FeatureSettings
 import SwiftUI
 
 struct TimerView: View {
-    @EnvironmentObject private var localization: LocalizationViewModel
     @EnvironmentObject private var viewModel: ActivityViewModel
 
     var body: some View {
@@ -64,8 +62,6 @@ struct TimerView: View {
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView()
-            .environmentObject(LocalizationViewModel())
-            .environmentObject(ThemeViewModel())
             .environmentObject(ActivityViewModel())
     }
 }

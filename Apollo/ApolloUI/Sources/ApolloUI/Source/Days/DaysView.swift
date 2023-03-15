@@ -6,7 +6,6 @@
 //
 
 import FoundationData
-import FeatureSettings
 import SwiftUI
 
 struct DaysView: View {
@@ -62,8 +61,6 @@ struct DaysView: View {
 struct DaysView_Previews: PreviewProvider {
     static var previews: some View {
         DaysView(planID: UUID())
-            .environmentObject(ThemeViewModel())
-            .environmentObject(ActivityViewModel())
             .environmentObject(PlansViewModel())
     }
 }

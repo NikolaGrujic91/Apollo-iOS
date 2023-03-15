@@ -18,10 +18,10 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(name: "FeatureSettings", path: "FeatureSettings"),
         .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "FoundationLocation", path: "FoundationLocation"),
         .package(name: "FoundationAudio", path: "FoundationAudio"),
-        .package(name: "FeatureSettings", path: "FeatureSettings"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
         .package(name: "FoundationLocalization", path: "FoundationLocalization"),
         .package(name: "FoundationImages", path: "FoundationImages"),
