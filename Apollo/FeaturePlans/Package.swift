@@ -39,8 +39,6 @@ let package = Package(
                 .product(name: "FoundationLocation", package: "FoundationLocation"),
                 .product(name: "FoundationAudio", package: "FoundationAudio"),
                 .product(name: "FeatureSettings", package: "FeatureSettings"),
-                .product(name: "FoundationLogger", package: "FoundationLogger"),
-                .product(name: "FoundationLocalization", package: "FoundationLocalization"),
                 .product(name: "FoundationImages", package: "FoundationImages"),
                 .product(name: "UtilityExtensions", package: "UtilityExtensions"),
                 .product(name: "FLAnimatedImage", package: "FLAnimatedImage"),
