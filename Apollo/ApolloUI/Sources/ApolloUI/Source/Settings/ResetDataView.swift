@@ -6,7 +6,7 @@
 //
 
 import ApolloData
-import FoundationLocalization
+import FeatureSettings
 import SwiftUI
 
 struct ResetDataView: View, PlansRepositoryInjected {

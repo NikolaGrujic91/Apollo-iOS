@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
-import FoundationLocalization
+import FeatureSettings
 import ApolloTheme
 import SwiftUI
 

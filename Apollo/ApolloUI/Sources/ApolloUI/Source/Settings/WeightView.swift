@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 19/02/2023.
 //
 
-import FoundationLocalization
+import FeatureSettings
 import SwiftUI
 
 struct WeightView: View {

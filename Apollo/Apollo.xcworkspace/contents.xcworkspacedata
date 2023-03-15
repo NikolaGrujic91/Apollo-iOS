@@ -23,6 +23,9 @@
       location = "group:ApolloTheme">
    </FileRef>
    <FileRef
+      location = "group:FeatureSettings">
+   </FileRef>
+   <FileRef
       location = "group:FoundationImages">
    </FileRef>
    <FileRef

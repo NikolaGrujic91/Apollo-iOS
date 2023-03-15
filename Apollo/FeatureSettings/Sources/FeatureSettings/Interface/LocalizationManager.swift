@@ -1,11 +1,12 @@
 //
 //  LocalizationManager.swift
-//  FoundationLocalization
+//  FeatureSettings
 //
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
 import Foundation
+import FoundationLocalization
 import FoundationStorage
 
 public final class LocalizationManager: ObservableObject, StorageInjected {

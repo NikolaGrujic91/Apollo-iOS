@@ -101,6 +101,17 @@ xcodebuild \
 xcpretty
 
 printg "/***************************************************/"
+printg "         Running tests for FeatureSettings"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme FeatureSettings \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
+
+printg "/***************************************************/"
 printg "             Running tests for FoundationImages"
 printg "/***************************************************/"
 
