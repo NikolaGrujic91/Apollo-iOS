@@ -71,28 +71,32 @@ Architecture of the application is based on the microapps/microfeatures architec
 
 ```mermaid
 graph TD
-    ApolloApp[ApolloApp] --> ApolloUI[ApolloUI]
+    ApolloApp[ApolloApp] --> FeaturePlans[FeaturePlans]
+    ApolloApp[ApolloApp] --> FeatureSettings[FeatureSettings]
     
-    ApolloUI --> ApolloData[ApolloData]
-    ApolloUI --> ApolloLogger[ApolloLogger]
-    ApolloUI --> ApolloTheme[ApolloTheme]
-    ApolloUI --> ApolloLocalization[ApolloLocalization]
-    ApolloUI --> ApolloImages[ApolloImages]
-    ApolloUI --> ApolloWeight[ApolloWeight]
-    ApolloUI --> ApolloLocation[ApolloLocation]
-    ApolloUI --> ApolloAudio[ApolloAudio]
+    FeaturePlans --> FeatureSettings[FeatureSettings]
+    FeaturePlans --> FoundationData[FoundationData]
+    FeaturePlans --> FoundationLocation[FoundationLocation]
+    FeaturePlans --> FoundationAudio[FoundationAudio]
+    FeaturePlans --> FoundationImages[FoundationImages]
+    FeaturePlans --> UtilityExtensions[UtilityExtensions]
 
-    ApolloData --> ApolloLogger[ApolloLogger]
+    FeatureSettings --> FoundationData[FoundationData]
+    FeatureSettings --> FoundationLogger[FoundationLogger]
+    FeatureSettings --> FoundationLocalization[FoundationLocalization]
+    FeatureSettings --> FoundationStorage[FoundationStorage]
+    FeatureSettings --> UtilityExtensions[UtilityExtensions]
 
-    ApolloLogger --> CocoaLumberJack[CocoaLumberJack]
+    FoundationData --> FoundationStorage[FoundationStorage]
+    FoundationData --> FoundationLogger[FoundationLogger]
 
-    ApolloWeight --> ApolloLogger[ApolloLogger]
+    FoundationLocation --> FoundationLogger[FoundationLogger]
 
-    ApolloLocation --> ApolloLogger[ApolloLogger]
+    FoundationAudio --> FoundationLogger[FoundationLogger]
 
-    ApolloAudio --> ApolloLogger[ApolloLogger]
+    FoundationLocalization --> FoundationLogger[FoundationLogger]
 
-    ApolloLocalization --> ApolloLogger[ApolloLogger]
+    FoundationLogger --> CocoaLumberjack[CocoaLumberjack]
 ```
 
 ## Dependency graph
