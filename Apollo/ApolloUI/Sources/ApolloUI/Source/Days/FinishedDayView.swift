@@ -9,7 +9,17 @@ import ApolloData
 import SwiftUI
 
 struct FinishedDayView: View {
-    var day: Day
+    @EnvironmentObject private var viewModel: PlansViewModel
+    @State private var day = Day()
+    let planId: UUID
+    let weekId: UUID
+    let dayId: UUID
+
+    init(planId: UUID, weekId: UUID, dayId: UUID) {
+        self.planId = planId
+        self.weekId = weekId
+        self.dayId = dayId
+    }
 
     var body: some View {
         DisclosureGroup(content: {
@@ -80,75 +90,18 @@ struct FinishedDayView: View {
                 Spacer()
             }
         })
-
-        /*VStack(alignment: .leading) {
-            HStack {
-                Text(name)
-                    .foregroundColor(.orange)
-                Spacer()
-                Image(systemName: "info.circle")
-                    .foregroundColor(.gray)
-            }
-            HStack {
-                VStack(alignment: .center) {
-                    Image(systemName: "ruler")
-                        .frame(height: 20)
-                        .foregroundColor(.gray)
-                    Text("\(distance)")
-                        .font(.system(size: 10))
-                        .padding(.vertical)
-                    Text("m")
-                        .font(.system(size: 12))
-                        .foregroundColor(.gray)
-                }
-                .padding(.leading)
-                Divider()
-                    .padding()
-                VStack(alignment: .center) {
-                    Image(systemName: "speedometer")
-                        .frame(height: 20)
-                        .foregroundColor(.gray)
-                    Text("\(pace)")
-                        .font(.system(size: 10))
-                        .padding(.vertical)
-                    Text("/km")
-                        .font(.system(size: 12))
-                        .foregroundColor(.gray)
-                }
-                Divider()
-                    .padding()
-                VStack(alignment: .center) {
-                    Image(systemName: "flame")
-                        .frame(height: 20)
-                        .foregroundColor(.gray)
-                    Text("\(calories)")
-                        .font(.system(size: 10))
-                        .padding(.vertical)
-                    Text("kcal")
-                        .font(.system(size: 12))
-                        .foregroundColor(.gray)
-                }
-                Divider()
-                    .padding()
-                VStack(alignment: .center) {
-                    Image(systemName: "figure.run")
-                        .frame(height: 20)
-                        .foregroundColor(.orange)
-                    Text("Run again")
-                        .font(.system(size: 10))
-                }
-                Spacer()
-            }
-            .background(.gray.opacity(0.1))
-            .cornerRadius(5)
-        }*/
+        .onAppear {
+            day = viewModel.getDay(planId, weekId, dayId)
+        }
     }
 }
 
 struct FinishedView_Previews: PreviewProvider {
     static var previews: some View {
         FinishedDayView(
-            day: Day()
+            planId: UUID(),
+            weekId: UUID(),
+            dayId: UUID()
         )
     }
 }

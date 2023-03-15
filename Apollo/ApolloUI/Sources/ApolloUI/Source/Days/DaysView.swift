@@ -23,7 +23,11 @@ struct DaysView: View {
                             ForEach(week.days) { day in
                                 if day.finished {
                                     VStack(alignment: .center, spacing: 10) {
-                                        FinishedDayView(day: day)
+                                        FinishedDayView(
+                                            planId: plan.id,
+                                            weekId: week.id,
+                                            dayId: day.id
+                                        )
                                     }
                                     .frame(maxWidth: .infinity) // Enable alignment center
                                     .contentShape(Rectangle()) // Detect tap on entire button

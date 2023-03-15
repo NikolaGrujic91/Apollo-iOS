@@ -39,4 +39,13 @@ final class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
 
         return plan
     }
+
+    func getDay(_ planId: UUID, _ weekId: UUID, _ dayId: UUID) -> Day {
+        guard let plan = plans.first(where: { $0.id == planId }),
+            let week = plan.weeks.first(where: { $0.id == weekId }),
+            let day = week.days.first(where: { $0.id == dayId })
+        else { return Day() }
+
+        return day
+    }
 }

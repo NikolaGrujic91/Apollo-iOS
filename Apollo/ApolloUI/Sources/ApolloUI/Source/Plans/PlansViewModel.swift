@@ -24,6 +24,10 @@ final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImage
         plansRepository.get(id)
     }
 
+    func getDay(_ planId: UUID, _ weekId: UUID, _ dayId: UUID) -> Day {
+        plansRepository.getDay(planId, weekId, dayId)
+    }
+
     func getImage(_ name: String) -> UIImage {
         if name == "0 to 2K" {
             return planImage.getImage(.plan1)
