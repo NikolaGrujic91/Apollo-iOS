@@ -1,6 +1,6 @@
 //
 //  Gifs.swift
-//  ApolloImages
+//  FoundationImages
 //
 //  Created by Nikola Grujic on 06/03/2023.
 //

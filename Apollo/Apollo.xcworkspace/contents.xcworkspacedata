@@ -23,7 +23,7 @@
       location = "group:ApolloTheme">
    </FileRef>
    <FileRef
-      location = "group:ApolloImages">
+      location = "group:FoundationImages">
    </FileRef>
    <FileRef
       location = "group:FoundationLocalization">

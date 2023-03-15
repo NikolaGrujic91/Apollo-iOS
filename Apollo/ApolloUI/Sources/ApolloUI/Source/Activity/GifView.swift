@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 06/03/2023.
 //
 
-import ApolloImages
+import FoundationImages
 import FLAnimatedImage
 import SwiftUI
 

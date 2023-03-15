@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 27/02/2023.
 //
 
-import ApolloImages
+import FoundationImages
 import SwiftUI
 
 struct InfoView: View {

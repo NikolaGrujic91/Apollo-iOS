@@ -1,8 +1,8 @@
-@testable import ApolloImages
+@testable import FoundationImages
 import SwiftUI
 import XCTest
 
-final class ApolloImagesTests: XCTestCase, ImagesInjected {
+final class FoundationImagesTests: XCTestCase, ImagesInjected {
     var imagePlan1: UIImage?
     var imagePlan2: UIImage?
     var imagePlan3: UIImage?

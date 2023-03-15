@@ -1,6 +1,6 @@
 //
 //  PlanImageInjected.swift
-//  ApolloImages
+//  FoundationImages
 //
 //  Created by Nikola Grujic on 12/02/2023.
 //

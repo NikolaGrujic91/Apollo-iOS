@@ -6,7 +6,7 @@
 //
 
 import ApolloData
-import ApolloImages
+import FoundationImages
 import SwiftUI
 
 final class PlansViewModel: ObservableObject, PlansRepositoryInjected, ImagesInjected {

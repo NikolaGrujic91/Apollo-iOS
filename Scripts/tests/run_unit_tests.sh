@@ -90,17 +90,6 @@ xcodebuild \
 xcpretty
 
 printg "/***************************************************/"
-printg "             Running tests for ApolloImages"
-printg "/***************************************************/"
-
-xcodebuild \
- test \
- -workspace $WORKSPACE \
- -scheme ApolloImages \
- -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
-xcpretty
-
-printg "/***************************************************/"
 printg "             Running tests for ApolloUI"
 printg "/***************************************************/"
 
@@ -108,6 +97,17 @@ xcodebuild \
  test \
  -workspace $WORKSPACE \
  -scheme ApolloUI \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for FoundationImages"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme FoundationImages \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
 
