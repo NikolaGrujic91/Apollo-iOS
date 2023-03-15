@@ -9,7 +9,7 @@ import ApolloData
 import ApolloImages
 import SwiftUI
 
-final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImageInjected {
+final class PlansViewModel: ObservableObject, PlansRepositoryInjected, ImagesInjected {
     @Published private(set) var plans: [Plan] = []
 
     func update() {
@@ -30,21 +30,21 @@ final class PlansViewModel: ObservableObject, PlansRepositoryInjected, PlanImage
 
     func getImage(_ name: String) -> UIImage {
         if name == "0 to 2K" {
-            return planImage.getImage(.plan1)
+            return images.getImage(.plan1)
         } else if name == "0 to 5K" {
-            return planImage.getImage(.plan2)
+            return images.getImage(.plan2)
         } else if name == "5K to 10K" {
-            return planImage.getImage(.plan3)
+            return images.getImage(.plan3)
         } else if name == "Weight Loss: Level 1" {
-            return planImage.getImage(.plan4)
+            return images.getImage(.plan4)
         } else if name == "Weight Loss: Level 2" {
-            return planImage.getImage(.plan5)
+            return images.getImage(.plan5)
         } else {
-            return planImage.getImage(.plan6)
+            return images.getImage(.plan6)
         }
     }
 
     func getGif(_ gif: Gifs) -> Data {
-        planImage.getGif(gif)
+        images.getGif(gif)
     }
 }

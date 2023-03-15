@@ -2,7 +2,7 @@
 import SwiftUI
 import XCTest
 
-final class ApolloImagesTests: XCTestCase, PlanImageInjected {
+final class ApolloImagesTests: XCTestCase, ImagesInjected {
     var imagePlan1: UIImage?
     var imagePlan2: UIImage?
     var imagePlan3: UIImage?
@@ -12,13 +12,13 @@ final class ApolloImagesTests: XCTestCase, PlanImageInjected {
 
     var successGif: Data?
 
-    func testPlanImageManager() {
-        imagePlan1 = planImage.getImage(.plan1)
-        imagePlan2 = planImage.getImage(.plan2)
-        imagePlan3 = planImage.getImage(.plan3)
-        imagePlan4 = planImage.getImage(.plan4)
-        imagePlan5 = planImage.getImage(.plan5)
-        imagePlan6 = planImage.getImage(.plan6)
+    func testImages() {
+        imagePlan1 = images.getImage(.plan1)
+        imagePlan2 = images.getImage(.plan2)
+        imagePlan3 = images.getImage(.plan3)
+        imagePlan4 = images.getImage(.plan4)
+        imagePlan5 = images.getImage(.plan5)
+        imagePlan6 = images.getImage(.plan6)
 
         compareImages()
     }
@@ -33,7 +33,7 @@ final class ApolloImagesTests: XCTestCase, PlanImageInjected {
     }
 
     func testGifs() {
-        successGif = planImage.getGif(.success)
+        successGif = images.getGif(.success)
         XCTAssertEqual(successGif?.isEmpty, false)
     }
 }

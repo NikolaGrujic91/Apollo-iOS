@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class PlanImageManager: PlanImageProtocol {
+final class ImagesManager: ImagesProtocol {
     // MARK: - Properties
 
     private let imagePlan1 = loadImage("1")
@@ -20,7 +20,7 @@ final class PlanImageManager: PlanImageProtocol {
 
     private let gifSuccess = loadGifData("success")
 
-    // MARK: - PlanImageProtocol
+    // MARK: - ImagesProtocol
 
     func getImage(_ planImage: PlanImage) -> UIImage {
         switch planImage {
