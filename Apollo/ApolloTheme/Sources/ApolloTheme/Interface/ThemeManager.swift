@@ -35,11 +35,6 @@ public final class ThemeManager: ObservableObject, StorageInjected {
     }
 
     private func getColorSchemeDevice() {
-        if UITraitCollection.current.userInterfaceStyle == .dark {
-            colorScheme = .dark
-            return
-        }
-
-        colorScheme = .light
+        colorScheme = UITraitCollection.current.userInterfaceStyle.toColorScheme()
     }
 }

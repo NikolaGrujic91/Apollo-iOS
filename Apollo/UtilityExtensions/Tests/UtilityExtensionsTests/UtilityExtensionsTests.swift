@@ -24,4 +24,12 @@ final class UtilityExtensionsTests: XCTestCase {
         timeInterval = TimeInterval(integerLiteral: 3900)
         XCTAssertEqual(timeInterval.format(), "01:05:00")
     }
+
+    func testUIUserInterfaceStyleExtension() {
+        var userInterfaceStyle = UIUserInterfaceStyle.dark
+        XCTAssertEqual(userInterfaceStyle.toColorScheme(), ColorScheme.dark)
+
+        userInterfaceStyle = UIUserInterfaceStyle.light
+        XCTAssertEqual(userInterfaceStyle.toColorScheme(), ColorScheme.light)
+    }
 }
