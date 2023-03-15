@@ -8,13 +8,13 @@
       location = "group:ApolloUI">
    </FileRef>
    <FileRef
-      location = "group:ApolloLocation">
-   </FileRef>
-   <FileRef
       location = "group:FeatureSettings">
    </FileRef>
    <FileRef
       location = "group:FoundationData">
+   </FileRef>
+   <FileRef
+      location = "group:FoundationLocation">
    </FileRef>
    <FileRef
       location = "group:FoundationImages">

@@ -1,8 +1,8 @@
-@testable import ApolloLocation
+@testable import FoundationLocation
 import CoreLocation
 import XCTest
 
-final class ApolloLocationTests: XCTestCase, LocationTrackerInjected {
+final class FoundationLocationTests: XCTestCase, LocationTrackerInjected {
     func testLocationTracker() throws {
         XCTAssertTrue(locationTracker.updatingLocationStopped)
 

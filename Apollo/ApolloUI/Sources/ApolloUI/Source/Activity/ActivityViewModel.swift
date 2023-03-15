@@ -7,7 +7,7 @@
 
 import FoundationAudio
 import FoundationData
-import ApolloLocation
+import FoundationLocation
 import FeatureSettings
 import Foundation
 

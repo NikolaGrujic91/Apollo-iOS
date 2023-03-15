@@ -1,6 +1,6 @@
 //
 //  LocationTrackerInjected.swift
-//  ApolloLocation
+//  FoundationLocation
 //
 //  Created by Nikola Grujic on 10/02/2023.
 //

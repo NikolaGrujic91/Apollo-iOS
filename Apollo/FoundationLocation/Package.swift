@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "ApolloLocation",
+    name: "FoundationLocation",
     platforms: [
         .iOS(.v16),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "ApolloLocation",
-            targets: ["ApolloLocation"]
+            name: "FoundationLocation",
+            targets: ["FoundationLocation"]
         ),
     ],
     dependencies: [
@@ -25,7 +25,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "ApolloLocation",
+            name: "FoundationLocation",
             dependencies: [
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
             ],
@@ -34,8 +34,8 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "ApolloLocationTests",
-            dependencies: ["ApolloLocation"],
+            name: "FoundationLocationTests",
+            dependencies: ["FoundationLocation"],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]
