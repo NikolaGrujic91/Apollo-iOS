@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 15/02/2023.
 //
 
-import ApolloData
+import FoundationData
 import FeatureSettings
 import SwiftUI
 

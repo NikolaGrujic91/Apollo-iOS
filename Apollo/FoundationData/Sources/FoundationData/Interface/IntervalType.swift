@@ -1,6 +1,6 @@
 //
 //  IntervalType.swift
-//  ApolloData
+//  FoundationData
 //
 //  Created by Nikola Grujic on 08/03/2023.
 //

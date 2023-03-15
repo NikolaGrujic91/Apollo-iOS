@@ -1,6 +1,6 @@
 //
 //  Day.swift
-//  ApolloData
+//  FoundationData
 //
 //  Created by Nikola Grujic on 11/02/2023.
 //

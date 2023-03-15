@@ -1,7 +1,7 @@
-@testable import ApolloData
+@testable import FoundationData
 import XCTest
 
-final class ApolloDataTests: XCTestCase, PlansRepositoryInjected {
+final class FoundationDataTests: XCTestCase, PlansRepositoryInjected {
     func testMemoryLayout() {
         XCTAssertEqual(class_getInstanceSize(Interval.self), 64)
         XCTAssertEqual(class_getInstanceSize(Plan.self), 56)

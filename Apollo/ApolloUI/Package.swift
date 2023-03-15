@@ -18,7 +18,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "ApolloData", path: "ApolloData"),
+        .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "ApolloLocation", path: "ApolloLocation"),
         .package(name: "ApolloAudio", path: "ApolloAudio"),
         .package(name: "FeatureSettings", path: "FeatureSettings"),
@@ -35,7 +35,7 @@ let package = Package(
         .target(
             name: "ApolloUI",
             dependencies: [
-                .product(name: "ApolloData", package: "ApolloData"),
+                .product(name: "FoundationData", package: "FoundationData"),
                 .product(name: "ApolloLocation", package: "ApolloLocation"),
                 .product(name: "ApolloAudio", package: "ApolloAudio"),
                 .product(name: "FeatureSettings", package: "FeatureSettings"),

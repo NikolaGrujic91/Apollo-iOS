@@ -6,7 +6,7 @@
 //
 
 import ApolloAudio
-import ApolloData
+import FoundationData
 import ApolloLocation
 import FeatureSettings
 import Foundation

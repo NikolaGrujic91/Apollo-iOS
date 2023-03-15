@@ -1,27 +1,27 @@
 //
-//  Plan.swift
-//  ApolloData
+//  Week.swift
+//  FoundationData
 //
-//  Created by Nikola Grujic on 11/02/2023.
+//  Created by Nikola Grujic on 04/03/2023.
 //
 
 import Foundation
 
-public final class Plan: Codable, Identifiable {
+public final class Week: Codable, Identifiable {
     public let id = UUID()
     public var name: String = ""
-    public var weeks: [Week] = []
+    public var days: [Day] = []
 
     public init() {}
 
     private enum CodingKeys: CodingKey {
         case name
-        case weeks
+        case days
     }
 }
 
-extension Plan: Hashable {
-    public static func == (lhs: Plan, rhs: Plan) -> Bool {
+extension Week: Hashable {
+    public static func == (lhs: Week, rhs: Week) -> Bool {
         lhs.id == rhs.id
     }
 

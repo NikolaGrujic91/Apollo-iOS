@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloData"
-               BuildableName = "ApolloData"
-               BlueprintName = "ApolloData"
+               BlueprintIdentifier = "FoundationData"
+               BuildableName = "FoundationData"
+               BlueprintName = "FoundationData"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloDataTests"
-               BuildableName = "ApolloDataTests"
-               BlueprintName = "ApolloDataTests"
+               BlueprintIdentifier = "FoundationDataTests"
+               BuildableName = "FoundationDataTests"
+               BlueprintName = "FoundationDataTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloDataTests"
-               BuildableName = "ApolloDataTests"
-               BlueprintName = "ApolloDataTests"
+               BlueprintIdentifier = "FoundationDataTests"
+               BuildableName = "FoundationDataTests"
+               BlueprintName = "FoundationDataTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -74,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ApolloData"
-            BuildableName = "ApolloData"
-            BlueprintName = "ApolloData"
+            BlueprintIdentifier = "FoundationData"
+            BuildableName = "FoundationData"
+            BlueprintName = "FoundationData"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

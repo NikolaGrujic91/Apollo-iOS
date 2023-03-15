@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 20/02/2023.
 //
 
-import ApolloData
+import FoundationData
 import SwiftUI
 
 struct ResetDataView: View, PlansRepositoryInjected {

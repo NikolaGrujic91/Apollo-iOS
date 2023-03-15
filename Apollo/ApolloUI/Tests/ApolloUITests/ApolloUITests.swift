@@ -1,4 +1,4 @@
-import ApolloData
+import FoundationData
 @testable import ApolloUI
 import XCTest
 
