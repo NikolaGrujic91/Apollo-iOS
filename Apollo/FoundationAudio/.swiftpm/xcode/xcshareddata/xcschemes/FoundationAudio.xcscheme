@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloAudio"
-               BuildableName = "ApolloAudio"
-               BlueprintName = "ApolloAudio"
+               BlueprintIdentifier = "FoundationAudio"
+               BuildableName = "FoundationAudio"
+               BlueprintName = "FoundationAudio"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloAudioTests"
-               BuildableName = "ApolloAudioTests"
-               BlueprintName = "ApolloAudioTests"
+               BlueprintIdentifier = "FoundationAudioTests"
+               BuildableName = "FoundationAudioTests"
+               BlueprintName = "FoundationAudioTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ApolloAudioTests"
-               BuildableName = "ApolloAudioTests"
-               BlueprintName = "ApolloAudioTests"
+               BlueprintIdentifier = "FoundationAudioTests"
+               BuildableName = "FoundationAudioTests"
+               BlueprintName = "FoundationAudioTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -74,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ApolloAudio"
-            BuildableName = "ApolloAudio"
-            BlueprintName = "ApolloAudio"
+            BlueprintIdentifier = "FoundationAudio"
+            BuildableName = "FoundationAudio"
+            BlueprintName = "FoundationAudio"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

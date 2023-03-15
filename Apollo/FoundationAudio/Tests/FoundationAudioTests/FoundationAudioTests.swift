@@ -1,7 +1,7 @@
-@testable import ApolloAudio
+@testable import FoundationAudio
 import XCTest
 
-final class ApolloAudioTests: XCTestCase, AudioPlayerInjected {
+final class FoundationAudioTests: XCTestCase, AudioPlayerInjected {
     func testAudioPlayer() throws {
         let audioPlayer = AudioPlayer()
 

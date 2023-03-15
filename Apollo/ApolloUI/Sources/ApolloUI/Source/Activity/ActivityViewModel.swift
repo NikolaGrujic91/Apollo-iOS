@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 18/02/2023.
 //
 
-import ApolloAudio
+import FoundationAudio
 import FoundationData
 import ApolloLocation
 import FeatureSettings

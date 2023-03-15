@@ -46,17 +46,6 @@ xcodebuild \
 xcpretty
 
 printg "/***************************************************/"
-printg "             Running tests for ApolloAudio"
-printg "/***************************************************/"
-
-xcodebuild \
- test \
- -workspace $WORKSPACE \
- -scheme ApolloAudio \
- -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
-xcpretty
-
-printg "/***************************************************/"
 printg "             Running tests for ApolloUI"
 printg "/***************************************************/"
 
@@ -99,6 +88,18 @@ xcodebuild \
  -scheme FoundationImages \
  -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
 xcpretty
+
+printg "/***************************************************/"
+printg "             Running tests for FoundationAudio"
+printg "/***************************************************/"
+
+xcodebuild \
+ test \
+ -workspace $WORKSPACE \
+ -scheme FoundationAudio \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro' |
+xcpretty
+
 
 printg "/***************************************************/"
 printg "      Running tests for FoundationLocalization"

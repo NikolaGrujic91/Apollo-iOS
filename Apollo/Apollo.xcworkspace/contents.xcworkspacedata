@@ -11,9 +11,6 @@
       location = "group:ApolloLocation">
    </FileRef>
    <FileRef
-      location = "group:ApolloAudio">
-   </FileRef>
-   <FileRef
       location = "group:FeatureSettings">
    </FileRef>
    <FileRef
@@ -21,6 +18,9 @@
    </FileRef>
    <FileRef
       location = "group:FoundationImages">
+   </FileRef>
+   <FileRef
+      location = "group:FoundationAudio">
    </FileRef>
    <FileRef
       location = "group:FoundationLocalization">
