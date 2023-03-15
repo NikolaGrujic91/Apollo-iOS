@@ -1,6 +1,6 @@
 //
 //  FinishedDayView.swift
-//  
+//
 //
 //  Created by Nikola Grujic on 13/03/2023.
 //

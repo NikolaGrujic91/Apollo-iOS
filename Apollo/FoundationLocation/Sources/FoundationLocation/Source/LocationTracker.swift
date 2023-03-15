@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
-import FoundationLogger
 import CoreLocation
+import FoundationLogger
 
 final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
     private let locationManager = CLLocationManager()

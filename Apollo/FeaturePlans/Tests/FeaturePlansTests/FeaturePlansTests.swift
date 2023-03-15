@@ -1,5 +1,5 @@
-import FoundationData
 @testable import FeaturePlans
+import FoundationData
 import XCTest
 
 final class FeaturePlansTests: XCTestCase {

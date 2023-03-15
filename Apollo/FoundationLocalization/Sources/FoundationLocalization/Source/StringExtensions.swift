@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
-import FoundationLogger
 import Foundation
+import FoundationLogger
 
 extension String: LoggerInjected {
     public func localized(_ language: Language) -> String {

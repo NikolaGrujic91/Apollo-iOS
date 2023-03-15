@@ -1,5 +1,5 @@
-@testable import FoundationLocation
 import CoreLocation
+@testable import FoundationLocation
 import XCTest
 
 final class FoundationLocationTests: XCTestCase, LocationTrackerInjected {

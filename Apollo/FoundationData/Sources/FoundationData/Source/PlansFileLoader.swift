@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import FoundationStorage
-import FoundationLogger
 import Foundation
+import FoundationLogger
+import FoundationStorage
 
 final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
@@ -27,7 +27,7 @@ final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected, StorageInject
         }
     }
 
-    private  func trySave(_ plans: [Plan]) throws {
+    private func trySave(_ plans: [Plan]) throws {
         do {
             let data = try JSONEncoder().encode(plans)
             storage.set(data, forKey: key)

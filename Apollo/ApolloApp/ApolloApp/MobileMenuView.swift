@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 13/02/2023.
 //
 
-import FeatureSettings
 import FeaturePlans
+import FeatureSettings
 import SwiftUI
 
 struct MobileMenuView: View {

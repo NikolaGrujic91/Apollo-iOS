@@ -1,12 +1,12 @@
 //
 //  UIUserInterfaceStyleExtension.swift
-//  
+//
 //
 //  Created by Nikola Grujic on 15/03/2023.
 //
 
-import UIKit
 import SwiftUI
+import UIKit
 
 public extension UIUserInterfaceStyle {
     func toColorScheme() -> ColorScheme {

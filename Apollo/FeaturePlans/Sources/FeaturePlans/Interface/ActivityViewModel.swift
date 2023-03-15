@@ -5,11 +5,11 @@
 //  Created by Nikola Grujic on 18/02/2023.
 //
 
+import FeatureSettings
+import Foundation
 import FoundationAudio
 import FoundationData
 import FoundationLocation
-import FeatureSettings
-import Foundation
 
 enum TimerButton {
     case start

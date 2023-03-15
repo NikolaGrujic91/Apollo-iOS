@@ -1,5 +1,5 @@
-import XCTest
 @testable import FoundationStorage
+import XCTest
 
 final class FoundationStorageTests: XCTestCase, StorageInjected {
     func testStorageUserDefaults() {

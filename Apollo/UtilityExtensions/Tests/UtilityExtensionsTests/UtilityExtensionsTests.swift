@@ -1,6 +1,6 @@
-import XCTest
 import SwiftUI
 @testable import UtilityExtensions
+import XCTest
 
 final class UtilityExtensionsTests: XCTestCase {
     func testColorSchemeExtension() {

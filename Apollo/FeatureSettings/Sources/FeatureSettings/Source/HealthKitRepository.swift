@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-import FoundationLogger
 import Foundation
+import FoundationLogger
 import HealthKit
 
 final class HealthKitRepository {

@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-import FoundationStorage
-import FoundationLogger
 import Foundation
+import FoundationLogger
+import FoundationStorage
 
 final class WeightRepository: WeightRepositoryProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties

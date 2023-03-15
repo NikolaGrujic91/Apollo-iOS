@@ -1,7 +1,7 @@
-import XCTest
-import SwiftUI
-import FoundationLocalization
 @testable import FeatureSettings
+import FoundationLocalization
+import SwiftUI
+import XCTest
 
 final class FeatureSettingsTests: XCTestCase, WeightRepositoryInjected {
     func testLocalizationViewModel() {

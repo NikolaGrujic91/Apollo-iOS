@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 06/03/2023.
 //
 
-import FoundationImages
 import FLAnimatedImage
+import FoundationImages
 import SwiftUI
 
 struct GifView: UIViewRepresentable {
@@ -25,7 +25,7 @@ struct GifView: UIViewRepresentable {
 
         NSLayoutConstraint.activate([
             animatedImageView.heightAnchor.constraint(equalTo: view.heightAnchor),
-            animatedImageView.widthAnchor.constraint(equalTo: view.widthAnchor)
+            animatedImageView.widthAnchor.constraint(equalTo: view.widthAnchor),
         ])
 
         return view
