@@ -1,1239 +1,1295 @@
 strict digraph "" {
-	ApolloImagesTests	[absolute_name="Apollo/ApolloImages/Tests/ApolloImagesTests/ApolloImagesTests.swift/ApolloImagesTests",
-		display_name=ApolloImagesTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+	FoundationLocalizationTests	[absolute_name="Apollo/FoundationLocalization/Tests/FoundationLocalizationTests/FoundationLocalizationTests.swift/FoundationLocalizationTests",
+		display_name=FoundationLocalizationTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=10,
 		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=24,
-		metric_tag_compareimages=0.3019895968805306,
-		metric_tag_uiimage=0.6743988172432085,
-		metric_tag_xctassertequal=0.6191201986713077];
-	PlanImageInjected	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift/PlanImageInjected",
-		display_name=PlanImageInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_extension=0.2797573689875965,
-		metric_tag_planimage=0.40228806204834605,
-		metric_tag_planimageinjected=0.691411161715984,
-		metric_tag_planimageprotocol=0.4464101080236435,
-		metric_tag_public=0.24065088146671487];
-	ApolloImagesTests -> PlanImageInjected;
-	PlanImageProtocol	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageProtocol.swift/PlanImageProtocol",
-		display_name=PlanImageProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=2,
-		metric_tag_anyobject=0.2725917819684675,
-		metric_tag_getimage=0.40009896403229395,
-		metric_tag_planimage=0.6983762156889468,
-		metric_tag_planimageprotocol=0.3874862707824763,
-		metric_tag_uiimage=0.35740675804832744];
-	PlanImageInjected -> PlanImageProtocol;
-	PlanImageInjectionMap	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImageInjected.swift/PlanImageInjectionMap",
-		display_name=PlanImageInjectionMap,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=2,
-		metric_tag_enum=0.2679299242828554,
-		metric_tag_planimage=0.4052609557448256,
-		metric_tag_planimageinjectionmap=0.5572300347408031,
-		metric_tag_planimagemanager=0.5012320434422224,
-		metric_tag_planimageprotocol=0.4497090619857146];
-	PlanImageInjectionMap -> PlanImageProtocol;
-	PlanImageManager	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Source/PlanImageManager.swift/PlanImageManager",
-		display_name=PlanImageManager,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
-		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=30,
-		metric_tag_imageempty=0.639945530800062,
-		metric_tag_loadimage=0.639945530800062,
-		metric_tag_planimage=0.20059302430819623,
-		metric_tag_uiimage=0.2722127886143075];
-	PlanImageInjectionMap -> PlanImageManager;
-	PlanImage	[absolute_name="Apollo/ApolloImages/Sources/ApolloImages/Interface/PlanImage.swift/PlanImage",
-		display_name=PlanImage,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
-		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=7,
-		metric_tag_enum=0.5514982803636846,
-		metric_tag_planimage=0.8341760286389791];
-	PlanImageProtocol -> PlanImage;
-	PlanImageManager -> PlanImage;
-	ApolloAudioTests	[absolute_name="Apollo/ApolloAudio/Tests/ApolloAudioTests/ApolloAudioTests.swift/ApolloAudioTests",
-		display_name=ApolloAudioTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=6,
-		metric_tag_apolloaudiotests=0.31818000376294225,
-		metric_tag_audioplayer=0.5302871555479625,
-		metric_tag_audioplayerinjected=0.26514357777398123,
-		metric_tag_testaudioplayer=0.31818000376294225,
-		metric_tag_xctassertnothrow=0.6363600075258845,
-		metric_tag_xctestcase=0.20264088200199934];
-	AudioPlayerInjected	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift/AudioPlayerInjected",
-		display_name=AudioPlayerInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_audioplayerinjected=0.6561170503166726,
-		metric_tag_audioplayerprotocol=0.42362243991128345,
-		metric_tag_extension=0.26547673787756176,
-		metric_tag_player=0.49519928534006374,
-		metric_tag_public=0.22836649919300536];
-	ApolloAudioTests -> AudioPlayerInjected;
-	AudioPlayer	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Source/AudioPlayer.swift/AudioPlayer",
-		display_name=AudioPlayer,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=4,
-		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=23,
-		metric_tag_audioplayer=0.5418104201275094,
-		metric_tag_avaudioplayer=0.26007530404817425,
-		metric_tag_playsound=0.26007530404817425,
-		metric_tag_sound=0.3250862520765056,
-		metric_tag_throw=0.21672416805100375];
-	ApolloAudioTests -> AudioPlayer;
-	AudioPlayerProtocol	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerProtocol.swift/AudioPlayerProtocol",
-		display_name=AudioPlayerProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=2,
-		metric_tag_anyobject=0.31879769784333184,
-		metric_tag_audioplayerprotocol=0.453167480616275,
-		metric_tag_play=0.5050866916666104,
-		metric_tag_sound=0.4679180998117983,
-		metric_tag_soundsenum=0.4679180998117983];
-	AudioPlayerInjected -> AudioPlayerProtocol;
-	SoundsEnum	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/SoundsEnum.swift/SoundsEnum",
-		display_name=SoundsEnum,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=3,
-		metric_tag_countdown=0.5846450747928785,
-		metric_tag_enum=0.28111175072331407,
-		metric_tag_soundsenum=0.4871924226074666];
-	AudioPlayer -> SoundsEnum;
-	LoggerInjected	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift/LoggerInjected",
-		display_name=LoggerInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=5,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_extension=0.30008012685842816,
-		metric_tag_logger=0.47883922533085754,
-		metric_tag_loggerinjected=0.6202784685577946,
-		metric_tag_loggerprotocol=0.47883922533085754,
-		metric_tag_public=0.2581327787734739];
-	AudioPlayer -> LoggerInjected;
-	AudioError	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift/AudioError",
-		display_name=AudioError,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=3,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=36,
-		metric_tag_audioerrortype=0.327532457435941,
-		metric_tag_errorline=0.3518299478402541,
-		metric_tag_errortype=0.27214583136948906,
-		metric_tag_not=0.27214583136948906,
-		metric_tag_public=0.30209026099608727,
-		metric_tag_requested=0.2314541171519635,
-		metric_tag_sound=0.5786212708506222];
-	AudioPlayer -> AudioError;
-	ErrorLine	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/ErrorLine.swift/ErrorLine",
-		display_name=ErrorLine,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=9,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=23,
-		metric_tag_column=0.6336209475185874,
-		metric_tag_errorlocation=0.3168104737592937,
-		metric_tag_function=0.6336209475185874];
-	AudioPlayer -> ErrorLine;
-	AudioPlayerInjectionMap	[absolute_name="Apollo/ApolloAudio/Sources/ApolloAudio/Interface/AudioPlayerInjected.swift/AudioPlayerInjectionMap",
-		display_name=AudioPlayerInjectionMap,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=2,
-		metric_tag_audioplayer=0.4475435748310052,
-		metric_tag_audioplayerinjectionmap=0.5370653044638204,
-		metric_tag_audioplayerprotocol=0.4334352408118882,
-		metric_tag_enum=0.2582342253444281,
-		metric_tag_player=0.5066700940965155];
-	AudioPlayerInjectionMap -> AudioPlayer;
-	AudioPlayerInjectionMap -> AudioPlayerProtocol;
-	AudioPlayerProtocol -> SoundsEnum;
-	LoggerProtocol	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerProtocol.swift/LoggerProtocol",
-		display_name=LoggerProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=5,
-		metric_tag_error=0.5149775887507331,
-		metric_tag_handleerror=0.5003633099129454,
-		metric_tag_loggerprotocol=0.22446481394894718,
-		metric_tag_loginfo=0.2501816549564727,
-		metric_tag_logwarn=0.2501816549564727,
-		metric_tag_message=0.5003633099129454];
-	LoggerInjected -> LoggerProtocol;
-	AudioError -> ErrorLine;
-	ErrorProtocol	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/ErrorProtocol.swift/ErrorProtocol",
-		display_name=ErrorProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=7,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=2,
-		metric_tag_anyobject=0.31565206848689353,
-		metric_tag_errorline=0.6761031489016367,
-		metric_tag_errorprotocol=0.3662517806813872,
-		metric_tag_localizederror=0.5559747627842023];
-	AudioError -> ErrorProtocol;
-	AudioErrorType	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/AudioError.swift/AudioErrorType",
-		display_name=AudioErrorType,
+		"metric_sloc-in-entity"=41,
+		metric_tag_xctassertequal=0.98600960907177];
+	Language	[absolute_name="Apollo/FoundationLocalization/Sources/FoundationLocalization/Interface/Language.swift/Language",
+		display_name=Language,
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=0,
 		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=3,
-		metric_tag_audioerrortype=0.5538689206708467,
-		metric_tag_enum=0.2822900213339713,
-		metric_tag_failedtoloadsound=0.5538689206708467,
-		metric_tag_soundnotfound=0.5538689206708467];
-	AudioError -> AudioErrorType;
-	ApolloThemeTests	[absolute_name="Apollo/ApolloTheme/Tests/ApolloThemeTests/ApolloThemeTests.swift/ApolloThemeTests",
-		display_name=ApolloThemeTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
+		"metric_sloc-in-entity"=4,
+		metric_tag_caseiterable=0.4311544509153369,
+		metric_tag_english=0.4774126916900428,
+		metric_tag_enum=0.2226419357233408,
+		metric_tag_identifiable=0.3597550364783126,
+		metric_tag_language=0.3779269388168849,
+		metric_tag_netherlands=0.4774126916900428,
+		metric_tag_public=0.21984828755974972];
+	FoundationDataTests	[absolute_name="Apollo/FoundationData/Tests/FoundationDataTests/FoundationDataTests.swift/FoundationDataTests",
+		display_name=FoundationDataTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=13,
-		metric_tag_apollothemetests=0.2576417095152102,
-		metric_tag_testtheme=0.2576417095152102,
-		metric_tag_theme=0.20195829190467685,
-		metric_tag_xctassertequal=0.8803348858635027];
-	ThemeManager	[absolute_name="Apollo/ApolloTheme/Sources/ApolloTheme/Interface/ThemeManager.swift/ThemeManager",
-		display_name=ThemeManager,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
-		"metric_fan-in-dependency-graph"=11,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=3,
-		"metric_sloc-in-entity"=24,
-		metric_tag_colorscheme=0.4543692051694955,
-		metric_tag_defaults=0.30291280344633037,
-		metric_tag_forkey=0.27493560552468593,
-		metric_tag_getcolorschemedevice=0.3507401391937559,
-		metric_tag_key=0.43841454966508364,
-		metric_tag_public=0.3051869962957706,
-		metric_tag_stringvalue=0.3154930382872678];
-	ApolloThemeTests -> ThemeManager;
-	ApolloDataTests	[absolute_name="Apollo/ApolloData/Tests/ApolloDataTests/ApolloDataTests.swift/ApolloDataTests",
-		display_name=ApolloDataTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=4,
-		"metric_sloc-in-entity"=45,
-		metric_tag_checkdayinitialvalue=0.21021024037808148,
-		metric_tag_checkdaywithvalue=0.21021024037808148,
-		metric_tag_checkplans=0.2802803205041086,
-		metric_tag_xctassertequal=0.8619197954498257];
-	PlansRepositoryInjected	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift/PlansRepositoryInjected",
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=7,
+		"metric_sloc-in-entity"=144,
+		metric_tag_xctassertequal=0.9905113720764331];
+	PlansRepositoryInjected	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/PlansRepositoryInjected.swift/PlansRepositoryInjected",
 		display_name=PlansRepositoryInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=4,
 		"metric_fan-out-dependency-graph"=1,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=9,
-		metric_tag_extension=0.2877614794684053,
-		metric_tag_plansrepository=0.49138306023052736,
-		metric_tag_plansrepositoryinjected=0.6353058321657169,
-		metric_tag_plansrepositoryprotocol=0.45918230357760387,
-		metric_tag_public=0.24753612009164994];
-	ApolloDataTests -> PlansRepositoryInjected;
-	PlansRepositoryProtocol	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryProtocol.swift/PlansRepositoryProtocol",
-		display_name=PlansRepositoryProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=5,
-		metric_tag_async=0.3273808084503472,
-		metric_tag_load=0.3125553356444427,
-		metric_tag_plan=0.3328484286622952,
-		metric_tag_plans=0.3738516311248317,
-		metric_tag_plansrepositoryprotocol=0.41485483358736824,
-		metric_tag_reset=0.42835837462554593,
-		metric_tag_save=0.32219370531203684];
-	PlansRepositoryInjected -> PlansRepositoryProtocol;
-	Day	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Day.swift/Day",
-		display_name=Day,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=6,
-		"metric_fan-out-dependency-graph"=2,
+		metric_tag_extension=0.2777405714927028,
+		metric_tag_plansrepository=0.5045606737542727,
+		metric_tag_plansrepositoryinjected=0.6566530654275763,
+		metric_tag_plansrepositoryprotocol=0.47286010374872556];
+	FoundationDataTests -> PlansRepositoryInjected;
+	IntervalType	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/IntervalType.swift/IntervalType",
+		display_name=IntervalType,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=4,
+		"metric_fan-out-dependency-graph"=0,
 		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=20,
-		metric_tag_calories=0.24638402959039446,
-		metric_tag_day=0.41726039345289256,
-		metric_tag_distance=0.27461214607911405,
-		metric_tag_hasher=0.27461214607911405,
-		metric_tag_intervals=0.30529200537345585,
-		metric_tag_name=0.21971676667582946,
-		metric_tag_public=0.5312830765660821];
-	Interval	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Interval.swift/Interval",
-		display_name=Interval,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_sloc-in-entity"=18,
+		metric_tag_caseiterable=0.29002123271822655,
+		metric_tag_color=0.45460707715389076,
+		metric_tag_fastrun=0.321137395347129,
+		metric_tag_fastwalk=0.321137395347129,
+		metric_tag_intervaltype=0.43833935550619263,
+		metric_tag_run=0.321137395347129,
+		metric_tag_walk=0.321137395347129];
+	FoundationDataTests -> IntervalType;
+	PlansRepositoryProtocol	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/PlansRepositoryProtocol.swift/PlansRepositoryProtocol",
+		display_name=PlansRepositoryProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_codable=0.22838367106754912,
-		metric_tag_codingkeys=0.2211841193431169,
-		metric_tag_identifiable=0.2117637368708131,
-		metric_tag_interval=0.22838367106754912,
-		metric_tag_public=0.4769439789077624,
-		metric_tag_seconds=0.47338988715555547,
-		metric_tag_type=0.45676734213509823,
-		metric_tag_uuid=0.22838367106754912];
+		"metric_sloc-in-entity"=7,
+		metric_tag_getday=0.23098187309640417,
+		metric_tag_plan=0.3472631222545568,
+		metric_tag_plans=0.20284490631919644,
+		metric_tag_plansrepositoryprotocol=0.22401120009039552,
+		metric_tag_reset=0.21786263074592413,
+		metric_tag_uuid=0.6581195112192494];
+	PlansRepositoryInjected -> PlansRepositoryProtocol;
+	Day	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/Day.swift/Day",
+		display_name=Day,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=9,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=4,
+		"metric_sloc-in-entity"=50,
+		metric_tag_endfraction=0.23408355849828333,
+		metric_tag_fractionduration=0.25919820961095347,
+		metric_tag_fractionscalculated=0.25919820961095347,
+		metric_tag_public=0.4836411454074644,
+		metric_tag_remainingfraction=0.3455976128146046,
+		metric_tag_startfraction=0.23408355849828333,
+		metric_tag_totaltime=0.3121114113310444];
+	Day -> IntervalType;
+	Interval	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/Interval.swift/Interval",
+		display_name=Interval,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=4,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=15,
+		metric_tag_interval=0.5551441898439122,
+		metric_tag_public=0.5034069842922814,
+		metric_tag_seconds=0.3124268376673044,
+		metric_tag_type=0.30190880168902123];
 	Day -> Interval;
-	CodingKeys	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift/CodingKeys",
+	CodingKeys	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/Plan.swift/CodingKeys",
 		display_name=CodingKeys,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=3,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=4,
 		"metric_fan-out-dependency-graph"=0,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=3,
-		metric_tag_codingkey=0.48679378415521785,
-		metric_tag_codingkeys=0.48679378415521785,
-		metric_tag_days=0.5425655469109554,
-		metric_tag_enum=0.29002444637020747,
-		metric_tag_name=0.38415110468220315];
+		metric_tag_codingkey=0.47469795446645713,
+		metric_tag_codingkeys=0.47469795446645713,
+		metric_tag_enum=0.2868938877408263,
+		metric_tag_name=0.3587961723519437,
+		metric_tag_weeks=0.5816192121425076];
 	Day -> CodingKeys;
+	Interval -> IntervalType;
 	Interval -> CodingKeys;
-	Plan	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/Plan.swift/Plan",
+	PlansRepositoryProtocol -> Day;
+	Plan	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/Plan.swift/Plan",
 		display_name=Plan,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=7,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=6,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=1,
 		"metric_sloc-in-entity"=16,
-		metric_tag_days=0.32833995106163244,
-		metric_tag_hasher=0.32833995106163244,
-		metric_tag_name=0.2324735796987993,
-		metric_tag_plan=0.47271228924208575,
-		metric_tag_public=0.47642136878386315];
+		metric_tag_hasher=0.32244083299291487,
+		metric_tag_name=0.22406834388434468,
+		metric_tag_plan=0.48476449215019746,
+		metric_tag_public=0.46083632760687526,
+		metric_tag_weeks=0.36322141560711946];
 	PlansRepositoryProtocol -> Plan;
-	Plan -> Day;
 	Plan -> CodingKeys;
-	PlansRepositoryInjectionMap	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Interface/PlansRepositoryInjected.swift/PlansRepositoryInjectionMap",
+	Week	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/Week.swift/Week",
+		display_name=Week,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=1,
+		"metric_sloc-in-entity"=16,
+		metric_tag_days=0.3423899248247051,
+		metric_tag_hasher=0.303948191998334,
+		metric_tag_name=0.21121756626030064,
+		metric_tag_public=0.43440642204996255,
+		metric_tag_week=0.5733692590810942];
+	Plan -> Week;
+	Week -> Day;
+	Week -> CodingKeys;
+	PlansRepositoryInjectionMap	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Interface/PlansRepositoryInjected.swift/PlansRepositoryInjectionMap",
 		display_name=PlansRepositoryInjectionMap,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=2,
-		metric_tag_enum=0.2179719673386111,
-		metric_tag_plansrepository=0.7830258426839917,
-		metric_tag_plansrepositoryinjectionmap=0.4533294564155842,
-		metric_tag_plansrepositoryprotocol=0.3658567412109707];
+		metric_tag_enum=0.2107331550745824,
+		metric_tag_plansrepository=0.7849309603264396,
+		metric_tag_plansrepositoryinjectionmap=0.4518766083560619,
+		metric_tag_plansrepositoryprotocol=0.3678076340887278];
 	PlansRepositoryInjectionMap -> PlansRepositoryProtocol;
-	PlansRepository	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansRepository.swift/PlansRepository",
+	PlansRepository	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Source/PlansRepository.swift/PlansRepository",
 		display_name=PlansRepository,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=3,
-		"metric_sloc-in-entity"=15,
-		metric_tag_plans=0.8083644030317426,
-		metric_tag_plansloadinginjected=0.24994891306077038,
-		metric_tag_plansrepository=0.23998223981304423,
-		metric_tag_plansrepositoryprotocol=0.224255996214785,
-		metric_tag_reset=0.23155553765138256];
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=5,
+		"metric_sloc-in-entity"=28,
+		metric_tag_day=0.3579168481320076,
+		metric_tag_dayid=0.20917155498837509,
+		metric_tag_plan=0.5593303425488974,
+		metric_tag_plans=0.43562476084113416,
+		metric_tag_uuid=0.35334034248391444,
+		metric_tag_weekid=0.20917155498837509];
 	PlansRepositoryInjectionMap -> PlansRepository;
+	PlansRepository -> Day;
 	PlansRepository -> Plan;
-	PlansLoadingInjected	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift/PlansLoadingInjected",
+	PlansLoadingInjected	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Source/PlansLoadingInjected.swift/PlansLoadingInjected",
 		display_name=PlansLoadingInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=1,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=9,
-		metric_tag_extension=0.2565133589491348,
-		metric_tag_plansloader=0.47847970804272505,
-		metric_tag_plansloadinginjected=0.6843226580968605,
-		metric_tag_plansloadingprotocol=0.4093195353258699,
-		metric_tag_public=0.22065608553043706];
+		metric_tag_extension=0.2431844320272804,
+		metric_tag_plansloader=0.4809043394831882,
+		metric_tag_plansloadinginjected=0.6890621764127208,
+		metric_tag_plansloadingprotocol=0.4140274326522582,
+		metric_tag_public=0.2033820880001535];
 	PlansRepository -> PlansLoadingInjected;
-	PlansLoaderInjectionMap	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingInjected.swift/PlansLoaderInjectionMap",
+	PlansLoaderInjectionMap	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Source/PlansLoadingInjected.swift/PlansLoaderInjectionMap",
 		display_name=PlansLoaderInjectionMap,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=2,
-		metric_tag_enum=0.2540656308101003,
-		metric_tag_plansloader=0.4984910768413821,
-		metric_tag_plansloaderinjectionmap=0.528395626810601,
-		metric_tag_plansloadingprotocol=0.4264384309450954];
-	PlansLoadingProtocol	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansLoadingProtocol.swift/PlansLoadingProtocol",
+		metric_tag_enum=0.24614951944232022,
+		metric_tag_plansloader=0.4990182631448445,
+		metric_tag_plansloaderinjectionmap=0.5278201712241442,
+		metric_tag_plansloadingprotocol=0.42962234559680385];
+	PlansLoadingProtocol	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Source/PlansLoadingProtocol.swift/PlansLoadingProtocol",
 		display_name=PlansLoadingProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=1,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=4,
-		metric_tag_anyobject=0.26366444824598256,
-		metric_tag_load=0.28237477512352066,
-		metric_tag_plan=0.6014167059406842,
-		metric_tag_plans=0.3377522576947016,
-		metric_tag_plansloadingprotocol=0.37479616241906105,
-		metric_tag_remove=0.3869957921459531,
-		metric_tag_save=0.2910824571147196];
+		metric_tag_anyobject=0.2755547361283418,
+		metric_tag_load=0.29390781568105706,
+		metric_tag_plan=0.5961536083284732,
+		metric_tag_plans=0.3482279432614106,
+		metric_tag_plansloadingprotocol=0.384564546827945,
+		metric_tag_remove=0.35602564976740914,
+		metric_tag_save=0.29390781568105706];
 	PlansLoaderInjectionMap -> PlansLoadingProtocol;
-	PlansFileLoader	[absolute_name="Apollo/ApolloData/Sources/ApolloData/Source/PlansFileLoader.swift/PlansFileLoader",
+	PlansFileLoader	[absolute_name="Apollo/FoundationData/Sources/FoundationData/Source/PlansFileLoader.swift/PlansFileLoader",
 		display_name=PlansFileLoader,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
 		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=5,
+		"metric_fan-out-dependency-graph"=6,
 		"metric_number-of-methods-in-entity"=5,
 		"metric_sloc-in-entity"=60,
-		metric_tag_catch=0.3542349733194164,
-		metric_tag_errorline=0.27477284122045903,
-		metric_tag_jsondata=0.25823069912210583,
-		metric_tag_plan=0.29261285285926064,
-		metric_tag_throw=0.37657731042650905,
-		metric_tag_userdefaultskey=0.25823069912210583];
+		metric_tag_catch=0.36044497494709615,
+		metric_tag_error=0.246228382482254,
+		metric_tag_errorline=0.2832486545420439,
+		metric_tag_jsondata=0.2601878647827685,
+		metric_tag_plan=0.28726644622929637,
+		metric_tag_throw=0.38215023465204506];
 	PlansLoaderInjectionMap -> PlansFileLoader;
 	PlansLoadingProtocol -> Plan;
-	PlansFileLoader -> LoggerInjected;
-	PlansFileLoader -> ErrorLine;
 	PlansFileLoader -> Plan;
+	LoggerInjected	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Interface/LoggerInjected.swift/LoggerInjected",
+		display_name=LoggerInjected,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=5,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_extension=0.28983977451899134,
+		metric_tag_logger=0.4934592922919738,
+		metric_tag_loggerinjected=0.6436607516459527,
+		metric_tag_loggerprotocol=0.4934592922919738];
+	PlansFileLoader -> LoggerInjected;
+	StorageInjected	[absolute_name="Apollo/FoundationStorage/Sources/FoundationStorage/Interface/StorageInjected.swift/StorageInjected",
+		display_name=StorageInjected,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
+		"metric_fan-in-dependency-graph"=5,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_extension=0.276145977387522,
+		metric_tag_storage=0.546086761185388,
+		metric_tag_storageinjected=0.6254292457801994,
+		metric_tag_storageprotocol=0.4701452683540965];
+	PlansFileLoader -> StorageInjected;
+	ErrorProtocol	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Interface/ErrorProtocol.swift/ErrorProtocol",
+		display_name=ErrorProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=7,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=2,
+		metric_tag_anyobject=0.31921118824713757,
+		metric_tag_errorline=0.6809439343838687,
+		metric_tag_errorprotocol=0.36723855534041483,
+		metric_tag_localizederror=0.547316561959487];
 	PlansFileLoader -> ErrorProtocol;
-	FileError	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift/FileError",
+	FileError	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/FileError.swift/FileError",
 		display_name=FileError,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=3,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=64,
-		metric_tag_description=0.31046197904212075,
-		metric_tag_errorline=0.2387978397152758,
-		metric_tag_json=0.2356425746658889,
-		metric_tag_not=0.24628502876645014,
-		metric_tag_possible=0.31419009955451854,
-		metric_tag_public=0.2314542039060111,
-		metric_tag_seems=0.2356425746658889];
+		metric_tag_description=0.3028231451689839,
+		metric_tag_errorline=0.23395962117721336,
+		metric_tag_errortype=0.35726730605741475,
+		metric_tag_not=0.23817820403827653,
+		metric_tag_possible=0.30087640179285774,
+		metric_tag_seems=0.22565730134464326];
 	PlansFileLoader -> FileError;
+	ErrorLine	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/ErrorLine.swift/ErrorLine",
+		display_name=ErrorLine,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=9,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=23,
+		metric_tag_column=0.6347351732547621,
+		metric_tag_errorlocation=0.31736758662738107,
+		metric_tag_function=0.6347351732547621];
+	PlansFileLoader -> ErrorLine;
 	PlansLoadingInjected -> PlansLoadingProtocol;
+	LoggerProtocol	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Interface/LoggerProtocol.swift/LoggerProtocol",
+		display_name=LoggerProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_error=0.5211212482776864,
+		metric_tag_handleerror=0.49730934482016304,
+		metric_tag_loggerprotocol=0.22410863451588908,
+		metric_tag_loginfo=0.24865467241008152,
+		metric_tag_logwarn=0.24865467241008152,
+		metric_tag_message=0.49730934482016304];
+	LoggerInjected -> LoggerProtocol;
+	StorageProtocol	[absolute_name="Apollo/FoundationStorage/Sources/FoundationStorage/Interface/StorageProtocol.swift/StorageProtocol",
+		display_name=StorageProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=8,
+		metric_tag_defaultname=0.7478967757123902,
+		metric_tag_forkey=0.5753250357125058,
+		metric_tag_value=0.22391633549136425];
+	StorageInjected -> StorageProtocol;
 	ErrorProtocol -> ErrorLine;
-	FileError -> ErrorLine;
 	FileError -> ErrorProtocol;
-	FileErrorType	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/FileError.swift/FileErrorType",
+	FileError -> ErrorLine;
+	FileErrorType	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/FileError.swift/FileErrorType",
 		display_name=FileErrorType,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=0,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=7,
-		metric_tag_description=0.44291589744754917,
-		metric_tag_emptystring=0.3171500472002663,
-		metric_tag_encodingjsondata=0.3171500472002663,
-		metric_tag_readingjsondata=0.3171500472002663];
+		metric_tag_description=0.4488748768221707,
+		metric_tag_emptystring=0.3162394749550365,
+		metric_tag_encodingjsondata=0.3162394749550365,
+		metric_tag_readingjsondata=0.3162394749550365];
 	FileError -> FileErrorType;
-	ApolloWeightTests	[absolute_name="Apollo/ApolloWeight/Tests/ApolloWeightTests/ApolloWeightTests.swift/ApolloWeightTests",
-		display_name=ApolloWeightTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+	FoundationStorageTests	[absolute_name="Apollo/FoundationStorage/Tests/FoundationStorageTests/FoundationStorageTests.swift/FoundationStorageTests",
+		display_name=FoundationStorageTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=1,
 		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=14,
-		metric_tag_bodymass=0.8784596744565365,
-		metric_tag_xctassertequal=0.40322737397248914];
-	WeightRepositoryInjected	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift/WeightRepositoryInjected",
-		display_name=WeightRepositoryInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
-		"metric_fan-in-dependency-graph"=3,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_extension=0.2781853993038275,
-		metric_tag_public=0.2392986529573928,
-		metric_tag_weightrepository=0.4750308938982725,
-		metric_tag_weightrepositoryinjected=0.6467351576309043,
-		metric_tag_weightrepositoryprotocol=0.4439017088387329];
-	ApolloWeightTests -> WeightRepositoryInjected;
-	WeightRepositoryProtocol	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryProtocol.swift/WeightRepositoryProtocol",
-		display_name=WeightRepositoryProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=5,
-		metric_tag_async=0.26657267745175706,
-		metric_tag_bodymass=0.31157672813280174,
-		metric_tag_double=0.5514626607702142,
-		metric_tag_loadfromhealthkit=0.3765006758285416,
-		metric_tag_save=0.26234903349919003,
-		metric_tag_value=0.28603763958466355,
-		metric_tag_weightrepositoryprotocol=0.3377991650355416];
-	WeightRepositoryInjected -> WeightRepositoryProtocol;
-	WeightRepositoryInjectionMap	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Interface/WeightRepositoryInjected.swift/WeightRepositoryInjectionMap",
-		display_name=WeightRepositoryInjectionMap,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_sloc-in-entity"=15,
+		metric_tag_doublevalue=0.47398805430327484,
+		metric_tag_forkey=0.6585790599818343,
+		metric_tag_stringvalue=0.47398805430327484,
+		metric_tag_xctassertequal=0.23852743605240112];
+	FoundationStorageTests -> StorageInjected;
+	StorageInjectionMap	[absolute_name="Apollo/FoundationStorage/Sources/FoundationStorage/Interface/StorageInjected.swift/StorageInjectionMap",
+		display_name=StorageInjectionMap,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=2,
-		metric_tag_enum=0.2179719673386111,
-		metric_tag_weightrepository=0.7830258426839917,
-		metric_tag_weightrepositoryinjectionmap=0.4533294564155842,
-		metric_tag_weightrepositoryprotocol=0.3658567412109707];
-	WeightRepositoryInjectionMap -> WeightRepositoryProtocol;
-	WeightRepository	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Source/WeightRepository.swift/WeightRepository",
-		display_name=WeightRepository,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=3,
-		"metric_sloc-in-entity"=23,
-		metric_tag_await=0.24827104669288924,
-		metric_tag_bodymass=0.28054657521376336,
-		metric_tag_double=0.24827104669288924,
-		metric_tag_forkey=0.29542478308594705,
-		metric_tag_healthkitrepository=0.33900469974877023,
-		metric_tag_key=0.4710867586224705,
-		metric_tag_value=0.38632641459748046];
-	WeightRepositoryInjectionMap -> WeightRepository;
-	WeightRepository -> LoggerInjected;
-	HealthKitRepository	[absolute_name="Apollo/ApolloWeight/Sources/ApolloWeight/Source/HealthKitRepository.swift/HealthKitRepository",
-		display_name=HealthKitRepository,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=35,
-		metric_tag_errorline=0.2657641501048722,
-		metric_tag_healthkiterror=0.3642308621541742,
-		metric_tag_oneyearago=0.21854381324971192,
-		metric_tag_predicate=0.32781571987456787,
-		metric_tag_sampletype=0.21854381324971192,
-		metric_tag_store=0.21854381324971192,
-		metric_tag_throw=0.3642308621541742];
-	WeightRepository -> HealthKitRepository;
-	HealthKitRepository -> ErrorLine;
-	HealthKitError	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift/HealthKitError",
-		display_name=HealthKitError,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=3,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=50,
-		metric_tag_description=0.391162818700838,
-		metric_tag_errorline=0.30087045238484844,
-		metric_tag_errortype=0.2327278843129243,
-		metric_tag_healthkiterrortype=0.28009224127849475,
-		metric_tag_not=0.3878798071882072,
-		metric_tag_on=0.28518987135443513,
-		metric_tag_public=0.25833512480926635,
-		metric_tag_type=0.24740651639946093];
-	HealthKitRepository -> HealthKitError;
-	HealthKitError -> ErrorLine;
-	HealthKitError -> ErrorProtocol;
-	HealthKitErrorType	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/HealthKitError.swift/HealthKitErrorType",
-		display_name=HealthKitErrorType,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		metric_tag_enum=0.24614951944232022,
+		metric_tag_storage=0.4990182631448445,
+		metric_tag_storageinjectionmap=0.5278201712241442,
+		metric_tag_storageprotocol=0.42962234559680385,
+		metric_tag_storageuserdefaults=0.47667776761564323];
+	StorageInjectionMap -> StorageProtocol;
+	StorageUserDefaults	[absolute_name="Apollo/FoundationStorage/Sources/FoundationStorage/Source/StorageUserDefaults.swift/StorageUserDefaults",
+		display_name=StorageUserDefaults,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=5,
-		metric_tag_authorization=0.35734692568248533,
-		metric_tag_description=0.5234080550353701,
-		metric_tag_healthdata=0.3747864782368194,
-		metric_tag_healthkiterrortype=0.3747864782368194,
-		metric_tag_quantitytype=0.3747864782368194,
-		metric_tag_query=0.3747864782368194];
-	HealthKitError -> HealthKitErrorType;
-	ApolloUITests	[absolute_name="Apollo/ApolloUI/Tests/ApolloUITests/ApolloUITests.swift/ApolloUITests",
-		display_name=ApolloUITests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=4,
-		"metric_number-of-methods-in-entity"=3,
-		"metric_sloc-in-entity"=38,
-		metric_tag_xctassertequal=0.9057382742656064];
-	ApolloUITests -> Day;
-	PlansViewModel	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansViewModel.swift/PlansViewModel",
-		display_name=PlansViewModel,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=5,
-		"metric_fan-out-dependency-graph"=3,
-		"metric_number-of-methods-in-entity"=3,
-		"metric_sloc-in-entity"=23,
-		metric_tag_level=0.33338586219344146,
-		metric_tag_loss=0.33338586219344146,
-		metric_tag_name=0.7081386644039412,
-		metric_tag_plans=0.2695523458884786];
-	ApolloUITests -> PlansViewModel;
-	TimerViewModel	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift/TimerViewModel",
-		display_name=TimerViewModel,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=7,
-		"metric_fan-out-dependency-graph"=6,
-		"metric_number-of-methods-in-entity"=12,
-		"metric_sloc-in-entity"=91,
-		metric_tag_activebutton=0.3966686209685109,
-		metric_tag_currentinterval=0.5030597997921262,
-		metric_tag_starttimer=0.22666778341057767,
-		metric_tag_stoptimer=0.3400016751158665,
-		metric_tag_timeremaining=0.5100025126737997];
-	ApolloUITests -> TimerViewModel;
-	WeightViewModel	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightViewModel.swift/WeightViewModel",
-		display_name=WeightViewModel,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=7,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=4,
-		"metric_sloc-in-entity"=15,
-		metric_tag_bodymass=0.6032620089739775,
-		metric_tag_format=0.2429883594981655,
-		metric_tag_loadfromhealth=0.27013518743715614,
-		metric_tag_observableobject=0.20108733632465917,
-		metric_tag_onappear=0.2429883594981655,
-		metric_tag_update=0.45021440211620595,
-		metric_tag_weightrepositoryinjected=0.21175158766339808];
-	ApolloUITests -> WeightViewModel;
-	PlansViewModel -> PlanImageInjected;
-	PlansViewModel -> PlansRepositoryInjected;
-	PlansViewModel -> Plan;
-	TimerViewModel -> AudioPlayerInjected;
-	TimerViewModel -> PlansRepositoryInjected;
-	TimerViewModel -> Day;
-	TimerViewModel -> WeightRepositoryInjected;
-	TimerButton	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerViewModel.swift/TimerButton",
-		display_name=TimerButton,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=4,
-		metric_tag_enum=0.23685064875077233,
-		metric_tag_pause=0.49259258959235236,
-		metric_tag_resume=0.49259258959235236,
-		metric_tag_start=0.49259258959235236,
-		metric_tag_timerbutton=0.4647143124785798];
-	TimerViewModel -> TimerButton;
-	LocationTrackerInjected	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift/LocationTrackerInjected",
-		display_name=LocationTrackerInjected,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_extension=0.27091080595492567,
-		metric_tag_locationtracker=0.46260875891231273,
-		metric_tag_locationtrackerinjected=0.6695471713383656,
-		metric_tag_locationtrackerprotocol=0.43229360709519915,
-		metric_tag_public=0.23304095433783384];
-	TimerViewModel -> LocationTrackerInjected;
-	WeightViewModel -> WeightRepositoryInjected;
-	ApolloRootView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift/ApolloRootView",
-		display_name=ApolloRootView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=6,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=20,
-		metric_tag_localization=0.298875704133228,
-		metric_tag_plansviewmodel=0.4690202313693893,
-		metric_tag_public=0.20926053225550673,
-		metric_tag_theme=0.3292625000789884,
-		metric_tag_timerviewmodel=0.4305759313358334,
-		metric_tag_view=0.21244249438003568,
-		metric_tag_weightviewmodel=0.4391277304838468];
-	ApolloRootView -> ThemeManager;
-	ApolloRootView -> PlansViewModel;
-	ApolloRootView -> TimerViewModel;
-	ApolloRootView -> WeightViewModel;
-	LocalizationManager	[absolute_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/LocalizationManager.swift/LocalizationManager",
-		display_name=LocalizationManager,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=12,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=15,
-		metric_tag_defaults=0.32450285219483077,
-		metric_tag_forkey=0.2945315851546066,
-		metric_tag_key=0.4696624579463791,
-		metric_tag_language=0.44179737773190986,
-		metric_tag_public=0.32693913767926125,
-		metric_tag_stringvalue=0.3379797407275015,
-		metric_tag_value=0.2567722542659044];
-	ApolloRootView -> LocalizationManager;
-	MobileMenuView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift/MobileMenuView",
+		"metric_number-of-methods-in-entity"=7,
+		"metric_sloc-in-entity"=22,
+		metric_tag_defaultname=0.7640279624774144,
+		metric_tag_forkey=0.5877340684868918,
+		metric_tag_value=0.22874592741480912];
+	StorageInjectionMap -> StorageUserDefaults;
+	MobileMenuView	[absolute_name="Apollo/ApolloApp/ApolloApp/MobileMenuView.swift/MobileMenuView",
 		display_name=MobileMenuView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=3,
 		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=39,
-		metric_tag_mindragtranslationforswipe=0.21514636097984507,
-		metric_tag_selectedtab=0.5378659024496126,
-		metric_tag_swipeleft=0.21514636097984507,
-		metric_tag_swiperight=0.21514636097984507,
-		metric_tag_systemimage=0.21514636097984507,
-		metric_tag_tabscount=0.21514636097984507,
-		metric_tag_translation=0.5378659024496126];
-	ApolloRootView -> MobileMenuView;
-	Language	[absolute_name="Apollo/ApolloLocalization/Sources/ApolloLocalization/Interface/Language.swift/Language",
-		display_name=Language,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=4,
-		metric_tag_caseiterable=0.4637696431490826,
-		metric_tag_english=0.4637696431490826,
-		metric_tag_enum=0.2229918662432102,
-		metric_tag_identifiable=0.36353634333458257,
-		metric_tag_language=0.36353634333458257,
-		metric_tag_netherlands=0.4637696431490826,
-		metric_tag_public=0.20176827307416093];
-	LocalizationManager -> Language;
-	MobileMenuView -> LocalizationManager;
-	SettingsView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift/SettingsView",
-		display_name=SettingsView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=6,
+		"metric_sloc-in-entity"=38,
+		metric_tag_mindragtranslationforswipe=0.21719314628773306,
+		metric_tag_selectedtab=0.5429828657193326,
+		metric_tag_swipeleft=0.21719314628773306,
+		metric_tag_swiperight=0.21719314628773306,
+		metric_tag_systemimage=0.21719314628773306,
+		metric_tag_tabscount=0.21719314628773306,
+		metric_tag_translation=0.5429828657193326];
+	LocalizationViewModel	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/LocalizationViewModel.swift/LocalizationViewModel",
+		display_name=LocalizationViewModel,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=10,
+		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=70,
-		metric_tag_darkmode=0.4563359987032284,
-		metric_tag_header=0.380279998919357,
-		metric_tag_section=0.380279998919357,
-		metric_tag_selectedlanguage=0.2281679993516142,
-		metric_tag_text=0.4162017230809716];
-	MobileMenuView -> SettingsView;
-	PlansView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift/PlansView",
+		"metric_sloc-in-entity"=13,
+		metric_tag_forkey=0.2325935355151768,
+		metric_tag_key=0.3975504624859186,
+		metric_tag_language=0.6625841041431976,
+		metric_tag_public=0.26773279562685637,
+		metric_tag_value=0.4224515677116597];
+	MobileMenuView -> LocalizationViewModel;
+	PlansView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Interface/PlansView.swift/PlansView",
 		display_name=PlansView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=26,
-		metric_tag_alignment=0.3210703294955567,
-		metric_tag_maxwidth=0.304900558449518,
-		metric_tag_plan=0.39782621208370716,
-		metric_tag_view=0.20715684796505227];
+		"metric_sloc-in-entity"=29,
+		metric_tag_alignment=0.2892809130617437,
+		metric_tag_center=0.3363357940374455,
+		metric_tag_enable=0.3363357940374455,
+		metric_tag_maxwidth=0.2892809130617437];
 	MobileMenuView -> PlansView;
-	RootView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Interface/RootView.swift/RootView_Previews",
-		display_name=RootView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=0,
+	SettingsView	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/SettingsView.swift/SettingsView",
+		display_name=SettingsView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=6,
+		"metric_number-of-methods-in-entity"=2,
+		"metric_sloc-in-entity"=72,
+		metric_tag_darkmode=0.45695311050505955,
+		metric_tag_header=0.38079425875421635,
+		metric_tag_section=0.38079425875421635,
+		metric_tag_selectedlanguage=0.22847655525252977,
+		metric_tag_text=0.4206093921878836];
+	MobileMenuView -> SettingsView;
+	LocalizationViewModel -> Language;
+	LocalizationViewModel -> StorageInjected;
+	PlansViewModel	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Interface/PlansViewModel.swift/PlansViewModel",
+		display_name=PlansViewModel,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=11,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_number-of-methods-in-entity"=6,
+		"metric_sloc-in-entity"=33,
+		metric_tag_gif=0.21425972219813155,
+		metric_tag_level=0.25405881388289586,
+		metric_tag_loss=0.25405881388289586,
+		metric_tag_name=0.5296463585045909,
+		metric_tag_plans=0.22311073856489758,
+		metric_tag_uuid=0.36193546309967256,
+		metric_tag_weekid=0.21425972219813155];
+	PlansView -> PlansViewModel;
+	DaysView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Days/DaysView.swift/DaysView",
+		display_name=DaysView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=5,
 		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_apollorootview=0.4357889601011755,
-		metric_tag_localizationmanager=0.3068117221462432,
-		metric_tag_plansviewmodel=0.37561906430097397,
-		metric_tag_previewprovider=0.3084479998906397,
-		metric_tag_previews=0.2941219575782507,
-		metric_tag_thememanager=0.3068117221462432,
-		metric_tag_timerviewmodel=0.3448306013723093,
-		metric_tag_weightviewmodel=0.3516793865189287];
-	RootView_Previews -> ThemeManager;
-	RootView_Previews -> PlansViewModel;
-	RootView_Previews -> TimerViewModel;
-	RootView_Previews -> WeightViewModel;
-	RootView_Previews -> ApolloRootView;
-	RootView_Previews -> LocalizationManager;
-	SettingsView -> ThemeManager;
+		"metric_sloc-in-entity"=47,
+		metric_tag_alignment=0.37338144849721205,
+		metric_tag_day=0.23492168212638842,
+		metric_tag_entire=0.2170581263554665,
+		metric_tag_plan=0.2447473961651436,
+		metric_tag_planid=0.26029626963492575,
+		metric_tag_rectangle=0.2170581263554665,
+		metric_tag_tap=0.2170581263554665];
+	PlansView -> DaysView;
+	SettingsView -> LocalizationViewModel;
+	ThemeViewModel	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/ThemeViewModel.swift/ThemeViewModel",
+		display_name=ThemeViewModel,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=6,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=3,
+		"metric_sloc-in-entity"=18,
+		metric_tag_colorscheme=0.7027755482887147,
+		metric_tag_forkey=0.20558528397621834,
+		metric_tag_getcolorschemedevice=0.2959248924433212,
+		metric_tag_key=0.35138777414435735,
+		metric_tag_public=0.23664425022294996,
+		metric_tag_value=0.3733974176102294];
+	SettingsView -> ThemeViewModel;
+	WeightViewModel	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/WeightViewModel.swift/WeightViewModel",
+		display_name=WeightViewModel,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=7,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=4,
+		"metric_sloc-in-entity"=16,
+		metric_tag_bodymass=0.5951611010865123,
+		metric_tag_format=0.23869270809086923,
+		metric_tag_loadfromhealth=0.27482583009993267,
+		metric_tag_observableobject=0.20709540876004723,
+		metric_tag_onappear=0.24819696236944316,
+		metric_tag_update=0.41419081752009446,
+		metric_tag_weightrepositoryinjected=0.21755618668158483];
 	SettingsView -> WeightViewModel;
-	SettingsView -> LocalizationManager;
-	AppearanceToggle	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift/AppearanceToggle",
+	AppearanceToggle	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/Views/AppearanceToggle.swift/AppearanceToggle",
 		display_name=AppearanceToggle,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=0,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=31,
-		metric_tag_action=0.37099003457514734,
-		metric_tag_cornerradius=0.2714379160019682,
-		metric_tag_height=0.36624025848315156,
-		metric_tag_roundedrectangle=0.2714379160019682,
-		metric_tag_style=0.24416017232210102,
-		metric_tag_systemname=0.3516364862892038,
-		metric_tag_width=0.36624025848315156];
+		metric_tag_action=0.40435743108179867,
+		metric_tag_cornerradius=0.29102138778420755,
+		metric_tag_height=0.3151170498245978,
+		metric_tag_rectanglecolor=0.252758931492417,
+		metric_tag_roundedrectangle=0.29102138778420755,
+		metric_tag_style=0.2474649773724802,
+		metric_tag_systemname=0.32174471280093964,
+		metric_tag_width=0.34556524406435585];
 	SettingsView -> AppearanceToggle;
-	WeightView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift/WeightView",
+	WeightView	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/Views/WeightView.swift/WeightView",
 		display_name=WeightView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=42,
-		metric_tag_action=0.23277177233823806,
-		metric_tag_button=0.24236083219083293,
-		metric_tag_dismiss=0.5109281562772892,
-		metric_tag_isfocused=0.34061877085152614,
-		metric_tag_label=0.2838420972168838,
-		metric_tag_text=0.41421560646828964];
+		metric_tag_action=0.24556439119970985,
+		metric_tag_button=0.2551588291240356,
+		metric_tag_dismiss=0.4788340633758211,
+		metric_tag_isfocused=0.3534718762364817,
+		metric_tag_label=0.266359252577376,
+		metric_tag_text=0.4338113695590107];
 	SettingsView -> WeightView;
-	ResetDataView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift/ResetDataView",
+	ResetDataView	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/Views/ResetDataView.swift/ResetDataView",
 		display_name=ResetDataView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=16,
-		metric_tag_button=0.439314380769393,
-		metric_tag_ispresented=0.2058070784271028,
-		metric_tag_role=0.6174212352813084,
-		metric_tag_showingalert=0.4116141568542056,
-		metric_tag_view=0.20817805211776352];
+		metric_tag_button=0.4466613512363594,
+		metric_tag_ispresented=0.20625352766333863,
+		metric_tag_role=0.6187605829900159,
+		metric_tag_showingalert=0.41250705532667725];
 	SettingsView -> ResetDataView;
-	WeightView -> WeightViewModel;
-	WeightView -> LocalizationManager;
-	ResetDataView -> PlansRepositoryInjected;
-	ResetDataView -> LocalizationManager;
-	SettingsView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/SettingsView.swift/SettingsView_Previews",
-		display_name=SettingsView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=4,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=7,
-		metric_tag_localizationmanager=0.35666085826406946,
-		metric_tag_previewprovider=0.3419093282692935,
-		metric_tag_previews=0.3419093282692935,
-		metric_tag_settingsview=0.5065936315744993,
-		metric_tag_thememanager=0.35666085826406946,
-		metric_tag_view=0.29666902404563933,
-		metric_tag_weightviewmodel=0.4088183820103054];
-	SettingsView_Previews -> ThemeManager;
-	SettingsView_Previews -> WeightViewModel;
-	SettingsView_Previews -> LocalizationManager;
-	SettingsView_Previews -> SettingsView;
-	AppearanceToggle_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/AppearanceToggle.swift/AppearanceToggle_Previews",
-		display_name=AppearanceToggle_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=9,
-		metric_tag_action=0.32631521548858977,
-		metric_tag_appearancetoggle=0.412389642499933,
-		metric_tag_labeltext=0.412389642499933,
-		metric_tag_previewprovider=0.27832932919850734,
-		metric_tag_previews=0.27832932919850734,
-		metric_tag_rectanglecolor=0.412389642499933,
-		metric_tag_systemname=0.412389642499933];
-	AppearanceToggle_Previews -> AppearanceToggle;
-	ResetDataView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/ResetDataView.swift/ResetDataView_Previews",
-		display_name=ResetDataView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=5,
-		metric_tag_localizationmanager=0.42457803914223413,
-		metric_tag_previewprovider=0.40701744752022717,
-		metric_tag_previews=0.40701744752022717,
-		metric_tag_resetdataview=0.6030617763404643,
-		metric_tag_view=0.35316225367875526];
-	ResetDataView_Previews -> LocalizationManager;
-	ResetDataView_Previews -> ResetDataView;
-	WeightViewView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Settings/WeightView.swift/WeightViewView_Previews",
-		display_name=WeightViewView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=5,
-		metric_tag_previewprovider=0.3959697949765638,
-		metric_tag_previews=0.3959697949765638,
-		metric_tag_view=0.34357638974601534,
-		metric_tag_weightview=0.5866929031927284,
-		metric_tag_weightviewmodel=0.473458070672386];
-	WeightViewView_Previews -> WeightViewModel;
-	WeightViewView_Previews -> WeightView;
-	PlansView -> PlansViewModel;
-	DaysView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift/DaysView",
-		display_name=DaysView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=20,
-		metric_tag_alignment=0.31511077313271085,
-		metric_tag_day=0.4120697455161847,
-		metric_tag_plan=0.2602946327659957,
-		metric_tag_text=0.36663749610111385,
-		metric_tag_view=0.2033117000395592];
-	PlansView -> DaysView;
-	DaysView -> Plan;
-	TimerView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift/TimerView",
-		display_name=TimerView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=6,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=54,
-		metric_tag_action=0.3955010771198817,
-		metric_tag_circlebutton=0.4998251385783436,
-		metric_tag_day=0.3955010771198817,
-		metric_tag_text=0.3518955861194901,
-		metric_tag_timeinterval=0.2499125692891718];
-	DaysView -> TimerView;
-	PlansView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Plans/PlansView.swift/PlansView_Previews",
-		display_name=PlansView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=4,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=7,
-		metric_tag_plansview=0.49274315578139366,
-		metric_tag_plansviewmodel=0.4247095269975309,
-		metric_tag_previewprovider=0.33256138826477244,
-		metric_tag_previews=0.33256138826477244,
-		metric_tag_thememanager=0.34690960543370625,
-		metric_tag_timerviewmodel=0.38989725368614064,
-		metric_tag_view=0.288557972346593];
-	PlansView_Previews -> ThemeManager;
-	PlansView_Previews -> PlansViewModel;
-	PlansView_Previews -> TimerViewModel;
-	PlansView_Previews -> PlansView;
-	CircularProgressView	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift/CircularProgressView",
-		display_name=CircularProgressView,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=29,
-		metric_tag_linewidth=0.6254117076688748,
-		metric_tag_progress=0.4467226483349105,
-		metric_tag_strokecolor=0.33211775953815204,
-		metric_tag_strokestyle=0.22141183969210138,
-		metric_tag_style=0.2987420865678814];
-	CircularProgressView -> ThemeManager;
-	CircularProgressView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircularProgressView.swift/CircularProgressView_Previews",
-		display_name=CircularProgressView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=8,
-		metric_tag_circularprogressview=0.4716084746411207,
-		metric_tag_linewidth=0.44070356367359426,
-		metric_tag_previewprovider=0.31829720454537297,
-		metric_tag_previews=0.31829720454537297,
-		metric_tag_progress=0.44070356367359426,
-		metric_tag_thememanager=0.33202999968106534,
-		metric_tag_view=0.2761811779366173];
-	CircularProgressView_Previews -> ThemeManager;
-	CircularProgressView_Previews -> CircularProgressView;
-	TimerView -> Day;
-	TimerView -> TimerViewModel;
-	TimerView -> LocalizationManager;
-	TimerView -> CircularProgressView;
-	TimerText	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift/TimerText",
-		display_name=TimerText,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=29,
-		metric_tag_fontsize=0.33856449199349153,
-		metric_tag_hours=0.29401569287471563,
-		metric_tag_minutes=0.29401569287471563,
-		metric_tag_seconds=0.25392336899511864,
-		metric_tag_size=0.29401569287471563,
-		metric_tag_time=0.49002615479119266,
-		metric_tag_timeinterval=0.33856449199349153];
-	TimerView -> TimerText;
-	CircleButton	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift/CircleButton",
-		display_name=CircleButton,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=2,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=23,
-		metric_tag_action=0.3740909281489282,
-		metric_tag_button=0.2596677645531436,
-		metric_tag_circle=0.45616679603792076,
-		metric_tag_height=0.3282679567950341,
-		metric_tag_text=0.33284598712495794,
-		metric_tag_width=0.3282679567950341];
-	TimerView -> CircleButton;
-	TimerView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerView.swift/TimerView_Previews",
-		display_name=TimerView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=6,
-		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=21,
-		metric_tag_day=0.7396568945289703,
-		metric_tag_interval=0.36077529857694346,
-		metric_tag_previewday=0.4329408497181902];
-	TimerView_Previews -> ThemeManager;
-	TimerView_Previews -> Day;
-	TimerView_Previews -> Interval;
-	TimerView_Previews -> TimerViewModel;
-	TimerView_Previews -> LocalizationManager;
-	TimerView_Previews -> TimerView;
-	CircleButton_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/CircleButton.swift/CircleButton_Previews",
-		display_name=CircleButton_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=7,
-		metric_tag_action=0.3701844478041303,
-		metric_tag_circlebutton=0.46783056640617615,
-		metric_tag_previewprovider=0.3157474250251325,
-		metric_tag_previews=0.3157474250251325,
-		metric_tag_print=0.5110396622292241,
-		metric_tag_text=0.3293702110269317,
-		metric_tag_view=0.2739687767551978];
-	CircleButton_Previews -> CircleButton;
-	LocationTrackerProtocol	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerProtocol.swift/LocationTrackerProtocol",
-		display_name=LocationTrackerProtocol,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
-		"metric_fan-in-dependency-graph"=3,
-		"metric_fan-out-dependency-graph"=0,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=8,
-		metric_tag_addlocation=0.30925269785324067,
-		metric_tag_calculatedistance=0.30925269785324067,
-		metric_tag_clear=0.30925269785324067,
-		metric_tag_location=0.30925269785324067,
-		metric_tag_startupdatinglocation=0.30925269785324067,
-		metric_tag_stopupdatinglocation=0.30925269785324067,
-		metric_tag_updatinglocationstopped=0.30925269785324067];
-	LocationTrackerInjected -> LocationTrackerProtocol;
-	TimerTextView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Timer/TimerText.swift/TimerTextView_Previews",
-		display_name=TimerTextView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=10,
-		metric_tag_currentinterval=0.2833849851405247,
-		metric_tag_fontsize=0.30325772604213513,
-		metric_tag_intervaltype=0.2833849851405247,
-		metric_tag_seconds=0.30325772604213513,
-		metric_tag_timeinterval=0.6065154520842703,
-		metric_tag_timertext=0.30325772604213513,
-		metric_tag_totalintervals=0.2833849851405247];
-	TimerTextView_Previews -> TimerText;
-	MobileMenuView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Menu/MobileMenuView.swift/MobileMenuView_Previews",
+	MobileMenuView_Previews	[absolute_name="Apollo/ApolloApp/ApolloApp/MobileMenuView.swift/MobileMenuView_Previews",
 		display_name=MobileMenuView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=3,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=6,
-		metric_tag_localizationmanager=0.3908116348611296,
-		metric_tag_mobilemenuview=0.555100681161042,
-		metric_tag_previewprovider=0.3746476252133623,
-		metric_tag_previews=0.3746476252133623,
-		metric_tag_thememanager=0.3908116348611296,
-		metric_tag_view=0.32507549851206147];
-	MobileMenuView_Previews -> ThemeManager;
-	MobileMenuView_Previews -> LocalizationManager;
+		metric_tag_localizationviewmodel=0.41547069396721564,
+		metric_tag_mobilemenuview=0.555247907454298,
+		metric_tag_previewprovider=0.33465155268279506,
+		metric_tag_previews=0.33465155268279506,
+		metric_tag_themeviewmodel=0.4614886906539216,
+		metric_tag_view=0.2865811031707107];
 	MobileMenuView_Previews -> MobileMenuView;
-	DaysView_Previews	[absolute_name="Apollo/ApolloUI/Sources/ApolloUI/Source/Days/DaysView.swift/DaysView_Previews",
-		display_name=DaysView_Previews,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=5,
-		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=16,
-		metric_tag_day=0.4452327333210869,
-		metric_tag_plan=0.7031072535429623,
-		metric_tag_previewplan=0.4343442644649836];
-	DaysView_Previews -> ThemeManager;
-	DaysView_Previews -> Day;
-	DaysView_Previews -> Plan;
-	DaysView_Previews -> TimerViewModel;
-	DaysView_Previews -> DaysView;
-	ApolloLoggerTests	[absolute_name="Apollo/ApolloLogger/Tests/ApolloLoggerTests/ApolloLoggerTests.swift/ApolloLoggerTests",
-		display_name=ApolloLoggerTests,
+	MobileMenuView_Previews -> LocalizationViewModel;
+	MobileMenuView_Previews -> ThemeViewModel;
+	ThemeViewModel -> StorageInjected;
+	ApolloRootView	[absolute_name="Apollo/ApolloApp/ApolloApp/ApolloRootView.swift/ApolloRootView",
+		display_name=ApolloRootView,
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=6,
-		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=19,
-		metric_tag_errorline=0.7691238145872681,
-		metric_tag_healthkiterror=0.32433457083008305];
-	ApolloLoggerTests -> LoggerInjected;
-	ApolloLoggerTests -> AudioError;
-	ApolloLoggerTests -> ErrorLine;
-	ApolloLoggerTests -> FileError;
-	ApolloLoggerTests -> HealthKitError;
-	LocalizationError	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift/LocalizationError",
-		display_name=LocalizationError,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
-		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=3,
 		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=36,
-		metric_tag_errorline=0.46959802090134445,
-		metric_tag_errortype=0.3632412322833001,
-		metric_tag_localizationerror=0.2668028871421304,
-		metric_tag_localizationerrortype=0.4371674291430911,
-		metric_tag_not=0.24216082152220006,
-		metric_tag_public=0.4032089637853801];
-	ApolloLoggerTests -> LocalizationError;
-	LocalizationError -> ErrorLine;
-	LocalizationError -> ErrorProtocol;
-	LocalizationErrorType	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/LocalizationError.swift/LocalizationErrorType",
-		display_name=LocalizationErrorType,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_sloc-in-entity"=19,
+		metric_tag_activityviewmodel=0.4478328434898641,
+		metric_tag_localization=0.32964615607342157,
+		metric_tag_plansviewmodel=0.4139864898986224,
+		metric_tag_theme=0.36715051208650523,
+		metric_tag_weightviewmodel=0.46445288901184856];
+	ApolloRootView -> MobileMenuView;
+	ApolloRootView -> LocalizationViewModel;
+	ApolloRootView -> ThemeViewModel;
+	ApolloRootView -> PlansViewModel;
+	ActivityViewModel	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Interface/ActivityViewModel.swift/ActivityViewModel",
+		display_name=ActivityViewModel,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=8,
+		"metric_fan-out-dependency-graph"=7,
+		"metric_number-of-methods-in-entity"=14,
+		"metric_sloc-in-entity"=124,
+		metric_tag_activebutton=0.2903854024767156,
+		metric_tag_currentinterval=0.3939348555328945,
+		metric_tag_double=0.2604005882561057,
+		metric_tag_timeelapsed=0.24198783539726304,
+		metric_tag_timeremaining=0.38718053663562085,
+		metric_tag_totaltime=0.26224891155588165,
+		metric_tag_totaltimeremaining=0.24198783539726304];
+	ApolloRootView -> ActivityViewModel;
+	ApolloRootView -> WeightViewModel;
+	PlansViewModel -> PlansRepositoryInjected;
+	PlansViewModel -> Day;
+	PlansViewModel -> Plan;
+	ImagesInjected	[absolute_name="Apollo/FoundationImages/Sources/FoundationImages/Interface/ImagesInjected.swift/ImagesInjected",
+		display_name=ImagesInjected,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_extension=0.2557373095980016,
+		metric_tag_images=0.5057280226706211,
+		metric_tag_imagesinjected=0.6734213260465797,
+		metric_tag_imagesprotocol=0.43539901318345275];
+	PlansViewModel -> ImagesInjected;
+	Gifs	[absolute_name="Apollo/FoundationImages/Sources/FoundationImages/Interface/Gifs.swift/Gifs",
+		display_name=Gifs,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		"metric_fan-in-dependency-graph"=4,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=2,
+		metric_tag_enum=0.35988708216658066,
+		metric_tag_gifs=0.5815220297661944,
+		metric_tag_success=0.7295981201909927];
+	PlansViewModel -> Gifs;
+	ActivityViewModel -> PlansRepositoryInjected;
+	ActivityViewModel -> IntervalType;
+	ActivityViewModel -> Day;
+	AudioPlayerInjected	[absolute_name="Apollo/FoundationAudio/Sources/FoundationAudio/Interface/AudioPlayerInjected.swift/AudioPlayerInjected",
+		display_name=AudioPlayerInjected,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_audioplayerinjected=0.6872786425546151,
+		metric_tag_audioplayerprotocol=0.44435842937597186,
+		metric_tag_extension=0.2609997399739708,
+		metric_tag_player=0.47414824540467493];
+	ActivityViewModel -> AudioPlayerInjected;
+	TimerButton	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Interface/ActivityViewModel.swift/TimerButton",
+		display_name=TimerButton,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=0,
 		"metric_number-of-methods-in-entity"=0,
-		"metric_sloc-in-entity"=3,
-		metric_tag_bundlenotfound=0.5538689206708467,
-		metric_tag_enum=0.2822900213339713,
-		metric_tag_localizationerrortype=0.5538689206708467,
-		metric_tag_pathnotfound=0.5538689206708467];
-	LocalizationError -> LocalizationErrorType;
-	LoggerInjectionMap	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Interface/LoggerInjected.swift/LoggerInjectionMap",
-		display_name=LoggerInjectionMap,
+		"metric_sloc-in-entity"=4,
+		metric_tag_enum=0.22999694575381674,
+		metric_tag_pause=0.49318409218855486,
+		metric_tag_resume=0.49318409218855486,
+		metric_tag_start=0.49318409218855486,
+		metric_tag_timerbutton=0.4662721936598504];
+	ActivityViewModel -> TimerButton;
+	WeightRepositoryInjected	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/WeightRepositoryInjected.swift/WeightRepositoryInjected",
+		display_name=WeightRepositoryInjected,
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_extension=0.26808124003613065,
+		metric_tag_weightrepository=0.48701293572827853,
+		metric_tag_weightrepositoryinjected=0.6658310470128334,
+		metric_tag_weightrepositoryprotocol=0.45641485612015564];
+	ActivityViewModel -> WeightRepositoryInjected;
+	LocationTrackerInjected	[absolute_name="Apollo/FoundationLocation/Sources/FoundationLocation/Interface/LocationTrackerInjected.swift/LocationTrackerInjected",
+		display_name=LocationTrackerInjected,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_extension=0.26099973997397075,
+		metric_tag_locationtracker=0.4741482454046748,
+		metric_tag_locationtrackerinjected=0.687278642554615,
+		metric_tag_locationtrackerprotocol=0.44435842937597175];
+	ActivityViewModel -> LocationTrackerInjected;
+	WeightViewModel -> WeightRepositoryInjected;
+	RootView_Previews	[absolute_name="Apollo/ApolloApp/ApolloApp/ApolloRootView.swift/RootView_Previews",
+		display_name=RootView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=6,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_activityviewmodel=0.34957362385086777,
+		metric_tag_apollorootview=0.4448674920569453,
+		metric_tag_localizationviewmodel=0.3328772664732051,
+		metric_tag_plansviewmodel=0.3231535149842969,
+		metric_tag_previews=0.2681245529362244,
+		metric_tag_themeviewmodel=0.36974712316363256,
+		metric_tag_weightviewmodel=0.36254705718909946];
+	RootView_Previews -> LocalizationViewModel;
+	RootView_Previews -> ThemeViewModel;
+	RootView_Previews -> ApolloRootView;
+	RootView_Previews -> PlansViewModel;
+	RootView_Previews -> ActivityViewModel;
+	RootView_Previews -> WeightViewModel;
+	ApolloApp	[absolute_name="Apollo/ApolloApp/ApolloApp/ApolloApp.swift/ApolloApp",
+		display_name=ApolloApp,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=6,
+		metric_tag_apolloapp=0.4507344697822404,
+		metric_tag_apollorootview=0.3914735059040995,
+		metric_tag_app=0.42613894752940296,
+		metric_tag_body=0.23594364756028788,
+		metric_tag_scene=0.4507344697822404,
+		metric_tag_windowgroup=0.4507344697822404];
+	ApolloApp -> ApolloRootView;
+	UtilityExtensionsTests	[absolute_name="Apollo/UtilityExtensions/Tests/UtilityExtensionsTests/UtilityExtensionsTests.swift/UtilityExtensionsTests",
+		display_name=UtilityExtensionsTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=11,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=3,
+		"metric_sloc-in-entity"=23,
+		metric_tag_colorscheme=0.5528961340299654,
+		metric_tag_integerliteral=0.23281363358978013,
+		metric_tag_timeinterval=0.36859742268664364,
+		metric_tag_userinterfacestyle=0.23281363358978013,
+		metric_tag_xctassertequal=0.624853318211059];
+	FoundationImagesTests	[absolute_name="Apollo/FoundationImages/Tests/FoundationImagesTests/FoundationImagesTests.swift/FoundationImagesTests",
+		display_name=FoundationImagesTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=3,
+		"metric_sloc-in-entity"=29,
+		metric_tag_compareimages=0.2581919982230901,
+		metric_tag_successgif=0.3872879973346351,
+		metric_tag_uiimage=0.5836828808028113,
+		metric_tag_xctassertequal=0.6063459806689055];
+	FoundationImagesTests -> ImagesInjected;
+	ImagesProtocol	[absolute_name="Apollo/FoundationImages/Sources/FoundationImages/Interface/ImagesProtocol.swift/ImagesProtocol",
+		display_name=ImagesProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=3,
+		metric_tag_getgif=0.318294586096474,
+		metric_tag_getimage=0.318294586096474,
+		metric_tag_gif=0.26843276386244314,
+		metric_tag_gifs=0.28578085376866325,
+		metric_tag_imagesprotocol=0.30868895146584924,
+		metric_tag_planimage=0.6004323625016303,
+		metric_tag_uiimage=0.28578085376866325];
+	ImagesInjected -> ImagesProtocol;
+	ImagesProtocol -> Gifs;
+	PlanImage	[absolute_name="Apollo/FoundationImages/Sources/FoundationImages/Interface/PlanImage.swift/PlanImage",
+		display_name=PlanImage,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=7,
+		metric_tag_enum=0.5075822937367187,
+		metric_tag_planimage=0.861603281728297];
+	ImagesProtocol -> PlanImage;
+	ImagesInjectionMap	[absolute_name="Apollo/FoundationImages/Sources/FoundationImages/Interface/ImagesInjected.swift/ImagesInjectionMap",
+		display_name=ImagesInjectionMap,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=2,
-		metric_tag_enum=0.22697101012202486,
-		metric_tag_logger=0.7619225089032532,
-		metric_tag_loggerinjectionmap=0.4720453088395253,
-		metric_tag_loggerprotocol=0.3809612544516266];
-	LoggerInjectionMap -> LoggerProtocol;
-	Logger	[absolute_name="Apollo/ApolloLogger/Sources/ApolloLogger/Source/Logger.swift/Logger",
-		display_name=Logger,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		metric_tag_enum=0.24614951944232022,
+		metric_tag_images=0.4990182631448445,
+		metric_tag_imagesinjectionmap=0.5278201712241442,
+		metric_tag_imagesmanager=0.47667776761564323,
+		metric_tag_imagesprotocol=0.42962234559680385];
+	ImagesInjectionMap -> ImagesProtocol;
+	ImagesManager	[absolute_name="Apollo/FoundationImages/Sources/FoundationImages/Source/ImagesManager.swift/ImagesManager",
+		display_name=ImagesManager,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
 		"metric_fan-in-dependency-graph"=1,
-		"metric_fan-out-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=4,
-		"metric_sloc-in-entity"=32,
-		metric_tag_ddlogerror=0.24239779395495528,
-		metric_tag_ddloglevel=0.24239779395495528,
-		metric_tag_error=0.22440671392144623,
-		metric_tag_handleerror=0.21803839350914364,
-		metric_tag_loglevel=0.3635966909324329,
-		metric_tag_message=0.6541151805274309];
-	LoggerInjectionMap -> Logger;
-	LoggerProtocol -> ErrorProtocol;
-	Logger -> ErrorProtocol;
-	ApolloApp	[absolute_name="Apollo/ApolloApp/ApolloApp/ApolloApp.swift/ApolloApp",
-		display_name=ApolloApp,
+		"metric_sloc-in-entity"=44,
+		metric_tag_data=0.2975774282279215,
+		metric_tag_imageempty=0.5502840941237293,
+		metric_tag_loadimage=0.5502840941237293,
+		metric_tag_name=0.20709712071374894,
+		metric_tag_path=0.22256877074904768,
+		metric_tag_uiimage=0.23695279373384992];
+	ImagesInjectionMap -> ImagesManager;
+	ImagesManager -> Gifs;
+	ImagesManager -> PlanImage;
+	FoundationAudioTests	[absolute_name="Apollo/FoundationAudio/Tests/FoundationAudioTests/FoundationAudioTests.swift/FoundationAudioTests",
+		display_name=FoundationAudioTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=2,
+		"metric_sloc-in-entity"=11,
+		metric_tag_audioplayer=0.3399642767562062,
+		metric_tag_foundationaudiotests=0.20253227616917638,
+		metric_tag_testaudioplayer=0.20253227616917638,
+		metric_tag_testaudioplayerinjected=0.20253227616917638,
+		metric_tag_xctassertnothrow=0.8101291046767055];
+	FoundationAudioTests -> AudioPlayerInjected;
+	AudioPlayer	[absolute_name="Apollo/FoundationAudio/Sources/FoundationAudio/Source/AudioPlayer.swift/AudioPlayer",
+		display_name=AudioPlayer,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_number-of-methods-in-entity"=2,
+		"metric_sloc-in-entity"=23,
+		metric_tag_audioplayer=0.5430813096824749,
+		metric_tag_avaudioplayer=0.25883070973084776,
+		metric_tag_playsound=0.25883070973084776,
+		metric_tag_sound=0.32584878580948495,
+		metric_tag_throw=0.21723252387298997];
+	FoundationAudioTests -> AudioPlayer;
+	AudioPlayerProtocol	[absolute_name="Apollo/FoundationAudio/Sources/FoundationAudio/Interface/AudioPlayerProtocol.swift/AudioPlayerProtocol",
+		display_name=AudioPlayerProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=2,
+		metric_tag_anyobject=0.3246644855079809,
+		metric_tag_audioplayerprotocol=0.45310217670275366,
+		metric_tag_play=0.502729283767646,
+		metric_tag_sound=0.46720159276244677,
+		metric_tag_soundsenum=0.46720159276244677];
+	AudioPlayerInjected -> AudioPlayerProtocol;
+	AudioPlayer -> LoggerInjected;
+	AudioPlayer -> ErrorLine;
+	SoundsEnum	[absolute_name="Apollo/FoundationAudio/Sources/FoundationAudio/Interface/SoundsEnum.swift/SoundsEnum",
+		display_name=SoundsEnum,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=3,
+		metric_tag_countdown=0.5850173074019634,
+		metric_tag_enum=0.2728234670313152,
+		metric_tag_soundsenum=0.49099577993840826];
+	AudioPlayer -> SoundsEnum;
+	AudioError	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/AudioError.swift/AudioError",
+		display_name=AudioError,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=36,
+		metric_tag_audioerrortype=0.29620083248604895,
+		metric_tag_errorline=0.3248234218860923,
+		metric_tag_errortype=0.4960205880727334,
+		metric_tag_not=0.2480102940363667,
+		metric_tag_public=0.25053607893468516,
+		metric_tag_requested=0.20886446537948464,
+		metric_tag_sound=0.5258899341073129];
+	AudioPlayer -> AudioError;
+	AudioPlayerInjectionMap	[absolute_name="Apollo/FoundationAudio/Sources/FoundationAudio/Interface/AudioPlayerInjected.swift/AudioPlayerInjectionMap",
+		display_name=AudioPlayerInjectionMap,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=7,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=2,
+		metric_tag_audioplayer=0.45932261547652453,
+		metric_tag_audioplayerinjectionmap=0.5472790005824728,
+		metric_tag_audioplayerprotocol=0.4454609746740223,
+		metric_tag_enum=0.2552241659916441,
+		metric_tag_player=0.47532470540630906];
+	AudioPlayerInjectionMap -> AudioPlayer;
+	AudioPlayerInjectionMap -> AudioPlayerProtocol;
+	AudioPlayerProtocol -> SoundsEnum;
+	AudioError -> ErrorProtocol;
+	AudioError -> ErrorLine;
+	AudioErrorType	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/AudioError.swift/AudioErrorType",
+		display_name=AudioErrorType,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=3,
+		metric_tag_audioerrortype=0.5552717468993656,
+		metric_tag_enum=0.27389753793340416,
+		metric_tag_failedtoloadsound=0.5552717468993656,
+		metric_tag_soundnotfound=0.5552717468993656];
+	AudioError -> AudioErrorType;
+	FeaturePlansTests	[absolute_name="Apollo/FeaturePlans/Tests/FeaturePlansTests/FeaturePlansTests.swift/FeaturePlansTests",
+		display_name=FeaturePlansTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=6,
+		"metric_sloc-in-entity"=90,
+		metric_tag_planimage=0.31139583690686334,
+		metric_tag_plansviewmodel=0.2068128324162877,
+		metric_tag_xctassertequal=0.8798068479432423];
+	FeaturePlansTests -> Day;
+	FeaturePlansTests -> PlansViewModel;
+	FeaturePlansTests -> ActivityViewModel;
+	DaysView -> Plan;
+	DaysView -> PlansViewModel;
+	ActivityView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/ActivityView.swift/ActivityView",
+		display_name=ActivityView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=25,
+		metric_tag_activityview=0.2372230785791626,
+		metric_tag_day=0.7059612902017589,
+		metric_tag_distance=0.2372230785791626,
+		metric_tag_infoview=0.25312652814027486,
+		metric_tag_pace=0.22488740474669663,
+		metric_tag_timerview=0.25312652814027486,
+		metric_tag_view=0.26129330233336445];
+	DaysView -> ActivityView;
+	FinishedDayView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Days/FinishedDayView.swift/FinishedDayView",
+		display_name=FinishedDayView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=84,
+		metric_tag_day=0.2218651301635504,
+		metric_tag_height=0.26447215170284066,
+		metric_tag_image=0.27608139172348656,
+		metric_tag_size=0.46322411725046353,
+		metric_tag_systemname=0.2700346317053986,
+		metric_tag_text=0.3597164220710723,
+		metric_tag_uuid=0.2628339006214553];
+	DaysView -> FinishedDayView;
+	DayView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Days/DayView.swift/DayView",
+		display_name=DayView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=14,
+		metric_tag_dayview=0.3183085088698853,
+		metric_tag_hstack=0.27617195046911314,
+		metric_tag_image=0.27617195046911314,
+		metric_tag_name=0.4275000353894853,
+		metric_tag_spacer=0.3075924629197858,
+		metric_tag_systemname=0.27012320702505455,
+		metric_tag_view=0.3285782887099455];
+	DaysView -> DayView;
+	PlansView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Interface/PlansView.swift/PlansView_Previews",
+		display_name=PlansView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=6,
+		metric_tag_activityviewmodel=0.4435872679044474,
+		metric_tag_plansview=0.564509281928062,
+		metric_tag_plansviewmodel=0.4100617868319396,
+		metric_tag_previewprovider=0.3402334437732663,
+		metric_tag_previews=0.3402334437732663,
+		metric_tag_view=0.29136119306917985];
+	PlansView_Previews -> PlansView;
+	PlansView_Previews -> PlansViewModel;
+	PlansView_Previews -> ActivityViewModel;
+	WeightRepositoryProtocol	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/WeightRepositoryProtocol.swift/WeightRepositoryProtocol",
+		display_name=WeightRepositoryProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_async=0.2806203249248207,
+		metric_tag_bodymass=0.31170214458171264,
+		metric_tag_double=0.5162855519632416,
+		metric_tag_loadfromhealthkit=0.3899626099957928,
+		metric_tag_save=0.2686128746935492,
+		metric_tag_value=0.2724230625187222,
+		metric_tag_weightrepositoryprotocol=0.35146730681287613];
+	WeightRepositoryInjected -> WeightRepositoryProtocol;
+	LocationTrackerProtocol	[absolute_name="Apollo/FoundationLocation/Sources/FoundationLocation/Interface/LocationTrackerProtocol.swift/LocationTrackerProtocol",
+		display_name=LocationTrackerProtocol,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
+		"metric_fan-in-dependency-graph"=3,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_distancekilometers=0.2839154925061835,
+		metric_tag_distancemeters=0.2839154925061835,
+		metric_tag_double=0.37588595163277816,
+		metric_tag_location=0.2839154925061835,
+		metric_tag_startupdatinglocation=0.2839154925061835,
+		metric_tag_stopupdatinglocation=0.2839154925061835,
+		metric_tag_updatinglocationstopped=0.2839154925061835];
+	LocationTrackerInjected -> LocationTrackerProtocol;
+	FractionProgressView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/FractionProgressView.swift/FractionProgressView",
+		display_name=FractionProgressView,
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=43,
+		metric_tag_intervals=0.2762176853163501,
+		metric_tag_linewidth=0.3357952166972363,
+		metric_tag_outerstyle=0.33935214835319144,
+		metric_tag_padding=0.3357952166972363,
+		metric_tag_progress=0.639298277123821];
+	FractionProgressView -> Interval;
+	FractionProgressView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/FractionProgressView.swift/FractionProgressView_Previews",
+		display_name=FractionProgressView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=1,
+		"metric_sloc-in-entity"=22,
+		metric_tag_fractionprogressview=0.23774475026460837,
+		metric_tag_interval=0.6336649138117623,
+		metric_tag_intervals=0.222807708019249,
+		metric_tag_linewidth=0.2166921716412185,
+		metric_tag_padding=0.2166921716412185,
+		metric_tag_previewintervals=0.5474687422667152,
+		metric_tag_progress=0.2062729382493769];
+	FractionProgressView_Previews -> Interval;
+	FractionProgressView_Previews -> FractionProgressView;
+	InfoView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/InfoView.swift/InfoView",
+		display_name=InfoView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=47,
+		metric_tag_distance=0.21388721978796685,
+		metric_tag_divider=0.35597059892827987,
+		metric_tag_pace=0.20276501786714127,
+		metric_tag_text=0.7256255056271675,
+		metric_tag_vstack=0.3526335525650453];
+	GifView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/GifView.swift/GifView",
+		display_name=GifView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=1,
+		"metric_sloc-in-entity"=16,
+		metric_tag_animatedimageview=0.3084405171437181,
+		metric_tag_context=0.3084405171437181,
+		metric_tag_equalto=0.3084405171437181,
+		metric_tag_gif=0.21831658973096577,
+		metric_tag_gifview=0.4018317835802307,
+		metric_tag_uiview=0.4626607757155771,
+		metric_tag_uiviewrepresentablecontext=0.3084405171437181];
+	InfoView -> GifView;
+	GifView -> PlansViewModel;
+	GifView -> Gifs;
+	InfoView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/InfoView.swift/InfoView_Previews",
+		display_name=InfoView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_calories=0.3531720456051001,
+		metric_tag_distance=0.4284276773542149,
+		metric_tag_infoview=0.4571494948021473,
+		metric_tag_pace=0.40614930494501883,
+		metric_tag_plansviewmodel=0.3320752106105773,
+		metric_tag_previewprovider=0.27552699648181217,
+		metric_tag_previews=0.27552699648181217];
+	InfoView_Previews -> PlansViewModel;
+	InfoView_Previews -> InfoView;
+	CircularProgressView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/CircularProgressView.swift/CircularProgressView",
+		display_name=CircularProgressView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=33,
+		metric_tag_color=0.4208570246911062,
+		metric_tag_innerstyle=0.29729613883044115,
+		metric_tag_linewidth=0.5491360349803351,
+		metric_tag_padding=0.3922400249859536,
+		metric_tag_progress=0.37337990495948076];
+	CircularProgressView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/CircularProgressView.swift/CircularProgressView_Previews",
+		display_name=CircularProgressView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_circularprogressview=0.4440585420157934,
+		metric_tag_color=0.36188779918066066,
+		metric_tag_linewidth=0.40473663329322246,
+		metric_tag_padding=0.40473663329322246,
+		metric_tag_previewprovider=0.26763699344490555,
+		metric_tag_previews=0.26763699344490555,
+		metric_tag_progress=0.385275637482573];
+	CircularProgressView_Previews -> CircularProgressView;
+	TimerView	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/TimerView.swift/TimerView",
+		display_name=TimerView,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=5,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=49,
+		metric_tag_action=0.3293841867751109,
+		metric_tag_circlebutton=0.41178812951224775,
+		metric_tag_imagename=0.41178812951224775,
+		metric_tag_linewidth=0.25021586930456713,
+		metric_tag_padding=0.25021586930456713,
+		metric_tag_progress=0.23818471229099777,
+		metric_tag_timeinterval=0.25021586930456713];
+	TimerView -> ActivityViewModel;
+	TimerView -> FractionProgressView;
+	TimerView -> CircularProgressView;
+	TimerText	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/TimerText.swift/TimerText",
+		display_name=TimerText,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=18,
+		metric_tag_color=0.42802310587602377,
+		metric_tag_fontsize=0.5252106226700775,
+		metric_tag_intervaltype=0.27513777912135085,
+		metric_tag_size=0.3640822886002623,
+		metric_tag_text=0.2473869055017936,
+		metric_tag_timeinterval=0.319135067528647];
+	TimerView -> TimerText;
+	CircleButton	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/CircleButton.swift/CircleButton",
+		display_name=CircleButton,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=15,
+		metric_tag_action=0.47290502045575966,
+		metric_tag_button=0.3275879175501357,
+		metric_tag_imagename=0.3941429322336922,
+		metric_tag_view=0.20342970195843077];
+	TimerView -> CircleButton;
+	TimerView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/TimerView.swift/TimerView_Previews",
+		display_name=TimerView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_activityviewmodel=0.4863587531952681,
+		metric_tag_previewprovider=0.37303936673074906,
+		metric_tag_previews=0.37303936673074906,
+		metric_tag_timerview=0.6189402861419137,
+		metric_tag_view=0.3194547653724291];
+	TimerView_Previews -> ActivityViewModel;
+	TimerView_Previews -> TimerView;
+	CircleButton_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/CircleButton.swift/CircleButton_Previews",
+		display_name=CircleButton_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=7,
+		metric_tag_action=0.36442702193640486,
+		metric_tag_circlebutton=0.4555978329626674,
+		metric_tag_imagename=0.4555978329626674,
+		metric_tag_previewprovider=0.27459179972222186,
+		metric_tag_previews=0.27459179972222186,
+		metric_tag_print=0.4959415595367235,
+		metric_tag_view=0.23514853062885824];
+	CircleButton_Previews -> CircleButton;
+	TimerTextView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/TimerText.swift/TimerTextView_Previews",
+		display_name=TimerTextView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=4,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=11,
+		metric_tag_color=0.25326683106501235,
+		metric_tag_currentinterval=0.2912486218060933,
+		metric_tag_fontsize=0.31077394705850536,
+		metric_tag_seconds=0.31077394705850536,
+		metric_tag_timeinterval=0.5665090934934973,
+		metric_tag_timertext=0.31077394705850536,
+		metric_tag_totalintervals=0.2912486218060933];
+	TimerTextView_Previews -> TimerText;
+	ActivityView -> Day;
+	ActivityView -> ActivityViewModel;
+	ActivityView -> InfoView;
+	ActivityView -> TimerView;
+	ActivityView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/ActivityView.swift/ActivityView_Previews",
+		display_name=ActivityView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_number-of-methods-in-entity"=1,
+		"metric_sloc-in-entity"=19,
+		metric_tag_day=0.7253133291734615,
+		metric_tag_interval=0.3696833455089628,
+		metric_tag_previewday=0.4790940885111064];
+	ActivityView_Previews -> Day;
+	ActivityView_Previews -> Interval;
+	ActivityView_Previews -> ActivityViewModel;
+	ActivityView_Previews -> ActivityView;
+	GifView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Activity/GifView.swift/GifView_Previews",
+		display_name=GifView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=6,
+		metric_tag_gif=0.37566110959699406,
+		metric_tag_gifview=0.4609592392928372,
+		metric_tag_height=0.3831216163630272,
+		metric_tag_plansviewmodel=0.33484262415582444,
+		metric_tag_previewprovider=0.27782315445380606,
+		metric_tag_previews=0.27782315445380606,
+		metric_tag_width=0.42014075385166755];
+	GifView_Previews -> PlansViewModel;
+	GifView_Previews -> GifView;
+	FinishedDayView -> Day;
+	FinishedDayView -> PlansViewModel;
+	FinishedDayView -> ActivityView;
+	FinishedView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Days/FinishedDayView.swift/FinishedView_Previews",
+		display_name=FinishedView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=8,
+		metric_tag_dayid=0.284904414063473,
+		metric_tag_finisheddayview=0.349595203290431,
+		metric_tag_planid=0.27008069457289574,
+		metric_tag_previewprovider=0.21070332012233595,
+		metric_tag_previews=0.21070332012233595,
+		metric_tag_uuid=0.7219066419855312,
+		metric_tag_weekid=0.284904414063473];
+	FinishedView_Previews -> FinishedDayView;
+	DaysView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Days/DaysView.swift/DaysView_Previews",
+		display_name=DaysView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_daysview=0.5276919423627352,
+		metric_tag_planid=0.40766979916325696,
+		metric_tag_plansviewmodel=0.38331752498917304,
+		metric_tag_previewprovider=0.31804339193196246,
+		metric_tag_previews=0.31804339193196246,
+		metric_tag_uuid=0.3632242038109716,
+		metric_tag_view=0.2723585932452255];
+	DaysView_Previews -> PlansViewModel;
+	DaysView_Previews -> DaysView;
+	DayView_Previews	[absolute_name="Apollo/FeaturePlans/Sources/FeaturePlans/Source/Days/DayView.swift/DayView_Previews",
+		display_name=DayView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=3,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=1,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=6,
-		metric_tag_apolloapp=0.44909385605456315,
-		metric_tag_apollorootview=0.38785489240186816,
-		metric_tag_app=0.42367738972172053,
-		metric_tag_body=0.25497093410946825,
-		metric_tag_scene=0.44909385605456315,
-		metric_tag_windowgroup=0.44909385605456315];
-	ApolloApp -> ApolloRootView;
-	ApolloLocalizationTests	[absolute_name="Apollo/ApolloLocalization/Tests/ApolloLocalizationTests/ApolloLocalizationTests.swift/ApolloLocalizationTests",
-		display_name=ApolloLocalizationTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=1,
-		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=1,
-		"metric_sloc-in-entity"=51,
-		metric_tag_xctassertequal=0.9863899059243292];
-	ApolloLocalizationTests -> LocalizationManager;
-	"Foundation.Bundle"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift/\
-Foundation.Bundle",
+		metric_tag_dayview=0.6396813247817538,
+		metric_tag_name=0.4295577739236247,
+		metric_tag_previewprovider=0.38554012664698095,
+		metric_tag_previews=0.38554012664698095,
+		metric_tag_view=0.33015987502617594];
+	DayView_Previews -> DayView;
+	"Foundation.Bundle"	[absolute_name="Apollo/Build/Intermediates.noindex/FoundationAudio.build/Debug-iphonesimulator/FoundationAudio.build/DerivedSources/resource_bundle_\
+accessor.swift/Foundation.Bundle",
 		display_name="Foundation.Bundle",
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=9,
 		"metric_fan-in-dependency-graph"=3,
 		"metric_fan-out-dependency-graph"=3,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=30,
-		metric_tag_bundle=0.5437167148568052,
-		metric_tag_bundlename=0.23441097696635355,
-		metric_tag_candidate=0.23441097696635355,
-		metric_tag_candidates=0.23441097696635355,
-		metric_tag_import=0.25217276440236774,
-		metric_tag_overrides=0.5860274424158839,
-		metric_tag_url=0.27274171809214515];
-	"Foundation.ProcessInfo"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift/\
-Foundation.ProcessInfo",
+		metric_tag_bundle=0.5470924740565858,
+		metric_tag_bundlename=0.23503869596154459,
+		metric_tag_candidate=0.23503869596154459,
+		metric_tag_candidates=0.23503869596154459,
+		metric_tag_import=0.25153243959785104,
+		metric_tag_overrides=0.5875967399038615,
+		metric_tag_url=0.2662518656381288];
+	"Foundation.ProcessInfo"	[absolute_name="Apollo/Build/Intermediates.noindex/FoundationAudio.build/Debug-iphonesimulator/FoundationAudio.build/DerivedSources/resource_bundle_\
+accessor.swift/Foundation.ProcessInfo",
 		display_name="Foundation.ProcessInfo",
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=9,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=3,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=29,
-		metric_tag_bundle=0.5469203669870624,
-		metric_tag_bundlename=0.2357921580211087,
-		metric_tag_candidate=0.2357921580211087,
-		metric_tag_candidates=0.2357921580211087,
-		metric_tag_overrides=0.5894803950527718,
-		metric_tag_url=0.2743487490373057];
+		metric_tag_bundle=0.5498928346843887,
+		metric_tag_bundlename=0.23624177065438484,
+		metric_tag_candidate=0.23624177065438484,
+		metric_tag_candidates=0.23624177065438484,
+		metric_tag_overrides=0.590604426635962,
+		metric_tag_url=0.26761470880810256];
 	"Foundation.Bundle" -> "Foundation.ProcessInfo";
-	"Foundation.URL"	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift/\
-Foundation.URL",
+	"Foundation.URL"	[absolute_name="Apollo/Build/Intermediates.noindex/FoundationAudio.build/Debug-iphonesimulator/FoundationAudio.build/DerivedSources/resource_bundle_\
+accessor.swift/Foundation.URL",
 		display_name="Foundation.URL",
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=9,
 		"metric_fan-in-dependency-graph"=2,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=28,
-		metric_tag_bundle=0.548000901498446,
-		metric_tag_bundlename=0.23625800566481417,
-		metric_tag_candidate=0.23625800566481417,
-		metric_tag_candidates=0.23625800566481417,
-		metric_tag_overrides=0.5906450141620354,
-		metric_tag_url=0.274890771805854];
+		metric_tag_bundle=0.5508358878872901,
+		metric_tag_bundlename=0.2366469197023854,
+		metric_tag_candidate=0.2366469197023854,
+		metric_tag_candidates=0.2366469197023854,
+		metric_tag_overrides=0.5916172992559635,
+		metric_tag_url=0.26807366170286046];
 	"Foundation.Bundle" -> "Foundation.URL";
-	BundleFinder	[absolute_name="Apollo/Build/Intermediates.noindex/ApolloImages.build/Debug-iphonesimulator/ApolloImages.build/DerivedSources/resource_bundle_accessor.swift/\
-BundleFinder",
+	BundleFinder	[absolute_name="Apollo/Build/Intermediates.noindex/FoundationAudio.build/Debug-iphonesimulator/FoundationAudio.build/DerivedSources/resource_bundle_\
+accessor.swift/BundleFinder",
 		display_name=BundleFinder,
 		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=9,
 		"metric_fan-in-dependency-graph"=3,
 		"metric_fan-out-dependency-graph"=1,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=27,
-		metric_tag_bundle=0.548000901498446,
-		metric_tag_bundlename=0.23625800566481417,
-		metric_tag_candidate=0.23625800566481417,
-		metric_tag_candidates=0.23625800566481417,
-		metric_tag_overrides=0.5906450141620354,
-		metric_tag_url=0.274890771805854];
+		metric_tag_bundle=0.5508358878872901,
+		metric_tag_bundlename=0.2366469197023854,
+		metric_tag_candidate=0.2366469197023854,
+		metric_tag_candidates=0.2366469197023854,
+		metric_tag_overrides=0.5916172992559635,
+		metric_tag_url=0.26807366170286046];
 	"Foundation.Bundle" -> BundleFinder;
 	"Foundation.ProcessInfo" -> "Foundation.Bundle";
 	"Foundation.ProcessInfo" -> "Foundation.URL";
@@ -1241,47 +1297,270 @@ BundleFinder",
 	"Foundation.URL" -> "Foundation.Bundle";
 	"Foundation.URL" -> BundleFinder;
 	BundleFinder -> "Foundation.Bundle";
-	ApolloLocationTests	[absolute_name="Apollo/ApolloLocation/Tests/ApolloLocationTests/ApolloLocationTests.swift/ApolloLocationTests",
-		display_name=ApolloLocationTests,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+	FeatureSettingsTests	[absolute_name="Apollo/FeatureSettings/Tests/FeatureSettingsTests/FeatureSettingsTests.swift/FeatureSettingsTests",
+		display_name=FeatureSettingsTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
 		"metric_fan-in-dependency-graph"=0,
-		"metric_fan-out-dependency-graph"=1,
-		"metric_number-of-methods-in-entity"=2,
-		"metric_sloc-in-entity"=18,
-		metric_tag_cllocation=0.3638118650453022,
-		metric_tag_latitude=0.43658481778424846,
-		metric_tag_locationamsterdam=0.29105654518949897,
-		metric_tag_locationrotterdam=0.29105654518949897,
-		metric_tag_locationthehague=0.29105654518949897,
-		metric_tag_longitude=0.43658481778424846,
-		metric_tag_xctasserttrue=0.29105654518949897];
-	ApolloLocationTests -> LocationTrackerInjected;
-	LocationTrackerInjectionMap	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Interface/LocationTrackerInjected.swift/LocationTrackerInjectionMap",
-		display_name=LocationTrackerInjectionMap,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_number-of-methods-in-entity"=4,
+		"metric_sloc-in-entity"=88,
+		metric_tag_xctassertequal=0.9786025857925426];
+	FeatureSettingsTests -> LocalizationViewModel;
+	FeatureSettingsTests -> ThemeViewModel;
+	FeatureSettingsTests -> WeightViewModel;
+	FeatureSettingsTests -> WeightRepositoryInjected;
+	WeightView -> LocalizationViewModel;
+	WeightView -> WeightViewModel;
+	ResetDataView -> PlansRepositoryInjected;
+	ResetDataView -> LocalizationViewModel;
+	SettingsView_Previews	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/SettingsView.swift/SettingsView_Previews",
+		display_name=SettingsView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=4,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=7,
+		metric_tag_localizationviewmodel=0.3785214118810421,
+		metric_tag_previewprovider=0.30488980341816874,
+		metric_tag_previews=0.30488980341816874,
+		metric_tag_settingsview=0.5058677421184841,
+		metric_tag_themeviewmodel=0.42044686494118877,
+		metric_tag_view=0.26109442944046457,
+		metric_tag_weightviewmodel=0.41225952560380474];
+	SettingsView_Previews -> LocalizationViewModel;
+	SettingsView_Previews -> SettingsView;
+	SettingsView_Previews -> ThemeViewModel;
+	SettingsView_Previews -> WeightViewModel;
+	WeightRepositoryInjectionMap	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Interface/WeightRepositoryInjected.swift/WeightRepositoryInjectionMap",
+		display_name=WeightRepositoryInjectionMap,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
 		"metric_fan-in-dependency-graph"=0,
 		"metric_fan-out-dependency-graph"=2,
 		"metric_number-of-methods-in-entity"=0,
 		"metric_sloc-in-entity"=2,
-		metric_tag_enum=0.2179719673386111,
-		metric_tag_locationtracker=0.7830258426839917,
-		metric_tag_locationtrackerinjectionmap=0.4533294564155842,
-		metric_tag_locationtrackerprotocol=0.3658567412109707];
-	LocationTrackerInjectionMap -> LocationTrackerProtocol;
-	LocationTracker	[absolute_name="Apollo/ApolloLocation/Sources/ApolloLocation/Source/LocationTracker.swift/LocationTracker",
-		display_name=LocationTracker,
-		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=6,
+		metric_tag_enum=0.2107331550745824,
+		metric_tag_weightrepository=0.7849309603264396,
+		metric_tag_weightrepositoryinjectionmap=0.4518766083560619,
+		metric_tag_weightrepositoryprotocol=0.3678076340887278];
+	WeightRepositoryInjectionMap -> WeightRepositoryProtocol;
+	WeightRepository	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/WeightRepository.swift/WeightRepository",
+		display_name=WeightRepository,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=5,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=3,
+		"metric_sloc-in-entity"=23,
+		metric_tag_await=0.24351306744113052,
+		metric_tag_bodymass=0.3929701709662531,
+		metric_tag_forkey=0.2521291832862381,
+		metric_tag_healthkitrepository=0.3277566445709202,
+		metric_tag_key=0.4309409253341032,
+		metric_tag_save=0.22576434827702216,
+		metric_tag_value=0.3434501151629655];
+	WeightRepositoryInjectionMap -> WeightRepository;
+	WeightRepository -> LoggerInjected;
+	WeightRepository -> StorageInjected;
+	HealthKitRepository	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/HealthKitRepository.swift/HealthKitRepository",
+		display_name=HealthKitRepository,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
 		"metric_fan-in-dependency-graph"=1,
 		"metric_fan-out-dependency-graph"=2,
-		"metric_number-of-methods-in-entity"=9,
-		"metric_sloc-in-entity"=68,
-		metric_tag_cllocationmanager=0.2912184292104189,
-		metric_tag_distance=0.26195287271094386,
-		metric_tag_location=0.26195287271094386,
-		metric_tag_locationmanager=0.2912184292104189,
-		metric_tag_locations=0.2912184292104189,
-		metric_tag_manager=0.21841382190781417,
-		metric_tag_statusstring=0.5824368584208378];
+		"metric_number-of-methods-in-entity"=2,
+		"metric_sloc-in-entity"=35,
+		metric_tag_errorline=0.2709341803300355,
+		metric_tag_healthkiterror=0.36553593080885766,
+		metric_tag_oneyearago=0.21776648062768847,
+		metric_tag_predicate=0.3266497209415327,
+		metric_tag_sampletype=0.21776648062768847,
+		metric_tag_store=0.21776648062768847,
+		metric_tag_throw=0.36553593080885766];
+	WeightRepository -> HealthKitRepository;
+	HealthKitRepository -> ErrorLine;
+	HealthKitError	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/HealthKitError.swift/HealthKitError",
+		display_name=HealthKitError,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=2,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=50,
+		metric_tag_description=0.37148169033673634,
+		metric_tag_errorline=0.28700486383547236,
+		metric_tag_errortype=0.438269877562364,
+		metric_tag_healthkiterrortype=0.2617147467445355,
+		metric_tag_not=0.36522489796863666,
+		metric_tag_on=0.27009019413295055,
+		metric_tag_public=0.22136665146560106,
+		metric_tag_type=0.23233079692117062];
+	HealthKitRepository -> HealthKitError;
+	HealthKitError -> ErrorProtocol;
+	HealthKitError -> ErrorLine;
+	HealthKitErrorType	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/HealthKitError.swift/HealthKitErrorType",
+		display_name=HealthKitErrorType,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_authorization=0.356724740546711,
+		metric_tag_description=0.5300709367243639,
+		metric_tag_healthdata=0.3734433878442397,
+		metric_tag_healthkiterrortype=0.3734433878442397,
+		metric_tag_quantitytype=0.3734433878442397,
+		metric_tag_query=0.3734433878442397];
+	HealthKitError -> HealthKitErrorType;
+	AppearanceToggle_Previews	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/Views/AppearanceToggle.swift/AppearanceToggle_Previews",
+		display_name=AppearanceToggle_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=9,
+		metric_tag_action=0.3457285006372238,
+		metric_tag_appearancetoggle=0.4322213946891088,
+		metric_tag_labeltext=0.4322213946891088,
+		metric_tag_previewprovider=0.2605026671754525,
+		metric_tag_previews=0.2605026671754525,
+		metric_tag_rectanglecolor=0.4322213946891088,
+		metric_tag_systemname=0.3667920461591838];
+	AppearanceToggle_Previews -> AppearanceToggle;
+	ResetDataView_Previews	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/Views/ResetDataView.swift/ResetDataView_Previews",
+		display_name=ResetDataView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_localizationviewmodel=0.4683227461113885,
+		metric_tag_previewprovider=0.3772225969690502,
+		metric_tag_previews=0.3772225969690502,
+		metric_tag_resetdataview=0.6258810273923149,
+		metric_tag_view=0.3230371026629594];
+	ResetDataView_Previews -> LocalizationViewModel;
+	ResetDataView_Previews -> ResetDataView;
+	WeightViewView_Previews	[absolute_name="Apollo/FeatureSettings/Sources/FeatureSettings/Source/Views/WeightView.swift/WeightViewView_Previews",
+		display_name=WeightViewView_Previews,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=0,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=5,
+		metric_tag_previewprovider=0.3697478835842735,
+		metric_tag_previews=0.3697478835842735,
+		metric_tag_view=0.31663608168898943,
+		metric_tag_weightview=0.6134791158145974,
+		metric_tag_weightviewmodel=0.49995796963533295];
+	WeightViewView_Previews -> WeightViewModel;
+	WeightViewView_Previews -> WeightView;
+	FoundationLoggerTests	[absolute_name="Apollo/FoundationLogger/Tests/FoundationLoggerTests/FoundationLoggerTests.swift/FoundationLoggerTests",
+		display_name=FoundationLoggerTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=6,
+		"metric_number-of-methods-in-entity"=1,
+		"metric_sloc-in-entity"=19,
+		metric_tag_errorline=0.7742550928191968,
+		metric_tag_healthkiterror=0.32141562454241523];
+	FoundationLoggerTests -> LoggerInjected;
+	FoundationLoggerTests -> FileError;
+	FoundationLoggerTests -> ErrorLine;
+	FoundationLoggerTests -> AudioError;
+	FoundationLoggerTests -> HealthKitError;
+	LocalizationError	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/LocalizationError.swift/LocalizationError",
+		display_name=LocalizationError,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=3,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=36,
+		metric_tag_errorline=0.40682256715642173,
+		metric_tag_errortype=0.6212371257912278,
+		metric_tag_localizationerror=0.2271976635607023,
+		metric_tag_localizationerrortype=0.370974427786493,
+		metric_tag_not=0.20707904193040927,
+		metric_tag_public=0.3137819625373404];
+	FoundationLoggerTests -> LocalizationError;
+	LocalizationError -> ErrorProtocol;
+	LocalizationError -> ErrorLine;
+	LocalizationErrorType	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/LocalizationError.swift/LocalizationErrorType",
+		display_name=LocalizationErrorType,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=0,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=3,
+		metric_tag_bundlenotfound=0.5552717468993656,
+		metric_tag_enum=0.27389753793340416,
+		metric_tag_localizationerrortype=0.5552717468993656,
+		metric_tag_pathnotfound=0.5552717468993656];
+	LocalizationError -> LocalizationErrorType;
+	LoggerInjectionMap	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Interface/LoggerInjected.swift/LoggerInjectionMap",
+		display_name=LoggerInjectionMap,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=2,
+		metric_tag_enum=0.21910833662859952,
+		metric_tag_logger=0.7648508738547527,
+		metric_tag_loggerinjectionmap=0.46983556993311465,
+		metric_tag_loggerprotocol=0.38242543692737635];
+	LoggerInjectionMap -> LoggerProtocol;
+	Logger	[absolute_name="Apollo/FoundationLogger/Sources/FoundationLogger/Source/Logger.swift/Logger",
+		display_name=Logger,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=2,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=4,
+		"metric_sloc-in-entity"=32,
+		metric_tag_ddlogerror=0.24132938920604088,
+		metric_tag_ddloglevel=0.24132938920604088,
+		metric_tag_error=0.22838169335547404,
+		metric_tag_handleerror=0.21794611266936773,
+		metric_tag_loglevel=0.3619940838090613,
+		metric_tag_message=0.6538383380081032];
+	LoggerInjectionMap -> Logger;
+	LoggerProtocol -> ErrorProtocol;
+	Logger -> ErrorProtocol;
+	FoundationLocationTests	[absolute_name="Apollo/FoundationLocation/Tests/FoundationLocationTests/FoundationLocationTests.swift/FoundationLocationTests",
+		display_name=FoundationLocationTests,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=1,
+		"metric_number-of-methods-in-entity"=2,
+		"metric_sloc-in-entity"=27,
+		metric_tag_cllocation=0.26691367307244174,
+		metric_tag_latitude=0.31802537762991684,
+		metric_tag_locationamsterdam=0.21201691841994458,
+		metric_tag_locationrotterdam=0.21201691841994458,
+		metric_tag_locationthehague=0.21201691841994458,
+		metric_tag_longitude=0.31802537762991684,
+		metric_tag_xctassertequal=0.711295731208207];
+	FoundationLocationTests -> LocationTrackerInjected;
+	LocationTrackerInjectionMap	[absolute_name="Apollo/FoundationLocation/Sources/FoundationLocation/Interface/LocationTrackerInjected.swift/LocationTrackerInjectionMap",
+		display_name=LocationTrackerInjectionMap,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
+		"metric_fan-in-dependency-graph"=0,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=0,
+		"metric_sloc-in-entity"=2,
+		metric_tag_enum=0.2107331550745824,
+		metric_tag_locationtracker=0.7849309603264396,
+		metric_tag_locationtrackerinjectionmap=0.4518766083560619,
+		metric_tag_locationtrackerprotocol=0.3678076340887278];
+	LocationTrackerInjectionMap -> LocationTrackerProtocol;
+	LocationTracker	[absolute_name="Apollo/FoundationLocation/Sources/FoundationLocation/Source/LocationTracker.swift/LocationTracker",
+		display_name=LocationTracker,
+		"metric_entity_result_dependency_graph_louvain-modularity-in-entity"=8,
+		"metric_fan-in-dependency-graph"=1,
+		"metric_fan-out-dependency-graph"=2,
+		"metric_number-of-methods-in-entity"=8,
+		"metric_sloc-in-entity"=66,
+		metric_tag_cllocationmanager=0.2670660956623617,
+		metric_tag_distancemeters=0.24118909664045274,
+		metric_tag_lastlocation=0.4005991434935426,
+		metric_tag_location=0.3617836449606791,
+		metric_tag_locationmanager=0.2670660956623617,
+		metric_tag_statusstring=0.5341321913247234];
 	LocationTrackerInjectionMap -> LocationTracker;
 	LocationTracker -> LoggerInjected;
 	LocationTracker -> LocationTrackerProtocol;

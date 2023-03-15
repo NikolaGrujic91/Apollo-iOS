@@ -1,1481 +1,1789 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d256" for="node" attr.name="metric_tag_manager" attr.type="float" />
-  <key id="d255" for="node" attr.name="metric_tag_cllocationmanager" attr.type="float" />
-  <key id="d254" for="node" attr.name="metric_tag_locationmanager" attr.type="float" />
-  <key id="d253" for="node" attr.name="metric_tag_locations" attr.type="float" />
-  <key id="d252" for="node" attr.name="metric_tag_statusstring" attr.type="float" />
-  <key id="d251" for="node" attr.name="metric_tag_locationtrackerinjected" attr.type="float" />
-  <key id="d250" for="node" attr.name="metric_tag_locationtrackerprotocol" attr.type="float" />
-  <key id="d249" for="node" attr.name="metric_tag_locationtrackerinjectionmap" attr.type="float" />
-  <key id="d248" for="node" attr.name="metric_tag_locationtracker" attr.type="float" />
-  <key id="d247" for="node" attr.name="metric_tag_addlocation" attr.type="float" />
-  <key id="d246" for="node" attr.name="metric_tag_calculatedistance" attr.type="float" />
-  <key id="d245" for="node" attr.name="metric_tag_clear" attr.type="float" />
-  <key id="d244" for="node" attr.name="metric_tag_location" attr.type="float" />
-  <key id="d243" for="node" attr.name="metric_tag_startupdatinglocation" attr.type="float" />
-  <key id="d242" for="node" attr.name="metric_tag_stopupdatinglocation" attr.type="float" />
-  <key id="d241" for="node" attr.name="metric_tag_updatinglocationstopped" attr.type="float" />
-  <key id="d240" for="node" attr.name="metric_tag_locationamsterdam" attr.type="float" />
-  <key id="d239" for="node" attr.name="metric_tag_locationrotterdam" attr.type="float" />
-  <key id="d238" for="node" attr.name="metric_tag_locationthehague" attr.type="float" />
-  <key id="d237" for="node" attr.name="metric_tag_xctasserttrue" attr.type="float" />
-  <key id="d236" for="node" attr.name="metric_tag_cllocation" attr.type="float" />
-  <key id="d235" for="node" attr.name="metric_tag_latitude" attr.type="float" />
-  <key id="d234" for="node" attr.name="metric_tag_longitude" attr.type="float" />
-  <key id="d233" for="node" attr.name="metric_tag_bundlename" attr.type="float" />
-  <key id="d232" for="node" attr.name="metric_tag_candidate" attr.type="float" />
-  <key id="d231" for="node" attr.name="metric_tag_candidates" attr.type="float" />
-  <key id="d230" for="node" attr.name="metric_tag_import" attr.type="float" />
-  <key id="d229" for="node" attr.name="metric_tag_url" attr.type="float" />
-  <key id="d228" for="node" attr.name="metric_tag_bundle" attr.type="float" />
-  <key id="d227" for="node" attr.name="metric_tag_overrides" attr.type="float" />
-  <key id="d226" for="node" attr.name="metric_tag_language" attr.type="float" />
-  <key id="d225" for="node" attr.name="metric_tag_caseiterable" attr.type="float" />
-  <key id="d224" for="node" attr.name="metric_tag_english" attr.type="float" />
-  <key id="d223" for="node" attr.name="metric_tag_netherlands" attr.type="float" />
-  <key id="d222" for="node" attr.name="metric_tag_body" attr.type="float" />
-  <key id="d221" for="node" attr.name="metric_tag_apolloapp" attr.type="float" />
-  <key id="d220" for="node" attr.name="metric_tag_app" attr.type="float" />
-  <key id="d219" for="node" attr.name="metric_tag_scene" attr.type="float" />
-  <key id="d218" for="node" attr.name="metric_tag_windowgroup" attr.type="float" />
-  <key id="d217" for="node" attr.name="metric_tag_failedtoloadsound" attr.type="float" />
-  <key id="d216" for="node" attr.name="metric_tag_soundnotfound" attr.type="float" />
-  <key id="d215" for="node" attr.name="metric_tag_requested" attr.type="float" />
-  <key id="d214" for="node" attr.name="metric_tag_audioerrortype" attr.type="float" />
-  <key id="d213" for="node" attr.name="metric_tag_ddlogerror" attr.type="float" />
-  <key id="d212" for="node" attr.name="metric_tag_ddloglevel" attr.type="float" />
-  <key id="d211" for="node" attr.name="metric_tag_loglevel" attr.type="float" />
-  <key id="d210" for="node" attr.name="metric_tag_errorlocation" attr.type="float" />
-  <key id="d209" for="node" attr.name="metric_tag_column" attr.type="float" />
-  <key id="d208" for="node" attr.name="metric_tag_function" attr.type="float" />
-  <key id="d207" for="node" attr.name="metric_tag_emptystring" attr.type="float" />
-  <key id="d206" for="node" attr.name="metric_tag_encodingjsondata" attr.type="float" />
-  <key id="d205" for="node" attr.name="metric_tag_readingjsondata" attr.type="float" />
-  <key id="d204" for="node" attr.name="metric_tag_json" attr.type="float" />
-  <key id="d203" for="node" attr.name="metric_tag_seems" attr.type="float" />
-  <key id="d202" for="node" attr.name="metric_tag_possible" attr.type="float" />
-  <key id="d201" for="node" attr.name="metric_tag_authorization" attr.type="float" />
-  <key id="d200" for="node" attr.name="metric_tag_healthdata" attr.type="float" />
-  <key id="d199" for="node" attr.name="metric_tag_quantitytype" attr.type="float" />
-  <key id="d198" for="node" attr.name="metric_tag_query" attr.type="float" />
-  <key id="d197" for="node" attr.name="metric_tag_healthkiterrortype" attr.type="float" />
-  <key id="d196" for="node" attr.name="metric_tag_on" attr.type="float" />
-  <key id="d195" for="node" attr.name="metric_tag_description" attr.type="float" />
-  <key id="d194" for="node" attr.name="metric_tag_bundlenotfound" attr.type="float" />
-  <key id="d193" for="node" attr.name="metric_tag_pathnotfound" attr.type="float" />
-  <key id="d192" for="node" attr.name="metric_tag_not" attr.type="float" />
-  <key id="d191" for="node" attr.name="metric_tag_localizationerror" attr.type="float" />
-  <key id="d190" for="node" attr.name="metric_tag_errortype" attr.type="float" />
-  <key id="d189" for="node" attr.name="metric_tag_localizationerrortype" attr.type="float" />
-  <key id="d188" for="node" attr.name="metric_tag_loginfo" attr.type="float" />
-  <key id="d187" for="node" attr.name="metric_tag_logwarn" attr.type="float" />
-  <key id="d186" for="node" attr.name="metric_tag_handleerror" attr.type="float" />
-  <key id="d185" for="node" attr.name="metric_tag_message" attr.type="float" />
-  <key id="d184" for="node" attr.name="metric_tag_error" attr.type="float" />
-  <key id="d183" for="node" attr.name="metric_tag_loggerinjected" attr.type="float" />
-  <key id="d182" for="node" attr.name="metric_tag_loggerprotocol" attr.type="float" />
-  <key id="d181" for="node" attr.name="metric_tag_loggerinjectionmap" attr.type="float" />
-  <key id="d180" for="node" attr.name="metric_tag_logger" attr.type="float" />
-  <key id="d179" for="node" attr.name="metric_tag_errorprotocol" attr.type="float" />
-  <key id="d178" for="node" attr.name="metric_tag_localizederror" attr.type="float" />
-  <key id="d177" for="node" attr.name="metric_tag_previewplan" attr.type="float" />
-  <key id="d176" for="node" attr.name="metric_tag_mobilemenuview" attr.type="float" />
-  <key id="d175" for="node" attr.name="metric_tag_mindragtranslationforswipe" attr.type="float" />
-  <key id="d174" for="node" attr.name="metric_tag_swipeleft" attr.type="float" />
-  <key id="d173" for="node" attr.name="metric_tag_swiperight" attr.type="float" />
-  <key id="d172" for="node" attr.name="metric_tag_systemimage" attr.type="float" />
-  <key id="d171" for="node" attr.name="metric_tag_tabscount" attr.type="float" />
-  <key id="d170" for="node" attr.name="metric_tag_selectedtab" attr.type="float" />
-  <key id="d169" for="node" attr.name="metric_tag_translation" attr.type="float" />
-  <key id="d168" for="node" attr.name="metric_tag_intervaltype" attr.type="float" />
-  <key id="d167" for="node" attr.name="metric_tag_totalintervals" attr.type="float" />
-  <key id="d166" for="node" attr.name="metric_tag_timertext" attr.type="float" />
-  <key id="d165" for="node" attr.name="metric_tag_hours" attr.type="float" />
-  <key id="d164" for="node" attr.name="metric_tag_minutes" attr.type="float" />
-  <key id="d163" for="node" attr.name="metric_tag_size" attr.type="float" />
-  <key id="d162" for="node" attr.name="metric_tag_fontsize" attr.type="float" />
-  <key id="d161" for="node" attr.name="metric_tag_time" attr.type="float" />
-  <key id="d160" for="node" attr.name="metric_tag_starttimer" attr.type="float" />
-  <key id="d159" for="node" attr.name="metric_tag_stoptimer" attr.type="float" />
-  <key id="d158" for="node" attr.name="metric_tag_activebutton" attr.type="float" />
-  <key id="d157" for="node" attr.name="metric_tag_currentinterval" attr.type="float" />
-  <key id="d156" for="node" attr.name="metric_tag_timeremaining" attr.type="float" />
-  <key id="d155" for="node" attr.name="metric_tag_timerbutton" attr.type="float" />
-  <key id="d154" for="node" attr.name="metric_tag_pause" attr.type="float" />
-  <key id="d153" for="node" attr.name="metric_tag_resume" attr.type="float" />
-  <key id="d152" for="node" attr.name="metric_tag_start" attr.type="float" />
-  <key id="d151" for="node" attr.name="metric_tag_print" attr.type="float" />
-  <key id="d150" for="node" attr.name="metric_tag_circle" attr.type="float" />
-  <key id="d149" for="node" attr.name="metric_tag_previewday" attr.type="float" />
-  <key id="d148" for="node" attr.name="metric_tag_timeinterval" attr.type="float" />
-  <key id="d147" for="node" attr.name="metric_tag_circlebutton" attr.type="float" />
-  <key id="d146" for="node" attr.name="metric_tag_circularprogressview" attr.type="float" />
-  <key id="d145" for="node" attr.name="metric_tag_strokestyle" attr.type="float" />
-  <key id="d144" for="node" attr.name="metric_tag_strokecolor" attr.type="float" />
-  <key id="d143" for="node" attr.name="metric_tag_progress" attr.type="float" />
-  <key id="d142" for="node" attr.name="metric_tag_linewidth" attr.type="float" />
-  <key id="d141" for="node" attr.name="metric_tag_level" attr.type="float" />
-  <key id="d140" for="node" attr.name="metric_tag_loss" attr.type="float" />
-  <key id="d139" for="node" attr.name="metric_tag_plansview" attr.type="float" />
-  <key id="d138" for="node" attr.name="metric_tag_maxwidth" attr.type="float" />
-  <key id="d137" for="node" attr.name="metric_tag_alignment" attr.type="float" />
-  <key id="d136" for="node" attr.name="metric_tag_weightview" attr.type="float" />
-  <key id="d135" for="node" attr.name="metric_tag_label" attr.type="float" />
-  <key id="d134" for="node" attr.name="metric_tag_isfocused" attr.type="float" />
-  <key id="d133" for="node" attr.name="metric_tag_dismiss" attr.type="float" />
-  <key id="d132" for="node" attr.name="metric_tag_resetdataview" attr.type="float" />
-  <key id="d131" for="node" attr.name="metric_tag_ispresented" attr.type="float" />
-  <key id="d130" for="node" attr.name="metric_tag_showingalert" attr.type="float" />
-  <key id="d129" for="node" attr.name="metric_tag_button" attr.type="float" />
-  <key id="d128" for="node" attr.name="metric_tag_role" attr.type="float" />
-  <key id="d127" for="node" attr.name="metric_tag_observableobject" attr.type="float" />
-  <key id="d126" for="node" attr.name="metric_tag_format" attr.type="float" />
-  <key id="d125" for="node" attr.name="metric_tag_onappear" attr.type="float" />
-  <key id="d124" for="node" attr.name="metric_tag_loadfromhealth" attr.type="float" />
-  <key id="d123" for="node" attr.name="metric_tag_update" attr.type="float" />
-  <key id="d122" for="node" attr.name="metric_tag_appearancetoggle" attr.type="float" />
-  <key id="d121" for="node" attr.name="metric_tag_labeltext" attr.type="float" />
-  <key id="d120" for="node" attr.name="metric_tag_rectanglecolor" attr.type="float" />
-  <key id="d119" for="node" attr.name="metric_tag_style" attr.type="float" />
-  <key id="d118" for="node" attr.name="metric_tag_cornerradius" attr.type="float" />
-  <key id="d117" for="node" attr.name="metric_tag_roundedrectangle" attr.type="float" />
-  <key id="d116" for="node" attr.name="metric_tag_systemname" attr.type="float" />
-  <key id="d115" for="node" attr.name="metric_tag_height" attr.type="float" />
-  <key id="d114" for="node" attr.name="metric_tag_width" attr.type="float" />
-  <key id="d113" for="node" attr.name="metric_tag_action" attr.type="float" />
-  <key id="d112" for="node" attr.name="metric_tag_settingsview" attr.type="float" />
-  <key id="d111" for="node" attr.name="metric_tag_selectedlanguage" attr.type="float" />
-  <key id="d110" for="node" attr.name="metric_tag_header" attr.type="float" />
-  <key id="d109" for="node" attr.name="metric_tag_section" attr.type="float" />
-  <key id="d108" for="node" attr.name="metric_tag_text" attr.type="float" />
-  <key id="d107" for="node" attr.name="metric_tag_darkmode" attr.type="float" />
-  <key id="d106" for="node" attr.name="metric_tag_localizationmanager" attr.type="float" />
-  <key id="d105" for="node" attr.name="metric_tag_previewprovider" attr.type="float" />
-  <key id="d104" for="node" attr.name="metric_tag_previews" attr.type="float" />
-  <key id="d103" for="node" attr.name="metric_tag_thememanager" attr.type="float" />
-  <key id="d102" for="node" attr.name="metric_tag_apollorootview" attr.type="float" />
-  <key id="d101" for="node" attr.name="metric_tag_view" attr.type="float" />
-  <key id="d100" for="node" attr.name="metric_tag_localization" attr.type="float" />
-  <key id="d99" for="node" attr.name="metric_tag_timerviewmodel" attr.type="float" />
-  <key id="d98" for="node" attr.name="metric_tag_weightviewmodel" attr.type="float" />
-  <key id="d97" for="node" attr.name="metric_tag_plansviewmodel" attr.type="float" />
-  <key id="d96" for="node" attr.name="metric_tag_oneyearago" attr.type="float" />
-  <key id="d95" for="node" attr.name="metric_tag_sampletype" attr.type="float" />
-  <key id="d94" for="node" attr.name="metric_tag_store" attr.type="float" />
-  <key id="d93" for="node" attr.name="metric_tag_predicate" attr.type="float" />
-  <key id="d92" for="node" attr.name="metric_tag_healthkiterror" attr.type="float" />
-  <key id="d91" for="node" attr.name="metric_tag_await" attr.type="float" />
-  <key id="d90" for="node" attr.name="metric_tag_healthkitrepository" attr.type="float" />
-  <key id="d89" for="node" attr.name="metric_tag_weightrepositoryinjected" attr.type="float" />
-  <key id="d88" for="node" attr.name="metric_tag_weightrepositoryinjectionmap" attr.type="float" />
-  <key id="d87" for="node" attr.name="metric_tag_weightrepository" attr.type="float" />
-  <key id="d86" for="node" attr.name="metric_tag_value" attr.type="float" />
-  <key id="d85" for="node" attr.name="metric_tag_weightrepositoryprotocol" attr.type="float" />
-  <key id="d84" for="node" attr.name="metric_tag_loadfromhealthkit" attr.type="float" />
-  <key id="d83" for="node" attr.name="metric_tag_double" attr.type="float" />
-  <key id="d82" for="node" attr.name="metric_tag_bodymass" attr.type="float" />
-  <key id="d81" for="node" attr.name="metric_tag_remove" attr.type="float" />
-  <key id="d80" for="node" attr.name="metric_tag_jsondata" attr.type="float" />
-  <key id="d79" for="node" attr.name="metric_tag_userdefaultskey" attr.type="float" />
-  <key id="d78" for="node" attr.name="metric_tag_errorline" attr.type="float" />
-  <key id="d77" for="node" attr.name="metric_tag_catch" attr.type="float" />
-  <key id="d76" for="node" attr.name="metric_tag_plansloadinginjected" attr.type="float" />
-  <key id="d75" for="node" attr.name="metric_tag_plansloadingprotocol" attr.type="float" />
-  <key id="d74" for="node" attr.name="metric_tag_plansloader" attr.type="float" />
-  <key id="d73" for="node" attr.name="metric_tag_plansloaderinjectionmap" attr.type="float" />
-  <key id="d72" for="node" attr.name="metric_tag_plansrepositoryinjected" attr.type="float" />
-  <key id="d71" for="node" attr.name="metric_tag_plansrepositoryinjectionmap" attr.type="float" />
-  <key id="d70" for="node" attr.name="metric_tag_plansrepository" attr.type="float" />
-  <key id="d69" for="node" attr.name="metric_tag_load" attr.type="float" />
-  <key id="d68" for="node" attr.name="metric_tag_async" attr.type="float" />
-  <key id="d67" for="node" attr.name="metric_tag_plan" attr.type="float" />
-  <key id="d66" for="node" attr.name="metric_tag_save" attr.type="float" />
-  <key id="d65" for="node" attr.name="metric_tag_plans" attr.type="float" />
-  <key id="d64" for="node" attr.name="metric_tag_plansrepositoryprotocol" attr.type="float" />
-  <key id="d63" for="node" attr.name="metric_tag_reset" attr.type="float" />
-  <key id="d62" for="node" attr.name="metric_tag_identifiable" attr.type="float" />
-  <key id="d61" for="node" attr.name="metric_tag_codable" attr.type="float" />
-  <key id="d60" for="node" attr.name="metric_tag_interval" attr.type="float" />
-  <key id="d59" for="node" attr.name="metric_tag_uuid" attr.type="float" />
-  <key id="d58" for="node" attr.name="metric_tag_seconds" attr.type="float" />
-  <key id="d57" for="node" attr.name="metric_tag_type" attr.type="float" />
-  <key id="d56" for="node" attr.name="metric_tag_codingkey" attr.type="float" />
-  <key id="d55" for="node" attr.name="metric_tag_codingkeys" attr.type="float" />
-  <key id="d54" for="node" attr.name="metric_tag_days" attr.type="float" />
-  <key id="d53" for="node" attr.name="metric_tag_name" attr.type="float" />
-  <key id="d52" for="node" attr.name="metric_tag_calories" attr.type="float" />
-  <key id="d51" for="node" attr.name="metric_tag_distance" attr.type="float" />
-  <key id="d50" for="node" attr.name="metric_tag_hasher" attr.type="float" />
-  <key id="d49" for="node" attr.name="metric_tag_intervals" attr.type="float" />
-  <key id="d48" for="node" attr.name="metric_tag_day" attr.type="float" />
-  <key id="d47" for="node" attr.name="metric_tag_checkdayinitialvalue" attr.type="float" />
-  <key id="d46" for="node" attr.name="metric_tag_checkdaywithvalue" attr.type="float" />
-  <key id="d45" for="node" attr.name="metric_tag_checkplans" attr.type="float" />
-  <key id="d44" for="node" attr.name="metric_tag_forkey" attr.type="float" />
-  <key id="d43" for="node" attr.name="metric_tag_defaults" attr.type="float" />
-  <key id="d42" for="node" attr.name="metric_tag_stringvalue" attr.type="float" />
-  <key id="d41" for="node" attr.name="metric_tag_getcolorschemedevice" attr.type="float" />
-  <key id="d40" for="node" attr.name="metric_tag_key" attr.type="float" />
-  <key id="d39" for="node" attr.name="metric_tag_colorscheme" attr.type="float" />
-  <key id="d38" for="node" attr.name="metric_tag_theme" attr.type="float" />
-  <key id="d37" for="node" attr.name="metric_tag_apollothemetests" attr.type="float" />
-  <key id="d36" for="node" attr.name="metric_tag_testtheme" attr.type="float" />
-  <key id="d35" for="node" attr.name="metric_tag_throw" attr.type="float" />
-  <key id="d34" for="node" attr.name="metric_tag_avaudioplayer" attr.type="float" />
-  <key id="d33" for="node" attr.name="metric_tag_playsound" attr.type="float" />
-  <key id="d32" for="node" attr.name="metric_tag_sound" attr.type="float" />
-  <key id="d31" for="node" attr.name="metric_tag_play" attr.type="float" />
-  <key id="d30" for="node" attr.name="metric_tag_audioplayerprotocol" attr.type="float" />
-  <key id="d29" for="node" attr.name="metric_tag_player" attr.type="float" />
-  <key id="d28" for="node" attr.name="metric_tag_audioplayerinjectionmap" attr.type="float" />
-  <key id="d27" for="node" attr.name="metric_tag_soundsenum" attr.type="float" />
-  <key id="d26" for="node" attr.name="metric_tag_countdown" attr.type="float" />
-  <key id="d25" for="node" attr.name="metric_tag_xctestcase" attr.type="float" />
-  <key id="d24" for="node" attr.name="metric_tag_audioplayerinjected" attr.type="float" />
-  <key id="d23" for="node" attr.name="metric_tag_apolloaudiotests" attr.type="float" />
-  <key id="d22" for="node" attr.name="metric_tag_testaudioplayer" attr.type="float" />
-  <key id="d21" for="node" attr.name="metric_tag_audioplayer" attr.type="float" />
-  <key id="d20" for="node" attr.name="metric_tag_xctassertnothrow" attr.type="float" />
-  <key id="d19" for="node" attr.name="metric_tag_imageempty" attr.type="float" />
-  <key id="d18" for="node" attr.name="metric_tag_loadimage" attr.type="float" />
-  <key id="d17" for="node" attr.name="metric_tag_anyobject" attr.type="float" />
-  <key id="d16" for="node" attr.name="metric_tag_getimage" attr.type="float" />
-  <key id="d15" for="node" attr.name="metric_tag_public" attr.type="float" />
-  <key id="d14" for="node" attr.name="metric_tag_extension" attr.type="float" />
-  <key id="d13" for="node" attr.name="metric_tag_planimageinjected" attr.type="float" />
+  <key id="d300" for="node" attr.name="metric_tag_cllocationmanager" attr.type="float" />
+  <key id="d299" for="node" attr.name="metric_tag_locationmanager" attr.type="float" />
+  <key id="d298" for="node" attr.name="metric_tag_lastlocation" attr.type="float" />
+  <key id="d297" for="node" attr.name="metric_tag_statusstring" attr.type="float" />
+  <key id="d296" for="node" attr.name="metric_tag_locationtrackerinjected" attr.type="float" />
+  <key id="d295" for="node" attr.name="metric_tag_locationtrackerprotocol" attr.type="float" />
+  <key id="d294" for="node" attr.name="metric_tag_locationtrackerinjectionmap" attr.type="float" />
+  <key id="d293" for="node" attr.name="metric_tag_locationtracker" attr.type="float" />
+  <key id="d292" for="node" attr.name="metric_tag_distancekilometers" attr.type="float" />
+  <key id="d291" for="node" attr.name="metric_tag_distancemeters" attr.type="float" />
+  <key id="d290" for="node" attr.name="metric_tag_location" attr.type="float" />
+  <key id="d289" for="node" attr.name="metric_tag_startupdatinglocation" attr.type="float" />
+  <key id="d288" for="node" attr.name="metric_tag_stopupdatinglocation" attr.type="float" />
+  <key id="d287" for="node" attr.name="metric_tag_updatinglocationstopped" attr.type="float" />
+  <key id="d286" for="node" attr.name="metric_tag_locationamsterdam" attr.type="float" />
+  <key id="d285" for="node" attr.name="metric_tag_locationrotterdam" attr.type="float" />
+  <key id="d284" for="node" attr.name="metric_tag_locationthehague" attr.type="float" />
+  <key id="d283" for="node" attr.name="metric_tag_cllocation" attr.type="float" />
+  <key id="d282" for="node" attr.name="metric_tag_latitude" attr.type="float" />
+  <key id="d281" for="node" attr.name="metric_tag_longitude" attr.type="float" />
+  <key id="d280" for="node" attr.name="metric_tag_failedtoloadsound" attr.type="float" />
+  <key id="d279" for="node" attr.name="metric_tag_soundnotfound" attr.type="float" />
+  <key id="d278" for="node" attr.name="metric_tag_requested" attr.type="float" />
+  <key id="d277" for="node" attr.name="metric_tag_audioerrortype" attr.type="float" />
+  <key id="d276" for="node" attr.name="metric_tag_ddlogerror" attr.type="float" />
+  <key id="d275" for="node" attr.name="metric_tag_ddloglevel" attr.type="float" />
+  <key id="d274" for="node" attr.name="metric_tag_loglevel" attr.type="float" />
+  <key id="d273" for="node" attr.name="metric_tag_errorlocation" attr.type="float" />
+  <key id="d272" for="node" attr.name="metric_tag_column" attr.type="float" />
+  <key id="d271" for="node" attr.name="metric_tag_function" attr.type="float" />
+  <key id="d270" for="node" attr.name="metric_tag_emptystring" attr.type="float" />
+  <key id="d269" for="node" attr.name="metric_tag_encodingjsondata" attr.type="float" />
+  <key id="d268" for="node" attr.name="metric_tag_readingjsondata" attr.type="float" />
+  <key id="d267" for="node" attr.name="metric_tag_seems" attr.type="float" />
+  <key id="d266" for="node" attr.name="metric_tag_possible" attr.type="float" />
+  <key id="d265" for="node" attr.name="metric_tag_authorization" attr.type="float" />
+  <key id="d264" for="node" attr.name="metric_tag_healthdata" attr.type="float" />
+  <key id="d263" for="node" attr.name="metric_tag_quantitytype" attr.type="float" />
+  <key id="d262" for="node" attr.name="metric_tag_query" attr.type="float" />
+  <key id="d261" for="node" attr.name="metric_tag_healthkiterrortype" attr.type="float" />
+  <key id="d260" for="node" attr.name="metric_tag_on" attr.type="float" />
+  <key id="d259" for="node" attr.name="metric_tag_description" attr.type="float" />
+  <key id="d258" for="node" attr.name="metric_tag_bundlenotfound" attr.type="float" />
+  <key id="d257" for="node" attr.name="metric_tag_pathnotfound" attr.type="float" />
+  <key id="d256" for="node" attr.name="metric_tag_not" attr.type="float" />
+  <key id="d255" for="node" attr.name="metric_tag_localizationerror" attr.type="float" />
+  <key id="d254" for="node" attr.name="metric_tag_localizationerrortype" attr.type="float" />
+  <key id="d253" for="node" attr.name="metric_tag_errortype" attr.type="float" />
+  <key id="d252" for="node" attr.name="metric_tag_loginfo" attr.type="float" />
+  <key id="d251" for="node" attr.name="metric_tag_logwarn" attr.type="float" />
+  <key id="d250" for="node" attr.name="metric_tag_handleerror" attr.type="float" />
+  <key id="d249" for="node" attr.name="metric_tag_message" attr.type="float" />
+  <key id="d248" for="node" attr.name="metric_tag_loggerinjected" attr.type="float" />
+  <key id="d247" for="node" attr.name="metric_tag_loggerprotocol" attr.type="float" />
+  <key id="d246" for="node" attr.name="metric_tag_loggerinjectionmap" attr.type="float" />
+  <key id="d245" for="node" attr.name="metric_tag_logger" attr.type="float" />
+  <key id="d244" for="node" attr.name="metric_tag_errorprotocol" attr.type="float" />
+  <key id="d243" for="node" attr.name="metric_tag_localizederror" attr.type="float" />
+  <key id="d242" for="node" attr.name="metric_tag_weightview" attr.type="float" />
+  <key id="d241" for="node" attr.name="metric_tag_label" attr.type="float" />
+  <key id="d240" for="node" attr.name="metric_tag_isfocused" attr.type="float" />
+  <key id="d239" for="node" attr.name="metric_tag_dismiss" attr.type="float" />
+  <key id="d238" for="node" attr.name="metric_tag_resetdataview" attr.type="float" />
+  <key id="d237" for="node" attr.name="metric_tag_ispresented" attr.type="float" />
+  <key id="d236" for="node" attr.name="metric_tag_showingalert" attr.type="float" />
+  <key id="d235" for="node" attr.name="metric_tag_role" attr.type="float" />
+  <key id="d234" for="node" attr.name="metric_tag_appearancetoggle" attr.type="float" />
+  <key id="d233" for="node" attr.name="metric_tag_labeltext" attr.type="float" />
+  <key id="d232" for="node" attr.name="metric_tag_rectanglecolor" attr.type="float" />
+  <key id="d231" for="node" attr.name="metric_tag_style" attr.type="float" />
+  <key id="d230" for="node" attr.name="metric_tag_cornerradius" attr.type="float" />
+  <key id="d229" for="node" attr.name="metric_tag_roundedrectangle" attr.type="float" />
+  <key id="d228" for="node" attr.name="metric_tag_oneyearago" attr.type="float" />
+  <key id="d227" for="node" attr.name="metric_tag_sampletype" attr.type="float" />
+  <key id="d226" for="node" attr.name="metric_tag_store" attr.type="float" />
+  <key id="d225" for="node" attr.name="metric_tag_predicate" attr.type="float" />
+  <key id="d224" for="node" attr.name="metric_tag_healthkiterror" attr.type="float" />
+  <key id="d223" for="node" attr.name="metric_tag_await" attr.type="float" />
+  <key id="d222" for="node" attr.name="metric_tag_healthkitrepository" attr.type="float" />
+  <key id="d221" for="node" attr.name="metric_tag_getcolorschemedevice" attr.type="float" />
+  <key id="d220" for="node" attr.name="metric_tag_observableobject" attr.type="float" />
+  <key id="d219" for="node" attr.name="metric_tag_format" attr.type="float" />
+  <key id="d218" for="node" attr.name="metric_tag_onappear" attr.type="float" />
+  <key id="d217" for="node" attr.name="metric_tag_loadfromhealth" attr.type="float" />
+  <key id="d216" for="node" attr.name="metric_tag_update" attr.type="float" />
+  <key id="d215" for="node" attr.name="metric_tag_key" attr.type="float" />
+  <key id="d214" for="node" attr.name="metric_tag_weightrepositoryinjected" attr.type="float" />
+  <key id="d213" for="node" attr.name="metric_tag_weightrepositoryinjectionmap" attr.type="float" />
+  <key id="d212" for="node" attr.name="metric_tag_weightrepository" attr.type="float" />
+  <key id="d211" for="node" attr.name="metric_tag_settingsview" attr.type="float" />
+  <key id="d210" for="node" attr.name="metric_tag_selectedlanguage" attr.type="float" />
+  <key id="d209" for="node" attr.name="metric_tag_header" attr.type="float" />
+  <key id="d208" for="node" attr.name="metric_tag_section" attr.type="float" />
+  <key id="d207" for="node" attr.name="metric_tag_darkmode" attr.type="float" />
+  <key id="d206" for="node" attr.name="metric_tag_async" attr.type="float" />
+  <key id="d205" for="node" attr.name="metric_tag_bodymass" attr.type="float" />
+  <key id="d204" for="node" attr.name="metric_tag_weightrepositoryprotocol" attr.type="float" />
+  <key id="d203" for="node" attr.name="metric_tag_loadfromhealthkit" attr.type="float" />
+  <key id="d202" for="node" attr.name="metric_tag_bundlename" attr.type="float" />
+  <key id="d201" for="node" attr.name="metric_tag_candidate" attr.type="float" />
+  <key id="d200" for="node" attr.name="metric_tag_candidates" attr.type="float" />
+  <key id="d199" for="node" attr.name="metric_tag_import" attr.type="float" />
+  <key id="d198" for="node" attr.name="metric_tag_url" attr.type="float" />
+  <key id="d197" for="node" attr.name="metric_tag_bundle" attr.type="float" />
+  <key id="d196" for="node" attr.name="metric_tag_overrides" attr.type="float" />
+  <key id="d195" for="node" attr.name="metric_tag_hstack" attr.type="float" />
+  <key id="d194" for="node" attr.name="metric_tag_dayview" attr.type="float" />
+  <key id="d193" for="node" attr.name="metric_tag_spacer" attr.type="float" />
+  <key id="d192" for="node" attr.name="metric_tag_daysview" attr.type="float" />
+  <key id="d191" for="node" attr.name="metric_tag_entire" attr.type="float" />
+  <key id="d190" for="node" attr.name="metric_tag_rectangle" attr.type="float" />
+  <key id="d189" for="node" attr.name="metric_tag_tap" attr.type="float" />
+  <key id="d188" for="node" attr.name="metric_tag_planid" attr.type="float" />
+  <key id="d187" for="node" attr.name="metric_tag_finisheddayview" attr.type="float" />
+  <key id="d186" for="node" attr.name="metric_tag_systemname" attr.type="float" />
+  <key id="d185" for="node" attr.name="metric_tag_image" attr.type="float" />
+  <key id="d184" for="node" attr.name="metric_tag_height" attr.type="float" />
+  <key id="d183" for="node" attr.name="metric_tag_width" attr.type="float" />
+  <key id="d182" for="node" attr.name="metric_tag_animatedimageview" attr.type="float" />
+  <key id="d181" for="node" attr.name="metric_tag_context" attr.type="float" />
+  <key id="d180" for="node" attr.name="metric_tag_equalto" attr.type="float" />
+  <key id="d179" for="node" attr.name="metric_tag_uiviewrepresentablecontext" attr.type="float" />
+  <key id="d178" for="node" attr.name="metric_tag_gifview" attr.type="float" />
+  <key id="d177" for="node" attr.name="metric_tag_uiview" attr.type="float" />
+  <key id="d176" for="node" attr.name="metric_tag_previewday" attr.type="float" />
+  <key id="d175" for="node" attr.name="metric_tag_activityview" attr.type="float" />
+  <key id="d174" for="node" attr.name="metric_tag_totalintervals" attr.type="float" />
+  <key id="d173" for="node" attr.name="metric_tag_timertext" attr.type="float" />
+  <key id="d172" for="node" attr.name="metric_tag_size" attr.type="float" />
+  <key id="d171" for="node" attr.name="metric_tag_fontsize" attr.type="float" />
+  <key id="d170" for="node" attr.name="metric_tag_print" attr.type="float" />
+  <key id="d169" for="node" attr.name="metric_tag_button" attr.type="float" />
+  <key id="d168" for="node" attr.name="metric_tag_timerview" attr.type="float" />
+  <key id="d167" for="node" attr.name="metric_tag_action" attr.type="float" />
+  <key id="d166" for="node" attr.name="metric_tag_circlebutton" attr.type="float" />
+  <key id="d165" for="node" attr.name="metric_tag_imagename" attr.type="float" />
+  <key id="d164" for="node" attr.name="metric_tag_circularprogressview" attr.type="float" />
+  <key id="d163" for="node" attr.name="metric_tag_innerstyle" attr.type="float" />
+  <key id="d162" for="node" attr.name="metric_tag_calories" attr.type="float" />
+  <key id="d161" for="node" attr.name="metric_tag_infoview" attr.type="float" />
+  <key id="d160" for="node" attr.name="metric_tag_pace" attr.type="float" />
+  <key id="d159" for="node" attr.name="metric_tag_distance" attr.type="float" />
+  <key id="d158" for="node" attr.name="metric_tag_divider" attr.type="float" />
+  <key id="d157" for="node" attr.name="metric_tag_vstack" attr.type="float" />
+  <key id="d156" for="node" attr.name="metric_tag_text" attr.type="float" />
+  <key id="d155" for="node" attr.name="metric_tag_fractionprogressview" attr.type="float" />
+  <key id="d154" for="node" attr.name="metric_tag_previewintervals" attr.type="float" />
+  <key id="d153" for="node" attr.name="metric_tag_intervals" attr.type="float" />
+  <key id="d152" for="node" attr.name="metric_tag_linewidth" attr.type="float" />
+  <key id="d151" for="node" attr.name="metric_tag_padding" attr.type="float" />
+  <key id="d150" for="node" attr.name="metric_tag_outerstyle" attr.type="float" />
+  <key id="d149" for="node" attr.name="metric_tag_progress" attr.type="float" />
+  <key id="d148" for="node" attr.name="metric_tag_timeelapsed" attr.type="float" />
+  <key id="d147" for="node" attr.name="metric_tag_totaltimeremaining" attr.type="float" />
+  <key id="d146" for="node" attr.name="metric_tag_double" attr.type="float" />
+  <key id="d145" for="node" attr.name="metric_tag_activebutton" attr.type="float" />
+  <key id="d144" for="node" attr.name="metric_tag_timeremaining" attr.type="float" />
+  <key id="d143" for="node" attr.name="metric_tag_currentinterval" attr.type="float" />
+  <key id="d142" for="node" attr.name="metric_tag_timerbutton" attr.type="float" />
+  <key id="d141" for="node" attr.name="metric_tag_pause" attr.type="float" />
+  <key id="d140" for="node" attr.name="metric_tag_resume" attr.type="float" />
+  <key id="d139" for="node" attr.name="metric_tag_start" attr.type="float" />
+  <key id="d138" for="node" attr.name="metric_tag_level" attr.type="float" />
+  <key id="d137" for="node" attr.name="metric_tag_loss" attr.type="float" />
+  <key id="d136" for="node" attr.name="metric_tag_plansview" attr.type="float" />
+  <key id="d135" for="node" attr.name="metric_tag_alignment" attr.type="float" />
+  <key id="d134" for="node" attr.name="metric_tag_maxwidth" attr.type="float" />
+  <key id="d133" for="node" attr.name="metric_tag_center" attr.type="float" />
+  <key id="d132" for="node" attr.name="metric_tag_enable" attr.type="float" />
+  <key id="d131" for="node" attr.name="metric_tag_avaudioplayer" attr.type="float" />
+  <key id="d130" for="node" attr.name="metric_tag_playsound" attr.type="float" />
+  <key id="d129" for="node" attr.name="metric_tag_sound" attr.type="float" />
+  <key id="d128" for="node" attr.name="metric_tag_play" attr.type="float" />
+  <key id="d127" for="node" attr.name="metric_tag_audioplayerinjected" attr.type="float" />
+  <key id="d126" for="node" attr.name="metric_tag_audioplayerprotocol" attr.type="float" />
+  <key id="d125" for="node" attr.name="metric_tag_player" attr.type="float" />
+  <key id="d124" for="node" attr.name="metric_tag_audioplayerinjectionmap" attr.type="float" />
+  <key id="d123" for="node" attr.name="metric_tag_soundsenum" attr.type="float" />
+  <key id="d122" for="node" attr.name="metric_tag_countdown" attr.type="float" />
+  <key id="d121" for="node" attr.name="metric_tag_foundationaudiotests" attr.type="float" />
+  <key id="d120" for="node" attr.name="metric_tag_testaudioplayer" attr.type="float" />
+  <key id="d119" for="node" attr.name="metric_tag_testaudioplayerinjected" attr.type="float" />
+  <key id="d118" for="node" attr.name="metric_tag_audioplayer" attr.type="float" />
+  <key id="d117" for="node" attr.name="metric_tag_xctassertnothrow" attr.type="float" />
+  <key id="d116" for="node" attr.name="metric_tag_path" attr.type="float" />
+  <key id="d115" for="node" attr.name="metric_tag_data" attr.type="float" />
+  <key id="d114" for="node" attr.name="metric_tag_imageempty" attr.type="float" />
+  <key id="d113" for="node" attr.name="metric_tag_loadimage" attr.type="float" />
+  <key id="d112" for="node" attr.name="metric_tag_imagesinjected" attr.type="float" />
+  <key id="d111" for="node" attr.name="metric_tag_images" attr.type="float" />
+  <key id="d110" for="node" attr.name="metric_tag_imagesmanager" attr.type="float" />
+  <key id="d109" for="node" attr.name="metric_tag_imagesinjectionmap" attr.type="float" />
+  <key id="d108" for="node" attr.name="metric_tag_gif" attr.type="float" />
+  <key id="d107" for="node" attr.name="metric_tag_imagesprotocol" attr.type="float" />
+  <key id="d106" for="node" attr.name="metric_tag_getgif" attr.type="float" />
+  <key id="d105" for="node" attr.name="metric_tag_getimage" attr.type="float" />
+  <key id="d104" for="node" attr.name="metric_tag_planimage" attr.type="float" />
+  <key id="d103" for="node" attr.name="metric_tag_gifs" attr.type="float" />
+  <key id="d102" for="node" attr.name="metric_tag_success" attr.type="float" />
+  <key id="d101" for="node" attr.name="metric_tag_compareimages" attr.type="float" />
+  <key id="d100" for="node" attr.name="metric_tag_successgif" attr.type="float" />
+  <key id="d99" for="node" attr.name="metric_tag_uiimage" attr.type="float" />
+  <key id="d98" for="node" attr.name="metric_tag_integerliteral" attr.type="float" />
+  <key id="d97" for="node" attr.name="metric_tag_userinterfacestyle" attr.type="float" />
+  <key id="d96" for="node" attr.name="metric_tag_timeinterval" attr.type="float" />
+  <key id="d95" for="node" attr.name="metric_tag_colorscheme" attr.type="float" />
+  <key id="d94" for="node" attr.name="metric_tag_body" attr.type="float" />
+  <key id="d93" for="node" attr.name="metric_tag_apolloapp" attr.type="float" />
+  <key id="d92" for="node" attr.name="metric_tag_app" attr.type="float" />
+  <key id="d91" for="node" attr.name="metric_tag_scene" attr.type="float" />
+  <key id="d90" for="node" attr.name="metric_tag_windowgroup" attr.type="float" />
+  <key id="d89" for="node" attr.name="metric_tag_apollorootview" attr.type="float" />
+  <key id="d88" for="node" attr.name="metric_tag_localization" attr.type="float" />
+  <key id="d87" for="node" attr.name="metric_tag_theme" attr.type="float" />
+  <key id="d86" for="node" attr.name="metric_tag_plansviewmodel" attr.type="float" />
+  <key id="d85" for="node" attr.name="metric_tag_activityviewmodel" attr.type="float" />
+  <key id="d84" for="node" attr.name="metric_tag_weightviewmodel" attr.type="float" />
+  <key id="d83" for="node" attr.name="metric_tag_view" attr.type="float" />
+  <key id="d82" for="node" attr.name="metric_tag_previewprovider" attr.type="float" />
+  <key id="d81" for="node" attr.name="metric_tag_previews" attr.type="float" />
+  <key id="d80" for="node" attr.name="metric_tag_localizationviewmodel" attr.type="float" />
+  <key id="d79" for="node" attr.name="metric_tag_themeviewmodel" attr.type="float" />
+  <key id="d78" for="node" attr.name="metric_tag_mobilemenuview" attr.type="float" />
+  <key id="d77" for="node" attr.name="metric_tag_mindragtranslationforswipe" attr.type="float" />
+  <key id="d76" for="node" attr.name="metric_tag_swipeleft" attr.type="float" />
+  <key id="d75" for="node" attr.name="metric_tag_swiperight" attr.type="float" />
+  <key id="d74" for="node" attr.name="metric_tag_systemimage" attr.type="float" />
+  <key id="d73" for="node" attr.name="metric_tag_tabscount" attr.type="float" />
+  <key id="d72" for="node" attr.name="metric_tag_selectedtab" attr.type="float" />
+  <key id="d71" for="node" attr.name="metric_tag_translation" attr.type="float" />
+  <key id="d70" for="node" attr.name="metric_tag_value" attr.type="float" />
+  <key id="d69" for="node" attr.name="metric_tag_defaultname" attr.type="float" />
+  <key id="d68" for="node" attr.name="metric_tag_storageinjected" attr.type="float" />
+  <key id="d67" for="node" attr.name="metric_tag_storageprotocol" attr.type="float" />
+  <key id="d66" for="node" attr.name="metric_tag_storage" attr.type="float" />
+  <key id="d65" for="node" attr.name="metric_tag_storageuserdefaults" attr.type="float" />
+  <key id="d64" for="node" attr.name="metric_tag_storageinjectionmap" attr.type="float" />
+  <key id="d63" for="node" attr.name="metric_tag_doublevalue" attr.type="float" />
+  <key id="d62" for="node" attr.name="metric_tag_stringvalue" attr.type="float" />
+  <key id="d61" for="node" attr.name="metric_tag_forkey" attr.type="float" />
+  <key id="d60" for="node" attr.name="metric_tag_dayid" attr.type="float" />
+  <key id="d59" for="node" attr.name="metric_tag_weekid" attr.type="float" />
+  <key id="d58" for="node" attr.name="metric_tag_day" attr.type="float" />
+  <key id="d57" for="node" attr.name="metric_tag_anyobject" attr.type="float" />
+  <key id="d56" for="node" attr.name="metric_tag_load" attr.type="float" />
+  <key id="d55" for="node" attr.name="metric_tag_save" attr.type="float" />
+  <key id="d54" for="node" attr.name="metric_tag_remove" attr.type="float" />
+  <key id="d53" for="node" attr.name="metric_tag_error" attr.type="float" />
+  <key id="d52" for="node" attr.name="metric_tag_jsondata" attr.type="float" />
+  <key id="d51" for="node" attr.name="metric_tag_errorline" attr.type="float" />
+  <key id="d50" for="node" attr.name="metric_tag_catch" attr.type="float" />
+  <key id="d49" for="node" attr.name="metric_tag_throw" attr.type="float" />
+  <key id="d48" for="node" attr.name="metric_tag_plansloadinginjected" attr.type="float" />
+  <key id="d47" for="node" attr.name="metric_tag_plansloadingprotocol" attr.type="float" />
+  <key id="d46" for="node" attr.name="metric_tag_plansloader" attr.type="float" />
+  <key id="d45" for="node" attr.name="metric_tag_plansloaderinjectionmap" attr.type="float" />
+  <key id="d44" for="node" attr.name="metric_tag_extension" attr.type="float" />
+  <key id="d43" for="node" attr.name="metric_tag_plansrepositoryinjected" attr.type="float" />
+  <key id="d42" for="node" attr.name="metric_tag_plansrepositoryinjectionmap" attr.type="float" />
+  <key id="d41" for="node" attr.name="metric_tag_plansrepository" attr.type="float" />
+  <key id="d40" for="node" attr.name="metric_tag_hasher" attr.type="float" />
+  <key id="d39" for="node" attr.name="metric_tag_days" attr.type="float" />
+  <key id="d38" for="node" attr.name="metric_tag_week" attr.type="float" />
+  <key id="d37" for="node" attr.name="metric_tag_plans" attr.type="float" />
+  <key id="d36" for="node" attr.name="metric_tag_plansrepositoryprotocol" attr.type="float" />
+  <key id="d35" for="node" attr.name="metric_tag_reset" attr.type="float" />
+  <key id="d34" for="node" attr.name="metric_tag_getday" attr.type="float" />
+  <key id="d33" for="node" attr.name="metric_tag_plan" attr.type="float" />
+  <key id="d32" for="node" attr.name="metric_tag_uuid" attr.type="float" />
+  <key id="d31" for="node" attr.name="metric_tag_type" attr.type="float" />
+  <key id="d30" for="node" attr.name="metric_tag_seconds" attr.type="float" />
+  <key id="d29" for="node" attr.name="metric_tag_interval" attr.type="float" />
+  <key id="d28" for="node" attr.name="metric_tag_name" attr.type="float" />
+  <key id="d27" for="node" attr.name="metric_tag_codingkey" attr.type="float" />
+  <key id="d26" for="node" attr.name="metric_tag_codingkeys" attr.type="float" />
+  <key id="d25" for="node" attr.name="metric_tag_weeks" attr.type="float" />
+  <key id="d24" for="node" attr.name="metric_tag_endfraction" attr.type="float" />
+  <key id="d23" for="node" attr.name="metric_tag_startfraction" attr.type="float" />
+  <key id="d22" for="node" attr.name="metric_tag_fractionduration" attr.type="float" />
+  <key id="d21" for="node" attr.name="metric_tag_fractionscalculated" attr.type="float" />
+  <key id="d20" for="node" attr.name="metric_tag_totaltime" attr.type="float" />
+  <key id="d19" for="node" attr.name="metric_tag_remainingfraction" attr.type="float" />
+  <key id="d18" for="node" attr.name="metric_tag_fastrun" attr.type="float" />
+  <key id="d17" for="node" attr.name="metric_tag_fastwalk" attr.type="float" />
+  <key id="d16" for="node" attr.name="metric_tag_run" attr.type="float" />
+  <key id="d15" for="node" attr.name="metric_tag_walk" attr.type="float" />
+  <key id="d14" for="node" attr.name="metric_tag_intervaltype" attr.type="float" />
+  <key id="d13" for="node" attr.name="metric_tag_color" attr.type="float" />
   <key id="d12" for="node" attr.name="metric_tag_enum" attr.type="float" />
-  <key id="d11" for="node" attr.name="metric_tag_planimage" attr.type="float" />
-  <key id="d10" for="node" attr.name="metric_tag_planimageprotocol" attr.type="float" />
-  <key id="d9" for="node" attr.name="metric_tag_planimagemanager" attr.type="float" />
-  <key id="d8" for="node" attr.name="metric_tag_planimageinjectionmap" attr.type="float" />
-  <key id="d7" for="node" attr.name="metric_entity_result_inheritance_graph_louvain-modularity-in-entity" attr.type="long" />
-  <key id="d6" for="node" attr.name="metric_fan-out-inheritance-graph" attr.type="long" />
-  <key id="d5" for="node" attr.name="metric_fan-in-inheritance-graph" attr.type="long" />
-  <key id="d4" for="node" attr.name="metric_tag_compareimages" attr.type="float" />
-  <key id="d3" for="node" attr.name="metric_tag_xctassertequal" attr.type="float" />
-  <key id="d2" for="node" attr.name="metric_tag_uiimage" attr.type="float" />
+  <key id="d11" for="node" attr.name="metric_tag_public" attr.type="float" />
+  <key id="d10" for="node" attr.name="metric_tag_identifiable" attr.type="float" />
+  <key id="d9" for="node" attr.name="metric_tag_language" attr.type="float" />
+  <key id="d8" for="node" attr.name="metric_tag_caseiterable" attr.type="float" />
+  <key id="d7" for="node" attr.name="metric_tag_english" attr.type="float" />
+  <key id="d6" for="node" attr.name="metric_tag_netherlands" attr.type="float" />
+  <key id="d5" for="node" attr.name="metric_entity_result_inheritance_graph_louvain-modularity-in-entity" attr.type="long" />
+  <key id="d4" for="node" attr.name="metric_fan-out-inheritance-graph" attr.type="long" />
+  <key id="d3" for="node" attr.name="metric_fan-in-inheritance-graph" attr.type="long" />
+  <key id="d2" for="node" attr.name="metric_tag_xctassertequal" attr.type="float" />
   <key id="d1" for="node" attr.name="metric_sloc-in-entity" attr.type="long" />
   <key id="d0" for="node" attr.name="metric_number-of-methods-in-entity" attr.type="long" />
   <graph edgedefault="directed">
-    <node id="ApolloImagesTests">
-      <data key="d0">2</data>
-      <data key="d1">24</data>
-      <data key="d2">0.6743988172432085</data>
-      <data key="d3">0.6191201986713077</data>
-      <data key="d4">0.3019895968805306</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
+    <node id="FoundationLocalizationTests">
+      <data key="d0">1</data>
+      <data key="d1">41</data>
+      <data key="d2">0.98600960907177</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
     </node>
     <node id="XCTestCase">
-      <data key="d5">9</data>
-      <data key="d6">0</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="PlanImageInjectionMap">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d8">0.5572300347408031</data>
-      <data key="d9">0.5012320434422224</data>
-      <data key="d10">0.4497090619857146</data>
-      <data key="d11">0.4052609557448256</data>
-      <data key="d12">0.2679299242828554</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">13</data>
-    </node>
-    <node id="PlanImageInjected">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d13">0.691411161715984</data>
-      <data key="d10">0.4464101080236435</data>
-      <data key="d11">0.40228806204834605</data>
-      <data key="d14">0.2797573689875965</data>
-      <data key="d15">0.24065088146671487</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="AnyObject">
-      <data key="d5">12</data>
-      <data key="d6">0</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="PlanImageProtocol">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d11">0.6983762156889468</data>
-      <data key="d16">0.40009896403229395</data>
-      <data key="d10">0.3874862707824763</data>
-      <data key="d2">0.35740675804832744</data>
-      <data key="d17">0.2725917819684675</data>
-      <data key="d5">1</data>
-      <data key="d6">1</data>
-      <data key="d7">7</data>
-    </node>
-    <node id="PlanImage">
-      <data key="d0">0</data>
-      <data key="d1">7</data>
-      <data key="d11">0.8341760286389791</data>
-      <data key="d12">0.5514982803636846</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">14</data>
-    </node>
-    <node id="PlanImageManager">
-      <data key="d0">2</data>
-      <data key="d1">30</data>
-      <data key="d18">0.639945530800062</data>
-      <data key="d19">0.639945530800062</data>
-      <data key="d2">0.2722127886143075</data>
-      <data key="d11">0.20059302430819623</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">7</data>
-    </node>
-    <node id="ApolloAudioTests">
-      <data key="d0">1</data>
-      <data key="d1">6</data>
-      <data key="d20">0.6363600075258845</data>
-      <data key="d21">0.5302871555479625</data>
-      <data key="d22">0.31818000376294225</data>
-      <data key="d23">0.31818000376294225</data>
-      <data key="d24">0.26514357777398123</data>
-      <data key="d25">0.20264088200199934</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="SoundsEnum">
-      <data key="d0">0</data>
-      <data key="d1">3</data>
-      <data key="d26">0.5846450747928785</data>
-      <data key="d27">0.4871924226074666</data>
-      <data key="d12">0.28111175072331407</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">6</data>
-    </node>
-    <node id="String">
+      <data key="d3">10</data>
+      <data key="d4">0</data>
       <data key="d5">2</data>
-      <data key="d6">0</data>
-      <data key="d7">6</data>
-    </node>
-    <node id="AudioPlayerInjectionMap">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d28">0.5370653044638204</data>
-      <data key="d29">0.5066700940965155</data>
-      <data key="d21">0.4475435748310052</data>
-      <data key="d30">0.4334352408118882</data>
-      <data key="d12">0.2582342253444281</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">15</data>
-    </node>
-    <node id="AudioPlayerInjected">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d24">0.6561170503166726</data>
-      <data key="d29">0.49519928534006374</data>
-      <data key="d30">0.42362243991128345</data>
-      <data key="d14">0.26547673787756176</data>
-      <data key="d15">0.22836649919300536</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="AudioPlayerProtocol">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d31">0.5050866916666104</data>
-      <data key="d27">0.4679180998117983</data>
-      <data key="d32">0.4679180998117983</data>
-      <data key="d30">0.453167480616275</data>
-      <data key="d17">0.31879769784333184</data>
-      <data key="d5">1</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="AudioPlayer">
-      <data key="d0">2</data>
-      <data key="d1">23</data>
-      <data key="d21">0.5418104201275094</data>
-      <data key="d32">0.3250862520765056</data>
-      <data key="d33">0.26007530404817425</data>
-      <data key="d34">0.26007530404817425</data>
-      <data key="d35">0.21672416805100375</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="ApolloThemeTests">
-      <data key="d0">1</data>
-      <data key="d1">13</data>
-      <data key="d3">0.8803348858635027</data>
-      <data key="d36">0.2576417095152102</data>
-      <data key="d37">0.2576417095152102</data>
-      <data key="d38">0.20195829190467685</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="ThemeManager">
-      <data key="d0">3</data>
-      <data key="d1">24</data>
-      <data key="d39">0.4543692051694955</data>
-      <data key="d40">0.43841454966508364</data>
-      <data key="d15">0.3051869962957706</data>
-      <data key="d41">0.3507401391937559</data>
-      <data key="d42">0.3154930382872678</data>
-      <data key="d43">0.30291280344633037</data>
-      <data key="d44">0.27493560552468593</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">3</data>
-    </node>
-    <node id="ObservableObject">
-      <data key="d5">5</data>
-      <data key="d6">0</data>
-      <data key="d7">3</data>
-    </node>
-    <node id="ApolloDataTests">
-      <data key="d0">4</data>
-      <data key="d1">45</data>
-      <data key="d3">0.8619197954498257</data>
-      <data key="d45">0.2802803205041086</data>
-      <data key="d46">0.21021024037808148</data>
-      <data key="d47">0.21021024037808148</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="Day">
-      <data key="d0">1</data>
-      <data key="d1">20</data>
-      <data key="d15">0.5312830765660821</data>
-      <data key="d48">0.41726039345289256</data>
-      <data key="d49">0.30529200537345585</data>
-      <data key="d50">0.27461214607911405</data>
-      <data key="d51">0.27461214607911405</data>
-      <data key="d52">0.24638402959039446</data>
-      <data key="d53">0.21971676667582946</data>
-      <data key="d5">0</data>
-      <data key="d6">2</data>
-      <data key="d7">4</data>
-    </node>
-    <node id="Codable">
-      <data key="d5">3</data>
-      <data key="d6">0</data>
-      <data key="d7">4</data>
-    </node>
-    <node id="CodingKey">
-      <data key="d5">4</data>
-      <data key="d6">0</data>
-      <data key="d7">4</data>
-    </node>
-    <node id="CodingKeys">
-      <data key="d0">0</data>
-      <data key="d1">3</data>
-      <data key="d54">0.5425655469109554</data>
-      <data key="d55">0.48679378415521785</data>
-      <data key="d56">0.48679378415521785</data>
-      <data key="d53">0.38415110468220315</data>
-      <data key="d12">0.29002444637020747</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">4</data>
-    </node>
-    <node id="Interval">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d15">0.4769439789077624</data>
-      <data key="d57">0.45676734213509823</data>
-      <data key="d58">0.47338988715555547</data>
-      <data key="d59">0.22838367106754912</data>
-      <data key="d60">0.22838367106754912</data>
-      <data key="d61">0.22838367106754912</data>
-      <data key="d62">0.2117637368708131</data>
-      <data key="d55">0.2211841193431169</data>
-      <data key="d5">0</data>
-      <data key="d6">2</data>
-      <data key="d7">4</data>
-    </node>
-    <node id="PlansRepositoryProtocol">
-      <data key="d0">0</data>
-      <data key="d1">5</data>
-      <data key="d63">0.42835837462554593</data>
-      <data key="d64">0.41485483358736824</data>
-      <data key="d65">0.3738516311248317</data>
-      <data key="d66">0.32219370531203684</data>
-      <data key="d67">0.3328484286622952</data>
-      <data key="d68">0.3273808084503472</data>
-      <data key="d69">0.3125553356444427</data>
-      <data key="d5">1</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="PlansRepositoryInjectionMap">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d70">0.7830258426839917</data>
-      <data key="d71">0.4533294564155842</data>
-      <data key="d64">0.3658567412109707</data>
-      <data key="d12">0.2179719673386111</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">19</data>
-    </node>
-    <node id="PlansRepositoryInjected">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d72">0.6353058321657169</data>
-      <data key="d70">0.49138306023052736</data>
-      <data key="d64">0.45918230357760387</data>
-      <data key="d14">0.2877614794684053</data>
-      <data key="d15">0.24753612009164994</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">20</data>
-    </node>
-    <node id="Plan">
-      <data key="d0">1</data>
-      <data key="d1">16</data>
-      <data key="d15">0.47642136878386315</data>
-      <data key="d67">0.47271228924208575</data>
-      <data key="d50">0.32833995106163244</data>
-      <data key="d54">0.32833995106163244</data>
-      <data key="d53">0.2324735796987993</data>
-      <data key="d5">0</data>
-      <data key="d6">2</data>
-      <data key="d7">4</data>
-    </node>
-    <node id="PlansLoaderInjectionMap">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d73">0.528395626810601</data>
-      <data key="d74">0.4984910768413821</data>
-      <data key="d75">0.4264384309450954</data>
-      <data key="d12">0.2540656308101003</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">21</data>
-    </node>
-    <node id="PlansLoadingInjected">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d76">0.6843226580968605</data>
-      <data key="d74">0.47847970804272505</data>
-      <data key="d75">0.4093195353258699</data>
-      <data key="d14">0.2565133589491348</data>
-      <data key="d15">0.22065608553043706</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="PlansFileLoader">
-      <data key="d0">5</data>
-      <data key="d1">60</data>
-      <data key="d35">0.37657731042650905</data>
-      <data key="d77">0.3542349733194164</data>
-      <data key="d67">0.29261285285926064</data>
-      <data key="d78">0.27477284122045903</data>
-      <data key="d79">0.25823069912210583</data>
-      <data key="d80">0.25823069912210583</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="PlansLoadingProtocol">
-      <data key="d0">0</data>
-      <data key="d1">4</data>
-      <data key="d67">0.6014167059406842</data>
-      <data key="d81">0.3869957921459531</data>
-      <data key="d75">0.37479616241906105</data>
-      <data key="d65">0.3377522576947016</data>
-      <data key="d66">0.2910824571147196</data>
-      <data key="d69">0.28237477512352066</data>
-      <data key="d17">0.26366444824598256</data>
-      <data key="d5">1</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="PlansRepository">
-      <data key="d0">3</data>
-      <data key="d1">15</data>
-      <data key="d65">0.8083644030317426</data>
-      <data key="d76">0.24994891306077038</data>
-      <data key="d63">0.23155553765138256</data>
-      <data key="d70">0.23998223981304423</data>
-      <data key="d64">0.224255996214785</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="ApolloWeightTests">
-      <data key="d0">1</data>
-      <data key="d1">14</data>
-      <data key="d82">0.8784596744565365</data>
-      <data key="d3">0.40322737397248914</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="WeightRepositoryProtocol">
-      <data key="d0">0</data>
-      <data key="d1">5</data>
-      <data key="d83">0.5514626607702142</data>
-      <data key="d84">0.3765006758285416</data>
-      <data key="d85">0.3377991650355416</data>
-      <data key="d82">0.31157672813280174</data>
-      <data key="d86">0.28603763958466355</data>
-      <data key="d66">0.26234903349919003</data>
-      <data key="d68">0.26657267745175706</data>
-      <data key="d5">1</data>
-      <data key="d6">1</data>
-      <data key="d7">9</data>
-    </node>
-    <node id="WeightRepositoryInjectionMap">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d87">0.7830258426839917</data>
-      <data key="d88">0.4533294564155842</data>
-      <data key="d85">0.3658567412109707</data>
-      <data key="d12">0.2179719673386111</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">22</data>
-    </node>
-    <node id="WeightRepositoryInjected">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d89">0.6467351576309043</data>
-      <data key="d87">0.4750308938982725</data>
-      <data key="d85">0.4439017088387329</data>
-      <data key="d14">0.2781853993038275</data>
-      <data key="d15">0.2392986529573928</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="WeightRepository">
-      <data key="d0">3</data>
-      <data key="d1">23</data>
-      <data key="d40">0.4710867586224705</data>
-      <data key="d86">0.38632641459748046</data>
-      <data key="d90">0.33900469974877023</data>
-      <data key="d44">0.29542478308594705</data>
-      <data key="d82">0.28054657521376336</data>
-      <data key="d83">0.24827104669288924</data>
-      <data key="d91">0.24827104669288924</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">9</data>
-    </node>
-    <node id="HealthKitRepository">
-      <data key="d0">2</data>
-      <data key="d1">35</data>
-      <data key="d35">0.3642308621541742</data>
-      <data key="d92">0.3642308621541742</data>
-      <data key="d93">0.32781571987456787</data>
-      <data key="d78">0.2657641501048722</data>
-      <data key="d94">0.21854381324971192</data>
-      <data key="d95">0.21854381324971192</data>
-      <data key="d96">0.21854381324971192</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">23</data>
-    </node>
-    <node id="ApolloUITests">
-      <data key="d0">3</data>
-      <data key="d1">38</data>
-      <data key="d3">0.9057382742656064</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="ApolloRootView">
-      <data key="d0">0</data>
-      <data key="d1">20</data>
-      <data key="d97">0.4690202313693893</data>
-      <data key="d98">0.4391277304838468</data>
-      <data key="d99">0.4305759313358334</data>
-      <data key="d38">0.3292625000789884</data>
-      <data key="d100">0.298875704133228</data>
-      <data key="d15">0.20926053225550673</data>
-      <data key="d101">0.21244249438003568</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="View">
-      <data key="d5">12</data>
-      <data key="d6">0</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="RootView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d102">0.4357889601011755</data>
-      <data key="d97">0.37561906430097397</data>
-      <data key="d98">0.3516793865189287</data>
-      <data key="d99">0.3448306013723093</data>
-      <data key="d103">0.3068117221462432</data>
-      <data key="d104">0.2941219575782507</data>
-      <data key="d105">0.3084479998906397</data>
-      <data key="d106">0.3068117221462432</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">24</data>
-    </node>
-    <node id="SettingsView">
-      <data key="d0">2</data>
-      <data key="d1">70</data>
-      <data key="d107">0.4563359987032284</data>
-      <data key="d108">0.4162017230809716</data>
-      <data key="d109">0.380279998919357</data>
-      <data key="d110">0.380279998919357</data>
-      <data key="d111">0.2281679993516142</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="SettingsView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">7</data>
-      <data key="d112">0.5065936315744993</data>
-      <data key="d98">0.4088183820103054</data>
-      <data key="d103">0.35666085826406946</data>
-      <data key="d104">0.3419093282692935</data>
-      <data key="d105">0.3419093282692935</data>
-      <data key="d106">0.35666085826406946</data>
-      <data key="d101">0.29666902404563933</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">25</data>
-    </node>
-    <node id="AppearanceToggle">
-      <data key="d0">0</data>
-      <data key="d1">31</data>
-      <data key="d113">0.37099003457514734</data>
-      <data key="d114">0.36624025848315156</data>
-      <data key="d115">0.36624025848315156</data>
-      <data key="d116">0.3516364862892038</data>
-      <data key="d117">0.2714379160019682</data>
-      <data key="d118">0.2714379160019682</data>
-      <data key="d119">0.24416017232210102</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="AppearanceToggle_Previews">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d116">0.412389642499933</data>
-      <data key="d120">0.412389642499933</data>
-      <data key="d121">0.412389642499933</data>
-      <data key="d122">0.412389642499933</data>
-      <data key="d113">0.32631521548858977</data>
-      <data key="d104">0.27832932919850734</data>
-      <data key="d105">0.27832932919850734</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">26</data>
-    </node>
-    <node id="WeightViewModel">
-      <data key="d0">4</data>
-      <data key="d1">15</data>
-      <data key="d82">0.6032620089739775</data>
-      <data key="d123">0.45021440211620595</data>
-      <data key="d124">0.27013518743715614</data>
-      <data key="d125">0.2429883594981655</data>
-      <data key="d126">0.2429883594981655</data>
-      <data key="d89">0.21175158766339808</data>
-      <data key="d127">0.20108733632465917</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">3</data>
-    </node>
-    <node id="ResetDataView">
-      <data key="d0">0</data>
-      <data key="d1">16</data>
-      <data key="d128">0.6174212352813084</data>
-      <data key="d129">0.439314380769393</data>
-      <data key="d130">0.4116141568542056</data>
-      <data key="d131">0.2058070784271028</data>
-      <data key="d101">0.20817805211776352</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="ResetDataView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">5</data>
-      <data key="d132">0.6030617763404643</data>
-      <data key="d104">0.40701744752022717</data>
-      <data key="d105">0.40701744752022717</data>
-      <data key="d106">0.42457803914223413</data>
-      <data key="d101">0.35316225367875526</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">27</data>
-    </node>
-    <node id="WeightView">
-      <data key="d0">0</data>
-      <data key="d1">42</data>
-      <data key="d133">0.5109281562772892</data>
-      <data key="d108">0.41421560646828964</data>
-      <data key="d134">0.34061877085152614</data>
-      <data key="d135">0.2838420972168838</data>
-      <data key="d129">0.24236083219083293</data>
-      <data key="d113">0.23277177233823806</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="WeightViewView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">5</data>
-      <data key="d136">0.5866929031927284</data>
-      <data key="d98">0.473458070672386</data>
-      <data key="d104">0.3959697949765638</data>
-      <data key="d105">0.3959697949765638</data>
-      <data key="d101">0.34357638974601534</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">28</data>
-    </node>
-    <node id="PlansView">
-      <data key="d0">0</data>
-      <data key="d1">26</data>
-      <data key="d67">0.39782621208370716</data>
-      <data key="d137">0.3210703294955567</data>
-      <data key="d138">0.304900558449518</data>
-      <data key="d101">0.20715684796505227</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="PlansView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">7</data>
-      <data key="d139">0.49274315578139366</data>
-      <data key="d97">0.4247095269975309</data>
-      <data key="d99">0.38989725368614064</data>
-      <data key="d103">0.34690960543370625</data>
-      <data key="d104">0.33256138826477244</data>
-      <data key="d105">0.33256138826477244</data>
-      <data key="d101">0.288557972346593</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">29</data>
-    </node>
-    <node id="PlansViewModel">
-      <data key="d0">3</data>
-      <data key="d1">23</data>
-      <data key="d53">0.7081386644039412</data>
-      <data key="d140">0.33338586219344146</data>
-      <data key="d141">0.33338586219344146</data>
-      <data key="d65">0.2695523458884786</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">3</data>
-    </node>
-    <node id="CircularProgressView">
-      <data key="d0">0</data>
-      <data key="d1">29</data>
-      <data key="d142">0.6254117076688748</data>
-      <data key="d143">0.4467226483349105</data>
-      <data key="d144">0.33211775953815204</data>
-      <data key="d119">0.2987420865678814</data>
-      <data key="d145">0.22141183969210138</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="CircularProgressView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">8</data>
-      <data key="d146">0.4716084746411207</data>
-      <data key="d143">0.44070356367359426</data>
-      <data key="d142">0.44070356367359426</data>
-      <data key="d103">0.33202999968106534</data>
-      <data key="d104">0.31829720454537297</data>
-      <data key="d105">0.31829720454537297</data>
-      <data key="d101">0.2761811779366173</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">30</data>
-    </node>
-    <node id="TimerView">
-      <data key="d0">0</data>
-      <data key="d1">54</data>
-      <data key="d147">0.4998251385783436</data>
-      <data key="d48">0.3955010771198817</data>
-      <data key="d113">0.3955010771198817</data>
-      <data key="d108">0.3518955861194901</data>
-      <data key="d148">0.2499125692891718</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="TimerView_Previews">
-      <data key="d0">1</data>
-      <data key="d1">21</data>
-      <data key="d48">0.7396568945289703</data>
-      <data key="d149">0.4329408497181902</data>
-      <data key="d60">0.36077529857694346</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">31</data>
-    </node>
-    <node id="CircleButton">
-      <data key="d0">0</data>
-      <data key="d1">23</data>
-      <data key="d150">0.45616679603792076</data>
-      <data key="d113">0.3740909281489282</data>
-      <data key="d108">0.33284598712495794</data>
-      <data key="d114">0.3282679567950341</data>
-      <data key="d115">0.3282679567950341</data>
-      <data key="d129">0.2596677645531436</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="CircleButton_Previews">
-      <data key="d0">0</data>
-      <data key="d1">7</data>
-      <data key="d151">0.5110396622292241</data>
-      <data key="d147">0.46783056640617615</data>
-      <data key="d113">0.3701844478041303</data>
-      <data key="d108">0.3293702110269317</data>
-      <data key="d104">0.3157474250251325</data>
-      <data key="d105">0.3157474250251325</data>
-      <data key="d101">0.2739687767551978</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">32</data>
-    </node>
-    <node id="TimerButton">
-      <data key="d0">0</data>
-      <data key="d1">4</data>
-      <data key="d152">0.49259258959235236</data>
-      <data key="d153">0.49259258959235236</data>
-      <data key="d154">0.49259258959235236</data>
-      <data key="d155">0.4647143124785798</data>
-      <data key="d12">0.23685064875077233</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">33</data>
-    </node>
-    <node id="TimerViewModel">
-      <data key="d0">12</data>
-      <data key="d1">91</data>
-      <data key="d156">0.5100025126737997</data>
-      <data key="d157">0.5030597997921262</data>
-      <data key="d158">0.3966686209685109</data>
-      <data key="d159">0.3400016751158665</data>
-      <data key="d160">0.22666778341057767</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">3</data>
-    </node>
-    <node id="TimerText">
-      <data key="d0">1</data>
-      <data key="d1">29</data>
-      <data key="d161">0.49002615479119266</data>
-      <data key="d148">0.33856449199349153</data>
-      <data key="d162">0.33856449199349153</data>
-      <data key="d163">0.29401569287471563</data>
-      <data key="d164">0.29401569287471563</data>
-      <data key="d165">0.29401569287471563</data>
-      <data key="d58">0.25392336899511864</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="TimerTextView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">10</data>
-      <data key="d148">0.6065154520842703</data>
-      <data key="d166">0.30325772604213513</data>
-      <data key="d58">0.30325772604213513</data>
-      <data key="d162">0.30325772604213513</data>
-      <data key="d167">0.2833849851405247</data>
-      <data key="d168">0.2833849851405247</data>
-      <data key="d157">0.2833849851405247</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">34</data>
-    </node>
-    <node id="MobileMenuView">
-      <data key="d0">1</data>
-      <data key="d1">39</data>
-      <data key="d169">0.5378659024496126</data>
-      <data key="d170">0.5378659024496126</data>
-      <data key="d171">0.21514636097984507</data>
-      <data key="d172">0.21514636097984507</data>
-      <data key="d173">0.21514636097984507</data>
-      <data key="d174">0.21514636097984507</data>
-      <data key="d175">0.21514636097984507</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="MobileMenuView_Previews">
-      <data key="d0">0</data>
-      <data key="d1">6</data>
-      <data key="d176">0.555100681161042</data>
-      <data key="d103">0.3908116348611296</data>
-      <data key="d104">0.3746476252133623</data>
-      <data key="d105">0.3746476252133623</data>
-      <data key="d106">0.3908116348611296</data>
-      <data key="d101">0.32507549851206147</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">35</data>
-    </node>
-    <node id="DaysView">
-      <data key="d0">0</data>
-      <data key="d1">20</data>
-      <data key="d48">0.4120697455161847</data>
-      <data key="d108">0.36663749610111385</data>
-      <data key="d137">0.31511077313271085</data>
-      <data key="d67">0.2602946327659957</data>
-      <data key="d101">0.2033117000395592</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">1</data>
-    </node>
-    <node id="DaysView_Previews">
-      <data key="d0">1</data>
-      <data key="d1">16</data>
-      <data key="d67">0.7031072535429623</data>
-      <data key="d48">0.4452327333210869</data>
-      <data key="d177">0.4343442644649836</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">36</data>
-    </node>
-    <node id="ApolloLoggerTests">
-      <data key="d0">1</data>
-      <data key="d1">19</data>
-      <data key="d78">0.7691238145872681</data>
-      <data key="d92">0.32433457083008305</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
-    </node>
-    <node id="ErrorProtocol">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d78">0.6761031489016367</data>
-      <data key="d178">0.5559747627842023</data>
-      <data key="d179">0.3662517806813872</data>
-      <data key="d17">0.31565206848689353</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">10</data>
-    </node>
-    <node id="LocalizedError">
-      <data key="d5">1</data>
-      <data key="d6">0</data>
-      <data key="d7">10</data>
-    </node>
-    <node id="LoggerInjectionMap">
-      <data key="d0">0</data>
-      <data key="d1">2</data>
-      <data key="d180">0.7619225089032532</data>
-      <data key="d181">0.4720453088395253</data>
-      <data key="d182">0.3809612544516266</data>
-      <data key="d12">0.22697101012202486</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">37</data>
-    </node>
-    <node id="LoggerInjected">
-      <data key="d0">0</data>
-      <data key="d1">9</data>
-      <data key="d183">0.6202784685577946</data>
-      <data key="d182">0.47883922533085754</data>
-      <data key="d180">0.47883922533085754</data>
-      <data key="d14">0.30008012685842816</data>
-      <data key="d15">0.2581327787734739</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">38</data>
-    </node>
-    <node id="LoggerProtocol">
-      <data key="d0">0</data>
-      <data key="d1">5</data>
-      <data key="d184">0.5149775887507331</data>
-      <data key="d185">0.5003633099129454</data>
-      <data key="d186">0.5003633099129454</data>
-      <data key="d187">0.2501816549564727</data>
-      <data key="d188">0.2501816549564727</data>
-      <data key="d182">0.22446481394894718</data>
-      <data key="d5">1</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="LocalizationError">
-      <data key="d0">0</data>
-      <data key="d1">36</data>
-      <data key="d78">0.46959802090134445</data>
-      <data key="d15">0.4032089637853801</data>
-      <data key="d189">0.4371674291430911</data>
-      <data key="d190">0.3632412322833001</data>
-      <data key="d191">0.2668028871421304</data>
-      <data key="d192">0.24216082152220006</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">5</data>
-    </node>
-    <node id="Error">
-      <data key="d5">4</data>
-      <data key="d6">0</data>
-      <data key="d7">5</data>
-    </node>
-    <node id="LocalizationErrorType">
-      <data key="d0">0</data>
-      <data key="d1">3</data>
-      <data key="d193">0.5538689206708467</data>
-      <data key="d189">0.5538689206708467</data>
-      <data key="d194">0.5538689206708467</data>
-      <data key="d12">0.2822900213339713</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">40</data>
-    </node>
-    <node id="HealthKitError">
-      <data key="d0">0</data>
-      <data key="d1">50</data>
-      <data key="d192">0.3878798071882072</data>
-      <data key="d195">0.391162818700838</data>
-      <data key="d78">0.30087045238484844</data>
-      <data key="d196">0.28518987135443513</data>
-      <data key="d15">0.25833512480926635</data>
-      <data key="d197">0.28009224127849475</data>
-      <data key="d57">0.24740651639946093</data>
-      <data key="d190">0.2327278843129243</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">5</data>
-    </node>
-    <node id="HealthKitErrorType">
-      <data key="d0">0</data>
-      <data key="d1">5</data>
-      <data key="d195">0.5234080550353701</data>
-      <data key="d198">0.3747864782368194</data>
-      <data key="d199">0.3747864782368194</data>
-      <data key="d197">0.3747864782368194</data>
-      <data key="d200">0.3747864782368194</data>
-      <data key="d201">0.35734692568248533</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">41</data>
-    </node>
-    <node id="FileError">
-      <data key="d0">0</data>
-      <data key="d1">64</data>
-      <data key="d202">0.31419009955451854</data>
-      <data key="d195">0.31046197904212075</data>
-      <data key="d192">0.24628502876645014</data>
-      <data key="d78">0.2387978397152758</data>
-      <data key="d15">0.2314542039060111</data>
-      <data key="d203">0.2356425746658889</data>
-      <data key="d204">0.2356425746658889</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">5</data>
-    </node>
-    <node id="FileErrorType">
-      <data key="d0">0</data>
-      <data key="d1">7</data>
-      <data key="d195">0.44291589744754917</data>
-      <data key="d205">0.3171500472002663</data>
-      <data key="d206">0.3171500472002663</data>
-      <data key="d207">0.3171500472002663</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">42</data>
-    </node>
-    <node id="ErrorLine">
-      <data key="d0">0</data>
-      <data key="d1">23</data>
-      <data key="d208">0.6336209475185874</data>
-      <data key="d209">0.6336209475185874</data>
-      <data key="d210">0.3168104737592937</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">11</data>
-    </node>
-    <node id="CustomStringConvertible">
-      <data key="d5">1</data>
-      <data key="d6">0</data>
-      <data key="d7">11</data>
-    </node>
-    <node id="Logger">
-      <data key="d0">4</data>
-      <data key="d1">32</data>
-      <data key="d185">0.6541151805274309</data>
-      <data key="d211">0.3635966909324329</data>
-      <data key="d212">0.24239779395495528</data>
-      <data key="d213">0.24239779395495528</data>
-      <data key="d184">0.22440671392144623</data>
-      <data key="d186">0.21803839350914364</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
-    </node>
-    <node id="AudioError">
-      <data key="d0">0</data>
-      <data key="d1">36</data>
-      <data key="d32">0.5786212708506222</data>
-      <data key="d78">0.3518299478402541</data>
-      <data key="d15">0.30209026099608727</data>
-      <data key="d214">0.327532457435941</data>
-      <data key="d192">0.27214583136948906</data>
-      <data key="d190">0.27214583136948906</data>
-      <data key="d215">0.2314541171519635</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">5</data>
-    </node>
-    <node id="AudioErrorType">
-      <data key="d0">0</data>
-      <data key="d1">3</data>
-      <data key="d216">0.5538689206708467</data>
-      <data key="d217">0.5538689206708467</data>
-      <data key="d214">0.5538689206708467</data>
-      <data key="d12">0.2822900213339713</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">43</data>
-    </node>
-    <node id="ApolloApp">
-      <data key="d0">0</data>
-      <data key="d1">6</data>
-      <data key="d218">0.44909385605456315</data>
-      <data key="d219">0.44909385605456315</data>
-      <data key="d220">0.42367738972172053</data>
-      <data key="d221">0.44909385605456315</data>
-      <data key="d102">0.38785489240186816</data>
-      <data key="d222">0.25497093410946825</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">12</data>
-    </node>
-    <node id="App">
-      <data key="d5">1</data>
-      <data key="d6">0</data>
-      <data key="d7">12</data>
-    </node>
-    <node id="ApolloLocalizationTests">
-      <data key="d0">1</data>
-      <data key="d1">51</data>
-      <data key="d3">0.9863899059243292</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
     </node>
     <node id="Language">
       <data key="d0">0</data>
       <data key="d1">4</data>
-      <data key="d223">0.4637696431490826</data>
-      <data key="d224">0.4637696431490826</data>
-      <data key="d225">0.4637696431490826</data>
-      <data key="d226">0.36353634333458257</data>
-      <data key="d62">0.36353634333458257</data>
-      <data key="d15">0.20176827307416093</data>
-      <data key="d12">0.2229918662432102</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">6</data>
+      <data key="d6">0.4774126916900428</data>
+      <data key="d7">0.4774126916900428</data>
+      <data key="d8">0.4311544509153369</data>
+      <data key="d9">0.3779269388168849</data>
+      <data key="d10">0.3597550364783126</data>
+      <data key="d11">0.21984828755974972</data>
+      <data key="d12">0.2226419357233408</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">6</data>
     </node>
-    <node id="LocalizationManager">
-      <data key="d0">2</data>
+    <node id="String">
+      <data key="d3">3</data>
+      <data key="d4">0</data>
+      <data key="d5">6</data>
+    </node>
+    <node id="FoundationDataTests">
+      <data key="d0">7</data>
+      <data key="d1">144</data>
+      <data key="d2">0.9905113720764331</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="IntervalType">
+      <data key="d0">1</data>
+      <data key="d1">18</data>
+      <data key="d13">0.45460707715389076</data>
+      <data key="d14">0.43833935550619263</data>
+      <data key="d15">0.321137395347129</data>
+      <data key="d16">0.321137395347129</data>
+      <data key="d17">0.321137395347129</data>
+      <data key="d18">0.321137395347129</data>
+      <data key="d8">0.29002123271822655</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">6</data>
+    </node>
+    <node id="Day">
+      <data key="d0">4</data>
+      <data key="d1">50</data>
+      <data key="d11">0.4836411454074644</data>
+      <data key="d19">0.3455976128146046</data>
+      <data key="d20">0.3121114113310444</data>
+      <data key="d21">0.25919820961095347</data>
+      <data key="d22">0.25919820961095347</data>
+      <data key="d23">0.23408355849828333</data>
+      <data key="d24">0.23408355849828333</data>
+      <data key="d3">0</data>
+      <data key="d4">2</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="Codable">
+      <data key="d3">4</data>
+      <data key="d4">0</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="CodingKey">
+      <data key="d3">5</data>
+      <data key="d4">0</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="CodingKeys">
+      <data key="d0">0</data>
+      <data key="d1">3</data>
+      <data key="d25">0.5816192121425076</data>
+      <data key="d26">0.47469795446645713</data>
+      <data key="d27">0.47469795446645713</data>
+      <data key="d28">0.3587961723519437</data>
+      <data key="d12">0.2868938877408263</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="Interval">
+      <data key="d0">0</data>
       <data key="d1">15</data>
-      <data key="d226">0.44179737773190986</data>
-      <data key="d40">0.4696624579463791</data>
-      <data key="d15">0.32693913767926125</data>
-      <data key="d42">0.3379797407275015</data>
-      <data key="d43">0.32450285219483077</data>
-      <data key="d44">0.2945315851546066</data>
-      <data key="d86">0.2567722542659044</data>
+      <data key="d11">0.5034069842922814</data>
+      <data key="d29">0.5551441898439122</data>
+      <data key="d30">0.3124268376673044</data>
+      <data key="d31">0.30190880168902123</data>
+      <data key="d3">0</data>
+      <data key="d4">2</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="PlansRepositoryProtocol">
+      <data key="d0">0</data>
+      <data key="d1">7</data>
+      <data key="d32">0.6581195112192494</data>
+      <data key="d33">0.3472631222545568</data>
+      <data key="d34">0.23098187309640417</data>
+      <data key="d35">0.21786263074592413</data>
+      <data key="d36">0.22401120009039552</data>
+      <data key="d37">0.20284490631919644</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="AnyObject">
+      <data key="d3">12</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="Week">
+      <data key="d0">1</data>
+      <data key="d1">16</data>
+      <data key="d38">0.5733692590810942</data>
+      <data key="d11">0.43440642204996255</data>
+      <data key="d39">0.3423899248247051</data>
+      <data key="d40">0.303948191998334</data>
+      <data key="d28">0.21121756626030064</data>
+      <data key="d3">0</data>
+      <data key="d4">2</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="PlansRepositoryInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d41">0.7849309603264396</data>
+      <data key="d42">0.4518766083560619</data>
+      <data key="d36">0.3678076340887278</data>
+      <data key="d12">0.2107331550745824</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">16</data>
+    </node>
+    <node id="PlansRepositoryInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d43">0.6566530654275763</data>
+      <data key="d41">0.5045606737542727</data>
+      <data key="d36">0.47286010374872556</data>
+      <data key="d44">0.2777405714927028</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">17</data>
+    </node>
+    <node id="Plan">
+      <data key="d0">1</data>
+      <data key="d1">16</data>
+      <data key="d11">0.46083632760687526</data>
+      <data key="d33">0.48476449215019746</data>
+      <data key="d25">0.36322141560711946</data>
+      <data key="d40">0.32244083299291487</data>
+      <data key="d28">0.22406834388434468</data>
+      <data key="d3">0</data>
+      <data key="d4">2</data>
+      <data key="d5">3</data>
+    </node>
+    <node id="PlansLoaderInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d45">0.5278201712241442</data>
+      <data key="d46">0.4990182631448445</data>
+      <data key="d47">0.42962234559680385</data>
+      <data key="d12">0.24614951944232022</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">18</data>
+    </node>
+    <node id="PlansLoadingInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d48">0.6890621764127208</data>
+      <data key="d46">0.4809043394831882</data>
+      <data key="d47">0.4140274326522582</data>
+      <data key="d44">0.2431844320272804</data>
+      <data key="d11">0.2033820880001535</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="PlansFileLoader">
+      <data key="d0">5</data>
+      <data key="d1">60</data>
+      <data key="d49">0.38215023465204506</data>
+      <data key="d50">0.36044497494709615</data>
+      <data key="d33">0.28726644622929637</data>
+      <data key="d51">0.2832486545420439</data>
+      <data key="d52">0.2601878647827685</data>
+      <data key="d53">0.246228382482254</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="PlansLoadingProtocol">
+      <data key="d0">0</data>
+      <data key="d1">4</data>
+      <data key="d33">0.5961536083284732</data>
+      <data key="d54">0.35602564976740914</data>
+      <data key="d47">0.384564546827945</data>
+      <data key="d37">0.3482279432614106</data>
+      <data key="d55">0.29390781568105706</data>
+      <data key="d56">0.29390781568105706</data>
+      <data key="d57">0.2755547361283418</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="PlansRepository">
+      <data key="d0">5</data>
+      <data key="d1">28</data>
+      <data key="d33">0.5593303425488974</data>
+      <data key="d37">0.43562476084113416</data>
+      <data key="d58">0.3579168481320076</data>
+      <data key="d32">0.35334034248391444</data>
+      <data key="d59">0.20917155498837509</data>
+      <data key="d60">0.20917155498837509</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="FoundationStorageTests">
+      <data key="d0">1</data>
+      <data key="d1">15</data>
+      <data key="d61">0.6585790599818343</data>
+      <data key="d62">0.47398805430327484</data>
+      <data key="d63">0.47398805430327484</data>
+      <data key="d2">0.23852743605240112</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="StorageInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d64">0.5278201712241442</data>
+      <data key="d65">0.47667776761564323</data>
+      <data key="d66">0.4990182631448445</data>
+      <data key="d67">0.42962234559680385</data>
+      <data key="d12">0.24614951944232022</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">19</data>
+    </node>
+    <node id="StorageInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d68">0.6254292457801994</data>
+      <data key="d66">0.546086761185388</data>
+      <data key="d67">0.4701452683540965</data>
+      <data key="d44">0.276145977387522</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">20</data>
+    </node>
+    <node id="StorageProtocol">
+      <data key="d0">0</data>
+      <data key="d1">8</data>
+      <data key="d69">0.7478967757123902</data>
+      <data key="d61">0.5753250357125058</data>
+      <data key="d70">0.22391633549136425</data>
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">8</data>
+    </node>
+    <node id="StorageUserDefaults">
+      <data key="d0">7</data>
+      <data key="d1">22</data>
+      <data key="d69">0.7640279624774144</data>
+      <data key="d61">0.5877340684868918</data>
+      <data key="d70">0.22874592741480912</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">8</data>
+    </node>
+    <node id="MobileMenuView">
+      <data key="d0">1</data>
+      <data key="d1">38</data>
+      <data key="d71">0.5429828657193326</data>
+      <data key="d72">0.5429828657193326</data>
+      <data key="d73">0.21719314628773306</data>
+      <data key="d74">0.21719314628773306</data>
+      <data key="d75">0.21719314628773306</data>
+      <data key="d76">0.21719314628773306</data>
+      <data key="d77">0.21719314628773306</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
       <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">3</data>
+    </node>
+    <node id="View">
+      <data key="d3">17</data>
+      <data key="d4">0</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="MobileMenuView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">6</data>
+      <data key="d78">0.555247907454298</data>
+      <data key="d79">0.4614886906539216</data>
+      <data key="d80">0.41547069396721564</data>
+      <data key="d81">0.33465155268279506</data>
+      <data key="d82">0.33465155268279506</data>
+      <data key="d83">0.2865811031707107</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">21</data>
+    </node>
+    <node id="ApolloRootView">
+      <data key="d0">0</data>
+      <data key="d1">19</data>
+      <data key="d84">0.46445288901184856</data>
+      <data key="d85">0.4478328434898641</data>
+      <data key="d86">0.4139864898986224</data>
+      <data key="d87">0.36715051208650523</data>
+      <data key="d88">0.32964615607342157</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="RootView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d89">0.4448674920569453</data>
+      <data key="d79">0.36974712316363256</data>
+      <data key="d84">0.36254705718909946</data>
+      <data key="d85">0.34957362385086777</data>
+      <data key="d80">0.3328772664732051</data>
+      <data key="d86">0.3231535149842969</data>
+      <data key="d81">0.2681245529362244</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">22</data>
+    </node>
+    <node id="ApolloApp">
+      <data key="d0">0</data>
+      <data key="d1">6</data>
+      <data key="d90">0.4507344697822404</data>
+      <data key="d91">0.4507344697822404</data>
+      <data key="d92">0.42613894752940296</data>
+      <data key="d93">0.4507344697822404</data>
+      <data key="d89">0.3914735059040995</data>
+      <data key="d94">0.23594364756028788</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">9</data>
+    </node>
+    <node id="App">
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">9</data>
+    </node>
+    <node id="UtilityExtensionsTests">
+      <data key="d0">3</data>
+      <data key="d1">23</data>
+      <data key="d2">0.624853318211059</data>
+      <data key="d95">0.5528961340299654</data>
+      <data key="d96">0.36859742268664364</data>
+      <data key="d97">0.23281363358978013</data>
+      <data key="d98">0.23281363358978013</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="FoundationImagesTests">
+      <data key="d0">3</data>
+      <data key="d1">29</data>
+      <data key="d2">0.6063459806689055</data>
+      <data key="d99">0.5836828808028113</data>
+      <data key="d100">0.3872879973346351</data>
+      <data key="d101">0.2581919982230901</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="Gifs">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d102">0.7295981201909927</data>
+      <data key="d103">0.5815220297661944</data>
+      <data key="d12">0.35988708216658066</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">23</data>
+    </node>
+    <node id="ImagesProtocol">
+      <data key="d0">0</data>
+      <data key="d1">3</data>
+      <data key="d104">0.6004323625016303</data>
+      <data key="d105">0.318294586096474</data>
+      <data key="d106">0.318294586096474</data>
+      <data key="d107">0.30868895146584924</data>
+      <data key="d99">0.28578085376866325</data>
+      <data key="d103">0.28578085376866325</data>
+      <data key="d108">0.26843276386244314</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="PlanImage">
+      <data key="d0">0</data>
+      <data key="d1">7</data>
+      <data key="d104">0.861603281728297</data>
+      <data key="d12">0.5075822937367187</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">25</data>
+    </node>
+    <node id="ImagesInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d109">0.5278201712241442</data>
+      <data key="d110">0.47667776761564323</data>
+      <data key="d111">0.4990182631448445</data>
+      <data key="d107">0.42962234559680385</data>
+      <data key="d12">0.24614951944232022</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">26</data>
+    </node>
+    <node id="ImagesInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d112">0.6734213260465797</data>
+      <data key="d111">0.5057280226706211</data>
+      <data key="d107">0.43539901318345275</data>
+      <data key="d44">0.2557373095980016</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="ImagesManager">
+      <data key="d0">4</data>
+      <data key="d1">44</data>
+      <data key="d113">0.5502840941237293</data>
+      <data key="d114">0.5502840941237293</data>
+      <data key="d115">0.2975774282279215</data>
+      <data key="d116">0.22256877074904768</data>
+      <data key="d99">0.23695279373384992</data>
+      <data key="d28">0.20709712071374894</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="FoundationAudioTests">
+      <data key="d0">2</data>
+      <data key="d1">11</data>
+      <data key="d117">0.8101291046767055</data>
+      <data key="d118">0.3399642767562062</data>
+      <data key="d119">0.20253227616917638</data>
+      <data key="d120">0.20253227616917638</data>
+      <data key="d121">0.20253227616917638</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="SoundsEnum">
+      <data key="d0">0</data>
+      <data key="d1">3</data>
+      <data key="d122">0.5850173074019634</data>
+      <data key="d123">0.49099577993840826</data>
+      <data key="d12">0.2728234670313152</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">6</data>
+    </node>
+    <node id="AudioPlayerInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d124">0.5472790005824728</data>
+      <data key="d125">0.47532470540630906</data>
+      <data key="d118">0.45932261547652453</data>
+      <data key="d126">0.4454609746740223</data>
+      <data key="d12">0.2552241659916441</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">27</data>
+    </node>
+    <node id="AudioPlayerInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d127">0.6872786425546151</data>
+      <data key="d125">0.47414824540467493</data>
+      <data key="d126">0.44435842937597186</data>
+      <data key="d44">0.2609997399739708</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="AudioPlayerProtocol">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d128">0.502729283767646</data>
+      <data key="d123">0.46720159276244677</data>
+      <data key="d129">0.46720159276244677</data>
+      <data key="d126">0.45310217670275366</data>
+      <data key="d57">0.3246644855079809</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="AudioPlayer">
+      <data key="d0">2</data>
+      <data key="d1">23</data>
+      <data key="d118">0.5430813096824749</data>
+      <data key="d129">0.32584878580948495</data>
+      <data key="d130">0.25883070973084776</data>
+      <data key="d131">0.25883070973084776</data>
+      <data key="d49">0.21723252387298997</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">10</data>
+    </node>
+    <node id="FeaturePlansTests">
+      <data key="d0">6</data>
+      <data key="d1">90</data>
+      <data key="d2">0.8798068479432423</data>
+      <data key="d104">0.31139583690686334</data>
+      <data key="d86">0.2068128324162877</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="PlansView">
+      <data key="d0">0</data>
+      <data key="d1">29</data>
+      <data key="d132">0.3363357940374455</data>
+      <data key="d133">0.3363357940374455</data>
+      <data key="d134">0.2892809130617437</data>
+      <data key="d135">0.2892809130617437</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="PlansView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">6</data>
+      <data key="d136">0.564509281928062</data>
+      <data key="d85">0.4435872679044474</data>
+      <data key="d86">0.4100617868319396</data>
+      <data key="d81">0.3402334437732663</data>
+      <data key="d82">0.3402334437732663</data>
+      <data key="d83">0.29136119306917985</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">28</data>
+    </node>
+    <node id="PlansViewModel">
+      <data key="d0">6</data>
+      <data key="d1">33</data>
+      <data key="d28">0.5296463585045909</data>
+      <data key="d32">0.36193546309967256</data>
+      <data key="d137">0.25405881388289586</data>
+      <data key="d138">0.25405881388289586</data>
+      <data key="d37">0.22311073856489758</data>
+      <data key="d59">0.21425972219813155</data>
+      <data key="d108">0.21425972219813155</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">4</data>
+    </node>
+    <node id="ObservableObject">
+      <data key="d3">5</data>
+      <data key="d4">0</data>
+      <data key="d5">4</data>
+    </node>
+    <node id="TimerButton">
+      <data key="d0">0</data>
+      <data key="d1">4</data>
+      <data key="d139">0.49318409218855486</data>
+      <data key="d140">0.49318409218855486</data>
+      <data key="d141">0.49318409218855486</data>
+      <data key="d142">0.4662721936598504</data>
+      <data key="d12">0.22999694575381674</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">29</data>
+    </node>
+    <node id="ActivityViewModel">
+      <data key="d0">14</data>
+      <data key="d1">124</data>
+      <data key="d143">0.3939348555328945</data>
+      <data key="d144">0.38718053663562085</data>
+      <data key="d145">0.2903854024767156</data>
+      <data key="d146">0.2604005882561057</data>
+      <data key="d20">0.26224891155588165</data>
+      <data key="d147">0.24198783539726304</data>
+      <data key="d148">0.24198783539726304</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">4</data>
+    </node>
+    <node id="FractionProgressView">
+      <data key="d0">0</data>
+      <data key="d1">43</data>
+      <data key="d149">0.639298277123821</data>
+      <data key="d150">0.33935214835319144</data>
+      <data key="d151">0.3357952166972363</data>
+      <data key="d152">0.3357952166972363</data>
+      <data key="d153">0.2762176853163501</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="FractionProgressView_Previews">
+      <data key="d0">1</data>
+      <data key="d1">22</data>
+      <data key="d29">0.6336649138117623</data>
+      <data key="d154">0.5474687422667152</data>
+      <data key="d155">0.23774475026460837</data>
+      <data key="d153">0.222807708019249</data>
+      <data key="d151">0.2166921716412185</data>
+      <data key="d152">0.2166921716412185</data>
+      <data key="d149">0.2062729382493769</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">30</data>
+    </node>
+    <node id="InfoView">
+      <data key="d0">0</data>
+      <data key="d1">47</data>
+      <data key="d156">0.7256255056271675</data>
+      <data key="d157">0.3526335525650453</data>
+      <data key="d158">0.35597059892827987</data>
+      <data key="d159">0.21388721978796685</data>
+      <data key="d160">0.20276501786714127</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="InfoView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d161">0.4571494948021473</data>
+      <data key="d159">0.4284276773542149</data>
+      <data key="d160">0.40614930494501883</data>
+      <data key="d162">0.3531720456051001</data>
+      <data key="d86">0.3320752106105773</data>
+      <data key="d81">0.27552699648181217</data>
+      <data key="d82">0.27552699648181217</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">31</data>
+    </node>
+    <node id="CircularProgressView">
+      <data key="d0">0</data>
+      <data key="d1">33</data>
+      <data key="d152">0.5491360349803351</data>
+      <data key="d13">0.4208570246911062</data>
+      <data key="d151">0.3922400249859536</data>
+      <data key="d149">0.37337990495948076</data>
+      <data key="d163">0.29729613883044115</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="CircularProgressView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d164">0.4440585420157934</data>
+      <data key="d151">0.40473663329322246</data>
+      <data key="d152">0.40473663329322246</data>
+      <data key="d149">0.385275637482573</data>
+      <data key="d13">0.36188779918066066</data>
+      <data key="d81">0.26763699344490555</data>
+      <data key="d82">0.26763699344490555</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">32</data>
+    </node>
+    <node id="TimerView">
+      <data key="d0">0</data>
+      <data key="d1">49</data>
+      <data key="d165">0.41178812951224775</data>
+      <data key="d166">0.41178812951224775</data>
+      <data key="d167">0.3293841867751109</data>
+      <data key="d96">0.25021586930456713</data>
+      <data key="d151">0.25021586930456713</data>
+      <data key="d152">0.25021586930456713</data>
+      <data key="d149">0.23818471229099777</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="TimerView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d168">0.6189402861419137</data>
+      <data key="d85">0.4863587531952681</data>
+      <data key="d81">0.37303936673074906</data>
+      <data key="d82">0.37303936673074906</data>
+      <data key="d83">0.3194547653724291</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">33</data>
+    </node>
+    <node id="CircleButton">
+      <data key="d0">0</data>
+      <data key="d1">15</data>
+      <data key="d167">0.47290502045575966</data>
+      <data key="d165">0.3941429322336922</data>
+      <data key="d169">0.3275879175501357</data>
+      <data key="d83">0.20342970195843077</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="CircleButton_Previews">
+      <data key="d0">0</data>
+      <data key="d1">7</data>
+      <data key="d170">0.4959415595367235</data>
+      <data key="d165">0.4555978329626674</data>
+      <data key="d166">0.4555978329626674</data>
+      <data key="d167">0.36442702193640486</data>
+      <data key="d81">0.27459179972222186</data>
+      <data key="d82">0.27459179972222186</data>
+      <data key="d83">0.23514853062885824</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">34</data>
+    </node>
+    <node id="TimerText">
+      <data key="d0">0</data>
+      <data key="d1">18</data>
+      <data key="d171">0.5252106226700775</data>
+      <data key="d13">0.42802310587602377</data>
+      <data key="d172">0.3640822886002623</data>
+      <data key="d96">0.319135067528647</data>
+      <data key="d14">0.27513777912135085</data>
+      <data key="d156">0.2473869055017936</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="TimerTextView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">11</data>
+      <data key="d96">0.5665090934934973</data>
+      <data key="d30">0.31077394705850536</data>
+      <data key="d173">0.31077394705850536</data>
+      <data key="d171">0.31077394705850536</data>
+      <data key="d174">0.2912486218060933</data>
+      <data key="d143">0.2912486218060933</data>
+      <data key="d13">0.25326683106501235</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">35</data>
+    </node>
+    <node id="ActivityView">
+      <data key="d0">0</data>
+      <data key="d1">25</data>
+      <data key="d58">0.7059612902017589</data>
+      <data key="d168">0.25312652814027486</data>
+      <data key="d161">0.25312652814027486</data>
+      <data key="d83">0.26129330233336445</data>
+      <data key="d159">0.2372230785791626</data>
+      <data key="d175">0.2372230785791626</data>
+      <data key="d160">0.22488740474669663</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="ActivityView_Previews">
+      <data key="d0">1</data>
+      <data key="d1">19</data>
+      <data key="d58">0.7253133291734615</data>
+      <data key="d176">0.4790940885111064</data>
+      <data key="d29">0.3696833455089628</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">36</data>
+    </node>
+    <node id="GifView">
+      <data key="d0">1</data>
+      <data key="d1">16</data>
+      <data key="d177">0.4626607757155771</data>
+      <data key="d178">0.4018317835802307</data>
+      <data key="d179">0.3084405171437181</data>
+      <data key="d180">0.3084405171437181</data>
+      <data key="d181">0.3084405171437181</data>
+      <data key="d182">0.3084405171437181</data>
+      <data key="d108">0.21831658973096577</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">11</data>
+    </node>
+    <node id="UIViewRepresentable">
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">11</data>
+    </node>
+    <node id="GifView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">6</data>
+      <data key="d178">0.4609592392928372</data>
+      <data key="d183">0.42014075385166755</data>
+      <data key="d184">0.3831216163630272</data>
+      <data key="d108">0.37566110959699406</data>
+      <data key="d86">0.33484262415582444</data>
+      <data key="d81">0.27782315445380606</data>
+      <data key="d82">0.27782315445380606</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">37</data>
+    </node>
+    <node id="FinishedDayView">
+      <data key="d0">0</data>
+      <data key="d1">84</data>
+      <data key="d172">0.46322411725046353</data>
+      <data key="d156">0.3597164220710723</data>
+      <data key="d185">0.27608139172348656</data>
+      <data key="d186">0.2700346317053986</data>
+      <data key="d184">0.26447215170284066</data>
+      <data key="d32">0.2628339006214553</data>
+      <data key="d58">0.2218651301635504</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="FinishedView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">8</data>
+      <data key="d32">0.7219066419855312</data>
+      <data key="d187">0.349595203290431</data>
+      <data key="d59">0.284904414063473</data>
+      <data key="d60">0.284904414063473</data>
+      <data key="d188">0.27008069457289574</data>
+      <data key="d81">0.21070332012233595</data>
+      <data key="d82">0.21070332012233595</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">38</data>
+    </node>
+    <node id="DaysView">
+      <data key="d0">0</data>
+      <data key="d1">47</data>
+      <data key="d135">0.37338144849721205</data>
+      <data key="d188">0.26029626963492575</data>
+      <data key="d33">0.2447473961651436</data>
+      <data key="d58">0.23492168212638842</data>
+      <data key="d189">0.2170581263554665</data>
+      <data key="d190">0.2170581263554665</data>
+      <data key="d191">0.2170581263554665</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="DaysView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d192">0.5276919423627352</data>
+      <data key="d188">0.40766979916325696</data>
+      <data key="d86">0.38331752498917304</data>
+      <data key="d32">0.3632242038109716</data>
+      <data key="d81">0.31804339193196246</data>
+      <data key="d82">0.31804339193196246</data>
+      <data key="d83">0.2723585932452255</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">39</data>
+    </node>
+    <node id="DayView">
+      <data key="d0">0</data>
+      <data key="d1">14</data>
+      <data key="d28">0.4275000353894853</data>
+      <data key="d193">0.3075924629197858</data>
+      <data key="d194">0.3183085088698853</data>
+      <data key="d83">0.3285782887099455</data>
+      <data key="d185">0.27617195046911314</data>
+      <data key="d195">0.27617195046911314</data>
+      <data key="d186">0.27012320702505455</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="DayView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">6</data>
+      <data key="d194">0.6396813247817538</data>
+      <data key="d28">0.4295577739236247</data>
+      <data key="d81">0.38554012664698095</data>
+      <data key="d82">0.38554012664698095</data>
+      <data key="d83">0.33015987502617594</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">40</data>
     </node>
     <node id="Foundation.Bundle">
       <data key="d0">0</data>
       <data key="d1">30</data>
-      <data key="d227">0.5860274424158839</data>
-      <data key="d228">0.5437167148568052</data>
-      <data key="d229">0.27274171809214515</data>
-      <data key="d230">0.25217276440236774</data>
-      <data key="d231">0.23441097696635355</data>
-      <data key="d232">0.23441097696635355</data>
-      <data key="d233">0.23441097696635355</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">44</data>
+      <data key="d196">0.5875967399038615</data>
+      <data key="d197">0.5470924740565858</data>
+      <data key="d198">0.2662518656381288</data>
+      <data key="d199">0.25153243959785104</data>
+      <data key="d200">0.23503869596154459</data>
+      <data key="d201">0.23503869596154459</data>
+      <data key="d202">0.23503869596154459</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">41</data>
     </node>
     <node id="Foundation.ProcessInfo">
       <data key="d0">0</data>
       <data key="d1">29</data>
-      <data key="d227">0.5894803950527718</data>
-      <data key="d228">0.5469203669870624</data>
-      <data key="d229">0.2743487490373057</data>
-      <data key="d231">0.2357921580211087</data>
-      <data key="d232">0.2357921580211087</data>
-      <data key="d233">0.2357921580211087</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">39</data>
+      <data key="d196">0.590604426635962</data>
+      <data key="d197">0.5498928346843887</data>
+      <data key="d198">0.26761470880810256</data>
+      <data key="d200">0.23624177065438484</data>
+      <data key="d201">0.23624177065438484</data>
+      <data key="d202">0.23624177065438484</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">42</data>
     </node>
     <node id="Foundation.URL">
       <data key="d0">0</data>
       <data key="d1">28</data>
-      <data key="d227">0.5906450141620354</data>
-      <data key="d228">0.548000901498446</data>
-      <data key="d229">0.274890771805854</data>
-      <data key="d231">0.23625800566481417</data>
-      <data key="d232">0.23625800566481417</data>
-      <data key="d233">0.23625800566481417</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">16</data>
+      <data key="d196">0.5916172992559635</data>
+      <data key="d197">0.5508358878872901</data>
+      <data key="d198">0.26807366170286046</data>
+      <data key="d200">0.2366469197023854</data>
+      <data key="d201">0.2366469197023854</data>
+      <data key="d202">0.2366469197023854</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">43</data>
     </node>
     <node id="BundleFinder">
       <data key="d0">0</data>
       <data key="d1">27</data>
-      <data key="d227">0.5906450141620354</data>
-      <data key="d228">0.548000901498446</data>
-      <data key="d229">0.274890771805854</data>
-      <data key="d231">0.23625800566481417</data>
-      <data key="d232">0.23625800566481417</data>
-      <data key="d233">0.23625800566481417</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">17</data>
+      <data key="d196">0.5916172992559635</data>
+      <data key="d197">0.5508358878872901</data>
+      <data key="d198">0.26807366170286046</data>
+      <data key="d200">0.2366469197023854</data>
+      <data key="d201">0.2366469197023854</data>
+      <data key="d202">0.2366469197023854</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">44</data>
     </node>
-    <node id="ApolloLocationTests">
+    <node id="FeatureSettingsTests">
+      <data key="d0">4</data>
+      <data key="d1">88</data>
+      <data key="d2">0.9786025857925426</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="WeightRepositoryProtocol">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d146">0.5162855519632416</data>
+      <data key="d203">0.3899626099957928</data>
+      <data key="d204">0.35146730681287613</data>
+      <data key="d205">0.31170214458171264</data>
+      <data key="d70">0.2724230625187222</data>
+      <data key="d206">0.2806203249248207</data>
+      <data key="d55">0.2686128746935492</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="SettingsView">
       <data key="d0">2</data>
-      <data key="d1">18</data>
-      <data key="d234">0.43658481778424846</data>
-      <data key="d235">0.43658481778424846</data>
-      <data key="d236">0.3638118650453022</data>
-      <data key="d237">0.29105654518949897</data>
-      <data key="d238">0.29105654518949897</data>
-      <data key="d239">0.29105654518949897</data>
-      <data key="d240">0.29105654518949897</data>
+      <data key="d1">72</data>
+      <data key="d207">0.45695311050505955</data>
+      <data key="d156">0.4206093921878836</data>
+      <data key="d208">0.38079425875421635</data>
+      <data key="d209">0.38079425875421635</data>
+      <data key="d210">0.22847655525252977</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
       <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">2</data>
+    </node>
+    <node id="SettingsView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">7</data>
+      <data key="d211">0.5058677421184841</data>
+      <data key="d79">0.42044686494118877</data>
+      <data key="d84">0.41225952560380474</data>
+      <data key="d80">0.3785214118810421</data>
+      <data key="d81">0.30488980341816874</data>
+      <data key="d82">0.30488980341816874</data>
+      <data key="d83">0.26109442944046457</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">46</data>
+    </node>
+    <node id="WeightRepositoryInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d212">0.7849309603264396</data>
+      <data key="d213">0.4518766083560619</data>
+      <data key="d204">0.3678076340887278</data>
+      <data key="d12">0.2107331550745824</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">47</data>
+    </node>
+    <node id="WeightRepositoryInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d214">0.6658310470128334</data>
+      <data key="d212">0.48701293572827853</data>
+      <data key="d204">0.45641485612015564</data>
+      <data key="d44">0.26808124003613065</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="LocalizationViewModel">
+      <data key="d0">2</data>
+      <data key="d1">13</data>
+      <data key="d9">0.6625841041431976</data>
+      <data key="d70">0.4224515677116597</data>
+      <data key="d215">0.3975504624859186</data>
+      <data key="d11">0.26773279562685637</data>
+      <data key="d61">0.2325935355151768</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">4</data>
+    </node>
+    <node id="WeightViewModel">
+      <data key="d0">4</data>
+      <data key="d1">16</data>
+      <data key="d205">0.5951611010865123</data>
+      <data key="d216">0.41419081752009446</data>
+      <data key="d217">0.27482583009993267</data>
+      <data key="d218">0.24819696236944316</data>
+      <data key="d219">0.23869270809086923</data>
+      <data key="d214">0.21755618668158483</data>
+      <data key="d220">0.20709540876004723</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">4</data>
+    </node>
+    <node id="ThemeViewModel">
+      <data key="d0">3</data>
+      <data key="d1">18</data>
+      <data key="d95">0.7027755482887147</data>
+      <data key="d70">0.3733974176102294</data>
+      <data key="d215">0.35138777414435735</data>
+      <data key="d221">0.2959248924433212</data>
+      <data key="d11">0.23664425022294996</data>
+      <data key="d61">0.20558528397621834</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">4</data>
+    </node>
+    <node id="WeightRepository">
+      <data key="d0">3</data>
+      <data key="d1">23</data>
+      <data key="d215">0.4309409253341032</data>
+      <data key="d205">0.3929701709662531</data>
+      <data key="d70">0.3434501151629655</data>
+      <data key="d222">0.3277566445709202</data>
+      <data key="d61">0.2521291832862381</data>
+      <data key="d223">0.24351306744113052</data>
+      <data key="d55">0.22576434827702216</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="HealthKitRepository">
+      <data key="d0">2</data>
+      <data key="d1">35</data>
+      <data key="d49">0.36553593080885766</data>
+      <data key="d224">0.36553593080885766</data>
+      <data key="d225">0.3266497209415327</data>
+      <data key="d51">0.2709341803300355</data>
+      <data key="d226">0.21776648062768847</data>
+      <data key="d227">0.21776648062768847</data>
+      <data key="d228">0.21776648062768847</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">48</data>
+    </node>
+    <node id="AppearanceToggle">
+      <data key="d0">0</data>
+      <data key="d1">31</data>
+      <data key="d167">0.40435743108179867</data>
+      <data key="d183">0.34556524406435585</data>
+      <data key="d186">0.32174471280093964</data>
+      <data key="d184">0.3151170498245978</data>
+      <data key="d229">0.29102138778420755</data>
+      <data key="d230">0.29102138778420755</data>
+      <data key="d231">0.2474649773724802</data>
+      <data key="d232">0.252758931492417</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="AppearanceToggle_Previews">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d232">0.4322213946891088</data>
+      <data key="d233">0.4322213946891088</data>
+      <data key="d234">0.4322213946891088</data>
+      <data key="d186">0.3667920461591838</data>
+      <data key="d167">0.3457285006372238</data>
+      <data key="d81">0.2605026671754525</data>
+      <data key="d82">0.2605026671754525</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">49</data>
+    </node>
+    <node id="ResetDataView">
+      <data key="d0">0</data>
+      <data key="d1">16</data>
+      <data key="d235">0.6187605829900159</data>
+      <data key="d169">0.4466613512363594</data>
+      <data key="d236">0.41250705532667725</data>
+      <data key="d237">0.20625352766333863</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="ResetDataView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d238">0.6258810273923149</data>
+      <data key="d80">0.4683227461113885</data>
+      <data key="d81">0.3772225969690502</data>
+      <data key="d82">0.3772225969690502</data>
+      <data key="d83">0.3230371026629594</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">50</data>
+    </node>
+    <node id="WeightView">
+      <data key="d0">0</data>
+      <data key="d1">42</data>
+      <data key="d239">0.4788340633758211</data>
+      <data key="d156">0.4338113695590107</data>
+      <data key="d240">0.3534718762364817</data>
+      <data key="d241">0.266359252577376</data>
+      <data key="d169">0.2551588291240356</data>
+      <data key="d167">0.24556439119970985</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="WeightViewView_Previews">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d242">0.6134791158145974</data>
+      <data key="d84">0.49995796963533295</data>
+      <data key="d81">0.3697478835842735</data>
+      <data key="d82">0.3697478835842735</data>
+      <data key="d83">0.31663608168898943</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">51</data>
+    </node>
+    <node id="FoundationLoggerTests">
+      <data key="d0">1</data>
+      <data key="d1">19</data>
+      <data key="d51">0.7742550928191968</data>
+      <data key="d224">0.32141562454241523</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
+    </node>
+    <node id="ErrorProtocol">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d51">0.6809439343838687</data>
+      <data key="d243">0.547316561959487</data>
+      <data key="d244">0.36723855534041483</data>
+      <data key="d57">0.31921118824713757</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">12</data>
+    </node>
+    <node id="LocalizedError">
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">12</data>
+    </node>
+    <node id="LoggerInjectionMap">
+      <data key="d0">0</data>
+      <data key="d1">2</data>
+      <data key="d245">0.7648508738547527</data>
+      <data key="d246">0.46983556993311465</data>
+      <data key="d247">0.38242543692737635</data>
+      <data key="d12">0.21910833662859952</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">52</data>
+    </node>
+    <node id="LoggerInjected">
+      <data key="d0">0</data>
+      <data key="d1">9</data>
+      <data key="d248">0.6436607516459527</data>
+      <data key="d247">0.4934592922919738</data>
+      <data key="d245">0.4934592922919738</data>
+      <data key="d44">0.28983977451899134</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">53</data>
+    </node>
+    <node id="LoggerProtocol">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d53">0.5211212482776864</data>
+      <data key="d249">0.49730934482016304</data>
+      <data key="d250">0.49730934482016304</data>
+      <data key="d251">0.24865467241008152</data>
+      <data key="d252">0.24865467241008152</data>
+      <data key="d247">0.22410863451588908</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="LocalizationError">
+      <data key="d0">0</data>
+      <data key="d1">36</data>
+      <data key="d253">0.6212371257912278</data>
+      <data key="d51">0.40682256715642173</data>
+      <data key="d11">0.3137819625373404</data>
+      <data key="d254">0.370974427786493</data>
+      <data key="d255">0.2271976635607023</data>
+      <data key="d256">0.20707904193040927</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">5</data>
+    </node>
+    <node id="Error">
+      <data key="d3">4</data>
+      <data key="d4">0</data>
+      <data key="d5">5</data>
+    </node>
+    <node id="LocalizationErrorType">
+      <data key="d0">0</data>
+      <data key="d1">3</data>
+      <data key="d257">0.5552717468993656</data>
+      <data key="d254">0.5552717468993656</data>
+      <data key="d258">0.5552717468993656</data>
+      <data key="d12">0.27389753793340416</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">54</data>
+    </node>
+    <node id="HealthKitError">
+      <data key="d0">0</data>
+      <data key="d1">50</data>
+      <data key="d253">0.438269877562364</data>
+      <data key="d256">0.36522489796863666</data>
+      <data key="d259">0.37148169033673634</data>
+      <data key="d51">0.28700486383547236</data>
+      <data key="d260">0.27009019413295055</data>
+      <data key="d11">0.22136665146560106</data>
+      <data key="d261">0.2617147467445355</data>
+      <data key="d31">0.23233079692117062</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">5</data>
+    </node>
+    <node id="HealthKitErrorType">
+      <data key="d0">0</data>
+      <data key="d1">5</data>
+      <data key="d259">0.5300709367243639</data>
+      <data key="d262">0.3734433878442397</data>
+      <data key="d263">0.3734433878442397</data>
+      <data key="d261">0.3734433878442397</data>
+      <data key="d264">0.3734433878442397</data>
+      <data key="d265">0.356724740546711</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">14</data>
+    </node>
+    <node id="FileError">
+      <data key="d0">0</data>
+      <data key="d1">64</data>
+      <data key="d253">0.35726730605741475</data>
+      <data key="d259">0.3028231451689839</data>
+      <data key="d266">0.30087640179285774</data>
+      <data key="d51">0.23395962117721336</data>
+      <data key="d256">0.23817820403827653</data>
+      <data key="d267">0.22565730134464326</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">5</data>
+    </node>
+    <node id="FileErrorType">
+      <data key="d0">0</data>
+      <data key="d1">7</data>
+      <data key="d259">0.4488748768221707</data>
+      <data key="d268">0.3162394749550365</data>
+      <data key="d269">0.3162394749550365</data>
+      <data key="d270">0.3162394749550365</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">15</data>
+    </node>
+    <node id="ErrorLine">
+      <data key="d0">0</data>
+      <data key="d1">23</data>
+      <data key="d271">0.6347351732547621</data>
+      <data key="d272">0.6347351732547621</data>
+      <data key="d273">0.31736758662738107</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">7</data>
+    </node>
+    <node id="CustomStringConvertible">
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">7</data>
+    </node>
+    <node id="Logger">
+      <data key="d0">4</data>
+      <data key="d1">32</data>
+      <data key="d249">0.6538383380081032</data>
+      <data key="d274">0.3619940838090613</data>
+      <data key="d275">0.24132938920604088</data>
+      <data key="d276">0.24132938920604088</data>
+      <data key="d53">0.22838169335547404</data>
+      <data key="d250">0.21794611266936773</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="AudioError">
+      <data key="d0">0</data>
+      <data key="d1">36</data>
+      <data key="d129">0.5258899341073129</data>
+      <data key="d253">0.4960205880727334</data>
+      <data key="d51">0.3248234218860923</data>
+      <data key="d11">0.25053607893468516</data>
+      <data key="d277">0.29620083248604895</data>
+      <data key="d256">0.2480102940363667</data>
+      <data key="d278">0.20886446537948464</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">5</data>
+    </node>
+    <node id="AudioErrorType">
+      <data key="d0">0</data>
+      <data key="d1">3</data>
+      <data key="d279">0.5552717468993656</data>
+      <data key="d280">0.5552717468993656</data>
+      <data key="d277">0.5552717468993656</data>
+      <data key="d12">0.27389753793340416</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">45</data>
+    </node>
+    <node id="FoundationLocationTests">
+      <data key="d0">2</data>
+      <data key="d1">27</data>
+      <data key="d2">0.711295731208207</data>
+      <data key="d281">0.31802537762991684</data>
+      <data key="d282">0.31802537762991684</data>
+      <data key="d283">0.26691367307244174</data>
+      <data key="d284">0.21201691841994458</data>
+      <data key="d285">0.21201691841994458</data>
+      <data key="d286">0.21201691841994458</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">2</data>
     </node>
     <node id="LocationTrackerProtocol">
       <data key="d0">0</data>
-      <data key="d1">8</data>
-      <data key="d241">0.30925269785324067</data>
-      <data key="d242">0.30925269785324067</data>
-      <data key="d243">0.30925269785324067</data>
-      <data key="d244">0.30925269785324067</data>
-      <data key="d245">0.30925269785324067</data>
-      <data key="d246">0.30925269785324067</data>
-      <data key="d247">0.30925269785324067</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
+      <data key="d1">9</data>
+      <data key="d146">0.37588595163277816</data>
+      <data key="d287">0.2839154925061835</data>
+      <data key="d288">0.2839154925061835</data>
+      <data key="d289">0.2839154925061835</data>
+      <data key="d290">0.2839154925061835</data>
+      <data key="d291">0.2839154925061835</data>
+      <data key="d292">0.2839154925061835</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
     </node>
     <node id="LocationTrackerInjectionMap">
       <data key="d0">0</data>
       <data key="d1">2</data>
-      <data key="d248">0.7830258426839917</data>
-      <data key="d249">0.4533294564155842</data>
-      <data key="d250">0.3658567412109707</data>
-      <data key="d12">0.2179719673386111</data>
-      <data key="d5">0</data>
-      <data key="d6">0</data>
-      <data key="d7">18</data>
+      <data key="d293">0.7849309603264396</data>
+      <data key="d294">0.4518766083560619</data>
+      <data key="d295">0.3678076340887278</data>
+      <data key="d12">0.2107331550745824</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">24</data>
     </node>
     <node id="LocationTrackerInjected">
       <data key="d0">0</data>
       <data key="d1">9</data>
-      <data key="d251">0.6695471713383656</data>
-      <data key="d248">0.46260875891231273</data>
-      <data key="d250">0.43229360709519915</data>
-      <data key="d14">0.27091080595492567</data>
-      <data key="d15">0.23304095433783384</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">0</data>
+      <data key="d296">0.687278642554615</data>
+      <data key="d293">0.4741482454046748</data>
+      <data key="d295">0.44435842937597175</data>
+      <data key="d44">0.26099973997397075</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">1</data>
     </node>
     <node id="LocationTracker">
-      <data key="d0">9</data>
-      <data key="d1">68</data>
-      <data key="d252">0.5824368584208378</data>
-      <data key="d253">0.2912184292104189</data>
-      <data key="d254">0.2912184292104189</data>
-      <data key="d255">0.2912184292104189</data>
-      <data key="d244">0.26195287271094386</data>
-      <data key="d51">0.26195287271094386</data>
-      <data key="d256">0.21841382190781417</data>
-      <data key="d5">0</data>
-      <data key="d6">1</data>
-      <data key="d7">8</data>
+      <data key="d0">8</data>
+      <data key="d1">66</data>
+      <data key="d297">0.5341321913247234</data>
+      <data key="d298">0.4005991434935426</data>
+      <data key="d290">0.3617836449606791</data>
+      <data key="d299">0.2670660956623617</data>
+      <data key="d300">0.2670660956623617</data>
+      <data key="d291">0.24118909664045274</data>
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+      <data key="d5">13</data>
     </node>
     <node id="NSObject">
-      <data key="d5">1</data>
-      <data key="d6">0</data>
-      <data key="d7">8</data>
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">13</data>
     </node>
-    <edge source="ApolloImagesTests" target="XCTestCase" />
-    <edge source="PlanImageInjected" target="AnyObject" />
-    <edge source="PlanImageProtocol" target="AnyObject" />
-    <edge source="PlanImageManager" target="PlanImageProtocol" />
-    <edge source="ApolloAudioTests" target="XCTestCase" />
-    <edge source="SoundsEnum" target="String" />
-    <edge source="AudioPlayerInjected" target="AnyObject" />
-    <edge source="AudioPlayerProtocol" target="AnyObject" />
-    <edge source="AudioPlayer" target="AudioPlayerProtocol" />
-    <edge source="ApolloThemeTests" target="XCTestCase" />
-    <edge source="ThemeManager" target="ObservableObject" />
-    <edge source="ApolloDataTests" target="XCTestCase" />
+    <edge source="FoundationLocalizationTests" target="XCTestCase" />
+    <edge source="Language" target="String" />
+    <edge source="FoundationDataTests" target="XCTestCase" />
+    <edge source="IntervalType" target="String" />
     <edge source="Day" target="Codable" />
     <edge source="Day" target="CodingKey" />
     <edge source="CodingKeys" target="CodingKey" />
     <edge source="Interval" target="Codable" />
     <edge source="Interval" target="CodingKey" />
     <edge source="PlansRepositoryProtocol" target="AnyObject" />
+    <edge source="Week" target="Codable" />
+    <edge source="Week" target="CodingKey" />
     <edge source="Plan" target="Codable" />
     <edge source="Plan" target="CodingKey" />
     <edge source="PlansLoadingInjected" target="AnyObject" />
     <edge source="PlansFileLoader" target="PlansLoadingProtocol" />
     <edge source="PlansLoadingProtocol" target="AnyObject" />
     <edge source="PlansRepository" target="PlansRepositoryProtocol" />
-    <edge source="ApolloWeightTests" target="XCTestCase" />
-    <edge source="WeightRepositoryProtocol" target="AnyObject" />
-    <edge source="WeightRepositoryInjected" target="AnyObject" />
-    <edge source="WeightRepository" target="WeightRepositoryProtocol" />
-    <edge source="ApolloUITests" target="XCTestCase" />
+    <edge source="FoundationStorageTests" target="XCTestCase" />
+    <edge source="StorageUserDefaults" target="StorageProtocol" />
+    <edge source="MobileMenuView" target="View" />
     <edge source="ApolloRootView" target="View" />
-    <edge source="SettingsView" target="View" />
-    <edge source="AppearanceToggle" target="View" />
-    <edge source="WeightViewModel" target="ObservableObject" />
-    <edge source="ResetDataView" target="View" />
-    <edge source="WeightView" target="View" />
+    <edge source="ApolloApp" target="App" />
+    <edge source="UtilityExtensionsTests" target="XCTestCase" />
+    <edge source="FoundationImagesTests" target="XCTestCase" />
+    <edge source="ImagesProtocol" target="AnyObject" />
+    <edge source="ImagesInjected" target="AnyObject" />
+    <edge source="ImagesManager" target="ImagesProtocol" />
+    <edge source="FoundationAudioTests" target="XCTestCase" />
+    <edge source="SoundsEnum" target="String" />
+    <edge source="AudioPlayerInjected" target="AnyObject" />
+    <edge source="AudioPlayerProtocol" target="AnyObject" />
+    <edge source="AudioPlayer" target="AudioPlayerProtocol" />
+    <edge source="FeaturePlansTests" target="XCTestCase" />
     <edge source="PlansView" target="View" />
     <edge source="PlansViewModel" target="ObservableObject" />
+    <edge source="ActivityViewModel" target="ObservableObject" />
+    <edge source="FractionProgressView" target="View" />
+    <edge source="InfoView" target="View" />
     <edge source="CircularProgressView" target="View" />
     <edge source="TimerView" target="View" />
     <edge source="CircleButton" target="View" />
-    <edge source="TimerViewModel" target="ObservableObject" />
     <edge source="TimerText" target="View" />
-    <edge source="MobileMenuView" target="View" />
+    <edge source="ActivityView" target="View" />
+    <edge source="GifView" target="UIViewRepresentable" />
+    <edge source="FinishedDayView" target="View" />
     <edge source="DaysView" target="View" />
-    <edge source="ApolloLoggerTests" target="XCTestCase" />
+    <edge source="DayView" target="View" />
+    <edge source="FeatureSettingsTests" target="XCTestCase" />
+    <edge source="WeightRepositoryProtocol" target="AnyObject" />
+    <edge source="SettingsView" target="View" />
+    <edge source="WeightRepositoryInjected" target="AnyObject" />
+    <edge source="LocalizationViewModel" target="ObservableObject" />
+    <edge source="WeightViewModel" target="ObservableObject" />
+    <edge source="ThemeViewModel" target="ObservableObject" />
+    <edge source="WeightRepository" target="WeightRepositoryProtocol" />
+    <edge source="AppearanceToggle" target="View" />
+    <edge source="ResetDataView" target="View" />
+    <edge source="WeightView" target="View" />
+    <edge source="FoundationLoggerTests" target="XCTestCase" />
     <edge source="ErrorProtocol" target="LocalizedError" />
     <edge source="LoggerProtocol" target="AnyObject" />
     <edge source="LocalizationError" target="Error" />
@@ -1484,11 +1792,7 @@
     <edge source="ErrorLine" target="CustomStringConvertible" />
     <edge source="Logger" target="LoggerProtocol" />
     <edge source="AudioError" target="Error" />
-    <edge source="ApolloApp" target="App" />
-    <edge source="ApolloLocalizationTests" target="XCTestCase" />
-    <edge source="Language" target="String" />
-    <edge source="LocalizationManager" target="ObservableObject" />
-    <edge source="ApolloLocationTests" target="XCTestCase" />
+    <edge source="FoundationLocationTests" target="XCTestCase" />
     <edge source="LocationTrackerProtocol" target="AnyObject" />
     <edge source="LocationTrackerInjected" target="AnyObject" />
     <edge source="LocationTracker" target="NSObject" />
