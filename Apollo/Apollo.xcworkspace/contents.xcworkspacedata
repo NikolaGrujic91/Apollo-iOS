@@ -20,9 +20,6 @@
       location = "group:ApolloAudio">
    </FileRef>
    <FileRef
-      location = "group:ApolloTheme">
-   </FileRef>
-   <FileRef
       location = "group:FeatureSettings">
    </FileRef>
    <FileRef

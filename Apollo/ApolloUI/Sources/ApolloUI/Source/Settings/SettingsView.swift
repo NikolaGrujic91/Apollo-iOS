@@ -7,7 +7,6 @@
 
 import FeatureSettings
 import FoundationLocalization
-import ApolloTheme
 import ApolloWeight
 import SwiftUI
 

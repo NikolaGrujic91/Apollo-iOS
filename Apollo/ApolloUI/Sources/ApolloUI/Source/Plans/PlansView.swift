@@ -6,7 +6,7 @@
 //
 
 import ApolloData
-import ApolloTheme
+import FeatureSettings
 import SwiftUI
 
 struct PlansView: View {

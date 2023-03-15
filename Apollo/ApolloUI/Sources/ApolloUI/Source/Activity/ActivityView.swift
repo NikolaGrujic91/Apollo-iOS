@@ -7,7 +7,6 @@
 
 import ApolloData
 import FeatureSettings
-import ApolloTheme
 import SwiftUI
 
 struct ActivityView: View {

@@ -6,7 +6,6 @@
 //
 
 import FeatureSettings
-import ApolloTheme
 import SwiftUI
 
 struct TimerView: View {

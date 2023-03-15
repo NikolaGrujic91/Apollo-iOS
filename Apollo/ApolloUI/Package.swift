@@ -20,7 +20,6 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(name: "ApolloData", path: "ApolloData"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
-        .package(name: "ApolloTheme", path: "ApolloTheme"),
         .package(name: "FeatureSettings", path: "FeatureSettings"),
         .package(name: "FoundationLocalization", path: "FoundationLocalization"),
         .package(name: "FoundationImages", path: "FoundationImages"),
@@ -39,7 +38,6 @@ let package = Package(
             dependencies: [
                 .product(name: "ApolloData", package: "ApolloData"),
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
-                .product(name: "ApolloTheme", package: "ApolloTheme"),
                 .product(name: "FeatureSettings", package: "FeatureSettings"),
                 .product(name: "FoundationLocalization", package: "FoundationLocalization"),
                 .product(name: "FoundationImages", package: "FoundationImages"),
