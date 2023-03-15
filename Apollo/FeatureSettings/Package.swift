@@ -19,6 +19,7 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(name: "FoundationLocalization", path: "FoundationLocalization"),
         .package(name: "FoundationStorage", path: "FoundationStorage"),
+        .package(name: "UtilityExtensions", path: "UtilityExtensions"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.2.2"),
     ],
     targets: [
@@ -29,6 +30,7 @@ let package = Package(
             dependencies: [
                 .product(name: "FoundationLocalization", package: "FoundationLocalization"),
                 .product(name: "FoundationStorage", package: "FoundationStorage"),
+                .product(name: "UtilityExtensions", package: "UtilityExtensions"),
             ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
