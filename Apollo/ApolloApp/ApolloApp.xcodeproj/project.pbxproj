@@ -13,6 +13,8 @@
 		8EAAF19229A26CCB0032AFA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF19129A26CCB0032AFA8 /* Preview Assets.xcassets */; };
 		8EAAF19A29A26D650032AFA8 /* ApolloUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8EAAF19929A26D650032AFA8 /* ApolloUI */; };
 		8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAAF19B29A273720032AFA8 /* HealthKit.framework */; };
+		8EE0B4FD29C20B1D00DD7726 /* ApolloRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FC29C20B1C00DD7726 /* ApolloRootView.swift */; };
+		8EE0B4FF29C20B2000DD7726 /* MobileMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FE29C20B2000DD7726 /* MobileMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8EAAF19129A26CCB0032AFA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EAAF19B29A273720032AFA8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8EAAF19D29A273C50032AFA8 /* ApolloApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApolloApp.entitlements; sourceTree = "<group>"; };
+		8EE0B4FC29C20B1C00DD7726 /* ApolloRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloRootView.swift; sourceTree = "<group>"; };
+		8EE0B4FE29C20B2000DD7726 /* MobileMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8E67D23C29ACF10B00696F05 /* Info.plist */,
 				8EAAF19D29A273C50032AFA8 /* ApolloApp.entitlements */,
 				8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */,
+				8EE0B4FC29C20B1C00DD7726 /* ApolloRootView.swift */,
+				8EE0B4FE29C20B2000DD7726 /* MobileMenuView.swift */,
 				8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */,
 				8EAAF19029A26CCB0032AFA8 /* Preview Content */,
 			);
@@ -163,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE0B4FF29C20B2000DD7726 /* MobileMenuView.swift in Sources */,
 				8EAAF18B29A26CC90032AFA8 /* ApolloApp.swift in Sources */,
+				8EE0B4FD29C20B1D00DD7726 /* ApolloRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

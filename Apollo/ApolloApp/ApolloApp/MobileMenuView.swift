@@ -6,6 +6,7 @@
 //
 
 import FeatureSettings
+import ApolloUI
 import SwiftUI
 
 struct MobileMenuView: View {

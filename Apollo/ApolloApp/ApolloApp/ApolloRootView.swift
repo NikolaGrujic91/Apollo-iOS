@@ -6,18 +6,17 @@
 //
 
 import FeatureSettings
+import ApolloUI
 import SwiftUI
 
-public struct ApolloRootView: View {
+struct ApolloRootView: View {
     @StateObject private var theme = ThemeViewModel()
     @StateObject private var localization = LocalizationViewModel()
     @StateObject private var plansViewModel = PlansViewModel()
     @StateObject private var activityViewModel = ActivityViewModel()
     @StateObject private var weightViewModel = WeightViewModel()
 
-    public init() {}
-
-    public var body: some View {
+    var body: some View {
         MobileMenuView()
             .environmentObject(theme)
             .environmentObject(localization)

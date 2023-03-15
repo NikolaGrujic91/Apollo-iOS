@@ -8,10 +8,12 @@
 import FoundationData
 import SwiftUI
 
-struct PlansView: View {
+public struct PlansView: View {
     @EnvironmentObject private var viewModel: PlansViewModel
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         NavigationStack {
             List {
                 ForEach(viewModel.plans) { plan in

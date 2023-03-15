@@ -9,8 +9,10 @@ import FoundationData
 import FoundationImages
 import SwiftUI
 
-final class PlansViewModel: ObservableObject, PlansRepositoryInjected, ImagesInjected {
+public final class PlansViewModel: ObservableObject, PlansRepositoryInjected, ImagesInjected {
     @Published private(set) var plans: [Plan] = []
+
+    public init() {}
 
     func update() {
         plans = plansRepository.plans
