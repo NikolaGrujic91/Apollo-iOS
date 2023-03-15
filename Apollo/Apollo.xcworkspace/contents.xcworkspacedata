@@ -26,7 +26,7 @@
       location = "group:ApolloImages">
    </FileRef>
    <FileRef
-      location = "group:ApolloLocalization">
+      location = "group:FoundationLocalization">
    </FileRef>
    <FileRef
       location = "group:FoundationStorage">

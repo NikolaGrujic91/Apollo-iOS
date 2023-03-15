@@ -6,7 +6,7 @@
 //
 
 import ApolloData
-import ApolloLocalization
+import FoundationLocalization
 import ApolloTheme
 import SwiftUI
 

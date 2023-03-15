@@ -1,7 +1,7 @@
-@testable import ApolloLocalization
+@testable import FoundationLocalization
 import XCTest
 
-final class ApolloLocalizationTests: XCTestCase {
+final class FoundationLocalizationTests: XCTestCase {
     func testSettingsLanguage() {
         let localizationManager = LocalizationManager()
 
