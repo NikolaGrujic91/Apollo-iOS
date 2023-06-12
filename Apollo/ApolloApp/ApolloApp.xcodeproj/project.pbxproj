@@ -409,7 +409,7 @@
 			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.2;
+				minimumVersion = 0.2.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
