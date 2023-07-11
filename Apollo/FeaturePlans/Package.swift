@@ -27,7 +27,7 @@ let package = Package(
         .package(name: "FoundationImages", path: "FoundationImages"),
         .package(name: "UtilityExtensions", path: "UtilityExtensions"),
         .package(url: "https://github.com/Flipboard/FLAnimatedImage.git", from: "1.0.17"),
-        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.2.6"),
+        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.52.4"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
