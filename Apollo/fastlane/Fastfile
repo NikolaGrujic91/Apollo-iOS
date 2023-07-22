@@ -13,11 +13,164 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
+# Fastlane Constants
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  # Load Environment Variables
+  before_all do
+     fastlane_require "dotenv"
+     Dotenv.load ".env.ios"
+  end
+
+  # Build
+  desc "Build the project with Debug configuration"
+  desc "The lane to run by developers"
+  desc "#### Example:"
+  desc "```\nfastlane ios build_debug\n```"
+  lane :build_debug do
+    increment_build_number(xcodeproj: "ApolloApp/ApolloApp.xcodeproj")
+    build_app(workspace: ENV["WORKSPACE"],
+              configuration: "Debug",
+              scheme: ENV["SCHEME_APP"],
+              silent: true,
+              skip_package_ipa: true)
+  end
+
+  desc "Build the project with Release configuration"
+  desc "The lane to run by developers"
+  desc "#### Example:"
+  desc "```\nfastlane ios build_release\n```"
+  lane :build_release do
+    increment_build_number(xcodeproj: "ApolloApp/ApolloApp.xcodeproj")
+    build_app(workspace: ENV["WORKSPACE"],
+              configuration: "Release",
+              scheme: ENV["SCHEME_APP"],
+              silent: true,
+              skip_package_ipa: true)
+  end
+
+  # Screenshots
+  desc "Create screenshots"
+  desc "The lane to run by developers"
+  desc "#### Example:"
+  desc "```\nfastlane ios screenshots\n```"
+  lane :screenshots do
+     capture_ios_screenshots
+  end
+
+  # Test
+  desc "Run unit tests with code coverage"
+  desc "The lane to run by developers"
+  desc "#### Example:"
+  desc "```\nfastlane ios tests\n```"
+  lane :tests do
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FeaturePlans",
+              scheme: "FeaturePlans")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FeaturePlans",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FeaturePlans")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FeatureSettings",
+              scheme: "FeatureSettings")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FeatureSettings",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FeatureSettings")
+
+     run_tests(workspace: ENV["WORKSPACE"],
+               devices: [ENV["DEVICE_IPHONE"]],
+               derived_data_path: ENV["DERIVED_DATA_PATH"],
+               code_coverage: ENV["CODE_COVERAGE"],
+               output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationData",
+               scheme: "FoundationData")
+
+     xcov(workspace: ENV["WORKSPACE"],
+          scheme: "FoundationData",
+          derived_data_path: ENV["DERIVED_DATA_PATH"],
+          output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationData")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationLocalization",
+              scheme: "FoundationLocalization")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FoundationLocalization",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationLocalization")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationLocation",
+              scheme: "FoundationLocation")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FoundationLocation",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationLocation")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationImages",
+              scheme: "FoundationImages")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FoundationImages",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationImages")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationStorage",
+              scheme: "FoundationStorage")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FoundationStorage",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationStorage")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationLogger",
+              scheme: "FoundationLogger")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "FoundationLogger",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationLogger")
+
+    run_tests(workspace: ENV["WORKSPACE"],
+              devices: [ENV["DEVICE_IPHONE"]],
+              derived_data_path: ENV["DERIVED_DATA_PATH"],
+              code_coverage: ENV["CODE_COVERAGE"],
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}UtilityExtensions",
+              scheme: "UtilityExtensions")
+
+    xcov(workspace: ENV["WORKSPACE"],
+         scheme: "UtilityExtensions",
+         derived_data_path: ENV["DERIVED_DATA_PATH"],
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}UtilityExtensions")
   end
 end
