@@ -48,11 +48,14 @@ Available on iOS.
 
 ## Usage
 
-![Plans](./Assets/ProductDetailsChart.mov.gif)
-
-![Timer](./Assets/Search.mov.gif)
-
-![Settings](./Assets/Settings.mov.gif)
+<p align="middle">
+  <img src="./Screenshots/en-US/iPhone%2014%20Pro-1.%20Plans.png" height="500">
+  <img src="./Screenshots/en-US/iPhone%2014%20Pro-2.%20Weeks.png" height="500">
+  <img src="./Screenshots/en-US/iPhone%2014%20Pro-3.%20Days.png" height="500">
+  <img src="./Screenshots/en-US/iPhone%2014%20Pro-4.%20Timer.png" height="500">
+  <img src="./Screenshots/en-US/iPhone%2014%20Pro-5.%20Timer.png" height="500">
+  <img src="./Screenshots/en-US/iPhone%2014%20Pro-6.%20Settings.png" height="500">
+</p>
 
 ## Requirements
 
@@ -99,6 +102,40 @@ graph TD
     FoundationLogger --> CocoaLumberjack[CocoaLumberjack]
 ```
 
+## Fastlane
+
+```shell
+brew install fastlane
+```
+
+## Available Actions
+
+Navigate to *fastlane* folder and run actions from terminal.
+
+### Build debug
+
+```shell
+fastlane ios build_debug
+```
+
+### Build release
+
+```shell
+fastlane ios build_release
+```
+
+### Create screenshots
+
+```shell
+fastlane ios screenshots
+```
+
+### Tests with code coverage
+
+```shell
+fastlane ios tests
+```
+
 ## Dependency graph
 
 Detailed dependency graph can be found at:
@@ -121,60 +158,6 @@ Generate new dependency graph:
 ./Scripts/emerge/run_emerge.sh
 ```
 
-## Tests
+## License
 
-Install xcpretty:
-
-```shell
-./Scripts/tests/install_xcpretty.sh
-```
-
-Run unit tests:
-
-```shell
-./Scripts/tests/run_unit_tests.sh
-```
-
-## Static analysis
-
-To find duplicated code run [jscpd](https://github.com/kucherenko/jscpd)
-
-Install jscpd:
-
-```shell
-./Scripts/jscpd/install_jscpd.sh
-```
-
-Run jscpd:
-
-```shell
-./Scripts/jscpd/run_jscpd.sh
-```
-
-To analyze code complexity run [lizard](https://github.com/terryyin/lizard)
-
-Install lizard:
-
-```shell
-./Scripts/lizard/install_lizard.sh
-```
-
-Run lizard:
-
-```shell
-./Scripts/lizard/run_lizard.sh
-```
-
-To format code  run [swiftformat](https://github.com/nicklockwood/SwiftFormat)
-
-Install swiftformat:
-
-```shell
-./Scripts/swiftformat/install_swiftformat.sh
-```
-
-Run swiftformat:
-
-```shell
-./Scripts/swiftformat/run_swiftformat.sh
-```
+This project is licensed under the GNU GPL v3 License - see the [LICENSE.md](https://github.com/NikolaGrujic91/Apollo-iOS/blob/master/LICENSE.md) file for details.
