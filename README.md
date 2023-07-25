@@ -19,9 +19,9 @@
 * [Usage](#usage)
 * [Requirements](#requirements)
 * [Architecture](#architecture)
+* [Fastlane](#fastlane)
 * [Dependency graph](#dependency-graph)
-* [Tests](#tests)
-* [Static analysis](#static-analysis)
+* [License](#license)
 
 ## General info
 
@@ -39,7 +39,7 @@ Available on iOS.
   * Weight Loss: Level 2
   * Weight Loss: Level 3
 * Distance tracking
-* Calories spent
+* Calories burned
 * Integrated with Apple Health for reading weight
 * Works completely offline
 * Dark theme
