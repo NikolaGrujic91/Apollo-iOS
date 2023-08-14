@@ -6,7 +6,6 @@
 //
 
 import AVFoundation
-import Foundation
 import FoundationLogger
 
 final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {

@@ -5,7 +5,6 @@
 //  Created by Nikola Grujic on 08/03/2023.
 //
 
-import Foundation
 import SwiftUI
 
 public enum IntervalType: String, CaseIterable, Codable {
