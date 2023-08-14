@@ -59,6 +59,25 @@ platform :ios do
      capture_ios_screenshots
   end
 
+    # Static analysis
+    desc "Run SwiftLint analyze."
+    desc "The lane to run by developers"
+    desc "#### Prerequisites:"
+    desc "Copy compile log from:"
+    desc "~/Library/Developer/Xcode/DerivedData/Apollo-xxxxxx/Logs/Build/XXXXXX.xcactivitylog"
+    desc "on the same level as `fastlane` folder, and extract archive. Use extracted file as input for `compiler_log_path`"
+    desc "#### Example:"
+    desc "```\nfastlane ios swiftlint_analyze\n```"
+    lane :swiftlint_analyze do
+         swiftlint(
+            mode: :analyze,
+            output_file: ENV["SWIFTLINT_OUTPUT_FILE"],
+            compiler_log_path: "D1718F8F-C62A-45FB-8800-E25100CDEE40",
+            raise_if_swiftlint_error: true,      # Allow fastlane to raise an error if swiftlint fails
+            ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+         )
+    end
+
   # Test
   desc "Run unit tests with code coverage"
   desc "The lane to run by developers"
