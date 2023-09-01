@@ -35,7 +35,7 @@ struct AppearanceToggle: View {
                     .clipShape(Circle())
                     .foregroundColor(.white)
             }
-            .buttonStyle(BorderlessButtonStyle())
+            .buttonStyle(.borderless)
         }
         .padding(25)
     }
