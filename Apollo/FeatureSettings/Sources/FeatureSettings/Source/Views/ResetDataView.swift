@@ -9,7 +9,8 @@ import FoundationData
 import SwiftUI
 
 struct ResetDataView: View, PlansRepositoryInjected {
-    @EnvironmentObject private var localization: LocalizationViewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
     @State private var showingAlert = false
 
     var body: some View {
@@ -30,6 +31,6 @@ struct ResetDataView: View, PlansRepositoryInjected {
 struct ResetDataView_Previews: PreviewProvider {
     static var previews: some View {
         ResetDataView()
-            .environmentObject(LocalizationViewModel())
+            .environment(LocalizationViewModel())
     }
 }

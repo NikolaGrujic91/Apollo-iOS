@@ -10,7 +10,8 @@ import FeatureSettings
 import SwiftUI
 
 struct MobileMenuView: View {
-    @EnvironmentObject private var localization: LocalizationViewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
     @State private var selectedTab: Int = 0
     private var tabsCount: Int = 3
     private let minDragTranslationForSwipe: CGFloat = 50
@@ -58,6 +59,6 @@ struct MobileMenuView_Previews: PreviewProvider {
     static var previews: some View {
         MobileMenuView()
             .environment(ThemeViewModel())
-            .environmentObject(LocalizationViewModel())
+            .environment(LocalizationViewModel())
     }
 }
