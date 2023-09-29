@@ -14,7 +14,7 @@ struct ApolloRootView: View {
     @StateObject private var localization = LocalizationViewModel()
     @StateObject private var plansViewModel = PlansViewModel()
     @StateObject private var activityViewModel = ActivityViewModel()
-    @StateObject private var weightViewModel = WeightViewModel()
+    @State private var weightViewModel = WeightViewModel()
 
     var body: some View {
         MobileMenuView()
@@ -22,7 +22,7 @@ struct ApolloRootView: View {
             .environmentObject(localization)
             .environmentObject(plansViewModel)
             .environmentObject(activityViewModel)
-            .environmentObject(weightViewModel)
+            .environment(weightViewModel)
             .onAppear {
                 theme.load()
                 localization.load()
@@ -38,6 +38,6 @@ struct RootView_Previews: PreviewProvider {
             .environmentObject(ThemeViewModel())
             .environmentObject(PlansViewModel())
             .environmentObject(ActivityViewModel())
-            .environmentObject(WeightViewModel())
+            .environment(WeightViewModel())
     }
 }

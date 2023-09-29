@@ -7,8 +7,9 @@
 
 import Foundation
 
-public final class WeightViewModel: ObservableObject, WeightRepositoryInjected {
-    @Published var bodyMass: String = "0.0"
+@Observable
+public final class WeightViewModel: WeightRepositoryInjected {
+    var bodyMass: String = "0.0"
 
     public init() {}
 

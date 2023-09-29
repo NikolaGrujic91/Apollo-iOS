@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct WeightView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss)
+    var dismiss
     @EnvironmentObject private var localization: LocalizationViewModel
-    @EnvironmentObject private var viewModel: WeightViewModel
+    @Environment(WeightViewModel.self)
+    private var viewModel
     @FocusState private var isFocused: Bool
 
     var body: some View {
         VStack(spacing: 10) {
             HStack {
                 Text("kg")
-                TextField("", text: $viewModel.bodyMass)
+                TextField("", text: Bindable(viewModel).bodyMass)
                     .keyboardType(.decimalPad)
                     .multilineTextAlignment(.trailing)
                     .disableAutocorrection(true)
@@ -55,6 +57,6 @@ struct WeightView: View {
 struct WeightViewView_Previews: PreviewProvider {
     static var previews: some View {
         WeightView()
-            .environmentObject(WeightViewModel())
+            .environment(WeightViewModel())
     }
 }

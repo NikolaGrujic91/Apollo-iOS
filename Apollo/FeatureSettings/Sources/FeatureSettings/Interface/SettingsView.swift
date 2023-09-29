@@ -11,7 +11,8 @@ import SwiftUI
 public struct SettingsView: View {
     @EnvironmentObject private var theme: ThemeViewModel
     @EnvironmentObject private var localization: LocalizationViewModel
-    @EnvironmentObject private var weightViewModel: WeightViewModel
+    @Environment(WeightViewModel.self)
+    private var weightViewModel
     @State private var darkMode = false
     @State private var selectedLanguage = Language.netherlands
 
@@ -92,6 +93,6 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView()
             .environmentObject(ThemeViewModel())
             .environmentObject(LocalizationViewModel())
-            .environmentObject(WeightViewModel())
+            .environment(WeightViewModel())
     }
 }
