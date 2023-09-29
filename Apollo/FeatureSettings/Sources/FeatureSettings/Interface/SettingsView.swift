@@ -48,8 +48,8 @@ public struct SettingsView: View {
                     }
                     .labelsHidden()
                     .pickerStyle(.inline)
-                    .onChange(of: selectedLanguage) { language in
-                        localization.save(language)
+                    .onChange(of: selectedLanguage) { _, newLanguage in
+                        localization.save(newLanguage)
                     }
                 }
                 Section(header: Text("weight".localized(localization.language))) {
