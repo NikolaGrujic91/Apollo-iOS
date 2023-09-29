@@ -10,7 +10,8 @@ import FoundationImages
 import SwiftUI
 
 struct GifView: UIViewRepresentable {
-    @EnvironmentObject private var viewModel: PlansViewModel
+    @Environment(PlansViewModel.self)
+    private var viewModel
     let animatedImageView = FLAnimatedImageView()
     var gif: Gifs
 
@@ -38,6 +39,6 @@ struct GifView_Previews: PreviewProvider {
     static var previews: some View {
         GifView(gif: .success)
             .frame(width: 200, height: 200)
-            .environmentObject(PlansViewModel())
+            .environment(PlansViewModel())
     }
 }

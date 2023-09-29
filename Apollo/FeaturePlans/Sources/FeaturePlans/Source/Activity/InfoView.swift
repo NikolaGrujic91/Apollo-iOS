@@ -9,7 +9,9 @@ import FoundationImages
 import SwiftUI
 
 struct InfoView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) 
+    var dismiss
+
     var calories: Int
     var distance: String
     var pace: String
@@ -65,6 +67,6 @@ struct InfoView_Previews: PreviewProvider {
             distance: "5.5",
             pace: "0:00"
         )
-        .environmentObject(PlansViewModel())
+        .environment(PlansViewModel())
     }
 }

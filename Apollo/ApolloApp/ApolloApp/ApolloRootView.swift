@@ -12,7 +12,7 @@ import SwiftUI
 struct ApolloRootView: View {
     @State private var theme = ThemeViewModel()
     @State private var localization = LocalizationViewModel()
-    @StateObject private var plansViewModel = PlansViewModel()
+    @State private var plansViewModel = PlansViewModel()
     @StateObject private var activityViewModel = ActivityViewModel()
     @State private var weightViewModel = WeightViewModel()
 
@@ -20,7 +20,7 @@ struct ApolloRootView: View {
         MobileMenuView()
             .environment(theme)
             .environment(localization)
-            .environmentObject(plansViewModel)
+            .environment(plansViewModel)
             .environmentObject(activityViewModel)
             .environment(weightViewModel)
             .onAppear {
@@ -36,7 +36,7 @@ struct RootView_Previews: PreviewProvider {
         ApolloRootView()
             .environment(LocalizationViewModel())
             .environment(ThemeViewModel())
-            .environmentObject(PlansViewModel())
+            .environment(PlansViewModel())
             .environmentObject(ActivityViewModel())
             .environment(WeightViewModel())
     }

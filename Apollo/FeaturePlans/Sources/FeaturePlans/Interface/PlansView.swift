@@ -9,7 +9,8 @@ import FoundationData
 import SwiftUI
 
 public struct PlansView: View {
-    @EnvironmentObject private var viewModel: PlansViewModel
+    @Environment(PlansViewModel.self)
+    private var viewModel
 
     public init() {}
 
@@ -44,7 +45,7 @@ public struct PlansView: View {
 struct PlansView_Previews: PreviewProvider {
     static var previews: some View {
         PlansView()
-            .environmentObject(PlansViewModel())
+            .environment(PlansViewModel())
             .environmentObject(ActivityViewModel())
     }
 }

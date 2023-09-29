@@ -9,7 +9,8 @@ import FoundationData
 import SwiftUI
 
 struct DaysView: View {
-    @EnvironmentObject private var viewModel: PlansViewModel
+    @Environment(PlansViewModel.self)
+    private var viewModel
     @State private var plan = Plan()
     var planID: UUID
 
@@ -61,6 +62,6 @@ struct DaysView: View {
 struct DaysView_Previews: PreviewProvider {
     static var previews: some View {
         DaysView(planID: UUID())
-            .environmentObject(PlansViewModel())
+            .environment(PlansViewModel())
     }
 }
