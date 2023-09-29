@@ -22,8 +22,6 @@ let package = Package(
         .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "FoundationLocation", path: "FoundationLocation"),
         .package(name: "FoundationAudio", path: "FoundationAudio"),
-        .package(name: "FoundationLogger", path: "FoundationLogger"),
-        .package(name: "FoundationLocalization", path: "FoundationLocalization"),
         .package(name: "FoundationImages", path: "FoundationImages"),
         .package(name: "UtilityExtensions", path: "UtilityExtensions"),
         .package(url: "https://github.com/Flipboard/FLAnimatedImage.git", from: "1.0.17"),
