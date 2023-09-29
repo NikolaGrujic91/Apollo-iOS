@@ -9,7 +9,8 @@ import FoundationLocalization
 import SwiftUI
 
 public struct SettingsView: View {
-    @EnvironmentObject private var theme: ThemeViewModel
+    @Environment(ThemeViewModel.self)
+    private var theme
     @EnvironmentObject private var localization: LocalizationViewModel
     @Environment(WeightViewModel.self)
     private var weightViewModel
@@ -91,7 +92,7 @@ public struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-            .environmentObject(ThemeViewModel())
+            .environment(ThemeViewModel())
             .environmentObject(LocalizationViewModel())
             .environment(WeightViewModel())
     }

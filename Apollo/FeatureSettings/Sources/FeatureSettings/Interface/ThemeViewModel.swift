@@ -9,10 +9,11 @@ import FoundationStorage
 import SwiftUI
 import UtilityExtensions
 
-public final class ThemeViewModel: ObservableObject, StorageInjected {
+@Observable
+public final class ThemeViewModel: StorageInjected {
     // MARK: - Properties
 
-    @Published public var colorScheme: ColorScheme?
+    public var colorScheme: ColorScheme?
     private let key = "colorScheme"
 
     public init() {}

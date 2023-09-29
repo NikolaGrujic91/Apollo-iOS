@@ -57,7 +57,7 @@ struct MobileMenuView: View {
 struct MobileMenuView_Previews: PreviewProvider {
     static var previews: some View {
         MobileMenuView()
-            .environmentObject(ThemeViewModel())
+            .environment(ThemeViewModel())
             .environmentObject(LocalizationViewModel())
     }
 }
