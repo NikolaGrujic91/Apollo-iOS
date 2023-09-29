@@ -11,7 +11,7 @@ struct WeightView: View {
     @Environment(\.dismiss)
     var dismiss
     @Environment(LocalizationViewModel.self)
-    private var localization 
+    private var localization
     @Environment(WeightViewModel.self)
     private var viewModel
     @FocusState private var isFocused: Bool

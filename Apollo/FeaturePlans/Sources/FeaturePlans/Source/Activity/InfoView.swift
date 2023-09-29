@@ -9,7 +9,7 @@ import FoundationImages
 import SwiftUI
 
 struct InfoView: View {
-    @Environment(\.dismiss) 
+    @Environment(\.dismiss)
     var dismiss
 
     var calories: Int

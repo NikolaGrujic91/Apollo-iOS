@@ -26,7 +26,7 @@ struct GifView: UIViewRepresentable {
 
         NSLayoutConstraint.activate([
             animatedImageView.heightAnchor.constraint(equalTo: view.heightAnchor),
-            animatedImageView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            animatedImageView.widthAnchor.constraint(equalTo: view.widthAnchor)
         ])
 
         return view

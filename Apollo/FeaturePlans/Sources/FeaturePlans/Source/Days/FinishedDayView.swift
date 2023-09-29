@@ -10,7 +10,7 @@ import SwiftUI
 
 struct FinishedDayView: View {
     @Environment(PlansViewModel.self)
-    private var viewModel 
+    private var viewModel
     @State private var day = Day()
     let planId: UUID
     let weekId: UUID
