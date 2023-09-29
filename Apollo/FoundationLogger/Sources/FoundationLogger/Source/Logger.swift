@@ -22,7 +22,7 @@ final class Logger: LoggerProtocol {
     // MARK: - LoggerProtocol
 
     func handleError(_ error: Error) {
-        DDLogError(error.localizedDescription)
+        DDLogError(DDLogMessageFormat(stringLiteral: error.localizedDescription))
     }
 
     func handleError(_ error: ErrorProtocol) {
@@ -42,14 +42,14 @@ final class Logger: LoggerProtocol {
             message.append("\tRecovery Suggestion: \(recoverySuggestion)")
         }
 
-        DDLogError(message)
+        DDLogError(DDLogMessageFormat(stringLiteral: message))
     }
 
     func logInfo(_ message: String) {
-        DDLogInfo(message)
+        DDLogInfo(DDLogMessageFormat(stringLiteral: message))
     }
 
     func logWarn(_ message: String) {
-        DDLogWarn(message)
+        DDLogWarn(DDLogMessageFormat(stringLiteral: message))
     }
 }
