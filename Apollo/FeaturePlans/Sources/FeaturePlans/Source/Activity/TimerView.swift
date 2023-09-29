@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TimerView: View {
-    @EnvironmentObject private var viewModel: ActivityViewModel
+    @Environment(ActivityViewModel.self)
+    private var viewModel
 
     var body: some View {
         VStack {
@@ -62,6 +63,6 @@ struct TimerView: View {
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView()
-            .environmentObject(ActivityViewModel())
+            .environment(ActivityViewModel())
     }
 }

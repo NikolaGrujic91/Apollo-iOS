@@ -9,7 +9,9 @@ import FoundationData
 import SwiftUI
 
 struct ActivityView: View {
-    @EnvironmentObject private var viewModel: ActivityViewModel
+    @Environment(ActivityViewModel.self)
+    private var viewModel
+
     var day: Day
 
     var body: some View {
@@ -41,7 +43,7 @@ struct ActivityView: View {
 struct ActivityView_Previews: PreviewProvider {
     static var previews: some View {
         ActivityView(day: previewDay())
-            .environmentObject(ActivityViewModel())
+            .environment(ActivityViewModel())
     }
 
     static func previewDay() -> Day {

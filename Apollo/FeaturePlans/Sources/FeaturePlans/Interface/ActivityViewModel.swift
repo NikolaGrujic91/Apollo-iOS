@@ -17,13 +17,15 @@ enum TimerButton {
     case resume
 }
 
-public final class ActivityViewModel: ObservableObject, PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
-    @Published private(set) var timeRemaining = 0
-    @Published private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @Published private(set) var activeButton: TimerButton = .start
-    @Published private(set) var distanceFormatted: String = "0.00"
-    @Published private(set) var paceFormatted: String = "00:00"
-    @Published var isFinished = false
+@Observable
+public final class ActivityViewModel: PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+    private(set) var timeRemaining = 0
+    private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    private(set) var activeButton: TimerButton = .start
+    private(set) var distanceFormatted: String = "0.00"
+    private(set) var paceFormatted: String = "00:00"
+    var isFinished = false
+
     private var timeElapsed = 0
     private var totalTime = 0
     private var totalTimeRemaining = 0

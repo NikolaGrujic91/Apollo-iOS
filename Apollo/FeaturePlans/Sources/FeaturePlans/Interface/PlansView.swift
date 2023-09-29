@@ -46,6 +46,6 @@ struct PlansView_Previews: PreviewProvider {
     static var previews: some View {
         PlansView()
             .environment(PlansViewModel())
-            .environmentObject(ActivityViewModel())
+            .environment(ActivityViewModel())
     }
 }
