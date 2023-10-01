@@ -5,7 +5,8 @@
 //  Created by Nikola Grujic on 10/02/2023.
 //
 
-import AVFoundation
+import AVFAudio
+import Foundation
 import FoundationLogger
 
 final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {

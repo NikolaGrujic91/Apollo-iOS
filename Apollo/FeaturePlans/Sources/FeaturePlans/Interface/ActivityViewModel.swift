@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 18/02/2023.
 //
 
+import Observation
 import FeatureSettings
 import Foundation
 import FoundationAudio

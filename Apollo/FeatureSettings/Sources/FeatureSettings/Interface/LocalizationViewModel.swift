@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
-import Foundation
+import Observation
 import FoundationLocalization
 import FoundationStorage
 

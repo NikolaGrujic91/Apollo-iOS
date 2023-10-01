@@ -5,9 +5,11 @@
 //  Created by Nikola Grujic on 21/02/2023.
 //
 
+import Observation
+import Foundation
 import FoundationData
 import FoundationImages
-import SwiftUI
+import UIKit
 
 @Observable
 public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {

@@ -5,7 +5,8 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import SwiftUI
+import UIKit
+import Foundation
 
 final class ImagesManager: ImagesProtocol {
     // MARK: - Properties

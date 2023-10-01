@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import SwiftUI
+import UIKit
 
 public protocol ImagesProtocol: AnyObject {
     func getImage(_ planImage: PlanImage) -> UIImage
