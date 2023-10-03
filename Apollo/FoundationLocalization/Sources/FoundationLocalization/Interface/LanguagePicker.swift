@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SharedUI
 
 public struct LanguagePicker: View {
     @Environment(LocalizationViewModel.self)
