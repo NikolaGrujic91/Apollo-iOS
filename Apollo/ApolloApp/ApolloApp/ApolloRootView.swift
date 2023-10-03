@@ -7,6 +7,7 @@
 
 import FeaturePlans
 import FeatureSettings
+import FoundationLocalization
 import SwiftUI
 
 struct ApolloRootView: View {

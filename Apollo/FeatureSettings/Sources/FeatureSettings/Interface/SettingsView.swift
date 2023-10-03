@@ -16,7 +16,6 @@ public struct SettingsView: View {
     @Environment(WeightViewModel.self)
     private var weightViewModel
     @State private var darkMode = false
-    @State private var selectedLanguage = Language.netherlands
 
     public init() {}
 
@@ -40,17 +39,8 @@ public struct SettingsView: View {
                         )
                     }
                 }
-                Section(header: Text("language".localized(localization.language))) {
-                    Picker("Selected language", selection: $selectedLanguage) {
-                        ForEach(Language.allCases) { language in
-                            Text(language.rawValue)
-                        }
-                    }
-                    .labelsHidden()
-                    .pickerStyle(.inline)
-                    .onChange(of: selectedLanguage) { _, newLanguage in
-                        localization.save(newLanguage)
-                    }
+                Section {
+                    LanguagePicker()
                 }
                 Section(header: Text("weight".localized(localization.language))) {
                     NavigationLink(destination: WeightView()) {
@@ -72,7 +62,6 @@ public struct SettingsView: View {
                     darkMode = colorScheme == .dark
                 }
 
-                selectedLanguage = localization.language
                 weightViewModel.onAppear()
             }
             .navigationTitle("settings".localized(localization.language))

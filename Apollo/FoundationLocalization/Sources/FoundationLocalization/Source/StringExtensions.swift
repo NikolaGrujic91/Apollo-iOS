@@ -9,7 +9,7 @@ import Foundation
 import FoundationLogger
 
 extension String: LoggerInjected {
-    public func localized(_ language: Language) -> String {
+    public func localized(_ language: LanguageCode) -> String {
         guard let path = Bundle.module.path(forResource: language.rawValue, ofType: "lproj")
         else {
             logger.handleError(LocalizationError(.pathNotFound, ErrorLine()))

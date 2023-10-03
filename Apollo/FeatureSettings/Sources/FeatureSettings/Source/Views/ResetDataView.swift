@@ -6,6 +6,7 @@
 //
 
 import FoundationData
+import FoundationLocalization
 import SwiftUI
 
 struct ResetDataView: View, PlansRepositoryInjected {

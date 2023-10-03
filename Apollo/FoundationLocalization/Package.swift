@@ -20,6 +20,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
+        .package(name: "FoundationStorage", path: "FoundationStorage"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.53.0"),
     ],
     targets: [
@@ -29,6 +30,7 @@ let package = Package(
             name: "FoundationLocalization",
             dependencies: [
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
+                .product(name: "FoundationStorage", package: "FoundationStorage"),
             ],
             resources: [
                 .process("Resources"),

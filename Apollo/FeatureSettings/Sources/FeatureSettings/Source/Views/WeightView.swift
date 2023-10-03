@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FoundationLocalization
 
 struct WeightView: View {
     @Environment(\.dismiss)
