@@ -7,6 +7,7 @@
 
 import FeaturePlans
 import FeatureSettings
+import FoundationTheme
 import FoundationLocalization
 import SwiftUI
 
