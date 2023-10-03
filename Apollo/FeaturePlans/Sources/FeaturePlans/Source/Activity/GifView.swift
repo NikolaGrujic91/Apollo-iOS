@@ -35,10 +35,8 @@ struct GifView: UIViewRepresentable {
     func updateUIView(_: UIView, context _: UIViewRepresentableContext<GifView>) {}
 }
 
-struct GifView_Previews: PreviewProvider {
-    static var previews: some View {
-        GifView(gif: .success)
-            .frame(width: 200, height: 200)
-            .environment(PlansViewModel())
-    }
+#Preview {
+    GifView(gif: .success)
+        .frame(width: 200, height: 200)
+        .environment(PlansViewModel())
 }

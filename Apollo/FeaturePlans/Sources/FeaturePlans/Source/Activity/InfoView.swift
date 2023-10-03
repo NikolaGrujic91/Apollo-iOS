@@ -60,13 +60,11 @@ struct InfoView: View {
     }
 }
 
-struct InfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        InfoView(
-            calories: 500,
-            distance: "5.5",
-            pace: "0:00"
-        )
-        .environment(PlansViewModel())
-    }
+#Preview {
+    InfoView(
+        calories: 500,
+        distance: "5.5",
+        pace: "0:00"
+    )
+    .environment(PlansViewModel())
 }

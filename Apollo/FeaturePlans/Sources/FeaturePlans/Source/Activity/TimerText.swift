@@ -29,15 +29,13 @@ struct TimerText: View {
     }
 }
 
-struct TimerTextView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerText(
-            timeInterval: TimeInterval(90), // 90 seconds
-            color: .orange,
-            intervalType: "run",
-            currentInterval: 1,
-            totalIntervals: 10,
-            fontSize: 100
-        )
-    }
+#Preview {
+    TimerText(
+        timeInterval: TimeInterval(90), // 90 seconds
+        color: .orange,
+        intervalType: "run",
+        currentInterval: 1,
+        totalIntervals: 10,
+        fontSize: 100
+    )
 }

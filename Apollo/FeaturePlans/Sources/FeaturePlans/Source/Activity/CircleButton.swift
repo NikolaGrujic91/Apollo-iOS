@@ -25,11 +25,9 @@ struct CircleButton: View {
     }
 }
 
-struct CircleButton_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleButton(
-            action: { print("pressed") },
-            imageName: "play.fill"
-        )
-    }
+#Preview {
+    CircleButton(
+        action: { print("pressed") },
+        imageName: "play.fill"
+    )
 }

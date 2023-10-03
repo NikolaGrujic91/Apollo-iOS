@@ -41,13 +41,11 @@ struct AppearanceToggle: View {
     }
 }
 
-struct AppearanceToggle_Previews: PreviewProvider {
-    static var previews: some View {
-        AppearanceToggle(
-            action: {},
-            systemName: "checkmark.circle.fill",
-            rectangleColor: .white,
-            labelText: "Light"
-        )
-    }
+#Preview {
+    AppearanceToggle(
+        action: {},
+        systemName: "checkmark.circle.fill",
+        rectangleColor: .white,
+        labelText: "Light"
+    )
 }

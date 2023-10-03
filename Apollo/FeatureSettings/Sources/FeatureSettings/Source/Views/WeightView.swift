@@ -56,9 +56,8 @@ struct WeightView: View {
     }
 }
 
-struct WeightViewView_Previews: PreviewProvider {
-    static var previews: some View {
-        WeightView()
-            .environment(WeightViewModel())
-    }
+#Preview {
+    WeightView()
+        .environment(LocalizationViewModel())
+        .environment(WeightViewModel())
 }

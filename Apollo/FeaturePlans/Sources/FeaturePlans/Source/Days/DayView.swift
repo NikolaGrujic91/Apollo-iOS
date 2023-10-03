@@ -24,10 +24,8 @@ struct DayView: View {
     }
 }
 
-struct DayView_Previews: PreviewProvider {
-    static var previews: some View {
-        DayView(
-            name: "Test day"
-        )
-    }
+#Preview {
+    DayView(
+        name: "Test day"
+    )
 }

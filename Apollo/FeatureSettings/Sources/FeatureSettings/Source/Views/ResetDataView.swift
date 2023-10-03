@@ -29,9 +29,7 @@ struct ResetDataView: View, PlansRepositoryInjected {
     }
 }
 
-struct ResetDataView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResetDataView()
-            .environment(LocalizationViewModel())
-    }
+#Preview {
+    ResetDataView()
+        .environment(LocalizationViewModel())
 }

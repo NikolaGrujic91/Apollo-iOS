@@ -56,17 +56,8 @@ struct FractionProgressView: View {
     }
 }
 
-struct FractionProgressView_Previews: PreviewProvider {
-    static var previews: some View {
-        FractionProgressView(
-            lineWidth: 5,
-            progress: 0.9,
-            padding: 10,
-            intervals: previewIntervals()
-        )
-    }
-
-    static func previewIntervals() -> [Interval] {
+#Preview {
+    func previewIntervals() -> [Interval] {
         let interval1 = Interval()
         interval1.seconds = 10
         interval1.type = .run
@@ -81,4 +72,11 @@ struct FractionProgressView_Previews: PreviewProvider {
 
         return [interval1, interval2]
     }
+
+    return FractionProgressView(
+        lineWidth: 5,
+        progress: 0.9,
+        padding: 10,
+        intervals: previewIntervals()
+    )
 }

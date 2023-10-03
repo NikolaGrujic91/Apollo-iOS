@@ -59,9 +59,7 @@ struct DaysView: View {
     }
 }
 
-struct DaysView_Previews: PreviewProvider {
-    static var previews: some View {
-        DaysView(planID: UUID())
-            .environment(PlansViewModel())
-    }
+#Preview {
+    DaysView(planID: UUID())
+        .environment(PlansViewModel())
 }

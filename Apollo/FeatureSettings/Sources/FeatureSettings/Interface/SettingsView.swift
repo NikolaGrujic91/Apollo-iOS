@@ -79,11 +79,9 @@ public struct SettingsView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-            .environment(ThemeViewModel())
-            .environment(LocalizationViewModel())
-            .environment(WeightViewModel())
-    }
+#Preview {
+    SettingsView()
+        .environment(ThemeViewModel())
+        .environment(LocalizationViewModel())
+        .environment(WeightViewModel())
 }

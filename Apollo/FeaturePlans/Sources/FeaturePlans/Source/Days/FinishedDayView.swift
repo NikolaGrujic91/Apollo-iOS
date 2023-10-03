@@ -97,12 +97,11 @@ struct FinishedDayView: View {
     }
 }
 
-struct FinishedView_Previews: PreviewProvider {
-    static var previews: some View {
-        FinishedDayView(
-            planId: UUID(),
-            weekId: UUID(),
-            dayId: UUID()
-        )
-    }
+#Preview {
+    FinishedDayView(
+        planId: UUID(),
+        weekId: UUID(),
+        dayId: UUID()
+    )
+    .environment(PlansViewModel())
 }

@@ -40,13 +40,8 @@ struct ActivityView: View {
     }
 }
 
-struct ActivityView_Previews: PreviewProvider {
-    static var previews: some View {
-        ActivityView(day: previewDay())
-            .environment(ActivityViewModel())
-    }
-
-    static func previewDay() -> Day {
+#Preview {
+    func previewDay() -> Day {
         let interval1 = Interval()
         interval1.seconds = 10
         interval1.type = .run
@@ -63,4 +58,7 @@ struct ActivityView_Previews: PreviewProvider {
 
         return day
     }
+
+    return ActivityView(day: previewDay())
+        .environment(ActivityViewModel())
 }

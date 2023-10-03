@@ -42,10 +42,8 @@ public struct PlansView: View {
     }
 }
 
-struct PlansView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlansView()
-            .environment(PlansViewModel())
-            .environment(ActivityViewModel())
-    }
+#Preview {
+    PlansView()
+        .environment(PlansViewModel())
+        .environment(ActivityViewModel())
 }

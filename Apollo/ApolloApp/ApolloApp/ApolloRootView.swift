@@ -32,13 +32,11 @@ struct ApolloRootView: View {
     }
 }
 
-struct RootView_Previews: PreviewProvider {
-    static var previews: some View {
-        ApolloRootView()
-            .environment(LocalizationViewModel())
-            .environment(ThemeViewModel())
-            .environment(PlansViewModel())
-            .environment(ActivityViewModel())
-            .environment(WeightViewModel())
-    }
+#Preview {
+    ApolloRootView()
+        .environment(LocalizationViewModel())
+        .environment(ThemeViewModel())
+        .environment(PlansViewModel())
+        .environment(ActivityViewModel())
+        .environment(WeightViewModel())
 }

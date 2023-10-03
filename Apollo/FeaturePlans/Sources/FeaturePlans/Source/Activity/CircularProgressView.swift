@@ -44,13 +44,11 @@ struct CircularProgressView: View {
     }
 }
 
-struct CircularProgressView_Previews: PreviewProvider {
-    static var previews: some View {
-        CircularProgressView(
-            lineWidth: 5,
-            progress: 0.25,
-            padding: 30,
-            color: .orange
-        )
-    }
+#Preview {
+    CircularProgressView(
+        lineWidth: 5,
+        progress: 0.25,
+        padding: 30,
+        color: .orange
+    )
 }
