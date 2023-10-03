@@ -26,6 +26,9 @@
       location = "group:FoundationAudio">
    </FileRef>
    <FileRef
+      location = "group:FoundationTheme">
+   </FileRef>
+   <FileRef
       location = "group:FoundationLocalization">
    </FileRef>
    <FileRef
