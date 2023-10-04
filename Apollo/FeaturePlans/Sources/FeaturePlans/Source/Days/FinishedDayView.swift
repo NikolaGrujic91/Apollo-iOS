@@ -5,7 +5,6 @@
 //  Created by Nikola Grujic on 13/03/2023.
 //
 
-import FoundationData
 import SwiftUI
 
 struct FinishedDayView: View {

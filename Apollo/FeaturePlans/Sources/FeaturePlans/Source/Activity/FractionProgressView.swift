@@ -5,7 +5,6 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
-import FoundationData
 import SwiftUI
 
 struct FractionProgressView: View {

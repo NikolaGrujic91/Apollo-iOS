@@ -17,12 +17,9 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
         .package(name: "FoundationLocalization", path: "FoundationLocalization"),
-        .package(name: "FoundationTheme", path: "FoundationTheme"),
         .package(name: "FoundationStorage", path: "FoundationStorage"),
-        .package(name: "UtilityExtensions", path: "UtilityExtensions"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.53.0"),
     ],
     targets: [
@@ -31,12 +28,9 @@ let package = Package(
         .target(
             name: "FeatureWeight",
             dependencies: [
-                .product(name: "FoundationData", package: "FoundationData"),
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
                 .product(name: "FoundationLocalization", package: "FoundationLocalization"),
-                .product(name: "FoundationTheme", package: "FoundationTheme"),
                 .product(name: "FoundationStorage", package: "FoundationStorage"),
-                .product(name: "UtilityExtensions", package: "UtilityExtensions"),
             ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),

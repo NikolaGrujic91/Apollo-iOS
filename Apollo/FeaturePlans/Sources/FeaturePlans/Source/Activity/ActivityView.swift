@@ -6,7 +6,6 @@
 //
 
 import FeatureWeight
-import FoundationData
 import SwiftUI
 
 struct ActivityView: View {

@@ -1,5 +1,4 @@
 @testable import FeaturePlans
-import FoundationData
 import XCTest
 
 final class FeaturePlansTests: XCTestCase {
@@ -65,7 +64,7 @@ final class FeaturePlansTests: XCTestCase {
         XCTAssertEqual(activityViewModel.timeRemaining, 0)
         XCTAssertEqual(activityViewModel.activeButton, .start)
 
-        activityViewModel.onAppear(day: Day())
+        activityViewModel.onAppear(day: Day(), bodyMass: 0.0)
         XCTAssertEqual(activityViewModel.activeButton, .start)
 
         activityViewModel.startPressed()
@@ -93,7 +92,7 @@ final class FeaturePlansTests: XCTestCase {
         let day = plansViewModel.plans[0].weeks[0].days[0]
         XCTAssertFalse(day.fractionsCalculated)
 
-        activityViewModel.onAppear(day: day)
+        activityViewModel.onAppear(day: day, bodyMass: 0.0)
         XCTAssertTrue(day.fractionsCalculated)
 
         XCTAssertEqual(day.intervals[0].startFraction, 1.0)

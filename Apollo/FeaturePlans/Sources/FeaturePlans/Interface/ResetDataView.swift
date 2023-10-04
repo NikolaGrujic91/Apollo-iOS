@@ -1,11 +1,10 @@
 //
 //  ResetDataView.swift
-//  FeatureSettings
+//  FeaturePlans
 //
 //  Created by Nikola Grujic on 20/02/2023.
 //
 
-import FoundationData
 import FoundationLocalization
 import SwiftUI
 

@@ -19,11 +19,11 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(name: "FeatureWeight", path: "FeatureWeight"),
-        .package(name: "FeatureSettings", path: "FeatureSettings"),
-        .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "FoundationLocation", path: "FoundationLocation"),
         .package(name: "FoundationAudio", path: "FoundationAudio"),
         .package(name: "FoundationImages", path: "FoundationImages"),
+        .package(name: "FoundationStorage", path: "FoundationStorage"),
+        .package(name: "FoundationLogger", path: "FoundationLogger"),
         .package(name: "UtilityExtensions", path: "UtilityExtensions"),
         .package(url: "https://github.com/Flipboard/FLAnimatedImage.git", from: "1.0.17"),
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.53.0"),
@@ -35,13 +35,16 @@ let package = Package(
             name: "FeaturePlans",
             dependencies: [
                 .product(name: "FeatureWeight", package: "FeatureWeight"),
-                .product(name: "FoundationData", package: "FoundationData"),
+                .product(name: "FoundationStorage", package: "FoundationStorage"),
+                .product(name: "FoundationLogger", package: "FoundationLogger"),
                 .product(name: "FoundationLocation", package: "FoundationLocation"),
                 .product(name: "FoundationAudio", package: "FoundationAudio"),
-                .product(name: "FeatureSettings", package: "FeatureSettings"),
                 .product(name: "FoundationImages", package: "FoundationImages"),
                 .product(name: "UtilityExtensions", package: "UtilityExtensions"),
                 .product(name: "FLAnimatedImage", package: "FLAnimatedImage"),
+            ],
+            resources: [
+                .process("Resources"),
             ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
@@ -50,6 +53,9 @@ let package = Package(
         .testTarget(
             name: "FeaturePlansTests",
             dependencies: ["FeaturePlans"],
+            resources: [
+                .process("Resources"),
+            ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

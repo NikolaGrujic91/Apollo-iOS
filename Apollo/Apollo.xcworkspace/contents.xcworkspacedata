@@ -14,9 +14,6 @@
       location = "group:SharedUI">
    </FileRef>
    <FileRef
-      location = "group:FoundationData">
-   </FileRef>
-   <FileRef
       location = "group:FoundationLocation">
    </FileRef>
    <FileRef

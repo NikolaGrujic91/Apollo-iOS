@@ -1,4 +1,4 @@
-@testable import FoundationData
+@testable import FeaturePlans
 import XCTest
 
 final class FoundationDataTests: XCTestCase, PlansRepositoryInjected {

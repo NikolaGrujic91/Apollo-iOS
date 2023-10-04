@@ -10,6 +10,7 @@
 		8E18B2DE2A6E418D00251A31 /* ApolloAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2DD2A6E418D00251A31 /* ApolloAppUITests.swift */; };
 		8E18B2E02A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2DF2A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift */; };
 		8E18B2E72A6E41AB00251A31 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2E62A6E41AB00251A31 /* SnapshotHelper.swift */; };
+		8E340A822ACDC67300EF4B28 /* FoundationTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 8E340A812ACDC67300EF4B28 /* FoundationTheme */; };
 		8E4FE50D2ACD6F76005EE393 /* FeatureWeight in Frameworks */ = {isa = PBXBuildFile; productRef = 8E4FE50C2ACD6F76005EE393 /* FeatureWeight */; };
 		8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E67D23929ACF07F00696F05 /* CoreLocation.framework */; };
 		8E9837672ACDA16200B112A0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9837662ACDA16200B112A0 /* SettingsView.swift */; };
@@ -64,6 +65,7 @@
 			files = (
 				8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */,
 				8E4FE50D2ACD6F76005EE393 /* FeatureWeight in Frameworks */,
+				8E340A822ACDC67300EF4B28 /* FoundationTheme in Frameworks */,
 				8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */,
 				8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */,
 			);
@@ -171,6 +173,7 @@
 			packageProductDependencies = (
 				8EE0B50129C20F9E00DD7726 /* FeaturePlans */,
 				8E4FE50C2ACD6F76005EE393 /* FeatureWeight */,
+				8E340A812ACDC67300EF4B28 /* FoundationTheme */,
 			);
 			productName = ApolloApp;
 			productReference = 8EAAF18729A26CC90032AFA8 /* ApolloApp.app */;
@@ -551,6 +554,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
 			productName = "plugin:SwiftLint";
+		};
+		8E340A812ACDC67300EF4B28 /* FoundationTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoundationTheme;
 		};
 		8E4FE50C2ACD6F76005EE393 /* FeatureWeight */ = {
 			isa = XCSwiftPackageProductDependency;
