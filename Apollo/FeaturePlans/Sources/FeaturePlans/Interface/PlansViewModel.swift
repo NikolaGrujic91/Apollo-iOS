@@ -25,6 +25,10 @@ public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
         await plansRepository.load()
     }
 
+    func reset() {
+        plansRepository.reset()
+    }
+
     func get(_ id: UUID) -> Plan {
         plansRepository.get(id)
     }

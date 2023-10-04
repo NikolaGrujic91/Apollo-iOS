@@ -6,7 +6,6 @@
 //
 
 import FeaturePlans
-import FeatureSettings
 import FeatureWeight
 import FoundationTheme
 import FoundationLocalization

@@ -9,12 +9,16 @@ import FoundationData
 import FoundationLocalization
 import SwiftUI
 
-struct ResetDataView: View, PlansRepositoryInjected {
+public struct ResetDataView: View {
     @Environment(LocalizationViewModel.self)
     private var localization
+    @Environment(PlansViewModel.self)
+    private var plansViewModel
     @State private var showingAlert = false
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         Button(
             role: .destructive,
             action: { showingAlert = true },
@@ -23,7 +27,7 @@ struct ResetDataView: View, PlansRepositoryInjected {
         .alert("resetQuestion".localized(localization.language), isPresented: $showingAlert) {
             Button("cancel".localized(localization.language), role: .cancel) {}
             Button("reset".localized(localization.language), role: .destructive) {
-                plansRepository.reset()
+                plansViewModel.reset()
             }
         }
     }
@@ -32,4 +36,5 @@ struct ResetDataView: View, PlansRepositoryInjected {
 #Preview {
     ResetDataView()
         .environment(LocalizationViewModel())
+        .environment(PlansViewModel())
 }

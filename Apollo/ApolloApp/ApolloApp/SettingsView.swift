@@ -6,6 +6,7 @@
 //
 
 import FeatureWeight
+import FeaturePlans
 import FoundationTheme
 import FoundationLocalization
 import SwiftUI
