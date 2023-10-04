@@ -5,12 +5,15 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
+import FeatureWeight
 import FoundationData
 import SwiftUI
 
 struct ActivityView: View {
     @Environment(ActivityViewModel.self)
     private var viewModel
+    @Environment(WeightViewModel.self)
+    private var weightViewModel
 
     var day: Day
 
@@ -30,7 +33,7 @@ struct ActivityView: View {
             TimerView()
                 .navigationTitle(viewModel.day.name)
                 .onAppear {
-                    viewModel.onAppear(day: day)
+                    viewModel.onAppear(day: day, bodyMass: Double(weightViewModel.bodyMass) ?? 0.0)
 
                     // Prevent screen lock only for timer
                     UIApplication.shared.isIdleTimerDisabled = true
@@ -61,4 +64,5 @@ struct ActivityView: View {
 
     return ActivityView(day: previewDay())
         .environment(ActivityViewModel())
+        .environment(WeightViewModel())
 }

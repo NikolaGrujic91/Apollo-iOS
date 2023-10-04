@@ -11,7 +11,13 @@ import FoundationStorage
 final class WeightRepository: WeightRepositoryProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 
-    private(set) var bodyMass: Double = 0.0
+    private(set) var bodyMass: Double = 0.0 {
+        didSet {
+            bodyMassFormatted = "\(String(format: "%.1f", bodyMass))"
+            logger.logInfo("Body mass: \(bodyMassFormatted)")
+        }
+    }
+    private(set) var bodyMassFormatted: String = ""
     private let key: String = "ApolloWeight"
     private let healthKitRepository = HealthKitRepository()
 

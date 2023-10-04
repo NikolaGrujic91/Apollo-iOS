@@ -11,6 +11,9 @@
       location = "group:FeatureSettings">
    </FileRef>
    <FileRef
+      location = "group:FeatureWeight">
+   </FileRef>
+   <FileRef
       location = "group:SharedUI">
    </FileRef>
    <FileRef

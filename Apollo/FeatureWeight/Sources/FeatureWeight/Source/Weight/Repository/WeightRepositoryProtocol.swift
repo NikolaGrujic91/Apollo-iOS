@@ -5,8 +5,10 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
-public protocol WeightRepositoryProtocol: AnyObject {
+protocol WeightRepositoryProtocol: AnyObject {
     var bodyMass: Double { get }
+
+    var bodyMassFormatted: String { get }
 
     ///
     /// Save weight data to user defaults.

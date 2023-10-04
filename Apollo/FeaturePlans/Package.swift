@@ -18,6 +18,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(name: "FeatureWeight", path: "FeatureWeight"),
         .package(name: "FeatureSettings", path: "FeatureSettings"),
         .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "FoundationLocation", path: "FoundationLocation"),
@@ -33,6 +34,7 @@ let package = Package(
         .target(
             name: "FeaturePlans",
             dependencies: [
+                .product(name: "FeatureWeight", package: "FeatureWeight"),
                 .product(name: "FoundationData", package: "FoundationData"),
                 .product(name: "FoundationLocation", package: "FoundationLocation"),
                 .product(name: "FoundationAudio", package: "FoundationAudio"),

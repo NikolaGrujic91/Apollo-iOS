@@ -6,7 +6,6 @@
 //
 
 import Observation
-import FeatureSettings
 import Foundation
 import FoundationAudio
 import FoundationData
@@ -19,7 +18,7 @@ enum TimerButton {
 }
 
 @Observable
-public final class ActivityViewModel: PlansRepositoryInjected, WeightRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     private(set) var timeRemaining = 0
     private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private(set) var activeButton: TimerButton = .start
@@ -39,7 +38,7 @@ public final class ActivityViewModel: PlansRepositoryInjected, WeightRepositoryI
 
     public init() {}
 
-    func onAppear(day: Day) {
+    func onAppear(day: Day, bodyMass: Double) {
         activeButton = .start
         stopTimer()
         locationTracker.requestAuthorization()
@@ -47,7 +46,7 @@ public final class ActivityViewModel: PlansRepositoryInjected, WeightRepositoryI
         self.day = day
         totalIntervals = day.intervals.count
         currentInterval = 0
-        bodyMass = weightRepository.bodyMass
+        self.bodyMass = bodyMass
         timeElapsed = 0
         distanceFormatted = "0.00"
         paceFormatted = "00:00"

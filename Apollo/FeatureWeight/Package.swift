@@ -4,21 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "FeatureSettings",
+    name: "FeatureWeight",
     platforms: [
         .iOS(.v17),
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
+        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "FeatureSettings",
-            targets: ["FeatureSettings"]
-        ),
+            name: "FeatureWeight",
+            targets: ["FeatureWeight"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "FeatureWeight", path: "FeatureWeight"),
         .package(name: "FoundationData", path: "FoundationData"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
         .package(name: "FoundationLocalization", path: "FoundationLocalization"),
@@ -28,12 +26,11 @@ let package = Package(
         .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.53.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
+        // Targets are the basic building blocks of a package, defining a module or a test suite.
+        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "FeatureSettings",
+            name: "FeatureWeight",
             dependencies: [
-                .product(name: "FeatureWeight", package: "FeatureWeight"),
                 .product(name: "FoundationData", package: "FoundationData"),
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
                 .product(name: "FoundationLocalization", package: "FoundationLocalization"),
@@ -46,8 +43,8 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "FeatureSettingsTests",
-            dependencies: ["FeatureSettings"],
+            name: "FeatureWeightTests",
+            dependencies: ["FeatureWeight"],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
+import FeatureWeight
 import FoundationTheme
 import FoundationLocalization
 import SwiftUI
@@ -41,13 +42,9 @@ public struct SettingsView: View {
                     Text("version".localized(localization.language) + " 1.0.0")
                 }
             }
-            .onAppear {
-                weightViewModel.onAppear()
-            }
             .navigationTitle("settings".localized(localization.language))
         }
     }
-
 }
 
 #Preview {

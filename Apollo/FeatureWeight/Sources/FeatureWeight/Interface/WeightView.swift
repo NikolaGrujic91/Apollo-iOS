@@ -8,7 +8,7 @@
 import SwiftUI
 import FoundationLocalization
 
-struct WeightView: View {
+public struct WeightView: View {
     @Environment(\.dismiss)
     var dismiss
     @Environment(LocalizationViewModel.self)
@@ -17,7 +17,9 @@ struct WeightView: View {
     private var viewModel
     @FocusState private var isFocused: Bool
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         VStack(spacing: 10) {
             HStack {
                 Text("kg")
@@ -30,7 +32,6 @@ struct WeightView: View {
             Button(action: {
                 Task {
                     await viewModel.loadFromHealth()
-                    viewModel.update()
                     dismiss()
                 }
             }, label: {
@@ -42,12 +43,10 @@ struct WeightView: View {
         .padding()
         .onAppear {
             isFocused = true
-            viewModel.onAppear()
         }
         .toolbar {
             Button(action: {
                 viewModel.save()
-                viewModel.update()
                 dismiss()
             }, label: {
                 Text("save".localized(localization.language))
@@ -57,7 +56,9 @@ struct WeightView: View {
 }
 
 #Preview {
-    WeightView()
-        .environment(LocalizationViewModel())
-        .environment(WeightViewModel())
+    NavigationView {
+        WeightView()
+            .environment(LocalizationViewModel())
+            .environment(WeightViewModel())
+    }
 }

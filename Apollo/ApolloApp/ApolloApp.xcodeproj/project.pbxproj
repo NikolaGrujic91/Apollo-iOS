@@ -10,6 +10,7 @@
 		8E18B2DE2A6E418D00251A31 /* ApolloAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2DD2A6E418D00251A31 /* ApolloAppUITests.swift */; };
 		8E18B2E02A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2DF2A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift */; };
 		8E18B2E72A6E41AB00251A31 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2E62A6E41AB00251A31 /* SnapshotHelper.swift */; };
+		8E4FE50D2ACD6F76005EE393 /* FeatureWeight in Frameworks */ = {isa = PBXBuildFile; productRef = 8E4FE50C2ACD6F76005EE393 /* FeatureWeight */; };
 		8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E67D23929ACF07F00696F05 /* CoreLocation.framework */; };
 		8EAAF18B29A26CC90032AFA8 /* ApolloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */; };
 		8EAAF18F29A26CCB0032AFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 			files = (
 				8EE0B50429C20F9E00DD7726 /* FeatureSettings in Frameworks */,
 				8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */,
+				8E4FE50D2ACD6F76005EE393 /* FeatureWeight in Frameworks */,
 				8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */,
 				8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */,
 			);
@@ -168,6 +170,7 @@
 			packageProductDependencies = (
 				8EE0B50129C20F9E00DD7726 /* FeaturePlans */,
 				8EE0B50329C20F9E00DD7726 /* FeatureSettings */,
+				8E4FE50C2ACD6F76005EE393 /* FeatureWeight */,
 			);
 			productName = ApolloApp;
 			productReference = 8EAAF18729A26CC90032AFA8 /* ApolloApp.app */;
@@ -448,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ng.ApolloApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ng.ApolloApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -488,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ng.ApolloApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ng.ApolloApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -547,6 +550,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
 			productName = "plugin:SwiftLint";
+		};
+		8E4FE50C2ACD6F76005EE393 /* FeatureWeight */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureWeight;
 		};
 		8EE0B50129C20F9E00DD7726 /* FeaturePlans */ = {
 			isa = XCSwiftPackageProductDependency;

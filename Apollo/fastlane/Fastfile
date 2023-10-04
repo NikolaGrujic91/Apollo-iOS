@@ -100,13 +100,13 @@ platform :ios do
               devices: [ENV["DEVICE_IPHONE"]],
               derived_data_path: ENV["DERIVED_DATA_PATH"],
               code_coverage: ENV["CODE_COVERAGE"],
-              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FeatureSettings",
-              scheme: "FeatureSettings")
+              output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FeatureWeight",
+              scheme: "FeatureWeight")
 
     xcov(workspace: ENV["WORKSPACE"],
-         scheme: "FeatureSettings",
+         scheme: "FeatureWeight",
          derived_data_path: ENV["DERIVED_DATA_PATH"],
-         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FeatureSettings")
+         output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FeatureWeight")
 
      run_tests(workspace: ENV["WORKSPACE"],
                devices: [ENV["DEVICE_IPHONE"]],
