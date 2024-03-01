@@ -19,25 +19,25 @@ public enum Language: String, CaseIterable, Identifiable {
 
 public extension Language {
     static func toArray() -> [String] {
-        return Language.allCases.map { $0.rawValue }
+        Language.allCases.map { $0.rawValue }
     }
 
     func toCode() -> LanguageCode {
         switch self {
         case .german:
-            return LanguageCode.german
+            LanguageCode.german
         case .english:
-            return LanguageCode.english
+            LanguageCode.english
         case .spanish:
-            return LanguageCode.spanish
+            LanguageCode.spanish
         case .french:
-            return LanguageCode.french
+            LanguageCode.french
         case .japanese:
-            return LanguageCode.japanese
+            LanguageCode.japanese
         case .netherlands:
-            return LanguageCode.netherlands
+            LanguageCode.netherlands
         case .portuguese:
-            return LanguageCode.portuguese
+            LanguageCode.portuguese
         }
     }
 }

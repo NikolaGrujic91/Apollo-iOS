@@ -31,51 +31,51 @@ extension FileError: ErrorProtocol {
     public var errorDescription: String? {
         switch errorType {
         case let .fileNotFound(fileName):
-            return "File \(fileName) not found. "
+            "File \(fileName) not found. "
         case .readingFileString:
-            return "Not possible to read string from file."
+            "Not possible to read string from file."
         case .emptyString:
-            return "Empty string."
+            "Empty string."
         case .readingJsonData:
-            return "Not possible to read json data from string."
+            "Not possible to read json data from string."
         case .decodingJsonData:
-            return "Not possible to decode json data."
+            "Not possible to decode json data."
         case .encodingJsonData:
-            return "Not possible to encode json data."
+            "Not possible to encode json data."
         }
     }
 
     public var failureReason: String? {
         switch errorType {
         case let .fileNotFound(fileName):
-            return "File \(fileName) not found in the resources folder."
+            "File \(fileName) not found in the resources folder."
         case .readingFileString:
-            return "File seems to be empty or corrupted."
+            "File seems to be empty or corrupted."
         case .emptyString:
-            return "File seems to be empty."
+            "File seems to be empty."
         case .readingJsonData:
-            return "String seems to be empty or corrupted."
+            "String seems to be empty or corrupted."
         case let .decodingJsonData(description):
-            return "\(description)"
+            "\(description)"
         case let .encodingJsonData(description):
-            return "\(description)"
+            "\(description)"
         }
     }
 
     public var recoverySuggestion: String? {
         switch errorType {
         case let .fileNotFound(fileName):
-            return "Check if the file \(fileName) exists."
+            "Check if the file \(fileName) exists."
         case .readingFileString:
-            return "Check if file is not empty."
+            "Check if file is not empty."
         case .emptyString:
-            return "Check if file is not empty."
+            "Check if file is not empty."
         case .readingJsonData:
-            return "Check if the content of the file is valid."
+            "Check if the content of the file is valid."
         case .decodingJsonData:
-            return "Check if the content of the file is valid json."
+            "Check if the content of the file is valid json."
         case .encodingJsonData:
-            return "Check if the content of the file is valid json."
+            "Check if the content of the file is valid json."
         }
     }
 }

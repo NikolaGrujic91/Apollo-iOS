@@ -5,8 +5,8 @@
 //  Created by Nikola Grujic on 20/08/2023.
 //
 
-import SwiftUI
 import FoundationLocalization
+import SwiftUI
 
 public struct ThemePicker: View {
     @Environment(ThemeViewModel.self)

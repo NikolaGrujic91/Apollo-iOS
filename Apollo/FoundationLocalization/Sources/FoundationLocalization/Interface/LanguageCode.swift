@@ -1,5 +1,5 @@
 //
-//  Language.swift
+//  LanguageCode.swift
 //  FoundationLocalization
 //
 //  Created by Nikola Grujic on 14/02/2023.
@@ -19,25 +19,25 @@ public enum LanguageCode: String, CaseIterable, Identifiable {
 
 public extension LanguageCode {
     static func toArray() -> [String] {
-        return LanguageCode.allCases.map { $0.rawValue }
+        LanguageCode.allCases.map { $0.rawValue }
     }
 
     func toLanguage() -> Language {
         switch self {
         case .german:
-            return Language.german
+            Language.german
         case .english:
-            return Language.english
+            Language.english
         case .spanish:
-            return Language.spanish
+            Language.spanish
         case .french:
-            return Language.french
+            Language.french
         case .japanese:
-            return Language.japanese
+            Language.japanese
         case .netherlands:
-            return Language.netherlands
+            Language.netherlands
         case .portuguese:
-            return Language.portuguese
+            Language.portuguese
         }
     }
 }

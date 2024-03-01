@@ -27,27 +27,27 @@ extension LocalizationError: ErrorProtocol {
     public var errorDescription: String? {
         switch errorType {
         case .pathNotFound:
-            return "Path to resource .lproj not found."
+            "Path to resource .lproj not found."
         case .bundleNotFound:
-            return "Bundle not found"
+            "Bundle not found"
         }
     }
 
     public var failureReason: String? {
         switch errorType {
         case .pathNotFound:
-            return ".lproj file missing."
+            ".lproj file missing."
         case .bundleNotFound:
-            return "Bundle missing."
+            "Bundle missing."
         }
     }
 
     public var recoverySuggestion: String? {
         switch errorType {
         case .pathNotFound:
-            return "Check if .lproj is in resources folder."
+            "Check if .lproj is in resources folder."
         case .bundleNotFound:
-            return "Check if bundle exists."
+            "Check if bundle exists."
         }
     }
 }

@@ -29,39 +29,39 @@ extension HealthKitError: ErrorProtocol {
     public var errorDescription: String? {
         switch errorType {
         case .healthData:
-            return "Health data not available."
+            "Health data not available."
         case .quantityType:
-            return "Quantity type not recognized."
+            "Quantity type not recognized."
         case let .authorization(description):
-            return description
+            description
         case let .query(description):
-            return description
+            description
         }
     }
 
     public var failureReason: String? {
         switch errorType {
         case .healthData:
-            return "Health data not available on the device."
+            "Health data not available on the device."
         case .quantityType:
-            return "Quantity type not recognized on the device."
+            "Quantity type not recognized on the device."
         case .authorization:
-            return "Authorization not granted."
+            "Authorization not granted."
         case .query:
-            return "Failed rading queries from HealthKit."
+            "Failed rading queries from HealthKit."
         }
     }
 
     public var recoverySuggestion: String? {
         switch errorType {
         case .healthData:
-            return "Check if health data is supported on the device."
+            "Check if health data is supported on the device."
         case .quantityType:
-            return "Check if quantity type is supported on the device and system."
+            "Check if quantity type is supported on the device and system."
         case .authorization:
-            return "Check if authorization can be granted. Check plist."
+            "Check if authorization can be granted. Check plist."
         case .query:
-            return "Check if there are any entries in the HealthKit."
+            "Check if there are any entries in the HealthKit."
         }
     }
 }

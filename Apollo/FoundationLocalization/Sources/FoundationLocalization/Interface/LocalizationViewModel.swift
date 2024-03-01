@@ -1,13 +1,13 @@
 //
-//  LocalizationManager.swift
+//  LocalizationViewModel.swift
 //  FoundationLocalization
 //
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
-import Observation
-import FoundationStorage
 import FoundationLogger
+import FoundationStorage
+import Observation
 
 @Observable
 public final class LocalizationViewModel: StorageInjected, LoggerInjected {

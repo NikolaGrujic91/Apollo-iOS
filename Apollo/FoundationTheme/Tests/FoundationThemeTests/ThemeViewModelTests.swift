@@ -1,5 +1,5 @@
-import XCTest
 @testable import FoundationTheme
+import XCTest
 
 final class ThemeViewModelTests: XCTestCase {
     func testThemeViewModel() {

@@ -6,8 +6,8 @@
 //
 
 import FeaturePlans
-import FoundationTheme
 import FoundationLocalization
+import FoundationTheme
 import SwiftUI
 
 struct MobileMenuView: View {

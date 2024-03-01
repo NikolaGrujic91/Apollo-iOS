@@ -1,5 +1,5 @@
 //
-//  RootView.swift
+//  ApolloRootView.swift
 //
 //
 //  Created by Nikola Grujic on 13/02/2023.
@@ -7,8 +7,8 @@
 
 import FeaturePlans
 import FeatureWeight
-import FoundationTheme
 import FoundationLocalization
+import FoundationTheme
 import SwiftUI
 
 struct ApolloRootView: View {

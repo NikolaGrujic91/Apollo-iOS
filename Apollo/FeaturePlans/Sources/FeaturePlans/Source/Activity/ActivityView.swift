@@ -1,5 +1,5 @@
 //
-//  TimerView.swift
+//  ActivityView.swift
 //  FeaturePlans
 //
 //  Created by Nikola Grujic on 16/02/2023.

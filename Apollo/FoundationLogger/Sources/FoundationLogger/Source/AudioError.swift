@@ -27,27 +27,27 @@ extension AudioError: ErrorProtocol {
     public var errorDescription: String? {
         switch errorType {
         case .soundNotFound:
-            return "Requested sound not found."
+            "Requested sound not found."
         case .failedToLoadSound:
-            return "Failed to load sound in the player."
+            "Failed to load sound in the player."
         }
     }
 
     public var failureReason: String? {
         switch errorType {
         case .soundNotFound:
-            return "Can not find requested sound in Resources."
+            "Can not find requested sound in Resources."
         case .failedToLoadSound:
-            return "Can not load sound in the player."
+            "Can not load sound in the player."
         }
     }
 
     public var recoverySuggestion: String? {
         switch errorType {
         case .soundNotFound:
-            return "Check if requested sound is present in Resources."
+            "Check if requested sound is present in Resources."
         case .failedToLoadSound:
-            return "Check if sound file is corrupted."
+            "Check if sound file is corrupted."
         }
     }
 }

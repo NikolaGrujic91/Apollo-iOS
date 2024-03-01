@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import SwiftUI
 import FoundationLogger
 import FoundationStorage
+import SwiftUI
 import UtilityExtensions
 
 final class ThemeRepository: ThemeRepositoryProtocol, LoggerInjected, StorageInjected {

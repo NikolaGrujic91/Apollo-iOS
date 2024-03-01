@@ -18,13 +18,13 @@ public extension IntervalType {
     func color() -> Color {
         switch self {
         case .run:
-            return Color.orange.opacity(0.4)
+            Color.orange.opacity(0.4)
         case .walk:
-            return Color.gray.opacity(0.4)
+            Color.gray.opacity(0.4)
         case .fastRun:
-            return Color.red.opacity(0.8)
+            Color.red.opacity(0.8)
         case .fastWalk:
-            return Color.gray.opacity(0.8)
+            Color.gray.opacity(0.8)
         }
     }
 }

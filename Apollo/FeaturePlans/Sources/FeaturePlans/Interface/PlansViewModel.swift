@@ -5,9 +5,9 @@
 //  Created by Nikola Grujic on 21/02/2023.
 //
 
-import Observation
 import Foundation
 import FoundationImages
+import Observation
 import UIKit
 
 @Observable
@@ -38,17 +38,17 @@ public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
 
     func getImage(_ name: String) -> UIImage {
         if name == "0 to 2K" {
-            return images.getImage(.plan1)
+            images.getImage(.plan1)
         } else if name == "0 to 5K" {
-            return images.getImage(.plan2)
+            images.getImage(.plan2)
         } else if name == "5K to 10K" {
-            return images.getImage(.plan3)
+            images.getImage(.plan3)
         } else if name == "Weight Loss: Level 1" {
-            return images.getImage(.plan4)
+            images.getImage(.plan4)
         } else if name == "Weight Loss: Level 2" {
-            return images.getImage(.plan5)
+            images.getImage(.plan5)
         } else {
-            return images.getImage(.plan6)
+            images.getImage(.plan6)
         }
     }
 

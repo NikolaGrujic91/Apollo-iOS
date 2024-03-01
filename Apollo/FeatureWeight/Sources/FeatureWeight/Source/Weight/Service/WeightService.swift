@@ -7,6 +7,7 @@
 
 final class WeightService: WeightServiceProtocol, WeightRepositoryInjected {
     // MARK: - WeightServiceProtocol
+
     func save(_ bodyMass: String) -> String {
         repository.save(Double(bodyMass) ?? 0.0)
         return repository.bodyMassFormatted

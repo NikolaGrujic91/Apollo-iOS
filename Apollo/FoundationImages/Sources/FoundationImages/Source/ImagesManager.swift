@@ -1,12 +1,12 @@
 //
-//  PlanImageManager.swift
+//  ImagesManager.swift
 //  FoundationImages
 //
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
-import UIKit
 import Foundation
+import UIKit
 
 final class ImagesManager: ImagesProtocol {
     // MARK: - Properties
@@ -26,24 +26,24 @@ final class ImagesManager: ImagesProtocol {
     func getImage(_ planImage: PlanImage) -> UIImage {
         switch planImage {
         case .plan1:
-            return imagePlan1 ?? imageEmpty
+            imagePlan1 ?? imageEmpty
         case .plan2:
-            return imagePlan2 ?? imageEmpty
+            imagePlan2 ?? imageEmpty
         case .plan3:
-            return imagePlan3 ?? imageEmpty
+            imagePlan3 ?? imageEmpty
         case .plan4:
-            return imagePlan4 ?? imageEmpty
+            imagePlan4 ?? imageEmpty
         case .plan5:
-            return imagePlan5 ?? imageEmpty
+            imagePlan5 ?? imageEmpty
         case .plan6:
-            return imagePlan6 ?? imageEmpty
+            imagePlan6 ?? imageEmpty
         }
     }
 
     func getGif(_ gif: Gifs) -> Data {
         switch gif {
         case .success:
-            return gifSuccess ?? Data()
+            gifSuccess ?? Data()
         }
     }
 

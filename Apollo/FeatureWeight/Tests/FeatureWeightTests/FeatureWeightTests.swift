@@ -1,5 +1,5 @@
-import XCTest
 @testable import FeatureWeight
+import XCTest
 
 final class FeatureWeightTests: XCTestCase, WeightRepositoryInjected {
     func testWeightRepository() {

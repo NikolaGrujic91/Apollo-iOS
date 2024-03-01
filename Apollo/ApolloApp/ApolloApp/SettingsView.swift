@@ -5,10 +5,10 @@
 //  Created by Nikola Grujic on 14/02/2023.
 //
 
-import FeatureWeight
 import FeaturePlans
-import FoundationTheme
+import FeatureWeight
 import FoundationLocalization
+import FoundationTheme
 import SwiftUI
 
 public struct SettingsView: View {

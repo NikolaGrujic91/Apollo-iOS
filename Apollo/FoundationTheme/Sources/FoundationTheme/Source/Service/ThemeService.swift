@@ -1,5 +1,5 @@
 //
-//  ThemeServicel.swift
+//  ThemeService.swift
 //  FoundationTheme
 //
 //  Created by Nikola Grujic on 12/02/2023.
