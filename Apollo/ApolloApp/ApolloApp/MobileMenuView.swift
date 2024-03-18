@@ -21,26 +21,36 @@ struct MobileMenuView: View {
     private var tabsCount: Int = 3
     private let minDragTranslationForSwipe: CGFloat = 50
 
+    // MARK: - Subviews tab items
+
+    @ViewBuilder private var tabPlans: some View {
+        PlansView()
+            .tabItem {
+                Label("plans".localized(localization.language), systemImage: "figure.run")
+            }
+            .tag(0)
+            .highPriorityGesture(DragGesture().onEnded {
+                self.handleSwipe(translation: $0.translation.width)
+            })
+    }
+
+    @ViewBuilder private var tabSettings: some View {
+        SettingsView()
+            .tabItem {
+                Label("settings".localized(localization.language), systemImage: "gearshape.fill")
+            }
+            .tag(1)
+            .highPriorityGesture(DragGesture().onEnded {
+                self.handleSwipe(translation: $0.translation.width)
+            })
+    }
+
     // MARK: - Body
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            PlansView()
-                .tabItem {
-                    Label("plans".localized(localization.language), systemImage: "figure.run")
-                }
-                .tag(0)
-                .highPriorityGesture(DragGesture().onEnded {
-                    self.handleSwipe(translation: $0.translation.width)
-                })
-            SettingsView()
-                .tabItem {
-                    Label("settings".localized(localization.language), systemImage: "gearshape.fill")
-                }
-                .tag(1)
-                .highPriorityGesture(DragGesture().onEnded {
-                    self.handleSwipe(translation: $0.translation.width)
-                })
+            tabPlans
+            tabSettings
         }
         .accessibilityElement(children: .contain)
         .accessibilityLabel(Text("Tab bar"))

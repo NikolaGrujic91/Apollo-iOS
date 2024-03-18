@@ -18,9 +18,9 @@ struct ActivityView: View {
 
     var day: Day
 
-    // MARK: - Body
+    // MARK: - Subviews
 
-    var body: some View {
+    @ViewBuilder private var activityView: some View {
         if viewModel.isFinished {
             InfoView(
                 calories: viewModel.calories,
@@ -43,6 +43,12 @@ struct ActivityView: View {
                 }
                 .toolbar(.hidden, for: .tabBar)
         }
+    }
+
+    // MARK: - Body
+
+    var body: some View {
+        activityView
     }
 }
 

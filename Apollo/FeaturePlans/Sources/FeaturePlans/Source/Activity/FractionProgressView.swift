@@ -32,30 +32,37 @@ struct FractionProgressView: View {
         self.intervals = intervals
     }
 
+    // MARK: - Subviews
+
+    @ViewBuilder
+    private func fractionView(_ interval: Interval) -> some View {
+        if interval.endFraction <= progress, progress <= interval.startFraction {
+            Circle()
+                .trim(from: interval.endFraction, to: progress)
+                .stroke(interval.type.color(), style: outerStyle)
+                .padding(padding)
+                .frame(maxWidth: .infinity)
+                .rotationEffect(.degrees(-90))
+                .animation(.easeOut, value: progress)
+        } else if interval.endFraction <= progress, interval.startFraction <= progress {
+            Circle()
+                .trim(from: interval.endFraction, to: interval.startFraction)
+                .stroke(interval.type.color(), style: outerStyle)
+                .padding(padding)
+                .frame(maxWidth: .infinity)
+                .rotationEffect(.degrees(-90))
+                .animation(.easeOut, value: progress)
+        } else {
+            EmptyView()
+        }
+    }
+
     // MARK: - Body
 
     var body: some View {
         ZStack {
             ForEach(intervals) { interval in
-                if interval.endFraction <= progress, progress <= interval.startFraction {
-                    Circle()
-                        .trim(from: interval.endFraction, to: progress)
-                        .stroke(interval.type.color(), style: outerStyle)
-                        .padding(padding)
-                        .frame(maxWidth: .infinity)
-                        .rotationEffect(.degrees(-90))
-                        .animation(.easeOut, value: progress)
-                } else if interval.endFraction <= progress, interval.startFraction <= progress {
-                    Circle()
-                        .trim(from: interval.endFraction, to: interval.startFraction)
-                        .stroke(interval.type.color(), style: outerStyle)
-                        .padding(padding)
-                        .frame(maxWidth: .infinity)
-                        .rotationEffect(.degrees(-90))
-                        .animation(.easeOut, value: progress)
-                } else {
-                    EmptyView()
-                }
+                fractionView(interval)
             }
         }
     }
