@@ -18,7 +18,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.53.0"),
+        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.54.0"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
     ],
     targets: [

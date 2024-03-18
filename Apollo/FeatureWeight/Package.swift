@@ -20,7 +20,7 @@ let package = Package(
         .package(name: "FoundationLogger", path: "FoundationLogger"),
         .package(name: "FoundationLocalization", path: "FoundationLocalization"),
         .package(name: "FoundationStorage", path: "FoundationStorage"),
-        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.53.0"),
+        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.54.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
