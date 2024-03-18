@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct AppearanceToggle: View {
+    // MARK: - Properties
+
     let systemName: String
     let rectangleColor: Color
     let labelText: String
     let action: () -> Void
+
+    // MARK: - Initializers
 
     init(systemName: String, rectangleColor: Color, labelText: String, action: @escaping () -> Void) {
         self.systemName = systemName
@@ -19,6 +23,8 @@ struct AppearanceToggle: View {
         self.labelText = labelText
         self.action = action
     }
+
+    // MARK: - Body
 
     var body: some View {
         VStack {
@@ -48,6 +54,8 @@ struct AppearanceToggle: View {
         .padding(25)
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     AppearanceToggle(

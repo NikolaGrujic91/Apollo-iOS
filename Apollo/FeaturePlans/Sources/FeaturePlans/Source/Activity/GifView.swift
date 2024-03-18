@@ -10,8 +10,11 @@ import FoundationImages
 import SwiftUI
 
 struct GifView: UIViewRepresentable {
+    // MARK: - Properties
+
     @Environment(PlansViewModel.self)
     private var viewModel
+
     let animatedImageView = FLAnimatedImageView()
     var gif: Gifs
 
@@ -34,6 +37,8 @@ struct GifView: UIViewRepresentable {
 
     func updateUIView(_: UIView, context _: UIViewRepresentableContext<GifView>) {}
 }
+
+// MARK: - Preview
 
 #Preview {
     GifView(gif: .success)

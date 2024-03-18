@@ -9,13 +9,20 @@ import FoundationLocalization
 import SwiftUI
 
 public struct ThemePicker: View {
+    // MARK: - Properties
+
     @Environment(ThemeViewModel.self)
     private var viewModel
     @Environment(LocalizationViewModel.self)
     private var localizationViewModel
+
     @State private var darkMode = false
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Body
 
     public var body: some View {
         HStack(alignment: .center, spacing: 10) {
@@ -47,6 +54,8 @@ public struct ThemePicker: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     ThemePicker()

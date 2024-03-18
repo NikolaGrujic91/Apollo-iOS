@@ -9,12 +9,16 @@ import SwiftUI
 import UtilityExtensions
 
 struct TimerText: View {
+    // MARK: - Properties
+
     let timeInterval: TimeInterval
     let color: Color
     let intervalType: String
     let currentInterval: Int
     let totalIntervals: Int
     let fontSize: CGFloat
+
+    // MARK: - Body
 
     var body: some View {
         VStack(spacing: 10) {
@@ -28,6 +32,8 @@ struct TimerText: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     TimerText(

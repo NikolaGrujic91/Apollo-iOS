@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct FinishedDayView: View {
+    // MARK: - Properties
+
     @Environment(PlansViewModel.self)
     private var viewModel
+
     @State private var day = Day()
+
     let planId: UUID
     let weekId: UUID
     let dayId: UUID
+
+    // MARK: - Initializers
 
     init(planId: UUID, weekId: UUID, dayId: UUID) {
         self.planId = planId
         self.weekId = weekId
         self.dayId = dayId
     }
+
+    // MARK: - Body
 
     var body: some View {
         DisclosureGroup(content: {
@@ -95,6 +103,8 @@ struct FinishedDayView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     FinishedDayView(

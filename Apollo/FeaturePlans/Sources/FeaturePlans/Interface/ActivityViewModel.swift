@@ -18,6 +18,8 @@ enum TimerButton {
 
 @Observable
 public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+    // MARK: - Properties
+
     private(set) var timeRemaining = 0
     private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private(set) var activeButton: TimerButton = .start
@@ -35,7 +37,11 @@ public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerIn
     public private(set) var totalIntervals: Int = 0
     public private(set) var day = Day()
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Functions
 
     func onAppear(day: Day, bodyMass: Double) {
         activeButton = .start

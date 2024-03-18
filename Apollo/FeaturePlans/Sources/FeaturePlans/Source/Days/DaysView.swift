@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct DaysView: View {
+    // MARK: - Properties
+
     @Environment(PlansViewModel.self)
     private var viewModel
+
     @State private var plan = Plan()
+
     var planID: UUID
+
+    // MARK: - Body
 
     var body: some View {
         NavigationStack {
@@ -57,6 +63,8 @@ struct DaysView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     DaysView(planID: UUID())

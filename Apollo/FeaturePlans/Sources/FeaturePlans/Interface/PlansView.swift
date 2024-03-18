@@ -8,10 +8,16 @@
 import SwiftUI
 
 public struct PlansView: View {
+    // MARK: - Properties
+
     @Environment(PlansViewModel.self)
     private var viewModel
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Body
 
     public var body: some View {
         NavigationStack {
@@ -40,6 +46,8 @@ public struct PlansView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     PlansView()

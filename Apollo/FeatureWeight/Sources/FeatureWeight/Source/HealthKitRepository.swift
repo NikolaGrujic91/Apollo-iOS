@@ -10,8 +10,12 @@ import FoundationLogger
 import HealthKit
 
 final class HealthKitRepository {
+    // MARK: - Properties
+
     private let store = HKHealthStore()
     private(set) var bodyMass: Double = 0.0
+
+    // MARK: - Functions
 
     func requestAuthorization() async throws {
         if !HKHealthStore.isHealthDataAvailable() {

@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct CircularProgressView: View {
+    // MARK: - Properties
+
     private var innerStyle: StrokeStyle
     let lineWidth: CGFloat
     let progress: Double
     let padding: CGFloat
     let color: Color
+
+    // MARK: - Initializers
 
     public init(
         lineWidth: CGFloat,
@@ -26,6 +30,8 @@ struct CircularProgressView: View {
         self.color = color
         innerStyle = StrokeStyle(lineWidth: lineWidth, lineCap: .round)
     }
+
+    // MARK: - Body
 
     var body: some View {
         ZStack {
@@ -43,6 +49,8 @@ struct CircularProgressView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     CircularProgressView(

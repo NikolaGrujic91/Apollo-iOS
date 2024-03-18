@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct CircleButton: View {
+    // MARK: - Properties
+
     let action: () -> Void
     let imageName: String
+
+    // MARK: - Body
 
     var body: some View {
         ZStack {
@@ -24,6 +28,8 @@ struct CircleButton: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     CircleButton(

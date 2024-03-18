@@ -8,9 +8,13 @@
 import Foundation
 
 public final class Plan: Codable, Identifiable {
+    // MARK: - Properties
+
     public let id = UUID()
     public var name: String = ""
     public var weeks: [Week] = []
+
+    // MARK: - Initializers
 
     public init() {}
 
@@ -19,6 +23,8 @@ public final class Plan: Codable, Identifiable {
         case weeks
     }
 }
+
+// MARK: - Hashable
 
 extension Plan: Hashable {
     public static func == (lhs: Plan, rhs: Plan) -> Bool {

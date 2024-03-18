@@ -11,11 +11,17 @@ import FoundationTheme
 import SwiftUI
 
 struct MobileMenuView: View {
+    // MARK: - Properties
+
     @Environment(LocalizationViewModel.self)
     private var localization
+
     @State private var selectedTab: Int = 0
+
     private var tabsCount: Int = 3
     private let minDragTranslationForSwipe: CGFloat = 50
+
+    // MARK: - Body
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -40,6 +46,8 @@ struct MobileMenuView: View {
         .accessibilityLabel(Text("Tab bar"))
     }
 
+    // MARK: - Functions
+
     private func handleSwipe(translation: CGFloat) {
         let swipeLeft = translation > minDragTranslationForSwipe && selectedTab > 0
 
@@ -55,6 +63,8 @@ struct MobileMenuView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     MobileMenuView()

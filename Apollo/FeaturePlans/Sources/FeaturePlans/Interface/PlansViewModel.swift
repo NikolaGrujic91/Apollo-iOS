@@ -12,9 +12,15 @@ import UIKit
 
 @Observable
 public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
+    // MARK: - Properties
+
     private(set) var plans: [Plan] = []
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Functions
 
     func update() {
         plans = plansRepository.plans

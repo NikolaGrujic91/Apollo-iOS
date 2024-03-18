@@ -9,12 +9,16 @@ import FoundationImages
 import SwiftUI
 
 struct InfoView: View {
+    // MARK: - Properties
+
     @Environment(\.dismiss)
     var dismiss
 
     var calories: Int
     var distance: String
     var pace: String
+
+    // MARK: - Body
 
     var body: some View {
         NavigationView {
@@ -59,6 +63,8 @@ struct InfoView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     InfoView(

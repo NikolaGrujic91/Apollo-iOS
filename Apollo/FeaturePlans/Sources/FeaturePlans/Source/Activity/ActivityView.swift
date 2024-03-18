@@ -9,12 +9,16 @@ import FeatureWeight
 import SwiftUI
 
 struct ActivityView: View {
+    // MARK: - Properties
+
     @Environment(ActivityViewModel.self)
     private var viewModel
     @Environment(WeightViewModel.self)
     private var weightViewModel
 
     var day: Day
+
+    // MARK: - Body
 
     var body: some View {
         if viewModel.isFinished {
@@ -41,6 +45,8 @@ struct ActivityView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     func previewDay() -> Day {

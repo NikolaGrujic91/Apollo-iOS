@@ -9,10 +9,16 @@ import SharedUI
 import SwiftUI
 
 public struct LanguagePicker: View {
+    // MARK: - Properties
+
     @Environment(LocalizationViewModel.self)
     private var localizationViewModel
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Body
 
     public var body: some View {
         ApolloPicker(
@@ -24,6 +30,8 @@ public struct LanguagePicker: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     NavigationStack {

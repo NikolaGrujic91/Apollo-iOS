@@ -9,13 +9,19 @@ import FoundationLocalization
 import SwiftUI
 
 public struct ResetDataView: View {
+    // MARK: - Properties
+
     @Environment(LocalizationViewModel.self)
     private var localization
     @Environment(PlansViewModel.self)
     private var plansViewModel
     @State private var showingAlert = false
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Body
 
     public var body: some View {
         Button(
@@ -31,6 +37,8 @@ public struct ResetDataView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     ResetDataView()

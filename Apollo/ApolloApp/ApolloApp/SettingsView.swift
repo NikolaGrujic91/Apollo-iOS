@@ -12,12 +12,18 @@ import FoundationTheme
 import SwiftUI
 
 public struct SettingsView: View {
+    // MARK: - Properties
+
     @Environment(LocalizationViewModel.self)
     private var localization
     @Environment(WeightViewModel.self)
     private var weightViewModel
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Body
 
     public var body: some View {
         NavigationStack {
@@ -47,6 +53,8 @@ public struct SettingsView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     SettingsView()

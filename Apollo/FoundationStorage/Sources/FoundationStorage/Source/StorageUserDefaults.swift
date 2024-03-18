@@ -8,6 +8,8 @@
 import Foundation
 
 final class StorageUserDefaults: StorageProtocol {
+    // MARK: - StorageProtocol
+
     func set(_ value: String, forKey defaultName: String) {
         UserDefaults.standard.set(value, forKey: defaultName)
     }

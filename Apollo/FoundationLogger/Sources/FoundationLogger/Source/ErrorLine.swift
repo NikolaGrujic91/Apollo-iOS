@@ -6,10 +6,14 @@
 //
 
 public final class ErrorLine: CustomStringConvertible {
+    // MARK: - Properties
+
     let file: String
     let function: String
     let line: Int
     let column: Int
+
+    // MARK: - Initializers
 
     public init(
         file: String = #file,

@@ -8,10 +8,15 @@
 import SwiftUI
 
 public struct ApolloPicker: View {
+    // MARK: - Properties
+
     @State private var selectedValue: String
+
     let title: String
     let values: [String]
     let action: (_ value: String) -> Void
+
+    // MARK: - Initializers
 
     public init(_ title: String, _ selectedValue: String, _ values: [String], action: @escaping (_ value: String) -> Void) {
         self.title = title
@@ -19,6 +24,8 @@ public struct ApolloPicker: View {
         self.values = values
         self.action = action
     }
+
+    // MARK: - Body
 
     public var body: some View {
         Picker(title, selection: $selectedValue) {
@@ -32,6 +39,8 @@ public struct ApolloPicker: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     NavigationStack {

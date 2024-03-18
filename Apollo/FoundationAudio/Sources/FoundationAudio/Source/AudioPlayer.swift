@@ -10,6 +10,8 @@ import Foundation
 import FoundationLogger
 
 final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
+    // MARK: - Properties
+
     private var audioPlayer: AVAudioPlayer?
     private let fileType: String = "caf"
 

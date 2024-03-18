@@ -8,6 +8,8 @@
 import Foundation
 
 public final class Day: Codable, Identifiable {
+    // MARK: - Properties
+
     public var finished = false
     public var fractionsCalculated = false
     public var calories: Int = 0
@@ -16,6 +18,8 @@ public final class Day: Codable, Identifiable {
     public var name: String = ""
     public var pace: String = ""
     public let id = UUID()
+
+    // MARK: - Initializers
 
     public init() {}
 
@@ -27,6 +31,8 @@ public final class Day: Codable, Identifiable {
         case finished
         case intervals
     }
+
+    // MARK: - Functions
 
     public func calculateFractions() {
         if fractionsCalculated {
@@ -60,6 +66,8 @@ public final class Day: Codable, Identifiable {
         intervals.isEmpty ? .run : intervals[index].type
     }
 }
+
+// MARK: - Hashable
 
 extension Day: Hashable {
     public static func == (lhs: Day, rhs: Day) -> Bool {

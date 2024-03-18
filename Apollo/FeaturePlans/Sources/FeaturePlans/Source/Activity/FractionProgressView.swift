@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct FractionProgressView: View {
+    // MARK: - Properties
+
     private var outerStyle: StrokeStyle
     let lineWidth: CGFloat
     let progress: Double
     let padding: CGFloat
     let intervals: [Interval]
+
+    // MARK: - Initializers
 
     public init(
         lineWidth: CGFloat,
@@ -27,6 +31,8 @@ struct FractionProgressView: View {
 
         self.intervals = intervals
     }
+
+    // MARK: - Body
 
     var body: some View {
         ZStack {
@@ -54,6 +60,8 @@ struct FractionProgressView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     func previewIntervals() -> [Interval] {

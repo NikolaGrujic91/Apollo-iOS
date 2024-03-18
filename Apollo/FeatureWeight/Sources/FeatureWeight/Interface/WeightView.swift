@@ -9,6 +9,8 @@ import FoundationLocalization
 import SwiftUI
 
 public struct WeightView: View {
+    // MARK: - Properties
+
     @Environment(\.dismiss)
     var dismiss
     @Environment(LocalizationViewModel.self)
@@ -17,7 +19,11 @@ public struct WeightView: View {
     private var viewModel
     @FocusState private var isFocused: Bool
 
+    // MARK: - Initializers
+
     public init() {}
+
+    // MARK: - Body
 
     public var body: some View {
         VStack(spacing: 10) {
@@ -54,6 +60,8 @@ public struct WeightView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     NavigationView {

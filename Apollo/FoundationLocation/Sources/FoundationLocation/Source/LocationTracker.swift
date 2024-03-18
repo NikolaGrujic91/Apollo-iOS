@@ -9,11 +9,15 @@ import CoreLocation
 import FoundationLogger
 
 final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
+    // MARK: - Properties
+
     private let locationManager = CLLocationManager()
     private var lastLocation: CLLocation?
     var updatingLocationStopped = true
     var distanceMeters: Double = 0.0
     var distanceKilometers: Double = 0.0
+
+    // MARK: - Initializers
 
     override init() {
         super.init()

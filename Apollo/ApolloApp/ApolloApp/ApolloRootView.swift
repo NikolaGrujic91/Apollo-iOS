@@ -12,11 +12,15 @@ import FoundationTheme
 import SwiftUI
 
 struct ApolloRootView: View {
+    // MARK: - Properties
+
     @State private var theme = ThemeViewModel()
     @State private var localization = LocalizationViewModel()
     @State private var plansViewModel = PlansViewModel()
     @State private var activityViewModel = ActivityViewModel()
     @State private var weightViewModel = WeightViewModel()
+
+    // MARK: - Body
 
     var body: some View {
         MobileMenuView()
@@ -32,6 +36,8 @@ struct ApolloRootView: View {
             .preferredColorScheme(theme.colorScheme)
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     ApolloRootView()

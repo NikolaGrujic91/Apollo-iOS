@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct DayView: View {
+    // MARK: - Properties
+
     var name: String
+
+    // MARK: - Body
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,6 +27,8 @@ struct DayView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     DayView(
