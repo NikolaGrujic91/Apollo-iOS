@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@MainActor
 final class ImagesManager: ImagesProtocol {
     // MARK: - Properties
 

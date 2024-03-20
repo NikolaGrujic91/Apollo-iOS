@@ -26,6 +26,9 @@ let package = Package(
         .target(
             name: "FoundationStorage",
             dependencies: [],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

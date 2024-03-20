@@ -46,6 +46,9 @@ let package = Package(
             resources: [
                 .process("Resources"),
             ],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

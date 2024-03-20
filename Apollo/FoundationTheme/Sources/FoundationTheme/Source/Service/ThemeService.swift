@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 final class ThemeService: ThemeServiceProtocol, ThemeRepositoryInjected {
     // MARK: - Properties
 

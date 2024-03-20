@@ -17,6 +17,7 @@ enum TimerButton {
 }
 
 @Observable
+@MainActor
 public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
     // MARK: - Properties
 

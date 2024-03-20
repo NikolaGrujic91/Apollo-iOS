@@ -26,6 +26,9 @@ let package = Package(
         .target(
             name: "UtilityExtensions",
             dependencies: [],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

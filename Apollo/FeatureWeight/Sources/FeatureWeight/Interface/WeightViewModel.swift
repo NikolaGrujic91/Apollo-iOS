@@ -8,6 +8,7 @@
 import Observation
 
 @Observable
+@MainActor
 public final class WeightViewModel: WeightServiceInjected {
     // MARK: - Properties
 

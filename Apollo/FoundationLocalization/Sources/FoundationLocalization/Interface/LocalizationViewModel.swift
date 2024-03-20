@@ -10,6 +10,7 @@ import FoundationStorage
 import Observation
 
 @Observable
+@MainActor
 public final class LocalizationViewModel: StorageInjected, LoggerInjected {
     // MARK: - Properties
 

@@ -29,6 +29,9 @@ let package = Package(
             dependencies: [
                 .product(name: "FoundationLogger", package: "FoundationLogger"),
             ],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

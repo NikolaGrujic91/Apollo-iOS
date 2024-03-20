@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
+@MainActor
 public final class AudioError: Error {
     public enum AudioErrorType {
         case soundNotFound
@@ -23,6 +24,7 @@ public final class AudioError: Error {
     public var errorLine: ErrorLine
 }
 
+@MainActor
 extension AudioError: ErrorProtocol {
     public var errorDescription: String? {
         switch errorType {

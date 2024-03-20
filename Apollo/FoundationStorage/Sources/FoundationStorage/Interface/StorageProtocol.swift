@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 public protocol StorageProtocol {
     func set(_ value: String, forKey defaultName: String)
 

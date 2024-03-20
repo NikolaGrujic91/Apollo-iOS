@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 public protocol ImagesProtocol: AnyObject {
     func getImage(_ planImage: PlanImage) -> UIImage
 

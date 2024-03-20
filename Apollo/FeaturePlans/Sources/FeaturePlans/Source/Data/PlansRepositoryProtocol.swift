@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 public protocol PlansRepositoryProtocol: AnyObject {
     var plans: [Plan] { get }
 

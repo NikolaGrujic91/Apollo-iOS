@@ -7,6 +7,7 @@
 
 import CoreLocation
 
+@MainActor
 public protocol LocationTrackerProtocol: AnyObject {
     var updatingLocationStopped: Bool { get }
 

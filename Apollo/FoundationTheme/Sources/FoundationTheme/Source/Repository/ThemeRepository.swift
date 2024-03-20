@@ -10,6 +10,7 @@ import FoundationStorage
 import SwiftUI
 import UtilityExtensions
 
+@MainActor
 final class ThemeRepository: ThemeRepositoryProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 

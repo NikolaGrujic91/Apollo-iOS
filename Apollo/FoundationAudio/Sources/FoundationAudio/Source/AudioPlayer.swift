@@ -9,6 +9,7 @@ import AVFAudio
 import Foundation
 import FoundationLogger
 
+@MainActor
 final class AudioPlayer: AudioPlayerProtocol, LoggerInjected {
     // MARK: - Properties
 

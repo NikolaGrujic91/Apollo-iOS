@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 04/10/2023.
 //
 
+@MainActor
 final class WeightService: WeightServiceProtocol, WeightRepositoryInjected {
     // MARK: - WeightServiceProtocol
 

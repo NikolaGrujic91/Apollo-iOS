@@ -7,6 +7,7 @@
 
 import CocoaLumberjackSwift
 
+@MainActor
 final class Logger: LoggerProtocol {
     #if DEBUG
         private let logLevel: DDLogLevel = .verbose

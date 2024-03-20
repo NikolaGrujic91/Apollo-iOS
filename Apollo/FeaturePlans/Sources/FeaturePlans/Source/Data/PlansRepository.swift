@@ -8,6 +8,7 @@
 
 import Foundation
 
+@MainActor
 final class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
     // MARK: - Properties
 

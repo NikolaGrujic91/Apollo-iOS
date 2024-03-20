@@ -10,6 +10,7 @@ import FoundationLocalization
 import FoundationTheme
 import SwiftUI
 
+@MainActor
 struct MobileMenuView: View {
     // MARK: - Properties
 

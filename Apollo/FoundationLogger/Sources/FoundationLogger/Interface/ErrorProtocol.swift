@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 public protocol ErrorProtocol: LocalizedError, AnyObject {
     var errorLine: ErrorLine { get set }
 }

@@ -11,6 +11,7 @@ import FoundationLocalization
 import FoundationTheme
 import SwiftUI
 
+@MainActor
 struct ApolloRootView: View {
     // MARK: - Properties
 

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct DaysView: View {
     // MARK: - Properties
 

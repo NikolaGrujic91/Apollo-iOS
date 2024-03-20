@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
+@MainActor
 protocol WeightRepositoryProtocol: AnyObject {
     var bodyMass: Double { get }
 

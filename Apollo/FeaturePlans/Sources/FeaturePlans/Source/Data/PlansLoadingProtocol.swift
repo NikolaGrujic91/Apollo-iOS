@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
+@MainActor
 protocol PlansLoadingProtocol: AnyObject {
     ///
     /// Save plans with updated calories and distances in UserDefaults.

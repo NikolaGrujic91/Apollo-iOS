@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
+@MainActor
 public final class ErrorLine: CustomStringConvertible {
     // MARK: - Properties
 

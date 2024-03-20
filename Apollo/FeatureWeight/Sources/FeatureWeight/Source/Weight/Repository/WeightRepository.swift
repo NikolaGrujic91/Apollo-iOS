@@ -8,6 +8,7 @@
 import FoundationLogger
 import FoundationStorage
 
+@MainActor
 final class WeightRepository: WeightRepositoryProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 

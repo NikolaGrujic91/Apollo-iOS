@@ -9,6 +9,7 @@ import FLAnimatedImage
 import FoundationImages
 import SwiftUI
 
+@MainActor
 struct GifView: UIViewRepresentable {
     // MARK: - Properties
 

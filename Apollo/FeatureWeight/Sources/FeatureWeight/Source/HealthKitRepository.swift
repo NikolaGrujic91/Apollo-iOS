@@ -9,6 +9,7 @@ import Foundation
 import FoundationLogger
 import HealthKit
 
+@MainActor
 final class HealthKitRepository {
     // MARK: - Properties
 

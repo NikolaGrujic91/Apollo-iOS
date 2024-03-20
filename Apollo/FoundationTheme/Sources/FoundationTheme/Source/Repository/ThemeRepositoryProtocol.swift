@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 protocol ThemeRepositoryProtocol: AnyObject {
     var colorScheme: ColorScheme? { get }
 

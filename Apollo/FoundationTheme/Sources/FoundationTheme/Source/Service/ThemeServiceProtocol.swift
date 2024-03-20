@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 protocol ThemeServiceProtocol: AnyObject {
     ///
     /// Save chosen color scheme.

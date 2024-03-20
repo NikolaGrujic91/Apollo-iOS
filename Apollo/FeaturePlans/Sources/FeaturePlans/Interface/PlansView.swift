@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 public struct PlansView: View {
     // MARK: - Properties
 

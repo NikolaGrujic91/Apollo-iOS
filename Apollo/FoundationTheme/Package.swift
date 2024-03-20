@@ -34,6 +34,9 @@ let package = Package(
                 .product(name: "FoundationStorage", package: "FoundationStorage"),
                 .product(name: "UtilityExtensions", package: "UtilityExtensions"),
             ],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ],
             plugins: [
                 .plugin(name: "SwiftLint", package: "SwiftLintPlugin"),
             ]

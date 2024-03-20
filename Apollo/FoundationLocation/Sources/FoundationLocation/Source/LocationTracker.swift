@@ -8,6 +8,7 @@
 import CoreLocation
 import FoundationLogger
 
+@MainActor
 final class LocationTracker: NSObject, CLLocationManagerDelegate, LocationTrackerProtocol, LoggerInjected {
     // MARK: - Properties
 

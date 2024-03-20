@@ -8,6 +8,7 @@
 import FeatureWeight
 import SwiftUI
 
+@MainActor
 struct ActivityView: View {
     // MARK: - Properties
 

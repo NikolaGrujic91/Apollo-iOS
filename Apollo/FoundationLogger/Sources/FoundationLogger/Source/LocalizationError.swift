@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 07/02/2023.
 //
 
+@MainActor
 public final class LocalizationError: Error {
     public enum LocalizationErrorType {
         case pathNotFound

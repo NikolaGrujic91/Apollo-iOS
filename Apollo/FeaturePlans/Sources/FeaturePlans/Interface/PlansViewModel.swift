@@ -11,6 +11,7 @@ import Observation
 import UIKit
 
 @Observable
+@MainActor
 public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
     // MARK: - Properties
 

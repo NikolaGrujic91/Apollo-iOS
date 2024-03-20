@@ -9,6 +9,7 @@ import Foundation
 import FoundationLogger
 import FoundationStorage
 
+@MainActor
 final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 
