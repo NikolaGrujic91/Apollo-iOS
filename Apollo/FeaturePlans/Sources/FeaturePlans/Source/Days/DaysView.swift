@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 15/02/2023.
 //
 
+import FoundationLocalization
 import SwiftUI
 
 @MainActor
@@ -13,6 +14,8 @@ struct DaysView: View {
 
     @Environment(PlansViewModel.self)
     private var viewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
 
     @State private var plan = Plan()
 
@@ -58,7 +61,7 @@ struct DaysView: View {
                             }
                         },
                         label: {
-                            Text(week.name)
+                            Text("\(week.name.localized(localization.language)) \(week.orderNumber)")
                         }
                     )
                 }
@@ -77,4 +80,5 @@ struct DaysView: View {
 #Preview {
     DaysView(planID: UUID())
         .environment(PlansViewModel())
+        .environment(LocalizationViewModel())
 }

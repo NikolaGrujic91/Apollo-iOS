@@ -11,8 +11,9 @@ public final class Week: Codable, Identifiable {
     // MARK: - Properties
 
     public let id = UUID()
-    public var name: String = ""
-    public var days: [Day] = []
+    public private(set) var name: String = ""
+    public private(set) var orderNumber: String = ""
+    public private(set) var days: [Day] = []
 
     // MARK: - Initializers
 
@@ -20,6 +21,7 @@ public final class Week: Codable, Identifiable {
 
     private enum CodingKeys: CodingKey {
         case name
+        case orderNumber
         case days
     }
 }
