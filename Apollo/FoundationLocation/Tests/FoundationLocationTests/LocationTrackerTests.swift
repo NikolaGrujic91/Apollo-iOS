@@ -1,9 +1,17 @@
-import CoreLocation
+//
+//  LocationTrackerTests.swift
+//
+//
+//  Created by Nikola Grujic on 23/03/2024.
+//
+
 @testable import FoundationLocation
+import CoreLocation
 import XCTest
 
-final class FoundationLocationTests: XCTestCase, LocationTrackerInjected {
-    func testLocationTracker() throws {
+final class LocationTrackerTests: XCTestCase, LocationTrackerInjected {
+    @MainActor
+    func testUpdatingLocationStopped() {
         XCTAssertTrue(locationTracker.updatingLocationStopped)
 
         locationTracker.startUpdatingLocation()
@@ -13,6 +21,7 @@ final class FoundationLocationTests: XCTestCase, LocationTrackerInjected {
         XCTAssertTrue(locationTracker.updatingLocationStopped)
     }
 
+    @MainActor
     func testCalculateDistance() {
         XCTAssertEqual(locationTracker.distanceMeters, 0.0)
         XCTAssertEqual(locationTracker.distanceKilometers, 0.0)
