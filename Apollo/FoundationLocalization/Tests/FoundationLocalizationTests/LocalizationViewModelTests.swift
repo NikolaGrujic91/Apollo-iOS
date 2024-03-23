@@ -32,6 +32,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("cancel".localized(.english), "Cancel")
         XCTAssertEqual("dark".localized(.english), "Dark")
         XCTAssertEqual("data".localized(.english), "Data")
+        XCTAssertEqual("day".localized(.english), "Day")
         XCTAssertEqual("information".localized(.english), "Information")
         XCTAssertEqual("language".localized(.english), "Language")
         XCTAssertEqual("light".localized(.english), "Light")
@@ -46,6 +47,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("settings".localized(.english), "Settings")
         XCTAssertEqual("start".localized(.english), "Start")
         XCTAssertEqual("version".localized(.english), "Version:")
+        XCTAssertEqual("week".localized(.english), "Week")
         XCTAssertEqual("weight".localized(.english), "Weight")
     }
 
@@ -59,6 +61,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("cancel".localized(.netherlands), "Annuleren")
         XCTAssertEqual("dark".localized(.netherlands), "Donker")
         XCTAssertEqual("data".localized(.netherlands), "Gegevens")
+        XCTAssertEqual("day".localized(.netherlands), "Dag")
         XCTAssertEqual("information".localized(.netherlands), "Informatie")
         XCTAssertEqual("language".localized(.netherlands), "Taal")
         XCTAssertEqual("light".localized(.netherlands), "Licht")
@@ -73,6 +76,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("settings".localized(.netherlands), "Instellingen")
         XCTAssertEqual("start".localized(.netherlands), "Starten")
         XCTAssertEqual("version".localized(.netherlands), "Versie:")
+        XCTAssertEqual("week".localized(.netherlands), "Week")
         XCTAssertEqual("weight".localized(.netherlands), "Gewicht")
     }
 
@@ -86,6 +90,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("cancel".localized(.french), "Annuler")
         XCTAssertEqual("dark".localized(.french), "Sombre")
         XCTAssertEqual("data".localized(.french), "Donnés")
+        XCTAssertEqual("day".localized(.french), "Jour")
         XCTAssertEqual("information".localized(.french), "Information")
         XCTAssertEqual("language".localized(.french), "Langue")
         XCTAssertEqual("light".localized(.french), "Lumière")
@@ -100,6 +105,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("settings".localized(.french), "Paramètres")
         XCTAssertEqual("start".localized(.french), "Commencer")
         XCTAssertEqual("version".localized(.french), "Version:")
+        XCTAssertEqual("week".localized(.french), "Semaine")
         XCTAssertEqual("weight".localized(.french), "Poids")
     }
 
@@ -113,6 +119,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("cancel".localized(.german), "Stornieren")
         XCTAssertEqual("dark".localized(.german), "Dunkel")
         XCTAssertEqual("data".localized(.german), "Daten")
+        XCTAssertEqual("day".localized(.german), "Tag")
         XCTAssertEqual("information".localized(.german), "Information")
         XCTAssertEqual("language".localized(.german), "Sprache")
         XCTAssertEqual("light".localized(.german), "Licht")
@@ -127,6 +134,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("settings".localized(.german), "Einstellungen")
         XCTAssertEqual("start".localized(.german), "Start")
         XCTAssertEqual("version".localized(.german), "Ausführung:")
+        XCTAssertEqual("week".localized(.german), "Woche")
         XCTAssertEqual("weight".localized(.german), "Gewicht")
     }
 
@@ -140,6 +148,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("cancel".localized(.portuguese), "Cancelar")
         XCTAssertEqual("dark".localized(.portuguese), "Escuro")
         XCTAssertEqual("data".localized(.portuguese), "Dados")
+        XCTAssertEqual("day".localized(.portuguese), "Dia")
         XCTAssertEqual("information".localized(.portuguese), "Informação")
         XCTAssertEqual("language".localized(.portuguese), "Linguagem")
         XCTAssertEqual("light".localized(.portuguese), "Luz")
@@ -154,6 +163,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("settings".localized(.portuguese), "Configurações")
         XCTAssertEqual("start".localized(.portuguese), "Começar")
         XCTAssertEqual("version".localized(.portuguese), "Versão:")
+        XCTAssertEqual("week".localized(.portuguese), "Semana")
         XCTAssertEqual("weight".localized(.portuguese), "Peso")
     }
 
@@ -167,6 +177,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("cancel".localized(.spanish), "Cancelar")
         XCTAssertEqual("dark".localized(.spanish), "Oscuro")
         XCTAssertEqual("data".localized(.spanish), "Datos")
+        XCTAssertEqual("day".localized(.spanish), "Día")
         XCTAssertEqual("information".localized(.spanish), "Información")
         XCTAssertEqual("language".localized(.spanish), "Idioma")
         XCTAssertEqual("light".localized(.spanish), "Ligero")
@@ -181,6 +192,7 @@ final class LocalizationViewModelTests: XCTestCase {
         XCTAssertEqual("settings".localized(.spanish), "Ajustes")
         XCTAssertEqual("start".localized(.spanish), "Comenzar")
         XCTAssertEqual("version".localized(.spanish), "Versión:")
+        XCTAssertEqual("week".localized(.spanish), "Semana")
         XCTAssertEqual("weight".localized(.spanish), "Peso")
     }
 
