@@ -12,7 +12,7 @@ public enum LanguageCode: String, CaseIterable, Identifiable {
     case french      = "fr"
     case japanese    = "ja"
     case netherlands = "nl"
-    case portuguese  = "pt"
+    case portuguese  = "pt-PT"
 
     public var id: Self { self }
 }
