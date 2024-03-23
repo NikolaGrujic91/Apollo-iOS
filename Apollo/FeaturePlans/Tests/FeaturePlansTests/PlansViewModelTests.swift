@@ -13,6 +13,8 @@ final class PlansViewModelTests: XCTestCase {
 
     private var plansViewModel: PlansViewModel?
 
+    // MARK: Functions
+
     @MainActor
     override func setUp() {
         super.setUp()
