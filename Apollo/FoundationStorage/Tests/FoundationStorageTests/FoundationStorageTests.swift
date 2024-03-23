@@ -2,6 +2,7 @@
 import XCTest
 
 final class FoundationStorageTests: XCTestCase, StorageInjected {
+    @MainActor
     func testStorageUserDefaults() {
         storage.set("example", forKey: "testKeyString")
         var stringValue: String? = storage.get(forKey: "testKeyString")

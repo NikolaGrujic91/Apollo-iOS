@@ -2,6 +2,7 @@
 import XCTest
 
 final class FoundationLoggerTests: XCTestCase, LoggerInjected {
+    @MainActor
     func testLogger() {
         XCTAssertNotNil(logger)
 
