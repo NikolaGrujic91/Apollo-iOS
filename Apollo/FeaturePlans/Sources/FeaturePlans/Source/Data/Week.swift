@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FoundationLocalization
 
 public final class Week: Codable, Identifiable {
     // MARK: - Properties
@@ -23,6 +24,11 @@ public final class Week: Codable, Identifiable {
         case name
         case orderNumber
         case days
+    }
+
+    @MainActor
+    public func fullName(_ language: LanguageCode) -> String {
+        "\(name.localized(language)) \(orderNumber)"
     }
 }
 

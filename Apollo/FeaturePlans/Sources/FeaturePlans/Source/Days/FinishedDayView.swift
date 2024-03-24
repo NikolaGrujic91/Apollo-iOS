@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 13/03/2023.
 //
 
+import FoundationLocalization
 import SwiftUI
 
 struct FinishedDayView: View {
@@ -12,6 +13,8 @@ struct FinishedDayView: View {
 
     @Environment(PlansViewModel.self)
     private var viewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
 
     @State private var day = Day()
 
@@ -93,7 +96,7 @@ struct FinishedDayView: View {
                 Image(systemName: "checkmark.circle.fill")
                     .frame(height: 20)
                     .foregroundColor(.accentColor)
-                Text(day.name)
+                Text(day.fullName(localization.language))
                     .foregroundColor(.accentColor)
                 Spacer()
             }
@@ -113,4 +116,5 @@ struct FinishedDayView: View {
         dayId: UUID()
     )
     .environment(PlansViewModel())
+    .environment(LocalizationViewModel())
 }

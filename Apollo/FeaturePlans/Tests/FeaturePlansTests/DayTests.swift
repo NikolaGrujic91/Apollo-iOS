@@ -6,6 +6,7 @@
 //
 
 @testable import FeaturePlans
+@testable import FoundationLocalization
 import XCTest
 
 final class DayTests: XCTestCase, PlansRepositoryInjected {
@@ -65,5 +66,15 @@ final class DayTests: XCTestCase, PlansRepositoryInjected {
         XCTAssertEqual(day.intervals[10].endFraction, 0.10000000000000016)
         XCTAssertEqual(day.intervals[11].startFraction, 0.10000000000000016)
         XCTAssertEqual(day.intervals[11].endFraction, 0.0)
+    }
+
+    @MainActor
+    func testFullName() {
+        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.english), "Day 1")
+        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.german), "Tag 1")
+        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.netherlands), "Dag 1")
+        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.spanish), "Día 1")
+        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.portuguese), "Dia 1")
+        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.french), "Jour 1")
     }
 }

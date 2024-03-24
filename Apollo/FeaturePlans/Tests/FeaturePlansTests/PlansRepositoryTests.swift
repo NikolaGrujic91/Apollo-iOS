@@ -135,6 +135,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         let weekId = plansRepository.plans[0].weeks[0].id
         let dayId = plansRepository.plans[0].weeks[0].days[0].id
         let day = plansRepository.getDay(planId, weekId, dayId)
-        XCTAssertEqual(day.name, "Day 1")
+        XCTAssertEqual(day.name, "day")
+        XCTAssertEqual(day.orderNumber, "1")
     }
 }

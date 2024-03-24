@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FoundationLocalization
 
 public final class Day: Codable, Identifiable {
     // MARK: - Properties
@@ -16,6 +17,7 @@ public final class Day: Codable, Identifiable {
     public var distance: Int = 0
     public var intervals: [Interval] = []
     public var name: String = ""
+    public var orderNumber: String = ""
     public var pace: String = ""
     public let id = UUID()
 
@@ -25,6 +27,7 @@ public final class Day: Codable, Identifiable {
 
     private enum CodingKeys: CodingKey {
         case name
+        case orderNumber
         case calories
         case distance
         case pace
@@ -64,6 +67,11 @@ public final class Day: Codable, Identifiable {
 
     public func intervalType(_ index: Int) -> IntervalType {
         intervals.isEmpty ? .run : intervals[index].type
+    }
+
+    @MainActor
+    public func fullName(_ language: LanguageCode) -> String {
+        "\(name.localized(language)) \(orderNumber)"
     }
 }
 

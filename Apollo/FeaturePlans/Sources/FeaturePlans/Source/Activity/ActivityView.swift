@@ -6,6 +6,7 @@
 //
 
 import FeatureWeight
+import FoundationLocalization
 import SwiftUI
 
 @MainActor
@@ -16,6 +17,8 @@ struct ActivityView: View {
     private var viewModel
     @Environment(WeightViewModel.self)
     private var weightViewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
 
     var day: Day
 
@@ -28,21 +31,16 @@ struct ActivityView: View {
                 distance: viewModel.distanceFormatted,
                 pace: viewModel.paceFormatted
             )
-            .navigationTitle(viewModel.day.name)
             .onDisappear {
                 viewModel.onDissapear()
             }
-            .toolbar(.hidden, for: .tabBar)
         } else {
             TimerView()
-                .navigationTitle(viewModel.day.name)
                 .onAppear {
                     viewModel.onAppear(day: day, bodyMass: Double(weightViewModel.bodyMass) ?? 0.0)
-
                     // Prevent screen lock only for timer
                     UIApplication.shared.isIdleTimerDisabled = true
                 }
-                .toolbar(.hidden, for: .tabBar)
         }
     }
 
@@ -50,6 +48,8 @@ struct ActivityView: View {
 
     var body: some View {
         activityView
+            .navigationTitle(viewModel.day.fullName(localization.language))
+            .toolbar(.hidden, for: .tabBar)
     }
 }
 
@@ -77,4 +77,5 @@ struct ActivityView: View {
     return ActivityView(day: previewDay())
         .environment(ActivityViewModel())
         .environment(WeightViewModel())
+        .environment(LocalizationViewModel())
 }

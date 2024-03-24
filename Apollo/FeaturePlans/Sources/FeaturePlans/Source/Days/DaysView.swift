@@ -39,7 +39,7 @@ struct DaysView: View {
         } else {
             NavigationLink(destination: ActivityView(day: day)) {
                 VStack(alignment: .center, spacing: 10) {
-                    DayView(name: day.name)
+                    DayView(name: day.fullName(localization.language))
                 }
                 .frame(maxWidth: .infinity) // Enable alignment center
                 .contentShape(Rectangle()) // Detect tap on entire button
@@ -61,7 +61,7 @@ struct DaysView: View {
                             }
                         },
                         label: {
-                            Text("\(week.name.localized(localization.language)) \(week.orderNumber)")
+                            Text(week.fullName(localization.language))
                         }
                     )
                 }
