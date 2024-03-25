@@ -37,7 +37,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
     @MainActor
     func verifyPlans() {
         let plan1 = plansRepository.plans[0]
-        XCTAssertEqual(plan1.name, "0 to 2K")
+        XCTAssertEqual(plan1.name, .basic0to2K)
         XCTAssertEqual(plan1.weeks.count, 6)
         XCTAssertEqual(plan1.weeks[0].days.count, 3)
         XCTAssertEqual(plan1.weeks[1].days.count, 3)
@@ -47,7 +47,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         XCTAssertEqual(plan1.weeks[5].days.count, 1)
 
         let plan2 = plansRepository.plans[1]
-        XCTAssertEqual(plan2.name, "0 to 5K")
+        XCTAssertEqual(plan2.name, .basic0to5K)
         XCTAssertEqual(plan2.weeks.count, 8)
         XCTAssertEqual(plan2.weeks[0].days.count, 3)
         XCTAssertEqual(plan2.weeks[1].days.count, 3)
@@ -59,7 +59,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         XCTAssertEqual(plan2.weeks[7].days.count, 3)
 
         let plan3 = plansRepository.plans[2]
-        XCTAssertEqual(plan3.name, "5K to 10K")
+        XCTAssertEqual(plan3.name, .basic5Kto10K)
         XCTAssertEqual(plan3.weeks.count, 6)
         XCTAssertEqual(plan3.weeks[0].days.count, 3)
         XCTAssertEqual(plan3.weeks[1].days.count, 3)
@@ -69,7 +69,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         XCTAssertEqual(plan3.weeks[5].days.count, 3)
 
         let plan4 = plansRepository.plans[3]
-        XCTAssertEqual(plan4.name, "Weight Loss: Level 1")
+        XCTAssertEqual(plan4.name, .weightLossLevel1)
         XCTAssertEqual(plan4.weeks.count, 6)
         XCTAssertEqual(plan4.weeks[0].days.count, 3)
         XCTAssertEqual(plan4.weeks[1].days.count, 3)
@@ -79,7 +79,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         XCTAssertEqual(plan4.weeks[5].days.count, 3)
 
         let plan5 = plansRepository.plans[4]
-        XCTAssertEqual(plan5.name, "Weight Loss: Level 2")
+        XCTAssertEqual(plan5.name, .weightLossLevel2)
         XCTAssertEqual(plan5.weeks.count, 6)
         XCTAssertEqual(plan5.weeks[0].days.count, 3)
         XCTAssertEqual(plan5.weeks[1].days.count, 3)
@@ -89,7 +89,7 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         XCTAssertEqual(plan5.weeks[5].days.count, 3)
 
         let plan6 = plansRepository.plans[5]
-        XCTAssertEqual(plan6.name, "Weight Loss: Level 3")
+        XCTAssertEqual(plan6.name, .weightLossLevel3)
         XCTAssertEqual(plan6.weeks.count, 6)
         XCTAssertEqual(plan6.weeks[0].days.count, 3)
         XCTAssertEqual(plan6.weeks[1].days.count, 3)
@@ -125,10 +125,10 @@ final class PlansRepositoryTests: XCTestCase, PlansRepositoryInjected {
         // Check get plan by id
         let id = plansRepository.plans[0].id
         let plan = plansRepository.get(id)
-        XCTAssertEqual(plan.name, "0 to 2K")
+        XCTAssertEqual(plan.name, .basic0to2K)
 
         let emptyPlan = plansRepository.get(UUID())
-        XCTAssertEqual(emptyPlan.name, "")
+        XCTAssertEqual(emptyPlan.name, .basic0to2K)
 
         // Check get day by id
         let planId = plansRepository.plans[0].id

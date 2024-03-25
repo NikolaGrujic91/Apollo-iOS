@@ -1,6 +1,6 @@
 [
     {
-        "name": "0 to 2K",
+        "name": "basic0to2K",
         "weeks": [
             {
                 "name": "week",
@@ -602,7 +602,7 @@
         ]
     },
     {
-        "name": "0 to 5K",
+        "name": "basic0to5K",
         "weeks": [
             {
                 "name": "week",
@@ -1519,7 +1519,7 @@
         ]
     },
     {
-        "name": "5K to 10K",
+        "name": "basic5Kto10K",
         "weeks": [
             {
                 "name": "week",
@@ -2012,7 +2012,7 @@
         ]
     },
     {
-        "name": "Weight Loss: Level 1",
+        "name": "weightLossLevel1",
         "weeks": [
             {
                 "name": "week",
@@ -3002,7 +3002,7 @@
         ]
     },
     {
-        "name": "Weight Loss: Level 2",
+        "name": "weightLossLevel2",
         "weeks": [
             {
                 "name": "week",
@@ -3863,7 +3863,7 @@
         ]
     },
     {
-        "name": "Weight Loss: Level 3",
+        "name": "weightLossLevel3",
         "weeks": [
             {
                 "name": "week",

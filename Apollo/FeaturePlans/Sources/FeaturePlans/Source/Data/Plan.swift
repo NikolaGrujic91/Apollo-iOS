@@ -11,7 +11,7 @@ public final class Plan: Codable, Identifiable {
     // MARK: - Properties
 
     public let id = UUID()
-    public var name: String = ""
+    public var name: PlanType = .basic0to2K
     public var weeks: [Week] = []
 
     // MARK: - Initializers

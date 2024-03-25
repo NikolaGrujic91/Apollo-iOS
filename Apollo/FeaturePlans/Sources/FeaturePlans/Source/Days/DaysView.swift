@@ -66,7 +66,7 @@ struct DaysView: View {
                     )
                 }
             }
-            .navigationTitle(plan.name)
+            .navigationTitle(plan.name.rawValue.localized(localization.language))
             .task {
                 viewModel.update()
                 plan = viewModel.get(planID)

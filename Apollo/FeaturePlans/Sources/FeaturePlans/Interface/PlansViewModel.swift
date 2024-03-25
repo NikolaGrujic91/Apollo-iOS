@@ -43,16 +43,16 @@ public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
         plansRepository.getDay(planId, weekId, dayId)
     }
 
-    func getImage(_ name: String) -> UIImage {
-        if name == "0 to 2K" {
+    func getImage(_ name: PlanType) -> UIImage {
+        if name == .basic0to2K {
             images.getImage(.plan1)
-        } else if name == "0 to 5K" {
+        } else if name == .basic0to5K {
             images.getImage(.plan2)
-        } else if name == "5K to 10K" {
+        } else if name == .basic5Kto10K {
             images.getImage(.plan3)
-        } else if name == "Weight Loss: Level 1" {
+        } else if name == .weightLossLevel1 {
             images.getImage(.plan4)
-        } else if name == "Weight Loss: Level 2" {
+            } else if name == .weightLossLevel2 {
             images.getImage(.plan5)
         } else {
             images.getImage(.plan6)

@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 15/02/2023.
 //
 
+import FoundationLocalization
 import SwiftUI
 
 @MainActor
@@ -13,6 +14,8 @@ public struct PlansView: View {
 
     @Environment(PlansViewModel.self)
     private var viewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
 
     // MARK: - Initializers
 
@@ -31,7 +34,7 @@ public struct PlansView: View {
                 .scaledToFit()
                 .frame(maxWidth: .infinity) // Enable alignment center
                 .accessibilityHidden(true)
-            Text("\(plan.name)")
+            Text("\(plan.name.rawValue.localized(localization.language))")
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity) // Enable alignment center

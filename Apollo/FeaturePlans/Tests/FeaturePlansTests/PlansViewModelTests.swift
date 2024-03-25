@@ -47,22 +47,22 @@ final class PlansViewModelTests: XCTestCase {
     func testGetImagePerPlan() {
         XCTAssertNotNil(plansViewModel)
 
-        var planImage = plansViewModel?.getImage("0 to 2K")
+        var planImage = plansViewModel?.getImage(.basic0to2K)
         XCTAssertNotNil(planImage)
 
-        planImage = plansViewModel?.getImage("0 to 5K")
+        planImage = plansViewModel?.getImage(.basic0to5K)
         XCTAssertNotNil(planImage)
 
-        planImage = plansViewModel?.getImage("5K to 10K")
+        planImage = plansViewModel?.getImage(.basic5Kto10K)
         XCTAssertNotNil(planImage)
 
-        planImage = plansViewModel?.getImage("Weight Loss: Level 1")
+        planImage = plansViewModel?.getImage(.weightLossLevel1)
         XCTAssertNotNil(planImage)
 
-        planImage = plansViewModel?.getImage("Weight Loss: Level 2")
+        planImage = plansViewModel?.getImage(.weightLossLevel2)
         XCTAssertNotNil(planImage)
 
-        planImage = plansViewModel?.getImage("")
+        planImage = plansViewModel?.getImage(.weightLossLevel3)
         XCTAssertNotNil(planImage)
     }
 
@@ -86,7 +86,7 @@ final class PlansViewModelTests: XCTestCase {
 
         if let uuid = plansViewModel?.plans[0].id,
             let plan = plansViewModel?.get(uuid) {
-            XCTAssertEqual(plan.name, "0 to 2K")
+            XCTAssertEqual(plan.name, .basic0to2K)
         } else {
             XCTFail("Plan UUID or plan not found!")
         }
