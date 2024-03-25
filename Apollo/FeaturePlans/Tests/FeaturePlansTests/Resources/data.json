@@ -4166,7 +4166,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4178,7 +4178,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4222,7 +4222,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4234,7 +4234,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4256,7 +4256,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4268,7 +4268,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4280,7 +4280,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4292,7 +4292,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4314,7 +4314,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4326,7 +4326,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4338,7 +4338,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4350,7 +4350,7 @@
                                 "seconds" : 540
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4378,7 +4378,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4390,7 +4390,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4402,7 +4402,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {
@@ -4490,7 +4490,7 @@
                                 "seconds" : 1800
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4502,7 +4502,7 @@
                                 "seconds" : 1200
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4524,7 +4524,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4536,7 +4536,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4548,7 +4548,7 @@
                                 "seconds" : 480
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {
@@ -4560,7 +4560,7 @@
                                 "seconds" : 480
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {
@@ -4572,7 +4572,7 @@
                                 "seconds" : 480
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {
@@ -4594,7 +4594,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4606,7 +4606,7 @@
                                 "seconds" : 600
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 60
                             },
                             {
@@ -4618,7 +4618,7 @@
                                 "seconds" : 480
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {
@@ -4630,7 +4630,7 @@
                                 "seconds" : 480
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {
@@ -4642,7 +4642,7 @@
                                 "seconds" : 480
                             },
                             {
-                                "type" : "fast run",
+                                "type" : "fastRun",
                                 "seconds" : 120
                             },
                             {

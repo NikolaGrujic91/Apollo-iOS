@@ -5,6 +5,7 @@
 //  Created by Nikola Grujic on 16/02/2023.
 //
 
+import FoundationLocalization
 import SwiftUI
 
 struct TimerView: View {
@@ -12,6 +13,8 @@ struct TimerView: View {
 
     @Environment(ActivityViewModel.self)
     private var viewModel
+    @Environment(LocalizationViewModel.self)
+    private var localization
 
     // MARK: - Body
 
@@ -33,7 +36,7 @@ struct TimerView: View {
                 TimerText(
                     timeInterval: TimeInterval(viewModel.timeRemaining),
                     color: viewModel.intervalType().color(),
-                    intervalType: viewModel.intervalType().rawValue,
+                    intervalType: viewModel.intervalType().rawValue.localized(localization.language),
                     currentInterval: viewModel.currentInterval + 1,
                     totalIntervals: viewModel.totalIntervals,
                     fontSize: 90
@@ -69,4 +72,5 @@ struct TimerView: View {
 #Preview {
     TimerView()
         .environment(ActivityViewModel())
+        .environment(LocalizationViewModel())
 }

@@ -10,8 +10,8 @@ import SwiftUI
 public enum IntervalType: String, CaseIterable, Codable {
     case run
     case walk
-    case fastRun = "fast run"
-    case fastWalk = "fast walk"
+    case fastRun
+    case fastWalk
 }
 
 public extension IntervalType {
