@@ -18,6 +18,7 @@
 		8EAAF18F29A26CCB0032AFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */; };
 		8EAAF19229A26CCB0032AFA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF19129A26CCB0032AFA8 /* Preview Assets.xcassets */; };
 		8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAAF19B29A273720032AFA8 /* HealthKit.framework */; };
+		8EC897DE2BB1B5D0003108FD /* UtilityExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8EC897DD2BB1B5D0003108FD /* UtilityExtensions */; };
 		8EE0B4FD29C20B1D00DD7726 /* ApolloRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FC29C20B1C00DD7726 /* ApolloRootView.swift */; };
 		8EE0B4FF29C20B2000DD7726 /* MobileMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FE29C20B2000DD7726 /* MobileMenuView.swift */; };
 		8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */ = {isa = PBXBuildFile; productRef = 8EE0B50129C20F9E00DD7726 /* FeaturePlans */; };
@@ -68,6 +69,7 @@
 				8E340A822ACDC67300EF4B28 /* FoundationTheme in Frameworks */,
 				8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */,
 				8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */,
+				8EC897DE2BB1B5D0003108FD /* UtilityExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +176,7 @@
 				8EE0B50129C20F9E00DD7726 /* FeaturePlans */,
 				8E4FE50C2ACD6F76005EE393 /* FeatureWeight */,
 				8E340A812ACDC67300EF4B28 /* FoundationTheme */,
+				8EC897DD2BB1B5D0003108FD /* UtilityExtensions */,
 			);
 			productName = ApolloApp;
 			productReference = 8EAAF18729A26CC90032AFA8 /* ApolloApp.app */;
@@ -564,6 +567,10 @@
 		8E4FE50C2ACD6F76005EE393 /* FeatureWeight */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureWeight;
+		};
+		8EC897DD2BB1B5D0003108FD /* UtilityExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UtilityExtensions;
 		};
 		8EE0B50129C20F9E00DD7726 /* FeaturePlans */ = {
 			isa = XCSwiftPackageProductDependency;
