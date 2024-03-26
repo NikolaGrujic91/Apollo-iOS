@@ -34,8 +34,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
     private var pace: Double = 0.0
     private var bodyMass: Double = 0.0
     private(set) var calories: Int = 0
-    private(set) var currentInterval = 0
-    private(set) var totalIntervals: Int = 0
+    private(set) var currentInterval = CurrentInterval(0, 0)
     private(set) var day = Day()
 
     // MARK: - Initializers
@@ -50,8 +49,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         locationTracker.requestAuthorization()
 
         self.day = day
-        totalIntervals = day.intervals.count
-        currentInterval = 0
+        currentInterval = CurrentInterval(0, day.intervals.count)
         self.bodyMass = bodyMass
         timeElapsed = 0
         distanceFormatted = "0.00"
@@ -59,7 +57,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         isFinished = false
 
         if !day.intervals.isEmpty {
-            timeRemaining = day.intervals[currentInterval].seconds
+            timeRemaining = day.intervals[currentInterval.get()].seconds
             totalTime = day.totalTime()
             totalTimeRemaining = totalTime
             day.calculateFractions()
@@ -106,15 +104,15 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
 
         if timeRemaining < 1 {
             stopTimer()
-            currentInterval += 1
+            currentInterval.next()
 
-            if isLastInterval() {
+            if currentInterval.isLast() {
                 update()
                 activeButton = .start
                 timeElapsed = 0
-                currentInterval = 0
+                currentInterval.reset()
                 isFinished = true
-                timeRemaining = day.intervals[currentInterval].seconds
+                timeRemaining = day.intervals[currentInterval.get()].seconds
                 totalTimeRemaining = totalTime
                 locationTracker.stopUpdatingLocation()
 
@@ -123,7 +121,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
             }
 
             player.play(.complete)
-            timeRemaining = day.intervals[currentInterval].seconds
+            timeRemaining = day.intervals[currentInterval.get()].seconds
             startTimer()
         } else {
             timeElapsed += 1
@@ -132,16 +130,12 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         }
     }
 
-    private func isLastInterval() -> Bool {
-        currentInterval >= totalIntervals
-    }
-
     func progress() -> Double {
         if day.intervals.isEmpty {
             return 1.0
         }
 
-        return ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval].seconds)) / 100.0
+        return ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval.get()].seconds)) / 100.0
     }
 
     func progressTotal() -> Double {
@@ -153,7 +147,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
     }
 
     func intervalType() -> IntervalType {
-        day.intervalType(currentInterval)
+        day.intervalType(currentInterval.get())
     }
 
     private func save() {

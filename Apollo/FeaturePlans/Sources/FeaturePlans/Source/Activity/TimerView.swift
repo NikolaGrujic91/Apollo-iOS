@@ -37,8 +37,8 @@ struct TimerView: View {
                     timeInterval: TimeInterval(viewModel.timeRemaining),
                     color: viewModel.intervalType().color(),
                     intervalType: viewModel.intervalType().rawValue.localized(localization.language),
-                    currentInterval: viewModel.currentInterval + 1,
-                    totalIntervals: viewModel.totalIntervals,
+                    currentInterval: viewModel.currentInterval.getDisplay(),
+                    totalIntervals: viewModel.currentInterval.getTotal(),
                     fontSize: 90
                 )
                 .onReceive(viewModel.timer) { _ in
