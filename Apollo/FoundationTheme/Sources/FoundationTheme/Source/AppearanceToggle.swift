@@ -30,7 +30,7 @@ struct AppearanceToggle: View {
         VStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .fill(Color.accentColor)
+                    .fill(Color(UIColor.systemOrange))
                     .frame(width: 102, height: 102)
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(rectangleColor)
@@ -44,7 +44,7 @@ struct AppearanceToggle: View {
                 Image(systemName: systemName)
                     .padding()
                     .frame(width: 20, height: 20)
-                    .background(Color.accentColor)
+                    .background(Color(UIColor.systemOrange))
                     .clipShape(Circle())
                     .foregroundColor(.white)
                     .symbolVariant(.fill)

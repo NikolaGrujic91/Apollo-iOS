@@ -21,7 +21,7 @@ struct DayView: View {
                     .frame(height: 20)
                     .foregroundColor(.gray)
                 Text(name)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(Color(UIColor.systemOrange))
                 Spacer()
             }
         }

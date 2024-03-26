@@ -82,7 +82,7 @@ struct FinishedDayView: View {
                         }
                         Image(systemName: "figure.run")
                             .frame(height: 20)
-                            .foregroundColor(.accentColor)
+                            .foregroundColor(Color(UIColor.systemOrange))
                     }
                     Text("Run again")
                         .font(.system(size: 10))
@@ -95,9 +95,9 @@ struct FinishedDayView: View {
             HStack {
                 Image(systemName: "checkmark.circle.fill")
                     .frame(height: 20)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(Color(UIColor.systemOrange))
                 Text(day.fullName(localization.language))
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(Color(UIColor.systemOrange))
                 Spacer()
             }
         })

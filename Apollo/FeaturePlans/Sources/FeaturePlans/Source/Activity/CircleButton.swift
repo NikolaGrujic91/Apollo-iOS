@@ -22,7 +22,7 @@ struct CircleButton: View {
                     .resizable()
                     .frame(width: 100, height: 100)
             }
-            .foregroundColor(.accentColor)
+            .foregroundColor(Color(UIColor.systemOrange))
             .frame(maxWidth: .infinity) // Enable alignment center
             .contentShape(Rectangle()) // Detect tap on entire button
         }
