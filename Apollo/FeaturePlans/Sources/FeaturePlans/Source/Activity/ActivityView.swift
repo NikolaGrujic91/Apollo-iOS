@@ -27,9 +27,9 @@ struct ActivityView: View {
     @ViewBuilder private var activityView: some View {
         if viewModel.isFinished {
             InfoView(
-                calories: viewModel.calories,
-                distance: viewModel.distanceFormatted,
-                pace: viewModel.paceFormatted
+                calories: viewModel.stats.calories,
+                distance: viewModel.stats.distanceKilometers,
+                pace: viewModel.stats.paceFormatted
             )
             .onDisappear {
                 viewModel.onDissapear()

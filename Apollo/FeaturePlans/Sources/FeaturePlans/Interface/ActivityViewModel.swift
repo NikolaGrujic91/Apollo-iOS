@@ -24,16 +24,13 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
     private(set) var timeRemaining = 0
     private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private(set) var activeButton: TimerButton = .start
-    private(set) var distanceFormatted: String = "0.00"
-    private(set) var paceFormatted: String = "00:00"
     private(set) var isFinished = false
 
     private var timeElapsed = 0
     private var totalTime = 0
     private var totalTimeRemaining = 0
-    private var pace: Double = 0.0
     private var bodyMass: Double = 0.0
-    private(set) var calories: Int = 0
+    private(set) var stats = ActivityStats()
     private(set) var currentInterval = CurrentInterval(0, 0)
     private(set) var day = Day()
 
@@ -52,8 +49,6 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         currentInterval = CurrentInterval(0, day.intervals.count)
         self.bodyMass = bodyMass
         timeElapsed = 0
-        distanceFormatted = "0.00"
-        paceFormatted = "00:00"
         isFinished = false
 
         if !day.intervals.isEmpty {
@@ -152,19 +147,19 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
 
     private func save() {
         day.finished = true
+        #warning("convert distance to string type and store stats.distanceKilometers")
         day.distance = Int(locationTracker.distanceMeters)
-        day.calories = calories
-        day.pace = paceFormatted
+        day.calories = stats.calories
+        day.pace = stats.paceFormatted
         service.save()
     }
 
     private func update() {
-        distanceFormatted = String(format: "%.2f", locationTracker.distanceKilometers)
-        calories = Int(locationTracker.distanceKilometers * bodyMass * 1.036)
+        stats.setDistanceKilometersFormatted(locationTracker.distanceKilometers)
+        stats.setCalories(locationTracker.distanceKilometers, bodyMass)
 
         if locationTracker.distanceKilometers > 0 {
-            pace = Double(timeElapsed) / locationTracker.distanceKilometers
-            paceFormatted = String(format: "%02i:%02i", Int(pace) / 60 % 60, Int(pace) % 60)
+            stats.setPace(timeElapsed, locationTracker.distanceKilometers)
         }
     }
 }
