@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-public enum IntervalType: String, CaseIterable, Codable {
+enum IntervalType: String, CaseIterable, Codable {
     case run
     case walk
     case fastRun
     case fastWalk
 }
 
-public extension IntervalType {
+extension IntervalType {
     func color() -> Color {
         switch self {
         case .run:

@@ -7,18 +7,14 @@
 
 import Foundation
 
-public final class Interval: Codable, Identifiable {
+final class Interval: Codable, Identifiable {
     // MARK: - Properties
 
-    public let id = UUID()
-    public var type: IntervalType = .run
-    public var seconds: Int = 0
-    public var startFraction: CGFloat = 0
-    public var endFraction: CGFloat = 0
-
-    // MARK: - Initializers
-
-    public init() {}
+    let id = UUID()
+    var type: IntervalType = .run
+    var seconds: Int = 0
+    var startFraction: CGFloat = 0
+    var endFraction: CGFloat = 0
 
     private enum CodingKeys: CodingKey {
         case type
@@ -29,7 +25,7 @@ public final class Interval: Codable, Identifiable {
 // MARK: - Equatable
 
 extension Interval: Equatable {
-    public static func == (lhs: Interval, rhs: Interval) -> Bool {
+    static func == (lhs: Interval, rhs: Interval) -> Bool {
         lhs.id == rhs.id
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Nikola Grujic on 25/03/2024.
 //
 
-public enum PlanType: String, Codable {
+enum PlanType: String, Codable {
     case basic0to2K
     case basic0to5K
     case basic5Kto10K

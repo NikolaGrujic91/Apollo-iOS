@@ -10,10 +10,10 @@ enum PlansRepositoryInjectionMap {
     static var plansRepository: PlansRepositoryProtocol = PlansRepository()
 }
 
-public protocol PlansRepositoryInjected {}
+protocol PlansRepositoryInjected {}
 
 @MainActor
-public extension PlansRepositoryInjected {
+extension PlansRepositoryInjected {
     var plansRepository: PlansRepositoryProtocol {
         PlansRepositoryInjectionMap.plansRepository
     }

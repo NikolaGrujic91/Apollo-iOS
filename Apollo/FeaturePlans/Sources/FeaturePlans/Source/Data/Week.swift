@@ -8,7 +8,7 @@
 import Foundation
 import FoundationLocalization
 
-public final class Week: Codable, Identifiable {
+final class Week: Codable, Identifiable {
     // MARK: - Properties
 
     public let id = UUID()
@@ -16,18 +16,16 @@ public final class Week: Codable, Identifiable {
     public private(set) var orderNumber: String = ""
     public private(set) var days: [Day] = []
 
-    // MARK: - Initializers
-
-    public init() {}
-
     private enum CodingKeys: CodingKey {
         case name
         case orderNumber
         case days
     }
 
+    // MARK: - Functions
+
     @MainActor
-    public func fullName(_ language: LanguageCode) -> String {
+    func fullName(_ language: LanguageCode) -> String {
         "\(name.localized(language)) \(orderNumber)"
     }
 }

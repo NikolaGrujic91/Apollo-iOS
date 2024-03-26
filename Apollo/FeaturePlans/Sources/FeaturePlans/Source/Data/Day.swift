@@ -8,22 +8,18 @@
 import Foundation
 import FoundationLocalization
 
-public final class Day: Codable, Identifiable {
+final class Day: Codable, Identifiable {
     // MARK: - Properties
 
-    public var finished = false
-    public var fractionsCalculated = false
-    public var calories: Int = 0
-    public var distance: Int = 0
-    public var intervals: [Interval] = []
-    public var name: String = ""
-    public var orderNumber: String = ""
-    public var pace: String = ""
-    public let id = UUID()
-
-    // MARK: - Initializers
-
-    public init() {}
+    var finished = false
+    var fractionsCalculated = false
+    var calories: Int = 0
+    var distance: Int = 0
+    var intervals: [Interval] = []
+    var name: String = ""
+    var orderNumber: String = ""
+    var pace: String = ""
+    let id = UUID()
 
     private enum CodingKeys: CodingKey {
         case name
@@ -37,7 +33,7 @@ public final class Day: Codable, Identifiable {
 
     // MARK: - Functions
 
-    public func calculateFractions() {
+    func calculateFractions() {
         if fractionsCalculated {
             return
         }
@@ -61,16 +57,16 @@ public final class Day: Codable, Identifiable {
         fractionsCalculated = true
     }
 
-    public func totalTime() -> Int {
+    func totalTime() -> Int {
         intervals.reduce(0) { $0 + $1.seconds }
     }
 
-    public func intervalType(_ index: Int) -> IntervalType {
+    func intervalType(_ index: Int) -> IntervalType {
         intervals.isEmpty ? .run : intervals[index].type
     }
 
     @MainActor
-    public func fullName(_ language: LanguageCode) -> String {
+    func fullName(_ language: LanguageCode) -> String {
         "\(name.localized(language)) \(orderNumber)"
     }
 }
@@ -78,11 +74,11 @@ public final class Day: Codable, Identifiable {
 // MARK: - Hashable
 
 extension Day: Hashable {
-    public static func == (lhs: Day, rhs: Day) -> Bool {
+    static func == (lhs: Day, rhs: Day) -> Bool {
         lhs.id == rhs.id
     }
 
-    public func hash(into hasher: inout Hasher) {
+    func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 }

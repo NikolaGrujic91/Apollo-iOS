@@ -7,16 +7,12 @@
 
 import Foundation
 
-public final class Plan: Codable, Identifiable {
+final class Plan: Codable, Identifiable {
     // MARK: - Properties
 
-    public let id = UUID()
-    public var name: PlanType = .basic0to2K
-    public var weeks: [Week] = []
-
-    // MARK: - Initializers
-
-    public init() {}
+    let id = UUID()
+    var name: PlanType = .basic0to2K
+    var weeks: [Week] = []
 
     private enum CodingKeys: CodingKey {
         case name
@@ -27,11 +23,11 @@ public final class Plan: Codable, Identifiable {
 // MARK: - Hashable
 
 extension Plan: Hashable {
-    public static func == (lhs: Plan, rhs: Plan) -> Bool {
+    static func == (lhs: Plan, rhs: Plan) -> Bool {
         lhs.id == rhs.id
     }
 
-    public func hash(into hasher: inout Hasher) {
+    func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 }

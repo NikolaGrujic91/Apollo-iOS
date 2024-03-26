@@ -26,17 +26,17 @@ public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerIn
     private(set) var activeButton: TimerButton = .start
     private(set) var distanceFormatted: String = "0.00"
     private(set) var paceFormatted: String = "00:00"
-    var isFinished = false
+    private(set) var isFinished = false
 
     private var timeElapsed = 0
     private var totalTime = 0
     private var totalTimeRemaining = 0
     private var pace: Double = 0.0
     private var bodyMass: Double = 0.0
-    public private(set) var calories: Int = 0
-    public private(set) var currentInterval = 0
-    public private(set) var totalIntervals: Int = 0
-    public private(set) var day = Day()
+    private(set) var calories: Int = 0
+    private(set) var currentInterval = 0
+    private(set) var totalIntervals: Int = 0
+    private(set) var day = Day()
 
     // MARK: - Initializers
 
