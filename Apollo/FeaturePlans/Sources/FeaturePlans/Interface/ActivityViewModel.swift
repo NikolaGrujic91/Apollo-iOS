@@ -18,7 +18,7 @@ enum TimerButton {
 
 @Observable
 @MainActor
-public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerInjected, AudioPlayerInjected {
+public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjected, AudioPlayerInjected {
     // MARK: - Properties
 
     private(set) var timeRemaining = 0
@@ -161,7 +161,7 @@ public final class ActivityViewModel: PlansRepositoryInjected, LocationTrackerIn
         day.distance = Int(locationTracker.distanceMeters)
         day.calories = calories
         day.pace = paceFormatted
-        plansRepository.save()
+        service.save()
     }
 
     private func update() {

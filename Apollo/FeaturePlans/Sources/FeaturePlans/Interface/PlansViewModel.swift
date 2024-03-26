@@ -12,7 +12,7 @@ import UIKit
 
 @Observable
 @MainActor
-public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
+public final class PlansViewModel: PlansServiceInjected, ImagesInjected {
     // MARK: - Properties
 
     private(set) var plans: [Plan] = []
@@ -24,23 +24,23 @@ public final class PlansViewModel: PlansRepositoryInjected, ImagesInjected {
     // MARK: - Functions
 
     func update() {
-        plans = plansRepository.plans
+        plans = service.plans
     }
 
     func load() async {
-        await plansRepository.load()
+        await service.load()
     }
 
     func reset() {
-        plansRepository.reset()
+        service.reset()
     }
 
     func get(_ id: UUID) -> Plan {
-        plansRepository.get(id)
+        service.get(id)
     }
 
     func getDay(_ planId: UUID, _ weekId: UUID, _ dayId: UUID) -> Day {
-        plansRepository.getDay(planId, weekId, dayId)
+        service.getDay(planId, weekId, dayId)
     }
 
     func getImage(_ name: PlanType) -> UIImage {

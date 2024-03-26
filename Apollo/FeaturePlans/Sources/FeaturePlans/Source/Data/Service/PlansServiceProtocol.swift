@@ -1,5 +1,5 @@
 //
-//  PlansRepositoryProtocol.swift
+//  PlansServiceProtocol.swift
 //  FoundationData
 //
 //  Created by Nikola Grujic on 12/02/2023.
@@ -8,7 +8,7 @@
 import Foundation
 
 @MainActor
-protocol PlansRepositoryProtocol: AnyObject {
+protocol PlansServiceProtocol: AnyObject {
     var plans: [Plan] { get }
 
     ///

@@ -1,5 +1,5 @@
 //
-//  PlansFileLoader.swift
+//  PlansRepository.swift
 //  FoundationData
 //
 //  Created by Nikola Grujic on 12/02/2023.
@@ -10,13 +10,13 @@ import FoundationLogger
 import FoundationStorage
 
 @MainActor
-final class PlansFileLoader: PlansLoadingProtocol, LoggerInjected, StorageInjected {
+final class PlansRepository: PlansRepositoryProtocol, LoggerInjected, StorageInjected {
     // MARK: - Properties
 
     private let fileName = "data"
     private let key = "ApolloPlans"
 
-    // MARK: - PlansLoadingProtocol
+    // MARK: - PlansRepositoryProtocol
 
     func save(_ plans: [Plan]) {
         do {

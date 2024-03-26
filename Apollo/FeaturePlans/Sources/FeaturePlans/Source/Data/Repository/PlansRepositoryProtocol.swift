@@ -1,12 +1,12 @@
 //
-//  PlansLoadingProtocol.swift
+//  PlansRepositoryProtocol.swift
 //  FoundationData
 //
 //  Created by Nikola Grujic on 12/02/2023.
 //
 
 @MainActor
-protocol PlansLoadingProtocol: AnyObject {
+protocol PlansRepositoryProtocol: AnyObject {
     ///
     /// Save plans with updated calories and distances in UserDefaults.
     ///

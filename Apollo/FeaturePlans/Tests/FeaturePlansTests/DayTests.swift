@@ -9,20 +9,20 @@
 @testable import FoundationLocalization
 import XCTest
 
-final class DayTests: XCTestCase, PlansRepositoryInjected {
+final class DayTests: XCTestCase, PlansServiceInjected {
     // MARK: - Functions
 
     @MainActor
     override func setUp() {
         super.setUp()
-        plansRepository.reset()
+        service.reset()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     @MainActor
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        plansRepository.reset()
+        service.reset()
         super.tearDown()
     }
 
@@ -30,9 +30,9 @@ final class DayTests: XCTestCase, PlansRepositoryInjected {
 
     @MainActor
     func testFractionsCalculation() async {
-        XCTAssertEqual(plansRepository.plans.count, 6)
+        XCTAssertEqual(service.plans.count, 6)
 
-        let day = plansRepository.plans[0].weeks[0].days[0]
+        let day = service.plans[0].weeks[0].days[0]
         XCTAssertEqual(day.totalTime(), 900)
 
         XCTAssertEqual(day.intervalType(0), .run)
@@ -70,11 +70,11 @@ final class DayTests: XCTestCase, PlansRepositoryInjected {
 
     @MainActor
     func testFullName() {
-        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.english), "Day 1")
-        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.german), "Tag 1")
-        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.netherlands), "Dag 1")
-        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.spanish), "Día 1")
-        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.portuguese), "Dia 1")
-        XCTAssertEqual(plansRepository.plans[0].weeks[0].days[0].fullName(LanguageCode.french), "Jour 1")
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].fullName(LanguageCode.english), "Day 1")
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].fullName(LanguageCode.german), "Tag 1")
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].fullName(LanguageCode.netherlands), "Dag 1")
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].fullName(LanguageCode.spanish), "Día 1")
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].fullName(LanguageCode.portuguese), "Dia 1")
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].fullName(LanguageCode.french), "Jour 1")
     }
 }

@@ -1,5 +1,5 @@
 //
-//  PlansRepository.swift
+//  PlansService.swift
 //  FoundationData
 //
 //  Created by Nikola Grujic on 05/07/2020.
@@ -9,28 +9,28 @@
 import Foundation
 
 @MainActor
-final class PlansRepository: PlansRepositoryProtocol, PlansLoadingInjected {
+final class PlansService: PlansServiceProtocol, PlansRepositoryInjected {
     // MARK: - Properties
 
     var plans: [Plan] = []
 
-    // MARK: - PlansRepositoryProtocol
+    // MARK: - PlansServiceProtocol
 
     func load() async {
         if !plans.isEmpty {
             return
         }
 
-        plans = plansLoader.load()
+        plans = repository.load()
     }
 
     func save() {
-        plansLoader.save(plans)
+        repository.save(plans)
     }
 
     func reset() {
-        plansLoader.remove()
-        plans = plansLoader.load()
+        repository.remove()
+        plans = repository.load()
     }
 
     func get(_ id: UUID) -> Plan {
