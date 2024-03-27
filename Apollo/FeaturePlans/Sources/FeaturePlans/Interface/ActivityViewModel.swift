@@ -21,15 +21,12 @@ enum TimerButton {
 public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjected, AudioPlayerInjected {
     // MARK: - Properties
 
-    private(set) var timeRemaining = 0
     private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private(set) var activeButton: TimerButton = .start
     private(set) var isFinished = false
 
-    private var timeElapsed = 0
-    private var totalTime = 0
-    private var totalTimeRemaining = 0
     private var bodyMass: Double = 0.0
+    private(set) var progress = ActivityProgress()
     private(set) var stats = ActivityStats()
     private(set) var currentInterval = CurrentInterval(0, 0)
     private(set) var day = Day()
@@ -48,13 +45,10 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         self.day = day
         currentInterval = CurrentInterval(0, day.intervals.count)
         self.bodyMass = bodyMass
-        timeElapsed = 0
         isFinished = false
 
         if !day.intervals.isEmpty {
-            timeRemaining = day.intervals[currentInterval.get()].seconds
-            totalTime = day.totalTime()
-            totalTimeRemaining = totalTime
+            progress.set(day.intervals[currentInterval.get()].seconds, day.totalTime())
             day.calculateFractions()
         }
     }
@@ -93,22 +87,20 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
     }
 
     func onReceive() {
-        if timeRemaining == 3 {
+        if progress.intervalTimeRemaining == 3 {
             player.play(.countdown)
         }
 
-        if timeRemaining < 1 {
+        if progress.intervalTimeRemaining < 1 {
             stopTimer()
             currentInterval.next()
 
             if currentInterval.isLast() {
                 update()
                 activeButton = .start
-                timeElapsed = 0
                 currentInterval.reset()
+                progress.set(day.intervals[currentInterval.get()].seconds, day.totalTime())
                 isFinished = true
-                timeRemaining = day.intervals[currentInterval.get()].seconds
-                totalTimeRemaining = totalTime
                 locationTracker.stopUpdatingLocation()
 
                 save()
@@ -116,29 +108,11 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
             }
 
             player.play(.complete)
-            timeRemaining = day.intervals[currentInterval.get()].seconds
+            progress.setIntervalTime(day.intervals[currentInterval.get()].seconds)
             startTimer()
         } else {
-            timeElapsed += 1
-            timeRemaining -= 1
-            totalTimeRemaining -= 1
+            progress.update()
         }
-    }
-
-    func progress() -> Double {
-        if day.intervals.isEmpty {
-            return 1.0
-        }
-
-        return ((Double(timeRemaining) * 100.0) / Double(day.intervals[currentInterval.get()].seconds)) / 100.0
-    }
-
-    func progressTotal() -> Double {
-        if totalTime == 0 {
-            return 1.0
-        }
-
-        return ((Double(totalTimeRemaining) * 100.0) / Double(totalTime)) / 100.0
     }
 
     func intervalType() -> IntervalType {
@@ -159,7 +133,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         stats.setCalories(locationTracker.distanceKilometers, bodyMass)
 
         if locationTracker.distanceKilometers > 0 {
-            stats.setPace(timeElapsed, locationTracker.distanceKilometers)
+            stats.setPace(progress.totalTimeElapsed, locationTracker.distanceKilometers)
         }
     }
 }

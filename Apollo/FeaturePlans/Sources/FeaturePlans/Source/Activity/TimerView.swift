@@ -23,18 +23,18 @@ struct TimerView: View {
             ZStack {
                 FractionProgressView(
                     lineWidth: 8,
-                    progress: viewModel.progressTotal(),
+                    progress: viewModel.progress.progressTotal(),
                     padding: 10,
                     intervals: viewModel.day.intervals
                 )
                 CircularProgressView(
                     lineWidth: 12,
-                    progress: viewModel.progress(),
+                    progress: viewModel.progress.progressInterval(),
                     padding: 30,
                     color: viewModel.intervalType().color()
                 )
                 TimerText(
-                    timeInterval: TimeInterval(viewModel.timeRemaining),
+                    timeInterval: TimeInterval(viewModel.progress.intervalTimeRemaining),
                     color: viewModel.intervalType().color(),
                     intervalType: viewModel.intervalType().rawValue.localized(localization.language),
                     currentInterval: viewModel.currentInterval.getDisplay(),

@@ -33,7 +33,7 @@ final class ActivityViewModelTests: XCTestCase {
     func testActiveButtonStates() async {
         XCTAssertNotNil(activityViewModel)
 
-        XCTAssertEqual(activityViewModel?.timeRemaining, 0)
+        XCTAssertEqual(activityViewModel?.progress.intervalTimeRemaining, 0)
         XCTAssertEqual(activityViewModel?.activeButton, .start)
 
         activityViewModel?.onAppear(day: Day(), bodyMass: 0.0)
