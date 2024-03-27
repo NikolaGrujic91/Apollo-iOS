@@ -96,30 +96,36 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
             currentInterval.next()
 
             if currentInterval.isLast() {
-                update()
-                activeButton = .start
-                currentInterval.reset()
-                progress.set(day.intervals[currentInterval.get()].seconds, day.totalTime())
-                isFinished = true
-                locationTracker.stopUpdatingLocation()
-
-                save()
-                return
+                handleLastIntervalCompletion()
+            } else {
+                handleNextIntervalContinuation()
             }
-
-            player.play(.complete)
-            progress.setIntervalTime(day.intervals[currentInterval.get()].seconds)
-            startTimer()
         } else {
             progress.update()
         }
+    }
+
+    private func handleLastIntervalCompletion() {
+        updateStats()
+        activeButton = .start
+        currentInterval.reset()
+        progress.set(day.intervals[currentInterval.get()].seconds, day.totalTime())
+        isFinished = true
+        locationTracker.stopUpdatingLocation()
+        saveStats()
+    }
+
+    private func handleNextIntervalContinuation() {
+        player.play(.complete)
+        progress.setIntervalTime(day.intervals[currentInterval.get()].seconds)
+        startTimer()
     }
 
     func intervalType() -> IntervalType {
         day.intervalType(currentInterval.get())
     }
 
-    private func save() {
+    private func saveStats() {
         day.finished = true
         #warning("convert distance to string type and store stats.distanceKilometers")
         day.distance = Int(locationTracker.distanceMeters)
@@ -128,7 +134,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         service.save()
     }
 
-    private func update() {
+    private func updateStats() {
         stats.setDistanceKilometersFormatted(locationTracker.distanceKilometers)
         stats.setCalories(locationTracker.distanceKilometers, bodyMass)
 
