@@ -46,7 +46,7 @@ public struct SettingsView: View {
                     ResetDataView()
                 }
                 Section(header: Text("information".localized(localization.language))) {
-                    Text("version".localized(localization.language) + " 1.0.0")
+                    Text("version".localized(localization.language) + " \(Version.get())")
                 }
             }
             .navigationTitle("settings".localized(localization.language))
