@@ -13,6 +13,6 @@ final class MemoryLayoutTests: XCTestCase {
         XCTAssertEqual(class_getInstanceSize(Interval.self), 64)
         XCTAssertEqual(class_getInstanceSize(Plan.self), 48)
         XCTAssertEqual(class_getInstanceSize(Week.self), 72)
-        XCTAssertEqual(class_getInstanceSize(Day.self), 112)
+        XCTAssertEqual(class_getInstanceSize(Day.self), 120)
     }
 }

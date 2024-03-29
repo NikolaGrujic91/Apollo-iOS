@@ -14,7 +14,7 @@ final class Day: Codable, Identifiable {
     var finished = false
     var fractionsCalculated = false
     var calories: Int = 0
-    var distance: Int = 0
+    var distance: String = ""
     var intervals: [Interval] = []
     var name: String = ""
     var orderNumber: String = ""

@@ -4,7 +4,7 @@ import XCTest
 final class PlansServiceTests: XCTestCase, PlansServiceInjected {
     // MARK: - Properties
     private let calories = 600
-    private let distance = 6000
+    private let distance = "6.00"
 
     // MARK: - Functions
 
@@ -31,7 +31,7 @@ final class PlansServiceTests: XCTestCase, PlansServiceInjected {
     @MainActor
     func verifyDayInitialValue() {
         XCTAssertEqual(service.plans[0].weeks[0].days[0].calories, 0)
-        XCTAssertEqual(service.plans[0].weeks[0].days[0].distance, 0)
+        XCTAssertEqual(service.plans[0].weeks[0].days[0].distance, "0")
     }
 
     @MainActor

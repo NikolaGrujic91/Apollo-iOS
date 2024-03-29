@@ -128,7 +128,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
     private func saveStats() {
         day.finished = true
         #warning("convert distance to string type and store stats.distanceKilometers")
-        day.distance = Int(locationTracker.distanceMeters)
+        day.distance = stats.distanceKilometers
         day.calories = stats.calories
         day.pace = stats.paceFormatted
         service.save()

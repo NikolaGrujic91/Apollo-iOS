@@ -67,7 +67,7 @@ struct ActivityView: View {
 
         let day = Day()
         day.name = "Preview day"
-        day.distance = 5000
+        day.distance = "5.00"
         day.calories = 500
         day.intervals = [interval1, interval2]
 
