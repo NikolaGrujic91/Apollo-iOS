@@ -108,18 +108,6 @@ platform :ios do
          derived_data_path: ENV["DERIVED_DATA_PATH"],
          output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FeatureWeight")
 
-     run_tests(workspace: ENV["WORKSPACE"],
-               devices: [ENV["DEVICE_IPHONE"]],
-               derived_data_path: ENV["DERIVED_DATA_PATH"],
-               code_coverage: ENV["CODE_COVERAGE"],
-               output_directory: "#{ENV["TESTS_OUTPUT_DIR"]}/#{ENV["TESTS_DIR_NAME"]}FoundationData",
-               scheme: "FoundationData")
-
-     xcov(workspace: ENV["WORKSPACE"],
-          scheme: "FoundationData",
-          derived_data_path: ENV["DERIVED_DATA_PATH"],
-          output_directory:"#{ENV["XCOV_OUTPUT_DIR"]}/#{ENV["XCOV_DIR_NAME"]}FoundationData")
-
     run_tests(workspace: ENV["WORKSPACE"],
               devices: [ENV["DEVICE_IPHONE"]],
               derived_data_path: ENV["DERIVED_DATA_PATH"],
