@@ -26,7 +26,7 @@ struct ActivityView: View {
 
     @ViewBuilder private var activityView: some View {
         if viewModel.isFinished {
-            InfoView(
+            StatsView(
                 calories: viewModel.stats.calories,
                 distance: viewModel.stats.distanceKilometers,
                 pace: viewModel.stats.paceFormatted

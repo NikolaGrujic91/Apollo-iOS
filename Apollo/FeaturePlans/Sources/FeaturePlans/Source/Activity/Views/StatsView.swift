@@ -1,5 +1,5 @@
 //
-//  InfoView.swift
+//  StatsView.swift
 //  FeaturePlans
 //
 //  Created by Nikola Grujic on 27/02/2023.
@@ -8,7 +8,7 @@
 import FoundationImages
 import SwiftUI
 
-struct InfoView: View {
+struct StatsView: View {
     // MARK: - Properties
 
     @Environment(\.dismiss)
@@ -67,7 +67,7 @@ struct InfoView: View {
 // MARK: - Preview
 
 #Preview {
-    InfoView(
+    StatsView(
         calories: 500,
         distance: "5.5",
         pace: "0:00"
