@@ -35,6 +35,7 @@ public struct PlansView: View {
                 .frame(maxWidth: .infinity) // Enable alignment center
                 .accessibilityHidden(true)
             Text("\(plan.name.rawValue.localized(localization.language))")
+                .font(.title3)
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity) // Enable alignment center
@@ -64,4 +65,5 @@ public struct PlansView: View {
     PlansView()
         .environment(PlansViewModel())
         .environment(ActivityViewModel())
+        .environment(LocalizationViewModel())
 }
