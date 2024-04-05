@@ -21,11 +21,11 @@ enum TimerButton {
 public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjected, AudioPlayerInjected {
     // MARK: - Properties
 
-    private(set) var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private(set) var activeButton: TimerButton = .start
     private(set) var isFinished = false
 
     private var bodyMass: Double = 0.0
+    private var timer: ActivityTimer?
     private(set) var progress = ActivityProgress()
     private(set) var stats = ActivityStats()
     private(set) var currentInterval = CurrentInterval(0, 0)
@@ -33,13 +33,15 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
 
     // MARK: - Initializers
 
-    public init() {}
+    public init() {
+        timer = ActivityTimer(onTick: self.onReceive)
+    }
 
     // MARK: - Functions
 
     func onAppear(day: Day, bodyMass: Double) {
         activeButton = .start
-        stopTimer()
+        timer?.stop()
         locationTracker.requestAuthorization()
 
         self.day = day
@@ -55,35 +57,27 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
 
     func onDissapear() {
         isFinished = false
-        stopTimer()
+        timer?.stop()
         locationTracker.stopUpdatingLocation()
         locationTracker.clear()
     }
 
     func startPressed() {
-        startTimer()
+        timer?.start()
         activeButton = .pause
         locationTracker.startUpdatingLocation()
     }
 
     func pausePressed() {
-        stopTimer()
+        timer?.stop()
         activeButton = .resume
         locationTracker.stopUpdatingLocation()
     }
 
     func resumePressed() {
-        startTimer()
+        timer?.start()
         activeButton = .pause
         locationTracker.startUpdatingLocation()
-    }
-
-    func startTimer() {
-        timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    }
-
-    func stopTimer() {
-        timer.upstream.connect().cancel()
     }
 
     func onReceive() {
@@ -92,7 +86,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
         }
 
         if progress.intervalTimeRemaining < 1 {
-            stopTimer()
+            timer?.stop()
             currentInterval.next()
 
             if currentInterval.isLast() {
@@ -118,7 +112,7 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
     private func handleNextIntervalContinuation() {
         player.play(.complete)
         progress.setIntervalTime(day.intervals[currentInterval.get()].seconds)
-        startTimer()
+        timer?.start()
     }
 
     func intervalType() -> IntervalType {
@@ -127,7 +121,6 @@ public final class ActivityViewModel: PlansServiceInjected, LocationTrackerInjec
 
     private func saveStats() {
         day.finished = true
-        #warning("convert distance to string type and store stats.distanceKilometers")
         day.distance = stats.distanceKilometers
         day.calories = stats.calories
         day.pace = stats.paceFormatted

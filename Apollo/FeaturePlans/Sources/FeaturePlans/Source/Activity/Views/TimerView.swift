@@ -41,22 +41,19 @@ struct TimerView: View {
                     totalIntervals: viewModel.currentInterval.getTotal(),
                     fontSize: 90
                 )
-                .onReceive(viewModel.timer) { _ in
-                    viewModel.onReceive()
-                }
             }
             HStack(spacing: 30) {
-                if viewModel.activeButton == .start {
+                if .start == viewModel.activeButton {
                     CircleButton(
                         action: viewModel.startPressed,
                         imageName: "play.fill"
                     )
-                } else if viewModel.activeButton == .pause {
+                } else if .pause == viewModel.activeButton {
                     CircleButton(
                         action: viewModel.pausePressed,
                         imageName: "pause.fill"
                     )
-                } else if viewModel.activeButton == .resume {
+                } else if .resume == viewModel.activeButton {
                     CircleButton(
                         action: viewModel.resumePressed,
                         imageName: "play.fill"
