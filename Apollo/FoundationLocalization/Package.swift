@@ -22,7 +22,7 @@ let package = Package(
         .package(name: "SharedUI", path: "SharedUI"),
         .package(name: "FoundationLogger", path: "FoundationLogger"),
         .package(name: "FoundationStorage", path: "FoundationStorage"),
-        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.54.0"),
+        .package(url: "https://github.com/lukepistrol/SwiftLintPlugin", from: "0.55.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
