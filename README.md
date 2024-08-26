@@ -74,32 +74,56 @@ Architecture of the application is based on the microapps/microfeatures architec
 
 ```mermaid
 graph TD
-    ApolloApp[ApolloApp] --> FeaturePlans[FeaturePlans]
-    ApolloApp[ApolloApp] --> FeatureSettings[FeatureSettings]
+    subgraph "App"
+      ApolloApp[ApolloApp]
+    end
+
+    subgraph "Feature"
+      FeaturePlans[FeaturePlans]
+      FeatureSettings[FeatureSettings]
+    end
+
+    subgraph "Foundation"
+      FoundationData[FoundationData]
+      FoundationLocation[FoundationLocation]
+      FoundationAudio[FoundationAudio]
+      FoundationImages[FoundationImages]
+      FoundationLogger[FoundationLogger]
+      FoundationLocalization[FoundationLocalization]
+      FoundationStorage[FoundationStorage]
+    end
+
+    subgraph "Utility"
+      UtilityExtensions[UtilityExtensions]
+    end
+
+
+    ApolloApp --> FeaturePlans
+    ApolloApp --> FeatureSettings
     
-    FeaturePlans --> FeatureSettings[FeatureSettings]
-    FeaturePlans --> FoundationData[FoundationData]
-    FeaturePlans --> FoundationLocation[FoundationLocation]
-    FeaturePlans --> FoundationAudio[FoundationAudio]
-    FeaturePlans --> FoundationImages[FoundationImages]
-    FeaturePlans --> UtilityExtensions[UtilityExtensions]
+    FeaturePlans --> FeatureSettings
+    FeaturePlans --> FoundationData
+    FeaturePlans --> FoundationLocation
+    FeaturePlans --> FoundationAudio
+    FeaturePlans --> FoundationImages
+    FeaturePlans --> UtilityExtensions
 
-    FeatureSettings --> FoundationData[FoundationData]
-    FeatureSettings --> FoundationLogger[FoundationLogger]
-    FeatureSettings --> FoundationLocalization[FoundationLocalization]
-    FeatureSettings --> FoundationStorage[FoundationStorage]
-    FeatureSettings --> UtilityExtensions[UtilityExtensions]
+    FeatureSettings --> FoundationData
+    FeatureSettings --> FoundationLogger
+    FeatureSettings --> FoundationLocalization
+    FeatureSettings --> FoundationStorage
+    FeatureSettings --> UtilityExtensions
 
-    FoundationData --> FoundationStorage[FoundationStorage]
-    FoundationData --> FoundationLogger[FoundationLogger]
+    FoundationData --> FoundationStorage
+    FoundationData --> FoundationLogger
 
-    FoundationLocation --> FoundationLogger[FoundationLogger]
+    FoundationLocation --> FoundationLogger
 
-    FoundationAudio --> FoundationLogger[FoundationLogger]
+    FoundationAudio --> FoundationLogger
 
-    FoundationLocalization --> FoundationLogger[FoundationLogger]
+    FoundationLocalization --> FoundationLogger
 
-    FoundationLogger --> CocoaLumberjack[CocoaLumberjack]
+    FoundationLogger --> CocoaLumberjack
 ```
 
 ## Fastlane
