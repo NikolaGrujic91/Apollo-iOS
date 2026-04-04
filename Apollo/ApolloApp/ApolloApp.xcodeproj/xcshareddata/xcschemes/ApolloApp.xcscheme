@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "2630"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,24 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "UtilityExtensions"
-               BuildableName = "UtilityExtensions"
-               BlueprintName = "UtilityExtensions"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "UtilityExtensionsTests"
-               BuildableName = "UtilityExtensionsTests"
-               BlueprintName = "UtilityExtensionsTests"
-               ReferencedContainer = "container:">
+               BlueprintIdentifier = "8EAAF18629A26CC90032AFA8"
+               BuildableName = "ApolloApp.app"
+               BlueprintName = "ApolloApp"
+               ReferencedContainer = "container:ApolloApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +27,18 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "UtilityExtensionsTests"
-               BuildableName = "UtilityExtensionsTests"
-               BlueprintName = "UtilityExtensionsTests"
-               ReferencedContainer = "container:">
+               BlueprintIdentifier = "8E18B2DA2A6E418D00251A31"
+               BuildableName = "ApolloAppUITests.xctest"
+               BlueprintName = "ApolloAppUITests"
+               ReferencedContainer = "container:ApolloApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -64,6 +53,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8EAAF18629A26CC90032AFA8"
+            BuildableName = "ApolloApp.app"
+            BlueprintName = "ApolloApp"
+            ReferencedContainer = "container:ApolloApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -71,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "UtilityExtensions"
-            BuildableName = "UtilityExtensions"
-            BlueprintName = "UtilityExtensions"
-            ReferencedContainer = "container:">
+            BlueprintIdentifier = "8EAAF18629A26CC90032AFA8"
+            BuildableName = "ApolloApp.app"
+            BlueprintName = "ApolloApp"
+            ReferencedContainer = "container:ApolloApp.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

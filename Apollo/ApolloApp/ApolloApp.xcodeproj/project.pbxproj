@@ -18,7 +18,6 @@
 		8EAAF18B29A26CC90032AFA8 /* ApolloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAF18A29A26CC90032AFA8 /* ApolloApp.swift */; };
 		8EAAF18F29A26CCB0032AFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */; };
 		8EAAF19229A26CCB0032AFA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAF19129A26CCB0032AFA8 /* Preview Assets.xcassets */; };
-		8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAAF19B29A273720032AFA8 /* HealthKit.framework */; };
 		8EC897DE2BB1B5D0003108FD /* UtilityExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8EC897DD2BB1B5D0003108FD /* UtilityExtensions */; };
 		8EE0B4FD29C20B1D00DD7726 /* ApolloRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FC29C20B1C00DD7726 /* ApolloRootView.swift */; };
 		8EE0B4FF29C20B2000DD7726 /* MobileMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B4FE29C20B2000DD7726 /* MobileMenuView.swift */; };
@@ -69,7 +68,6 @@
 				8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */,
 				8E4FE50D2ACD6F76005EE393 /* FeatureWeight in Frameworks */,
 				8E340A822ACDC67300EF4B28 /* FoundationTheme in Frameworks */,
-				8EAAF19C29A273720032AFA8 /* HealthKit.framework in Frameworks */,
 				8EE0B50229C20F9E00DD7726 /* FeaturePlans in Frameworks */,
 				8EC897DE2BB1B5D0003108FD /* UtilityExtensions in Frameworks */,
 			);
@@ -172,7 +170,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8E14EA7E29A735950089BE7B /* PBXTargetDependency */,
 			);
 			name = ApolloApp;
 			packageProductDependencies = (
@@ -193,7 +190,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					8E18B2DA2A6E418D00251A31 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -271,10 +268,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8E14EA7E29A735950089BE7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 8E14EA7D29A735950089BE7B /* SwiftLint */;
-		};
 		8E18B2E22A6E418D00251A31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8EAAF18629A26CC90032AFA8 /* ApolloApp */;
@@ -448,9 +441,6 @@
 				INFOPLIST_FILE = ApolloApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Apollo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Read weight in order to calculate burned calories.";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read weight in order to calculate burned calories.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Read weight in order to calculate burned calories.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Read location in order to calculate distance.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,9 +479,6 @@
 				INFOPLIST_FILE = ApolloApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Apollo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Read weight in order to calculate burned calories.";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Read weight in order to calculate burned calories.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Read weight in order to calculate burned calories.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Read location in order to calculate distance.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -553,17 +540,12 @@
 			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.55.1;
+				minimumVersion = 0.63.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8E14EA7D29A735950089BE7B /* SwiftLint */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8E14EA7C29A7358E0089BE7B /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
-			productName = "plugin:SwiftLint";
-		};
 		8E340A812ACDC67300EF4B28 /* FoundationTheme */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoundationTheme;

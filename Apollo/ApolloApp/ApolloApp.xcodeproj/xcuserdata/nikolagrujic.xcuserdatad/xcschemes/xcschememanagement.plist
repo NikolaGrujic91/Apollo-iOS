@@ -7,7 +7,20 @@
 		<key>ApolloApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8E18B2DA2A6E418D00251A31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EAAF18629A26CC90032AFA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

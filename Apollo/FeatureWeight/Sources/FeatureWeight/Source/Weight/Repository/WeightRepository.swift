@@ -40,12 +40,12 @@ final class WeightRepository: WeightRepositoryProtocol, LoggerInjected, StorageI
     }
 
     func loadFromHealthKit() async {
-        do {
-            try await healthKitRepository.requestAuthorization()
-            try await healthKitRepository.fetchWeight()
-            save(healthKitRepository.bodyMass)
-        } catch {
-            logger.handleError(error)
-        }
+//        do {
+//            try await healthKitRepository.requestAuthorization()
+//            try await healthKitRepository.fetchWeight()
+//            save(healthKitRepository.bodyMass)
+//        } catch {
+//            logger.handleError(error)
+//        }
     }
 }
