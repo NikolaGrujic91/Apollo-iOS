@@ -47,6 +47,15 @@ public struct SettingsView: View {
                 }
                 Section(header: Text("information".localized(localization.language))) {
                     Text("version".localized(localization.language) + " \(Version.get())")
+
+
+                    if let installDate = getAppInstallationDate(),
+                       let expirationDate = getExpirationDate(from: installDate) {
+                        Text("Installed on: \(formatDate(installDate))")
+                        Text("Expires on: \(formatDate(expirationDate))")
+                    } else {
+                        Text("Could not determine installation and expiration date")
+                    }
                 }
             }
             .navigationTitle("settings".localized(localization.language))

@@ -11,6 +11,7 @@
 		8E18B2E02A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2DF2A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift */; };
 		8E18B2E72A6E41AB00251A31 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18B2E62A6E41AB00251A31 /* SnapshotHelper.swift */; };
 		8E340A822ACDC67300EF4B28 /* FoundationTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 8E340A812ACDC67300EF4B28 /* FoundationTheme */; };
+		8E419E002F8AA59B00CBF56F /* Trial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E419DFF2F8AA59600CBF56F /* Trial.swift */; };
 		8E4FE50D2ACD6F76005EE393 /* FeatureWeight in Frameworks */ = {isa = PBXBuildFile; productRef = 8E4FE50C2ACD6F76005EE393 /* FeatureWeight */; };
 		8E67D23A29ACF07F00696F05 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E67D23929ACF07F00696F05 /* CoreLocation.framework */; };
 		8E9837672ACDA16200B112A0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9837662ACDA16200B112A0 /* SettingsView.swift */; };
@@ -39,6 +40,7 @@
 		8E18B2DD2A6E418D00251A31 /* ApolloAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAppUITests.swift; sourceTree = "<group>"; };
 		8E18B2DF2A6E418D00251A31 /* ApolloAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E18B2E62A6E41AB00251A31 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		8E419DFF2F8AA59600CBF56F /* Trial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trial.swift; sourceTree = "<group>"; };
 		8E67D23929ACF07F00696F05 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8E67D23C29ACF10B00696F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8E9837662ACDA16200B112A0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				8EAAF18E29A26CCB0032AFA8 /* Assets.xcassets */,
 				8EAAF19029A26CCB0032AFA8 /* Preview Content */,
 				8E98D0BA2BB6BBC000A9BAD1 /* Version.swift */,
+				8E419DFF2F8AA59600CBF56F /* Trial.swift */,
 			);
 			path = ApolloApp;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				8E98D0BB2BB6BBC000A9BAD1 /* Version.swift in Sources */,
 				8E9837672ACDA16200B112A0 /* SettingsView.swift in Sources */,
 				8EAAF18B29A26CC90032AFA8 /* ApolloApp.swift in Sources */,
+				8E419E002F8AA59B00CBF56F /* Trial.swift in Sources */,
 				8EE0B4FD29C20B1D00DD7726 /* ApolloRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
