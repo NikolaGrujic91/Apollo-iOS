@@ -7,24 +7,25 @@
 
 import Foundation
 
-func getAppInstallationDate() -> Date? {
-    let fileManager = FileManager.default
+private let key = "firstLaunchDate"
 
-    // Get Documents directory (created on first install)
-    if let docsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
-        do {
-            let attributes = try fileManager.attributesOfItem(atPath: docsURL.path)
-            return attributes[.creationDate] as? Date
-        } catch {
-            print("Error fetching attributes: \(error)")
-        }
+func getFirstLaunchDate() -> Date {
+    #if DEBUG
+    UserDefaults.standard.removeObject(forKey: key)
+    #endif
+
+    if let savedDate = UserDefaults.standard.object(forKey: key) as? Date {
+        return savedDate
+    } else {
+        let now = Date()
+        UserDefaults.standard.set(now, forKey: key)
+        return now
     }
-
-    return nil
 }
 
-func getExpirationDate(from date: Date, days: Int = 7) -> Date? {
-    return Calendar.current.date(byAdding: .day, value: days, to: date)
+func getExpirationDate(days: Int = 7) -> Date? {
+    let installDate = getFirstLaunchDate()
+    return Calendar.current.date(byAdding: .day, value: days, to: installDate)
 }
 
 func formatDate(_ date: Date) -> String {
