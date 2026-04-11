@@ -30,9 +30,6 @@ struct MobileMenuView: View {
                 Label("plans".localized(localization.language), systemImage: "figure.run")
             }
             .tag(0)
-            .highPriorityGesture(DragGesture().onEnded {
-                self.handleSwipe(translation: $0.translation.width)
-            })
     }
 
     @ViewBuilder private var tabSettings: some View {
@@ -41,9 +38,6 @@ struct MobileMenuView: View {
                 Label("settings".localized(localization.language), systemImage: "gearshape.fill")
             }
             .tag(1)
-            .highPriorityGesture(DragGesture().onEnded {
-                self.handleSwipe(translation: $0.translation.width)
-            })
     }
 
     // MARK: - Body
@@ -55,23 +49,6 @@ struct MobileMenuView: View {
         }
         .accessibilityElement(children: .contain)
         .accessibilityLabel(Text("Tab bar"))
-    }
-
-    // MARK: - Functions
-
-    private func handleSwipe(translation: CGFloat) {
-        let swipeLeft = translation > minDragTranslationForSwipe && selectedTab > 0
-
-        if swipeLeft {
-            selectedTab -= 1
-            return
-        }
-
-        let swipeRight = translation < -minDragTranslationForSwipe && selectedTab < tabsCount - 1
-
-        if swipeRight {
-            selectedTab += 1
-        }
     }
 }
 
